@@ -44,6 +44,14 @@ class TelegramParserTests(unittest.TestCase):
         self.assertEqual(rows[0]["title"], "Senior C++ Engineer | Example")
         self.assertEqual(rows[0]["region"], "Russia")
 
+    def test_russian_channel_header_is_not_used_as_job_title(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="c_rabota/1241"><div>
+          C/C++ Работа вакансии #senior<br>Прософт-Системы<br>Старший инженер-программист C++/Qt<br>Опыт работы: 3–6 лет<br>Формат работы: офис (Екатеринбург)
+          </div></div>'''
+        rows, _ = collect.parse_page("c_rabota", fixture)
+        self.assertEqual(rows[0]["title"], "Старший инженер-программист C++/Qt")
+        self.assertEqual(rows[0]["region"], "Russia")
+
 
 if __name__ == "__main__":
     unittest.main()

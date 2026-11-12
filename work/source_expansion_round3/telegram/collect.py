@@ -24,6 +24,7 @@ PAGE_LIMIT = 3
 VACANCY_RE = re.compile(r"(?:c/c\+\+|c\+\+|c\s*\+\+|\bhft\b|\bhigh[- ]frequency\b|\blow[- ]latency\b|\bquant(?:itative)? developer\b|\btrading systems\b)", re.I)
 SALARY_RE = re.compile(r"[^\n]*(?:₽|руб\w*|CHF|£|GBP|\$|USD|EUR|€)[^\n]*", re.I)
 TITLE_RE = re.compile(r"c\s*\+\s*\+|c/c\+\+|hft|low[- ]latency|high[- ]frequency|quant|engineer|developer|разработчик|инженер|программист|ищет", re.I)
+CHANNEL_HEADER = re.compile(r"вакансии\s+по\s+c\s*\+\s*\+|c/c\+\+\s+работа\s+вакансии", re.I)
 
 
 class TelegramHTML(HTMLParser):
@@ -108,7 +109,7 @@ def _salary_fields(segment):
 
 
 def _location(segment):
-    match = re.search(r"(?:📍\s*|Location\s*:\s*)([^\]\n]+)", segment, re.I)
+    match = re.search(r"(?:📍\s*|Location\s*:\s*|(?:office|офис|гибрид|локация|город)[^\n]*?\()([^\]\n)]+)", segment, re.I)
     return match.group(1).strip() if match else None
 
 
@@ -118,7 +119,7 @@ def _normalized_region(channel, location, salary):
         return "Switzerland", "CH"
     if channel == "devitjobs" and "london" in location_l:
         return "London, UK", "GB"
-    if channel in {"cppdevjob", "c_rabota"} and (salary.get("currency") == "RUB" or re.search(r"\b(?:Russia|Россия|РФ|Москва|Санкт-Петербург|Петербург|Казань|Новосибирск)\b", (location or "") + " " + (salary.get("salary_raw_snippet") or ""), re.I)):
+    if channel in {"cppdevjob", "c_rabota"} and (salary.get("currency") == "RUB" or re.search(r"\b(?:Russia|Россия|РФ|Москва|Санкт-Петербург|Петербург|Казань|Новосибирск|Екатеринбург)\b", (location or "") + " " + (salary.get("salary_raw_snippet") or ""), re.I)):
         return "Russia", "RU"
     if "london" in location_l:
         return "London, UK", "GB"
@@ -137,8 +138,7 @@ def parse_page(source, html_text):
         post_url = "https://t.me/" + post["post"]
         for index, segment in enumerate(post_segments(text)):
             lines = [line.strip() for line in segment.splitlines() if line.strip()]
-            title_line = next((line for line in lines if TITLE_RE.search(line) and
-                               not re.search(r"вакансии\s+по\s+c\s*\+\s*\+", line, re.I)),
+            title_line = next((line for line in lines if TITLE_RE.search(line) and not CHANNEL_HEADER.search(line)),
                               lines[0] if lines else "")
             title = re.sub(r"^➡️\s*|^💻\s*", "", title_line)[:180]
             salary = _salary_fields(segment)
