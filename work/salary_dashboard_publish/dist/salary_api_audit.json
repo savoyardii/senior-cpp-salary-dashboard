@@ -1,10 +1,10 @@
 {
-  "observed_at": "2026-11-12T11:39:15.152904+00:00",
+  "observed_at": "2026-11-12T14:55:01.776551+00:00",
   "fx": {
     "provider": "ExchangeRate-API",
     "base": "USD",
     "updated_at": "Thu, 12 Nov 2026 00:02:31 +0000",
-    "fetched_at": "2026-11-12T08:30:46.521312+00:00",
+    "fetched_at": "2026-11-12T14:55:01.802972+00:00",
     "rates": {
       "USD": 1,
       "CHF": 0.831838,
@@ -20,34 +20,52 @@
       "qualified_records": 48,
       "updated_at": "2026-11-11T13:38:41.519398+00:00",
       "status": "queried",
-      "refresh_error": null,
+      "refresh_error": "HTTP 503",
       "refresh_policy": "weekly"
     },
     {
       "source": "SuperJob",
       "records": 40,
       "qualified_records": 0,
-      "updated_at": "2026-11-11T13:38:41.519398+00:00",
+      "updated_at": "2026-11-12T14:55:01.776551+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
     },
     {
-      "source": "Adzuna",
-      "records": 118,
-      "qualified_records": 28,
-      "updated_at": null,
-      "status": "queried",
-      "refresh_error": null,
-      "refresh_policy": "one-time pilot; excluded from recurring refreshes"
-    },
-    {
       "source": "Работа России",
       "records": 68,
       "qualified_records": 6,
-      "updated_at": "2026-11-12T11:39:15.152904+00:00",
+      "updated_at": "2026-11-12T14:55:01.776551+00:00",
       "status": "queried",
       "refresh_error": null,
+      "refresh_policy": "weekly"
+    },
+    {
+      "source": "Yandex Delivery Careers",
+      "records": 1,
+      "qualified_records": 1,
+      "updated_at": "2026-11-12T12:54:09.566420+00:00",
+      "status": "queried",
+      "refresh_error": "no_strict_current_records; retained prior snapshot",
+      "refresh_policy": "weekly"
+    },
+    {
+      "source": "Zarplata",
+      "records": 2,
+      "qualified_records": 2,
+      "updated_at": "2026-11-12T12:54:09.566420+00:00",
+      "status": "queried",
+      "refresh_error": "no_strict_current_records; retained prior snapshot",
+      "refresh_policy": "weekly"
+    },
+    {
+      "source": "UK Government Work Hub",
+      "records": 1,
+      "qualified_records": 1,
+      "updated_at": "2026-11-12T12:52:26.702922+00:00",
+      "status": "queried",
+      "refresh_error": "CalledProcessError",
       "refresh_policy": "weekly"
     },
     {
@@ -69,31 +87,13 @@
       "refresh_policy": "one_time_static"
     },
     {
-      "source": "Yandex Delivery Careers",
-      "records": 1,
-      "qualified_records": 1,
-      "updated_at": "2026-11-12T12:54:09.566420+00:00",
+      "source": "Adzuna",
+      "records": 118,
+      "qualified_records": 28,
+      "updated_at": null,
       "status": "queried",
       "refresh_error": null,
-      "refresh_policy": "weekly"
-    },
-    {
-      "source": "Zarplata",
-      "records": 2,
-      "qualified_records": 2,
-      "updated_at": "2026-11-12T12:54:09.566420+00:00",
-      "status": "queried",
-      "refresh_error": null,
-      "refresh_policy": "weekly"
-    },
-    {
-      "source": "UK Government Work Hub",
-      "records": 1,
-      "qualified_records": 1,
-      "updated_at": "2026-11-12T12:52:26.702922+00:00",
-      "status": "queried",
-      "refresh_error": null,
-      "refresh_policy": "weekly"
+      "refresh_policy": "one-time pilot; excluded from recurring refreshes"
     }
   ],
   "regions": [
@@ -1681,111 +1681,111 @@
     },
     {
       "group_id": "g44",
-      "region": "London, UK",
-      "title": "Lead eSoftware Engineer - C++",
-      "employer": "Hackajob Ltd",
-      "city": "London",
+      "region": "Russia",
+      "title": "Ведущий разработчик C++ / Qt",
+      "employer": "ООО \"ИВТРЕЙД\"",
+      "city": "г Санкт-Петербург, Коломяжский проспект, дом: Д. 10;корпус: ЛИТЕР АФ;офис/квартира: ОФИС 31А;",
       "sources": [
-        "Adzuna"
+        "Работа России"
       ],
       "records": [
         {
-          "source": "Adzuna",
-          "id": "5936547205",
+          "source": "Работа России",
+          "id": "834a1168-b595-11f1-b9fd-bbcf99b669df",
           "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5936547205?se=5gHHzMvd8RGZ8OPqZjk9Ow&utm_medium=api&utm_source=salary-dashboard&v=8229F19D32F68DD3ABCBFF6CC252FC49B20D4F93"
+            "https://trudvsem.ru/vacancy/card/1187847151810/834a1168-b595-11f1-b9fd-bbcf99b669df"
           ],
-          "observed_at": null
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
       "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
+      "salary_estimate": false,
+      "salary_unresolved": true,
       "seniority": "explicit",
-      "segment": "trading_finance",
+      "segment": "general_cpp",
       "salary_conflict": false,
       "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
+        "no_explicit_local_salary_currency_and_period"
       ]
     },
     {
       "group_id": "g45",
-      "region": "London, UK",
-      "title": "Senior C++ Developer",
-      "employer": "Ec1 Partners",
-      "city": "London",
+      "region": "Russia",
+      "title": "Ведущий инженер-программист C++",
+      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
+      "city": "г Москва, Верейская улица, дом: Д. 41;",
       "sources": [
-        "Adzuna"
+        "Работа России"
       ],
       "records": [
         {
-          "source": "Adzuna",
-          "id": "5704447927",
+          "source": "Работа России",
+          "id": "f9bb8068-6e2b-11f1-ac73-1996bddbbd0d",
           "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5704447927?utm_medium=api&utm_source=salary-dashboard"
+            "https://trudvsem.ru/vacancy/card/1027739001993/f9bb8068-6e2b-11f1-ac73-1996bddbbd0d"
           ],
-          "observed_at": null
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
       "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
+      "salary_estimate": false,
+      "salary_unresolved": true,
       "seniority": "explicit",
-      "segment": "hft",
+      "segment": "general_cpp",
       "salary_conflict": false,
       "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
+        "no_explicit_local_salary_currency_and_period"
       ]
     },
     {
       "group_id": "g46",
-      "region": "London, UK",
-      "title": "Senior C++ Developer",
-      "employer": "SWIFT",
-      "city": "London",
+      "region": "Russia",
+      "title": "Ведущий инженер C++/Qt (Desktop)",
+      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
+      "city": "г Москва, Верейская улица, дом: Д. 41;",
       "sources": [
-        "Adzuna"
+        "Работа России"
       ],
       "records": [
         {
-          "source": "Adzuna",
-          "id": "5758425731",
+          "source": "Работа России",
+          "id": "5069bea8-9b12-11f1-800d-3160d0db64b8",
           "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5758425731?utm_medium=api&utm_source=salary-dashboard"
+            "https://trudvsem.ru/vacancy/card/1027739001993/5069bea8-9b12-11f1-800d-3160d0db64b8"
           ],
-          "observed_at": null
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
       "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
+      "salary_estimate": false,
+      "salary_unresolved": true,
       "seniority": "explicit",
-      "segment": "trading_finance",
+      "segment": "general_cpp",
       "salary_conflict": false,
       "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
+        "no_explicit_local_salary_currency_and_period"
       ]
     },
     {
       "group_id": "g47",
-      "region": "London, UK",
-      "title": "Senior C++ Software Engineer",
-      "employer": "RedTech Recruitment Ltd.",
-      "city": "London",
+      "region": "Russia",
+      "title": "Ведущий инженер-программист",
+      "employer": "АО \"КБП\"",
+      "city": "Тульская область, г Тула, Щегловская засека улица, 59",
       "sources": [
-        "Adzuna"
+        "Работа России"
       ],
       "records": [
         {
-          "source": "Adzuna",
-          "id": "5959739836",
+          "source": "Работа России",
+          "id": "9140cdc8-13f3-11f1-a8b6-8123d4ac677e",
           "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5959739836?utm_medium=api&utm_source=salary-dashboard"
+            "https://trudvsem.ru/vacancy/card/1117154036911/9140cdc8-13f3-11f1-a8b6-8123d4ac677e"
           ],
-          "observed_at": null
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
@@ -1801,666 +1801,6 @@
     },
     {
       "group_id": "g48",
-      "region": "London, UK",
-      "title": "Senior/C++ Software Engineer",
-      "employer": "Selby Jennings London",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5927822100",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5927822100?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g49",
-      "region": "London, UK",
-      "title": "Lead eSoftware Engineer - C++",
-      "employer": "JPMorganChase",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5733982048",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5733982048?se=5gHHzMvd8RGZ8OPqZjk9Ow&utm_medium=api&utm_source=salary-dashboard&v=E6A4FFF786540F50C6255FEA041ACB77E9B8724F"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g50",
-      "region": "London, UK",
-      "title": "Senior Software Engineer C++",
-      "employer": "REC SOLUTIONS LIMITED",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5938014099",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5938014099?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g51",
-      "region": "London, UK",
-      "title": "Lead eSoftware Engineer - C++",
-      "employer": "Hackajob Ltd",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5935856890",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5935856890?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g52",
-      "region": "London, UK",
-      "title": "Senior Embedded Software Engineer C++",
-      "employer": "Engineering Employment",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5948090190",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5948090190?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g53",
-      "region": "London, UK",
-      "title": "Senior Embedded Software Engineer (C++)",
-      "employer": "Expert Employment",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5947185805",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5947185805?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g54",
-      "region": "London, UK",
-      "title": "Senior/Staff Software Engineer, C++",
-      "employer": "Spearpoint Search",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5657685222",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5657685222?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g55",
-      "region": "London, UK",
-      "title": "Sr Lead Software Engineer - C++, Python,",
-      "employer": "JPMorganChase",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5890389406",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5890389406?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=BCF07ACDE69BF684DBE0B7E5E5D261153D3A126D"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g56",
-      "region": "London, UK",
-      "title": "Senior Software Engineer (C++ / Defence Systems)",
-      "employer": "First Military Recruitment",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5954617052",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5954617052?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=023CD2607F1334169E04FDA9B79C094D8DDC03AB"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g57",
-      "region": "London, UK",
-      "title": "Senior/C++ Software Engineer - Selby Jennings",
-      "employer": "Selby Jennings",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5927550894",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5927550894?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g58",
-      "region": "London, UK",
-      "title": "Senior C++/iOS Engineer - User Platform",
-      "employer": "Spotify",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5812147232",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5812147232?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g59",
-      "region": "London, UK",
-      "title": "Senior Software Engineer (Data Platform, C++)",
-      "employer": "Nebius",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5852591853",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5852591853?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g60",
-      "region": "London, UK",
-      "title": "Senior Software Engineer – C++ / Video Processing",
-      "employer": "Medtronic",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5887474655",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5887474655?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g61",
-      "region": "London, UK",
-      "title": "Senior Software Engineer - C++ / Video Processing",
-      "employer": "Medtronic",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5888511644",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5888511644?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g62",
-      "region": "London, UK",
-      "title": "Sr Manager of Software Engineering (C++ / FICC Etrading)",
-      "employer": "JPMorganChase",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5830784272",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5830784272?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=B5FF863C99B962699B43CEA237A1746FC42EAD56"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g63",
-      "region": "London, UK",
-      "title": "Sr Lead Software Engineer (C++ / FICC Etrading)",
-      "employer": "JPMorganChase",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5830787747",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/land/ad/5830787747?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=91DB4C7C8DBD6ECFDC959E30C59566A8477492D2"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g64",
-      "region": "London, UK",
-      "title": "Senior Quant Developer (C++)- Leading Quant & Systematic Fund",
-      "employer": "Oxford Knight",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5936685592",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5936685592?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "hft",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g65",
-      "region": "London, UK",
-      "title": "C++ Senior Software Developer - London- Prop Trading Firm",
-      "employer": "Oxford Knight",
-      "city": "London",
-      "sources": [
-        "Adzuna"
-      ],
-      "records": [
-        {
-          "source": "Adzuna",
-          "id": "5918978728",
-          "urls": [
-            "https://www.adzuna.co.uk/jobs/details/5918978728?utm_medium=api&utm_source=salary-dashboard"
-          ],
-          "observed_at": null
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": true,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "predicted_or_unverified_salary_excluded"
-      ]
-    },
-    {
-      "group_id": "g66",
-      "region": "Russia",
-      "title": "Ведущий разработчик C++ / Qt",
-      "employer": "ООО \"ИВТРЕЙД\"",
-      "city": "г Санкт-Петербург, Коломяжский проспект, дом: Д. 10;корпус: ЛИТЕР АФ;офис/квартира: ОФИС 31А;",
-      "sources": [
-        "Работа России"
-      ],
-      "records": [
-        {
-          "source": "Работа России",
-          "id": "834a1168-b595-11f1-b9fd-bbcf99b669df",
-          "urls": [
-            "https://trudvsem.ru/vacancy/card/1187847151810/834a1168-b595-11f1-b9fd-bbcf99b669df"
-          ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g67",
-      "region": "Russia",
-      "title": "Ведущий инженер-программист C++",
-      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
-      "city": "г Москва, Верейская улица, дом: Д. 41;",
-      "sources": [
-        "Работа России"
-      ],
-      "records": [
-        {
-          "source": "Работа России",
-          "id": "f9bb8068-6e2b-11f1-ac73-1996bddbbd0d",
-          "urls": [
-            "https://trudvsem.ru/vacancy/card/1027739001993/f9bb8068-6e2b-11f1-ac73-1996bddbbd0d"
-          ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g68",
-      "region": "Russia",
-      "title": "Ведущий инженер C++/Qt (Desktop)",
-      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
-      "city": "г Москва, Верейская улица, дом: Д. 41;",
-      "sources": [
-        "Работа России"
-      ],
-      "records": [
-        {
-          "source": "Работа России",
-          "id": "5069bea8-9b12-11f1-800d-3160d0db64b8",
-          "urls": [
-            "https://trudvsem.ru/vacancy/card/1027739001993/5069bea8-9b12-11f1-800d-3160d0db64b8"
-          ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g69",
-      "region": "Russia",
-      "title": "Ведущий инженер-программист",
-      "employer": "АО \"КБП\"",
-      "city": "Тульская область, г Тула, Щегловская засека улица, 59",
-      "sources": [
-        "Работа России"
-      ],
-      "records": [
-        {
-          "source": "Работа России",
-          "id": "9140cdc8-13f3-11f1-a8b6-8123d4ac677e",
-          "urls": [
-            "https://trudvsem.ru/vacancy/card/1117154036911/9140cdc8-13f3-11f1-a8b6-8123d4ac677e"
-          ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": true,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g70",
       "region": "Russia",
       "title": "Программист C++",
       "employer": "АО \"ОКБ МЭИ\"",
@@ -2475,7 +1815,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1097746729816/240669a6-c6e0-11f1-aa68-7523fb122f6d"
           ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2490,7 +1830,7 @@
       ]
     },
     {
-      "group_id": "g71",
+      "group_id": "g49",
       "region": "Russia",
       "title": "Ведущий программист Qt, C++",
       "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
@@ -2505,7 +1845,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1027739001993/add63fc6-cc52-11f1-83b1-37322656cbc9"
           ],
-          "observed_at": "2026-11-12T11:39:15.152904+00:00"
+          "observed_at": "2026-11-12T14:55:01.776551+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2520,249 +1860,7 @@
       ]
     },
     {
-      "group_id": "g72",
-      "region": "London, UK",
-      "title": "Software Engineering Team Lead - C++",
-      "employer": "Spencer Rose Ltd",
-      "city": "London",
-      "sources": [
-        "ITJobsWatch"
-      ],
-      "records": [
-        {
-          "source": "ITJobsWatch",
-          "id": "",
-          "urls": [
-            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [
-        {
-          "min": null,
-          "max": 110000,
-          "currency": "GBP",
-          "period": "year",
-          "basis": "source_card_field",
-          "snippet": "GBP 110,000 Annual",
-          "tax_basis": "unknown",
-          "compensation": "base",
-          "employment_basis": "unknown",
-          "source": "ITJobsWatch",
-          "urls": [
-            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary": [
-        {
-          "min": null,
-          "max": 110000,
-          "currency": "GBP",
-          "period": "year",
-          "basis": "source_card_field",
-          "snippet": "GBP 110,000 Annual",
-          "tax_basis": "unknown",
-          "compensation": "base",
-          "employment_basis": "unknown",
-          "source": "ITJobsWatch",
-          "urls": [
-            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": []
-    },
-    {
-      "group_id": "g73",
-      "region": "London, UK",
-      "title": "Senior Software Engineer C++ (Fixed Term Contract)",
-      "employer": "Microlise",
-      "city": "London",
-      "sources": [
-        "ITJobsWatch"
-      ],
-      "records": [
-        {
-          "source": "ITJobsWatch",
-          "id": "",
-          "urls": [
-            "https://www.itjobswatch.co.uk/ja/clk?jr=562tpe-8n4-0-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g74",
-      "region": "London, UK",
-      "title": "Senior Software Engineer (C++ / Defence Systems)",
-      "employer": "First Military Recruitment Ltd",
-      "city": "London",
-      "sources": [
-        "ITJobsWatch"
-      ],
-      "records": [
-        {
-          "source": "ITJobsWatch",
-          "id": "",
-          "urls": [
-            "https://www.itjobswatch.co.uk/jv/First-Military-Recruitment-Ltd/Senior-Software-Engineer-CPlusPlus-Defence-Systems-Job-Enfield-Ponders-End-Greater-London-UK-55p68l?jr=8n4-0-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g75",
-      "region": "London, UK",
-      "title": "Senior C++ Engineer",
-      "employer": "EPAM Systems Ltd",
-      "city": "London",
-      "sources": [
-        "ITJobsWatch"
-      ],
-      "records": [
-        {
-          "source": "ITJobsWatch",
-          "id": "",
-          "urls": [
-            "https://www.itjobswatch.co.uk/jv/EPAM-Systems-Ltd/Senior-CPlusPlus-Engineer-Job-London-UK-55td5d?jr=8n4-0-1lh"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "trading_finance",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g76",
-      "region": "Russia",
-      "title": "Senior C/C++ Developer (AI / Real-Time Audio Processing)",
-      "employer": "Интеграция Дистрибуция Проекты",
-      "city": "['Москва']",
-      "sources": [
-        "Finder"
-      ],
-      "records": [
-        {
-          "source": "Finder",
-          "id": "",
-          "urls": [
-            "https://finder.work/vacancies/37781766"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g77",
-      "region": "Russia",
-      "title": "Senior Developer C++ (CyberTrace)",
-      "employer": "Лаборатория Касперского",
-      "city": "['Москва']",
-      "sources": [
-        "Finder"
-      ],
-      "records": [
-        {
-          "source": "Finder",
-          "id": "",
-          "urls": [
-            "https://finder.work/vacancies/37313453"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g78",
-      "region": "Russia",
-      "title": "Senior C/С++ developer (1310)",
-      "employer": "ЦНИИАГ",
-      "city": "['Москва']",
-      "sources": [
-        "Finder"
-      ],
-      "records": [
-        {
-          "source": "Finder",
-          "id": "",
-          "urls": [
-            "https://finder.work/vacancies/33658175"
-          ],
-          "observed_at": "2026-11-12T12:38:11.183094+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g79",
+      "group_id": "g50",
       "region": "Russia",
       "title": "Старший разработчик инфраструктуры на С++",
       "employer": "Яндекс",
@@ -2792,7 +1890,7 @@
       ]
     },
     {
-      "group_id": "g80",
+      "group_id": "g51",
       "region": "Russia",
       "title": "Senior Разработчик C++",
       "employer": "Система Безопасных Коммуникаций",
@@ -2822,7 +1920,7 @@
       ]
     },
     {
-      "group_id": "g81",
+      "group_id": "g52",
       "region": "Russia",
       "title": "Ведущий разработчик встроенного ПО (team lead)",
       "employer": "Zelax",
@@ -2884,7 +1982,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g82",
+      "group_id": "g53",
       "region": "London, UK",
       "title": "Senior C++ Software Engineer",
       "employer": "Hadteg.com",
@@ -2944,6 +2042,908 @@
       "segment": "trading_finance",
       "salary_conflict": false,
       "salary_exclusion_reasons": []
+    },
+    {
+      "group_id": "g54",
+      "region": "London, UK",
+      "title": "Software Engineering Team Lead - C++",
+      "employer": "Spencer Rose Ltd",
+      "city": "London",
+      "sources": [
+        "ITJobsWatch"
+      ],
+      "records": [
+        {
+          "source": "ITJobsWatch",
+          "id": "",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [
+        {
+          "min": null,
+          "max": 110000,
+          "currency": "GBP",
+          "period": "year",
+          "basis": "source_card_field",
+          "snippet": "GBP 110,000 Annual",
+          "tax_basis": "unknown",
+          "compensation": "base",
+          "employment_basis": "unknown",
+          "source": "ITJobsWatch",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary": [
+        {
+          "min": null,
+          "max": 110000,
+          "currency": "GBP",
+          "period": "year",
+          "basis": "source_card_field",
+          "snippet": "GBP 110,000 Annual",
+          "tax_basis": "unknown",
+          "compensation": "base",
+          "employment_basis": "unknown",
+          "source": "ITJobsWatch",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": []
+    },
+    {
+      "group_id": "g55",
+      "region": "London, UK",
+      "title": "Senior Software Engineer C++ (Fixed Term Contract)",
+      "employer": "Microlise",
+      "city": "London",
+      "sources": [
+        "ITJobsWatch"
+      ],
+      "records": [
+        {
+          "source": "ITJobsWatch",
+          "id": "",
+          "urls": [
+            "https://www.itjobswatch.co.uk/ja/clk?jr=562tpe-8n4-0-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g56",
+      "region": "London, UK",
+      "title": "Senior Software Engineer (C++ / Defence Systems)",
+      "employer": "First Military Recruitment Ltd",
+      "city": "London",
+      "sources": [
+        "ITJobsWatch"
+      ],
+      "records": [
+        {
+          "source": "ITJobsWatch",
+          "id": "",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/First-Military-Recruitment-Ltd/Senior-Software-Engineer-CPlusPlus-Defence-Systems-Job-Enfield-Ponders-End-Greater-London-UK-55p68l?jr=8n4-0-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g57",
+      "region": "London, UK",
+      "title": "Senior C++ Engineer",
+      "employer": "EPAM Systems Ltd",
+      "city": "London",
+      "sources": [
+        "ITJobsWatch"
+      ],
+      "records": [
+        {
+          "source": "ITJobsWatch",
+          "id": "",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/EPAM-Systems-Ltd/Senior-CPlusPlus-Engineer-Job-London-UK-55td5d?jr=8n4-0-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g58",
+      "region": "Russia",
+      "title": "Senior C/C++ Developer (AI / Real-Time Audio Processing)",
+      "employer": "Интеграция Дистрибуция Проекты",
+      "city": "['Москва']",
+      "sources": [
+        "Finder"
+      ],
+      "records": [
+        {
+          "source": "Finder",
+          "id": "",
+          "urls": [
+            "https://finder.work/vacancies/37781766"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g59",
+      "region": "Russia",
+      "title": "Senior Developer C++ (CyberTrace)",
+      "employer": "Лаборатория Касперского",
+      "city": "['Москва']",
+      "sources": [
+        "Finder"
+      ],
+      "records": [
+        {
+          "source": "Finder",
+          "id": "",
+          "urls": [
+            "https://finder.work/vacancies/37313453"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g60",
+      "region": "Russia",
+      "title": "Senior C/С++ developer (1310)",
+      "employer": "ЦНИИАГ",
+      "city": "['Москва']",
+      "sources": [
+        "Finder"
+      ],
+      "records": [
+        {
+          "source": "Finder",
+          "id": "",
+          "urls": [
+            "https://finder.work/vacancies/33658175"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g61",
+      "region": "London, UK",
+      "title": "Lead eSoftware Engineer - C++",
+      "employer": "Hackajob Ltd",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5936547205",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5936547205?se=5gHHzMvd8RGZ8OPqZjk9Ow&utm_medium=api&utm_source=salary-dashboard&v=8229F19D32F68DD3ABCBFF6CC252FC49B20D4F93"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g62",
+      "region": "London, UK",
+      "title": "Senior C++ Developer",
+      "employer": "Ec1 Partners",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5704447927",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5704447927?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "hft",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g63",
+      "region": "London, UK",
+      "title": "Senior C++ Developer",
+      "employer": "SWIFT",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5758425731",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5758425731?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g64",
+      "region": "London, UK",
+      "title": "Senior C++ Software Engineer",
+      "employer": "RedTech Recruitment Ltd.",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5959739836",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5959739836?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": true,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g65",
+      "region": "London, UK",
+      "title": "Senior/C++ Software Engineer",
+      "employer": "Selby Jennings London",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5927822100",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5927822100?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g66",
+      "region": "London, UK",
+      "title": "Lead eSoftware Engineer - C++",
+      "employer": "JPMorganChase",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5733982048",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5733982048?se=5gHHzMvd8RGZ8OPqZjk9Ow&utm_medium=api&utm_source=salary-dashboard&v=E6A4FFF786540F50C6255FEA041ACB77E9B8724F"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g67",
+      "region": "London, UK",
+      "title": "Senior Software Engineer C++",
+      "employer": "REC SOLUTIONS LIMITED",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5938014099",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5938014099?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": true,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g68",
+      "region": "London, UK",
+      "title": "Lead eSoftware Engineer - C++",
+      "employer": "Hackajob Ltd",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5935856890",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5935856890?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g69",
+      "region": "London, UK",
+      "title": "Senior Embedded Software Engineer C++",
+      "employer": "Engineering Employment",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5948090190",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5948090190?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": true,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g70",
+      "region": "London, UK",
+      "title": "Senior Embedded Software Engineer (C++)",
+      "employer": "Expert Employment",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5947185805",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5947185805?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": true,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g71",
+      "region": "London, UK",
+      "title": "Senior/Staff Software Engineer, C++",
+      "employer": "Spearpoint Search",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5657685222",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5657685222?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g72",
+      "region": "London, UK",
+      "title": "Sr Lead Software Engineer - C++, Python,",
+      "employer": "JPMorganChase",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5890389406",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5890389406?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=BCF07ACDE69BF684DBE0B7E5E5D261153D3A126D"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g73",
+      "region": "London, UK",
+      "title": "Senior Software Engineer (C++ / Defence Systems)",
+      "employer": "First Military Recruitment",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5954617052",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5954617052?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=023CD2607F1334169E04FDA9B79C094D8DDC03AB"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g74",
+      "region": "London, UK",
+      "title": "Senior/C++ Software Engineer - Selby Jennings",
+      "employer": "Selby Jennings",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5927550894",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5927550894?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g75",
+      "region": "London, UK",
+      "title": "Senior C++/iOS Engineer - User Platform",
+      "employer": "Spotify",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5812147232",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5812147232?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g76",
+      "region": "London, UK",
+      "title": "Senior Software Engineer (Data Platform, C++)",
+      "employer": "Nebius",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5852591853",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5852591853?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g77",
+      "region": "London, UK",
+      "title": "Senior Software Engineer – C++ / Video Processing",
+      "employer": "Medtronic",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5887474655",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5887474655?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": true,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g78",
+      "region": "London, UK",
+      "title": "Senior Software Engineer - C++ / Video Processing",
+      "employer": "Medtronic",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5888511644",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5888511644?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g79",
+      "region": "London, UK",
+      "title": "Sr Manager of Software Engineering (C++ / FICC Etrading)",
+      "employer": "JPMorganChase",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5830784272",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5830784272?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=B5FF863C99B962699B43CEA237A1746FC42EAD56"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g80",
+      "region": "London, UK",
+      "title": "Sr Lead Software Engineer (C++ / FICC Etrading)",
+      "employer": "JPMorganChase",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5830787747",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/land/ad/5830787747?se=PkwZzsvd8RGXhdcCTZvjAw&utm_medium=api&utm_source=salary-dashboard&v=91DB4C7C8DBD6ECFDC959E30C59566A8477492D2"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g81",
+      "region": "London, UK",
+      "title": "Senior Quant Developer (C++)- Leading Quant & Systematic Fund",
+      "employer": "Oxford Knight",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5936685592",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5936685592?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "hft",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
+    },
+    {
+      "group_id": "g82",
+      "region": "London, UK",
+      "title": "C++ Senior Software Developer - London- Prop Trading Firm",
+      "employer": "Oxford Knight",
+      "city": "London",
+      "sources": [
+        "Adzuna"
+      ],
+      "records": [
+        {
+          "source": "Adzuna",
+          "id": "5918978728",
+          "urls": [
+            "https://www.adzuna.co.uk/jobs/details/5918978728?utm_medium=api&utm_source=salary-dashboard"
+          ],
+          "observed_at": null
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": true,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "predicted_or_unverified_salary_excluded"
+      ]
     }
   ],
   "excluded": [
@@ -8012,7 +8012,7 @@
       "urls": [
         "https://tambov.superjob.ru/vakansii/programmist-asutp-51780741.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Программист АСУТП",
       "employer": "Группа Компаний РУСАГРО",
@@ -8026,7 +8026,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/vizrt-razrabotchik-52173341.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Vizrt разработчик",
       "employer": "Матч ТВ",
@@ -8040,7 +8040,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/game-tools-developer-52186959.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Game Tools Developer (C++)",
       "employer": "Леста Игры",
@@ -8054,7 +8054,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/ui-unreal-engine-developer-52187017.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "UI Unreal Engine Developer",
       "employer": "Леста Игры",
@@ -8068,7 +8068,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/gameplay-developer-52187100.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Gameplay Developer",
       "employer": "Леста Игры",
@@ -8082,7 +8082,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/mod-developer-52187149.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Mod Developer (Python &amp; React)",
       "employer": "Леста Игры",
@@ -8096,7 +8096,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/developer-c-52235265.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Developer C++",
       "employer": "Лаборатория Касперского",
@@ -8110,7 +8110,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/project-manager-52235288.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Project manager",
       "employer": "Лаборатория Касперского",
@@ -8125,7 +8125,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/data-scientist-52266919.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Data Scientist, Корзина товаров",
       "employer": "OZON: Старт карьеры",
@@ -8140,7 +8140,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/embedded-linux-engineer-52280956.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Embedded Linux Engineer",
       "employer": "Автономные Технологии",
@@ -8154,7 +8154,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/stazher-programmist-52298567.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Стажер-программист",
       "employer": "Figma",
@@ -8169,7 +8169,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/inzhener-programmist-52280959.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Инженер-программист (C++/Python)",
       "employer": "Автономные Технологии",
@@ -8183,7 +8183,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/embedded-razrabotchik-52280965.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Embedded разработчик",
       "employer": "Автономные Технологии",
@@ -8197,7 +8197,7 @@
       "urls": [
         "https://krasnoznamensk-mo.superjob.ru/vakansii/inzhener-programmist-2-kategorii-52183641.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Инженер-программист 2 категории",
       "employer": "НПО ОРИОН",
@@ -8212,7 +8212,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/inzhener-programmist-1-kategorii-52183738.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Инженер-программист 1 категории",
       "employer": "НПО ОРИОН",
@@ -8222,11 +8222,266 @@
     },
     {
       "source": "SuperJob",
+      "id": "52218356",
+      "urls": [
+        "https://www.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218356.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218357",
+      "urls": [
+        "https://spb.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218357.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218358",
+      "urls": [
+        "https://nsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218358.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218359",
+      "urls": [
+        "https://ekaterinburg.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218359.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218360",
+      "urls": [
+        "https://kazan.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218360.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218361",
+      "urls": [
+        "https://nn.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218361.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218362",
+      "urls": [
+        "https://krasnoyarsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218362.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218363",
+      "urls": [
+        "https://chelyabinsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218363.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218364",
+      "urls": [
+        "https://ufa.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218364.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218365",
+      "urls": [
+        "https://krasnodar.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218365.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218366",
+      "urls": [
+        "https://samara.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218366.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218367",
+      "urls": [
+        "https://rnd.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218367.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218368",
+      "urls": [
+        "https://omsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218368.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218369",
+      "urls": [
+        "https://voronezh.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218369.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218370",
+      "urls": [
+        "https://perm.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218370.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218371",
+      "urls": [
+        "https://volgograd.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218371.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
+      "id": "52218372",
+      "urls": [
+        "https://saratov.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218372.html"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
+      "employer": "СТОПФАЕР",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "SuperJob",
       "id": "52218373",
       "urls": [
         "https://tyumen.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218373.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -8241,262 +8496,7 @@
       "urls": [
         "https://tolyatti.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218374.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218375",
-      "urls": [
-        "https://makhachkala.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218375.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218380",
-      "urls": [
-        "https://irkutsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218380.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218381",
-      "urls": [
-        "https://stavropol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218381.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218382",
-      "urls": [
-        "https://sevastopol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218382.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218383",
-      "urls": [
-        "https://simferopol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218383.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218384",
-      "urls": [
-        "https://tomsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218384.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218385",
-      "urls": [
-        "https://kemerovo.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218385.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218386",
-      "urls": [
-        "https://orenburg.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218386.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218387",
-      "urls": [
-        "https://novokuznetsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218387.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218388",
-      "urls": [
-        "https://ryazan.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218388.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218389",
-      "urls": [
-        "https://cheboksary.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218389.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218390",
-      "urls": [
-        "https://ulan-ude.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218390.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218391",
-      "urls": [
-        "https://kaliningrad.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218391.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218392",
-      "urls": [
-        "https://penza.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218392.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218393",
-      "urls": [
-        "https://kursk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218393.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218394",
-      "urls": [
-        "https://belgorod.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218394.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
-      "region": "Russia",
-      "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
-      "employer": "СТОПФАЕР",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "SuperJob",
-      "id": "52218395",
-      "urls": [
-        "https://bryansk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218395.html"
-      ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -8511,7 +8511,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/golang-razrabotchik-52269486.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Golang разработчик",
       "employer": "F6",
@@ -8525,7 +8525,7 @@
       "urls": [
         "https://nn.superjob.ru/vakansii/uchitel-matematiki-52282035.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Учитель математики, физики, информатики",
       "employer": "En+ Group",
@@ -8541,7 +8541,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/uchitel-informatiki-52285669.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Учитель Информатики",
       "employer": "Школа № 1212 Щукино",
@@ -8556,7 +8556,7 @@
       "urls": [
         "https://ekaterinburg.superjob.ru/vakansii/inzhener-programmist-c-52294194.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Инженер-программист C++",
       "employer": "Группа Синара",
@@ -8570,7 +8570,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/risk-tehnolog-52294312.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Риск-технолог (МСБ)",
       "employer": "Альфа-Банк",
@@ -8586,10 +8586,942 @@
       "urls": [
         "https://www.superjob.ru/vakansii/uchitel-informatiki-i-matematiki-52301534.html"
       ],
-      "observed_at": "2026-11-11T13:38:41.519398+00:00",
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
       "region": "Russia",
       "title": "Учитель информатики и математики",
       "employer": "Школа 887",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "6b8ac940-ddb6-11f1-8848-6f99e28577a1",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1087017011113/6b8ac940-ddb6-11f1-8848-6f99e28577a1"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Разработчик C++",
+      "employer": "АО \"НПФ \"МИКРАН\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "20872cf8-9553-11f1-9253-c35c7c22d563",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1037804018614/20872cf8-9553-11f1-9253-c35c7c22d563"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Разработчик C++/QML",
+      "employer": "ООО \"СТЦ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "90a759a8-6b8e-11f0-a528-d549be31d974",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1037804018614/90a759a8-6b8e-11f0-a528-d549be31d974"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Junior C++ разработчик",
+      "employer": "ООО \"СТЦ\"",
+      "reasons": [
+        "junior_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "4196d9e8-3978-11f1-9a2a-17c964ea3db7",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1026200000111/4196d9e8-3978-11f1-9a2a-17c964ea3db7"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Разработчик C#/NET.",
+      "employer": "ПРИО-ВНЕШТОРГБАНК (ПАО)",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "31ea3e80-d377-11f1-8095-7786b3ff4397",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1156658049613/31ea3e80-d377-11f1-8095-7786b3ff4397"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист",
+      "employer": "ООО \"СОФТ-ГОРИЗОНТ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "42572f98-18fc-11ef-b501-cb26dff57dd7",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1055008001201/42572f98-18fc-11ef-b501-cb26dff57dd7"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист",
+      "employer": "ООО \"КОРИФЕЙ",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "d82f68b8-15cd-11f0-a940-e7d0d2cf29b1",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7eb8e970-e5bf-11e5-bc70-4376a32b3f45/d82f68b8-15cd-11f0-a940-e7d0d2cf29b1"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий инженер (отд.4)",
+      "employer": "АО \"ЦКБА\"",
+      "reasons": [
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "79b2cbf8-4953-11f1-b4d8-b7a0ba5a93f0",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1167746822946/79b2cbf8-4953-11f1-b4d8-b7a0ba5a93f0"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Бизнес-аналитик ИТ",
+      "employer": "ООО \"РСХБ-ИНТЕХ\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "0ad1f490-326a-11f1-b443-0128ed62de58",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/0ad1f490-326a-11f1-b443-0128ed62de58"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист микроконтроллеров",
+      "employer": "Миракс",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "cd673dc0-d1e4-11f1-b4a4-47d9292de166",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/cd673dc0-d1e4-11f1-b4a4-47d9292de166"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Секретарь на ресепшн",
+      "employer": "Новый Старт",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9c73f9ef-55a0-11f0-9d55-d549be31d974",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1025203565166/9c73f9ef-55a0-11f0-9d55-d549be31d974"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-разработчик",
+      "employer": "ООО \"ВЗОР\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "09e36d74-d45e-11f1-8891-d72479708e81",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/09e36d74-d45e-11f1-8891-d72479708e81"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Руководитель группы разработки",
+      "employer": "Стек-ИТ",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "aa025cd0-cdf1-11f1-a06f-fbf8ae5f6e59",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/aa025cd0-cdf1-11f1-a06f-fbf8ae5f6e59"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий менеджер по работе с клиентами (финансовый сектор) [МТС Веб Сервисы]",
+      "employer": "МТС",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "86c0b934-ce0d-11f1-acc4-3f3a02315f4e",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/86c0b934-ce0d-11f1-acc4-3f3a02315f4e"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Сетевой инженер [MWS Cloud Platform]",
+      "employer": "МТС",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "c928b888-76c5-11f1-a41f-c3af44321512",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027402317700/c928b888-76c5-11f1-a41f-c3af44321512"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист",
+      "employer": "АО \"СМЭУ\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9a6783c4-2443-11f1-89a6-53287c563eeb",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/5147746474134/9a6783c4-2443-11f1-89a6-53287c563eeb"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "IT-директор мобильного приложения",
+      "employer": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕРВИС ОФОРМЛЕНИЯ НЕДВИЖИМОСТИ\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "7bee45a0-5e46-11f0-bad6-d549be31d974",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1242200015166/7bee45a0-5e46-11f0-bad6-d549be31d974"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист",
+      "employer": "ООО \"ПИЭСПИ ИНТЕРНЕШНЛ\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "bc44f698-a075-11f1-ae19-97b17645c340",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027801525608/bc44f698-a075-11f1-ae19-97b17645c340"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист (middle) C/C++",
+      "employer": "ПАО \"ИНТЕЛТЕХ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "8ad8f205-d31a-11f1-a28e-952c60408284",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/8ad8f205-d31a-11f1-a28e-952c60408284"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист C++",
+      "employer": "Группа Синара",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "107fd9b8-712c-11f1-8093-61b073a087e6",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1037804018614/107fd9b8-712c-11f1-8093-61b073a087e6"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист C/С++ (STM32)",
+      "employer": "ООО \"СТЦ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "d263076d-d391-11f1-97b0-2d1ddb2e4006",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1217800031195/d263076d-d391-11f1-97b0-2d1ddb2e4006"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-программист",
+      "employer": "ООО \"НЭК ТЕХ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "3f0a3720-ddb1-11f1-87a4-09d0e8c84613",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1087017011113/3f0a3720-ddb1-11f1-87a4-09d0e8c84613"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер по верификации FPGA",
+      "employer": "АО \"НПФ \"МИКРАН\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "43801f60-11ce-11ef-be31-3950de1bc4b3",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/43801f60-11ce-11ef-be31-3950de1bc4b3"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-электроник 2 категории (управления 453)",
+      "employer": "РЕШЕТНЁВ",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "e26e6eb8-d16b-11f1-bddd-75870adb5ddc",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1023402464403/e26e6eb8-d16b-11f1-bddd-75870adb5ddc"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Преподаватель (в колледжах, университетах и других вузах)",
+      "employer": "ГАПОУ \"ВКУИНТ ИМ. Ю. ГАГАРИНА\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "4fc79559-e954-11f0-b96a-d92b1f162aa8",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1141831004072/4fc79559-e954-11f0-b96a-d92b1f162aa8"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер - программист",
+      "employer": "ООО КОНЦЕРН \"АКСИОН\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9d197b40-2d81-11f1-ac54-c7fb2a974cd9",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/9d197b40-2d81-11f1-ac54-c7fb2a974cd9"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер управления КТВ",
+      "employer": "МТС",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "089c6e91-8b20-11f1-aeca-c9464de5d4ac",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1136733017354/089c6e91-8b20-11f1-aeca-c9464de5d4ac"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-технолог",
+      "employer": "ООО \"РТС\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "a8d30bd9-5fec-11f1-8c7d-0f19594344d3",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1136733017354/a8d30bd9-5fec-11f1-8c7d-0f19594344d3"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий инженер-технолог",
+      "employer": "ООО \"РТС\"",
+      "reasons": [
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "2bdfe395-a38e-11ed-9eaf-ed798474fbe2",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1077847477740/2bdfe395-a38e-11ed-9eaf-ed798474fbe2"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер-электроник",
+      "employer": "АО \"НПО \"СПАРК\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "97012478-a85f-11f1-8a32-2b6903e6a9c2",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1097746763102/97012478-a85f-11f1-8a32-2b6903e6a9c2"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Начальник отдела разработки программного обеспечения",
+      "employer": "АО \"НПП \"САЛЮТ\"",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "0b217208-7382-11f1-a2ba-317386bbe7a2",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1192536002900/0b217208-7382-11f1-a2ba-317386bbe7a2"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Риелтор/агент по недвижимости",
+      "employer": "ООО \"МЕТРИКА\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "ac606248-e8e4-11ef-a95d-e7d0d2cf29b1",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1021401004877/ac606248-e8e4-11ef-a95d-e7d0d2cf29b1"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Инженер по автоматизированным системам управления технологией производства (АСУ ТП)",
+      "employer": "ООО \"НМ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "0ed70a47-c724-11f1-aa68-7523fb122f6d",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1236300023849/0ed70a47-c724-11f1-aa68-7523fb122f6d"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий инженер по машинному обучению",
+      "employer": "ООО \"ФИНТЕХ-МАРКЕТ\"",
+      "reasons": [
+        "not_software_development_role"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "e6e50bd3-c40f-11f1-9dff-97d306130813",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1076164014805/e6e50bd3-c40f-11f1-9dff-97d306130813"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист C#",
+      "employer": "ООО \"ОБЕРМЕЙСТЕР\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "06b358b8-76d3-11f1-a41f-c3af44321512",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1107232016583/06b358b8-76d3-11f1-a41f-c3af44321512"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист C#",
+      "employer": "ООО \"СТРОИТЕЛЬНЫЙ ДВОР\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "809c81d8-188a-11f1-8162-0bc462b2a22d",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1157847290985/809c81d8-188a-11f1-8162-0bc462b2a22d"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист C++",
+      "employer": "АО \"ОКЕНИТ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9aa3b5d0-7812-11f0-b2d9-cb26dff57dd7",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1226600012330/9aa3b5d0-7812-11f0-b2d9-cb26dff57dd7"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист C++",
+      "employer": "ООО \"РЕГЛАБ\"",
+      "reasons": [
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "1f7fff18-780f-11f0-b2d9-cb26dff57dd7",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1226600012330/1f7fff18-780f-11f0-b2d9-cb26dff57dd7"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Программист C#",
+      "employer": "ООО \"РЕГЛАБ\"",
+      "reasons": [
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "12281070-d9f0-11f1-a92b-0daf2d824c6c",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1037835069986/12281070-d9f0-11f1-a92b-0daf2d824c6c"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Администратор 1С",
+      "employer": "ООО \"ТРАНСОЙЛ\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "0d3d6e48-eed1-11ef-b3ec-e7d0d2cf29b1",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027739001993/0d3d6e48-eed1-11ef-b3ec-e7d0d2cf29b1"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Заместитель начальника отдела по разработке на С++",
+      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "889ca4d0-3330-11f1-bae7-834137f14917",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027807573925/889ca4d0-3330-11f1-bae7-834137f14917"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Учитель информатики и ИКТ",
+      "employer": "ГБОУ ШКОЛА № 634 С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ АНГЛИЙСКОГО ЯЗЫКА ПРИМОРСКОГО РАЙОНА САНКТ-ПЕТЕРБУРГА",
+      "reasons": [
+        "not_software_development_role",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "0a318120-2dd0-11f1-8ac2-61ac2858f806",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1166952054609/0a318120-2dd0-11f1-8ac2-61ac2858f806"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий инженер-программист",
+      "employer": "ООО \"КСК ЭЛКОМ\"",
+      "reasons": [
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "68b4da84-d2c1-11f1-b4a4-47d9292de166",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68b4da84-d2c1-11f1-b4a4-47d9292de166"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
+      "employer": "Самарский филиал ООО РН-Проектирование Добыча",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "68a263f4-d2c1-11f1-b4a4-47d9292de166",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68a263f4-d2c1-11f1-b4a4-47d9292de166"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
+      "employer": "Самарский филиал ООО РН-Проектирование Добыча",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "4ef4d2d4-ace2-11f1-9fdd-b1b3beb9d7ff",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/4ef4d2d4-ace2-11f1-9fdd-b1b3beb9d7ff"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Слесарь строительный",
+      "employer": "МФТИ",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9b241c30-d6ac-11f1-8891-d72479708e81",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/5147746474134/9b241c30-d6ac-11f1-8891-d72479708e81"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Механик (литейное производство)",
+      "employer": "ООО \"Джобкарт\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "7c1206d0-d62b-11f1-8891-d72479708e81",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/7c1206d0-d62b-11f1-8891-d72479708e81"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Директор представительства",
+      "employer": "Образовательный холдинг СИНЕРГИЯ",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "298122b0-d62c-11f1-b2ef-ab79fed554e9",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/298122b0-d62c-11f1-b2ef-ab79fed554e9"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Директор представительства",
+      "employer": "Образовательный холдинг СИНЕРГИЯ",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "06eea425-cddf-11f1-a06f-fbf8ae5f6e59",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/06eea425-cddf-11f1-a06f-fbf8ae5f6e59"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор плавления жиров",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9fa850e0-cd4d-11f1-a4f3-d96998355502",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/9fa850e0-cd4d-11f1-a4f3-d96998355502"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Контролер по отгрузке готовой продукции",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "539b8400-cd4e-11f1-b79b-5f0ce528fb8f",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/539b8400-cd4e-11f1-b79b-5f0ce528fb8f"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор мониторинга",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "9beb48e5-cd4d-11f1-a06f-fbf8ae5f6e59",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/9beb48e5-cd4d-11f1-a06f-fbf8ae5f6e59"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Аппаратчик",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "f95bcf15-acf3-11f1-8638-4995cd87d3e4",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/f95bcf15-acf3-11f1-8638-4995cd87d3e4"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Водитель (форд транзит)",
+      "employer": "ФГУП «РАДОН»",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "a34bdd75-cd4d-11f1-b79b-5f0ce528fb8f",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/a34bdd75-cd4d-11f1-b79b-5f0ce528fb8f"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор сушильных установок",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "904b0ed5-cd4d-11f1-a4f3-d96998355502",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/904b0ed5-cd4d-11f1-a4f3-d96998355502"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор-наладчик",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "e7f27075-cd4c-11f1-b79b-5f0ce528fb8f",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/e7f27075-cd4c-11f1-b79b-5f0ce528fb8f"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор оборудования (гидрогенизаторщик)",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "e209dd15-cd24-11f1-acc4-3f3a02315f4e",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/e209dd15-cd24-11f1-acc4-3f3a02315f4e"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Оператор пульта управления",
+      "employer": "ГК Русагро",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "2fa88820-b5b8-11f1-b9fd-bbcf99b669df",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1164350073645/2fa88820-b5b8-11f1-b9fd-bbcf99b669df"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Менеджер (в торговле)",
+      "employer": "ООО \"СОНЛАЙТ\"",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "b3bc8af0-d1e5-11f1-a28e-952c60408284",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1027700404797/b3bc8af0-d1e5-11f1-a28e-952c60408284"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Механик (литейное производство)",
+      "employer": "JOBCART.RU",
+      "reasons": [
+        "not_software_development_role",
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "a9d7e620-de73-11f1-8798-75bc1c1c1094",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/1097604013781/a9d7e620-de73-11f1-8798-75bc1c1c1094"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Разработчик RPA",
+      "employer": "ООО \"СЕВЕРСТАЛЬ-ЦЕНТР ЕДИНОГО СЕРВИСА\"",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "2b20b634-b1bf-11f1-965d-c9051aad3960",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/2b20b634-b1bf-11f1-965d-c9051aad3960"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
+      "employer": "МФТИ",
+      "reasons": [
+        "cpp_not_core_requirement"
+      ]
+    },
+    {
+      "source": "Работа России",
+      "id": "3081f904-b588-11f1-823b-a9fe92e671b2",
+      "urls": [
+        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/3081f904-b588-11f1-823b-a9fe92e671b2"
+      ],
+      "observed_at": "2026-11-12T14:55:01.776551+00:00",
+      "region": "Russia",
+      "title": "Специалист по робототехнике (автономное движение платформы)",
+      "employer": "МФТИ",
       "reasons": [
         "not_software_development_role",
         "cpp_not_core_requirement",
@@ -9867,938 +10799,6 @@
       "employer": "Squarepoint Capital",
       "reasons": [
         "junior_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "6b8ac940-ddb6-11f1-8848-6f99e28577a1",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1087017011113/6b8ac940-ddb6-11f1-8848-6f99e28577a1"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Разработчик C++",
-      "employer": "АО \"НПФ \"МИКРАН\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "20872cf8-9553-11f1-9253-c35c7c22d563",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1037804018614/20872cf8-9553-11f1-9253-c35c7c22d563"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Разработчик C++/QML",
-      "employer": "ООО \"СТЦ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "90a759a8-6b8e-11f0-a528-d549be31d974",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1037804018614/90a759a8-6b8e-11f0-a528-d549be31d974"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Junior C++ разработчик",
-      "employer": "ООО \"СТЦ\"",
-      "reasons": [
-        "junior_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "4196d9e8-3978-11f1-9a2a-17c964ea3db7",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1026200000111/4196d9e8-3978-11f1-9a2a-17c964ea3db7"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Разработчик C#/NET.",
-      "employer": "ПРИО-ВНЕШТОРГБАНК (ПАО)",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "31ea3e80-d377-11f1-8095-7786b3ff4397",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1156658049613/31ea3e80-d377-11f1-8095-7786b3ff4397"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист",
-      "employer": "ООО \"СОФТ-ГОРИЗОНТ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "42572f98-18fc-11ef-b501-cb26dff57dd7",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1055008001201/42572f98-18fc-11ef-b501-cb26dff57dd7"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист",
-      "employer": "ООО \"КОРИФЕЙ",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "d82f68b8-15cd-11f0-a940-e7d0d2cf29b1",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7eb8e970-e5bf-11e5-bc70-4376a32b3f45/d82f68b8-15cd-11f0-a940-e7d0d2cf29b1"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер (отд.4)",
-      "employer": "АО \"ЦКБА\"",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "79b2cbf8-4953-11f1-b4d8-b7a0ba5a93f0",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1167746822946/79b2cbf8-4953-11f1-b4d8-b7a0ba5a93f0"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Бизнес-аналитик ИТ",
-      "employer": "ООО \"РСХБ-ИНТЕХ\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "0ad1f490-326a-11f1-b443-0128ed62de58",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/0ad1f490-326a-11f1-b443-0128ed62de58"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист микроконтроллеров",
-      "employer": "Миракс",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "cd673dc0-d1e4-11f1-b4a4-47d9292de166",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/cd673dc0-d1e4-11f1-b4a4-47d9292de166"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Секретарь на ресепшн",
-      "employer": "Новый Старт",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9c73f9ef-55a0-11f0-9d55-d549be31d974",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1025203565166/9c73f9ef-55a0-11f0-9d55-d549be31d974"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-разработчик",
-      "employer": "ООО \"ВЗОР\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "09e36d74-d45e-11f1-8891-d72479708e81",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/09e36d74-d45e-11f1-8891-d72479708e81"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Руководитель группы разработки",
-      "employer": "Стек-ИТ",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "aa025cd0-cdf1-11f1-a06f-fbf8ae5f6e59",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/aa025cd0-cdf1-11f1-a06f-fbf8ae5f6e59"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий менеджер по работе с клиентами (финансовый сектор) [МТС Веб Сервисы]",
-      "employer": "МТС",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "86c0b934-ce0d-11f1-acc4-3f3a02315f4e",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/86c0b934-ce0d-11f1-acc4-3f3a02315f4e"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Сетевой инженер [MWS Cloud Platform]",
-      "employer": "МТС",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "c928b888-76c5-11f1-a41f-c3af44321512",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027402317700/c928b888-76c5-11f1-a41f-c3af44321512"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист",
-      "employer": "АО \"СМЭУ\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9a6783c4-2443-11f1-89a6-53287c563eeb",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/5147746474134/9a6783c4-2443-11f1-89a6-53287c563eeb"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "IT-директор мобильного приложения",
-      "employer": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕРВИС ОФОРМЛЕНИЯ НЕДВИЖИМОСТИ\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "7bee45a0-5e46-11f0-bad6-d549be31d974",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1242200015166/7bee45a0-5e46-11f0-bad6-d549be31d974"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист",
-      "employer": "ООО \"ПИЭСПИ ИНТЕРНЕШНЛ\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "bc44f698-a075-11f1-ae19-97b17645c340",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027801525608/bc44f698-a075-11f1-ae19-97b17645c340"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист (middle) C/C++",
-      "employer": "ПАО \"ИНТЕЛТЕХ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "8ad8f205-d31a-11f1-a28e-952c60408284",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/8ad8f205-d31a-11f1-a28e-952c60408284"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист C++",
-      "employer": "Группа Синара",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "107fd9b8-712c-11f1-8093-61b073a087e6",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1037804018614/107fd9b8-712c-11f1-8093-61b073a087e6"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист C/С++ (STM32)",
-      "employer": "ООО \"СТЦ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "d263076d-d391-11f1-97b0-2d1ddb2e4006",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1217800031195/d263076d-d391-11f1-97b0-2d1ddb2e4006"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-программист",
-      "employer": "ООО \"НЭК ТЕХ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "3f0a3720-ddb1-11f1-87a4-09d0e8c84613",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1087017011113/3f0a3720-ddb1-11f1-87a4-09d0e8c84613"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер по верификации FPGA",
-      "employer": "АО \"НПФ \"МИКРАН\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "43801f60-11ce-11ef-be31-3950de1bc4b3",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/43801f60-11ce-11ef-be31-3950de1bc4b3"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-электроник 2 категории (управления 453)",
-      "employer": "РЕШЕТНЁВ",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "e26e6eb8-d16b-11f1-bddd-75870adb5ddc",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1023402464403/e26e6eb8-d16b-11f1-bddd-75870adb5ddc"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Преподаватель (в колледжах, университетах и других вузах)",
-      "employer": "ГАПОУ \"ВКУИНТ ИМ. Ю. ГАГАРИНА\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "4fc79559-e954-11f0-b96a-d92b1f162aa8",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1141831004072/4fc79559-e954-11f0-b96a-d92b1f162aa8"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер - программист",
-      "employer": "ООО КОНЦЕРН \"АКСИОН\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9d197b40-2d81-11f1-ac54-c7fb2a974cd9",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/9d197b40-2d81-11f1-ac54-c7fb2a974cd9"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер управления КТВ",
-      "employer": "МТС",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "089c6e91-8b20-11f1-aeca-c9464de5d4ac",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1136733017354/089c6e91-8b20-11f1-aeca-c9464de5d4ac"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-технолог",
-      "employer": "ООО \"РТС\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "a8d30bd9-5fec-11f1-8c7d-0f19594344d3",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1136733017354/a8d30bd9-5fec-11f1-8c7d-0f19594344d3"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер-технолог",
-      "employer": "ООО \"РТС\"",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "2bdfe395-a38e-11ed-9eaf-ed798474fbe2",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1077847477740/2bdfe395-a38e-11ed-9eaf-ed798474fbe2"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер-электроник",
-      "employer": "АО \"НПО \"СПАРК\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "97012478-a85f-11f1-8a32-2b6903e6a9c2",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1097746763102/97012478-a85f-11f1-8a32-2b6903e6a9c2"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Начальник отдела разработки программного обеспечения",
-      "employer": "АО \"НПП \"САЛЮТ\"",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "0b217208-7382-11f1-a2ba-317386bbe7a2",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1192536002900/0b217208-7382-11f1-a2ba-317386bbe7a2"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Риелтор/агент по недвижимости",
-      "employer": "ООО \"МЕТРИКА\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "ac606248-e8e4-11ef-a95d-e7d0d2cf29b1",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1021401004877/ac606248-e8e4-11ef-a95d-e7d0d2cf29b1"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Инженер по автоматизированным системам управления технологией производства (АСУ ТП)",
-      "employer": "ООО \"НМ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "0ed70a47-c724-11f1-aa68-7523fb122f6d",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1236300023849/0ed70a47-c724-11f1-aa68-7523fb122f6d"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер по машинному обучению",
-      "employer": "ООО \"ФИНТЕХ-МАРКЕТ\"",
-      "reasons": [
-        "not_software_development_role"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "e6e50bd3-c40f-11f1-9dff-97d306130813",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1076164014805/e6e50bd3-c40f-11f1-9dff-97d306130813"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист C#",
-      "employer": "ООО \"ОБЕРМЕЙСТЕР\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "06b358b8-76d3-11f1-a41f-c3af44321512",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1107232016583/06b358b8-76d3-11f1-a41f-c3af44321512"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист C#",
-      "employer": "ООО \"СТРОИТЕЛЬНЫЙ ДВОР\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "809c81d8-188a-11f1-8162-0bc462b2a22d",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1157847290985/809c81d8-188a-11f1-8162-0bc462b2a22d"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист C++",
-      "employer": "АО \"ОКЕНИТ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9aa3b5d0-7812-11f0-b2d9-cb26dff57dd7",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1226600012330/9aa3b5d0-7812-11f0-b2d9-cb26dff57dd7"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист C++",
-      "employer": "ООО \"РЕГЛАБ\"",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "1f7fff18-780f-11f0-b2d9-cb26dff57dd7",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1226600012330/1f7fff18-780f-11f0-b2d9-cb26dff57dd7"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Программист C#",
-      "employer": "ООО \"РЕГЛАБ\"",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "12281070-d9f0-11f1-a92b-0daf2d824c6c",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1037835069986/12281070-d9f0-11f1-a92b-0daf2d824c6c"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Администратор 1С",
-      "employer": "ООО \"ТРАНСОЙЛ\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "0d3d6e48-eed1-11ef-b3ec-e7d0d2cf29b1",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027739001993/0d3d6e48-eed1-11ef-b3ec-e7d0d2cf29b1"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Заместитель начальника отдела по разработке на С++",
-      "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "889ca4d0-3330-11f1-bae7-834137f14917",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027807573925/889ca4d0-3330-11f1-bae7-834137f14917"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Учитель информатики и ИКТ",
-      "employer": "ГБОУ ШКОЛА № 634 С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ АНГЛИЙСКОГО ЯЗЫКА ПРИМОРСКОГО РАЙОНА САНКТ-ПЕТЕРБУРГА",
-      "reasons": [
-        "not_software_development_role",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "0a318120-2dd0-11f1-8ac2-61ac2858f806",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1166952054609/0a318120-2dd0-11f1-8ac2-61ac2858f806"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер-программист",
-      "employer": "ООО \"КСК ЭЛКОМ\"",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "68b4da84-d2c1-11f1-b4a4-47d9292de166",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68b4da84-d2c1-11f1-b4a4-47d9292de166"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
-      "employer": "Самарский филиал ООО РН-Проектирование Добыча",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "68a263f4-d2c1-11f1-b4a4-47d9292de166",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68a263f4-d2c1-11f1-b4a4-47d9292de166"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
-      "employer": "Самарский филиал ООО РН-Проектирование Добыча",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "4ef4d2d4-ace2-11f1-9fdd-b1b3beb9d7ff",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/4ef4d2d4-ace2-11f1-9fdd-b1b3beb9d7ff"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Слесарь строительный",
-      "employer": "МФТИ",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9b241c30-d6ac-11f1-8891-d72479708e81",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/5147746474134/9b241c30-d6ac-11f1-8891-d72479708e81"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Механик (литейное производство)",
-      "employer": "ООО \"Джобкарт\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "7c1206d0-d62b-11f1-8891-d72479708e81",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/7c1206d0-d62b-11f1-8891-d72479708e81"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Директор представительства",
-      "employer": "Образовательный холдинг СИНЕРГИЯ",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "298122b0-d62c-11f1-b2ef-ab79fed554e9",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/298122b0-d62c-11f1-b2ef-ab79fed554e9"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Директор представительства",
-      "employer": "Образовательный холдинг СИНЕРГИЯ",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "06eea425-cddf-11f1-a06f-fbf8ae5f6e59",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/06eea425-cddf-11f1-a06f-fbf8ae5f6e59"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор плавления жиров",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9fa850e0-cd4d-11f1-a4f3-d96998355502",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/9fa850e0-cd4d-11f1-a4f3-d96998355502"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Контролер по отгрузке готовой продукции",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "539b8400-cd4e-11f1-b79b-5f0ce528fb8f",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/539b8400-cd4e-11f1-b79b-5f0ce528fb8f"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор мониторинга",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "9beb48e5-cd4d-11f1-a06f-fbf8ae5f6e59",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/9beb48e5-cd4d-11f1-a06f-fbf8ae5f6e59"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Аппаратчик",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "f95bcf15-acf3-11f1-8638-4995cd87d3e4",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/f95bcf15-acf3-11f1-8638-4995cd87d3e4"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Водитель (форд транзит)",
-      "employer": "ФГУП «РАДОН»",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "a34bdd75-cd4d-11f1-b79b-5f0ce528fb8f",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/a34bdd75-cd4d-11f1-b79b-5f0ce528fb8f"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор сушильных установок",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "904b0ed5-cd4d-11f1-a4f3-d96998355502",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/904b0ed5-cd4d-11f1-a4f3-d96998355502"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор-наладчик",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "e7f27075-cd4c-11f1-b79b-5f0ce528fb8f",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/e7f27075-cd4c-11f1-b79b-5f0ce528fb8f"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор оборудования (гидрогенизаторщик)",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "e209dd15-cd24-11f1-acc4-3f3a02315f4e",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/e209dd15-cd24-11f1-acc4-3f3a02315f4e"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Оператор пульта управления",
-      "employer": "ГК Русагро",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "2fa88820-b5b8-11f1-b9fd-bbcf99b669df",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1164350073645/2fa88820-b5b8-11f1-b9fd-bbcf99b669df"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Менеджер (в торговле)",
-      "employer": "ООО \"СОНЛАЙТ\"",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "b3bc8af0-d1e5-11f1-a28e-952c60408284",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1027700404797/b3bc8af0-d1e5-11f1-a28e-952c60408284"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Механик (литейное производство)",
-      "employer": "JOBCART.RU",
-      "reasons": [
-        "not_software_development_role",
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "a9d7e620-de73-11f1-8798-75bc1c1c1094",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/1097604013781/a9d7e620-de73-11f1-8798-75bc1c1c1094"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Разработчик RPA",
-      "employer": "ООО \"СЕВЕРСТАЛЬ-ЦЕНТР ЕДИНОГО СЕРВИСА\"",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "2b20b634-b1bf-11f1-965d-c9051aad3960",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/2b20b634-b1bf-11f1-965d-c9051aad3960"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
-      "employer": "МФТИ",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Работа России",
-      "id": "3081f904-b588-11f1-823b-a9fe92e671b2",
-      "urls": [
-        "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/3081f904-b588-11f1-823b-a9fe92e671b2"
-      ],
-      "observed_at": "2026-11-12T11:39:15.152904+00:00",
-      "region": "Russia",
-      "title": "Специалист по робототехнике (автономное движение платформы)",
-      "employer": "МФТИ",
-      "reasons": [
-        "not_software_development_role",
         "cpp_not_core_requirement",
         "seniority_not_established"
       ]
