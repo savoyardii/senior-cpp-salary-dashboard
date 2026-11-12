@@ -184,7 +184,7 @@ def collect(channels=None, page_limit=PAGE_LIMIT, delay=0.7):
                 html_text = fetch(url)
                 rows, posts = parse_page(channel, html_text)
                 candidates.extend(rows)
-                ids = [p.get("post", "").rsplit("/", 1)[-1] for p in posts]
+                ids = [str(p.get("post") or "").rsplit("/", 1)[-1] for p in posts]
                 next_before = min((int(i) for i in ids if i.isdigit()), default=None)
                 attempt.update(status="ok", posts=len(posts), candidates=len(rows))
                 if next_before is None or str(next_before) in seen_before:

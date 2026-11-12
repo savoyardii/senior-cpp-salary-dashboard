@@ -1,6 +1,7 @@
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).parent))
 import collect
@@ -26,6 +27,12 @@ class TelegramParserTests(unittest.TestCase):
         fixture = '<div class="tgme_widget_message_wrap" data-post="devitjobs/3"><div>Python Developer</div></div>'
         rows, _ = collect.parse_page("devitjobs", fixture)
         self.assertEqual(rows, [])
+
+    def test_post_without_identifier_does_not_break_pagination(self):
+        fixture = '<div class="tgme_widget_message_wrap"><div>Channel notice</div></div>'
+        with patch.object(collect, "fetch", return_value=fixture):
+            result = collect.collect(channels=("cppdevjob",), page_limit=1, delay=0)
+        self.assertEqual(result["attempts"][0]["status"], "ok")
 
 
 if __name__ == "__main__":
