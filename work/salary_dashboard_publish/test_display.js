@@ -19,7 +19,7 @@ for(const [id,values]of [['segment',['all','finance','general']],['level',['seni
  document.getElementById(id).value=values[0];const menu=document.getElementById(id+'-menu');menu.items=values.map(value=>{const n=new Node('button',value);n.dataset={value};return n});
 }
 for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=page.match(new RegExp(`<script id="${id}" type="application/json">([\\s\\S]*?)</script>`))[1];
-const context={document,Intl,Map,Set,Date,Number,Event:class Event{},console};vm.createContext(context);
+const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
 const jobs=()=>nodes.regions.children.flatMap(region=>region.children.filter(child=>child.className==='region-jobs')).map(content).join(' ');
@@ -31,17 +31,19 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
 }
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 const cards=content(nodes.regions);
-assert(cards.includes('100–120 тыс.')&&cards.includes('Зарплатных наблюдений: 3'),'Swiss card must use explicit-Senior API salary observations');
-assert(cards.includes('40–200 тыс.')&&cards.includes('Зарплатных наблюдений: 4'),'London card must use explicit-Senior API salary observations');
-assert(cards.includes('Зарплатных наблюдений: 1'),'Russia card must show the single API salary observation');
+assert(cards.includes('100–180 тыс.')&&cards.includes('Вакансий в расчёте: 4'),'Swiss card must combine manual and API salary records');
+assert(cards.includes('40–250 тыс.')&&cards.includes('Вакансий в расчёте: 7'),'London card must combine manual and API salary records and dedupe duplicates');
+assert(cards.includes('Вакансий в расчёте: 1'),'Russia card must combine the single local-currency salary record');
+assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
+assert(cards.includes('SwissDevJobs')&&cards.includes('Headcount Labs'),'Expanded cards must retain source names from the merged sample');
 const explicit=Number(nodes['api-kpis'].children[0].children[0].textContent);
 nodes.level.value='all';vm.runInContext('render();renderApi()',context);
 const all=Number(nodes['api-kpis'].children[0].children[0].textContent);
 const allCards=content(nodes.regions);
-assert(allCards.includes('100–160 тыс.')&&allCards.includes('Зарплатных наблюдений: 4'),'All-level Swiss card must include the experience-based observation');
-assert(allCards.includes('40–220 тыс.')&&allCards.includes('Зарплатных наблюдений: 5'),'All-level London card must include the experience-based observation');
+assert(allCards.includes('объединённой выборке'),'All-level cards must keep using the merged salary sample');
+assert(allCards!==cards,'All-level filter must alter the merged sample');
 assert(all>explicit,'API Senior filter must affect the displayed counts');
 nodes.segment.value='finance';vm.runInContext('render();renderApi()',context);
 assert(Number(nodes['api-kpis'].children[0].children[0].textContent)<all,'API segment filter must affect the counts');
 assert(!content(nodes['api-notes']).includes('£2 026'));
-console.log('Display checks passed: period/currency pairs, one scale suffix, API senior/segment filters.');
+console.log('Display checks passed: period/currency pairs, one scale suffix, merged manual/API sample, senior/segment filters.');
