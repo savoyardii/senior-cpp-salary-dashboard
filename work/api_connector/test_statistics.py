@@ -48,6 +48,7 @@ class ScopeAndDedupTests(unittest.TestCase):
     def test_senior_uses_lower_bound_not_upper(self):
         for text in ('5+ years of experience', '6 years of software development experience', '7+ years experience in C++', '10 years professional experience', 'опыт работы от 6 лет'):
             self.assertTrue(m.senior('C++ Developer', text), text)
+        self.assertTrue(m.senior('C++ тимлид', ''))
         for text in ('3–5 years of experience', '2 to 5 years of experience', 'between 3 and 5 years of experience', '6 months experience in C++', 'C++ experience; 10 years is ideal', '5 years of sales experience; C++ experience 6 months', 'Company founded 10 years ago'):
             self.assertFalse(m.senior('C++ Developer', text), text)
         self.assertFalse(m.senior('Junior C++ Developer', '10 years experience'))

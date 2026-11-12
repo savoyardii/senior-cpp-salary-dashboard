@@ -41,6 +41,13 @@ def timestamp(value):
         return None
 
 
+def pay_period(value):
+    return {
+        "annual": "year", "monthly": "month", "weekly": "week",
+        "fortnightly": "fortnight", "hourly": "hour",
+    }.get(str(value or "").casefold())
+
+
 def fetch_page(country, page):
     params = urlencode({
         "q": "C++", "country": country, "seniority": "Senior",
@@ -80,10 +87,7 @@ def collect():
                 if key in seen:
                     continue
                 seen.add(key)
-                salary_period = {
-                    "annual": "year", "monthly": "month", "weekly": "week",
-                    "fortnightly": "fortnight", "hourly": "hour",
-                }.get(str(job.get("salaryPeriod") or "annual").casefold())
+                salary_period = pay_period(job.get("salaryPeriod"))
                 raw = {
                     "id": guid,
                     "title": job.get("title", ""),
@@ -133,6 +137,7 @@ def collect():
 
 def self_check():
     assert timestamp(1799653327) == "2027-01-11T07:42:07+00:00"
+    assert pay_period(None) is None
     item = {
         "guid": "https://himalayas.app/job/example",
         "title": "Senior C++ Engineer",

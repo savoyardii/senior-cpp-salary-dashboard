@@ -23,6 +23,7 @@ CHANNELS = {
 PAGE_LIMIT = 3
 VACANCY_RE = re.compile(r"(?:c/c\+\+|c\+\+|c\s*\+\+|\bhft\b|\bhigh[- ]frequency\b|\blow[- ]latency\b|\bquant(?:itative)? developer\b|\btrading systems\b)", re.I)
 SALARY_RE = re.compile(r"[^\n]*(?:₽|руб\w*|CHF|£|GBP|\$|USD|EUR|€)[^\n]*", re.I)
+TITLE_RE = re.compile(r"c\s*\+\s*\+|c/c\+\+|hft|low[- ]latency|high[- ]frequency|quant|engineer|developer|разработчик|инженер|программист|ищет", re.I)
 
 
 class TelegramHTML(HTMLParser):
@@ -42,6 +43,8 @@ class TelegramHTML(HTMLParser):
             return
         if self.current is None:
             return
+        if attrs.get("data-post") and not self.current["post"]:
+            self.current["post"] = attrs["data-post"]
         if tag == "div":
             self.div_depth += 1
         if tag == "time" and attrs.get("datetime"):
@@ -66,7 +69,12 @@ class TelegramHTML(HTMLParser):
 
 
 def post_segments(text):
-    chunks = re.split(r"➡️", text)[1:] if "➡️" in text else [text]
+    starts = []
+    for match in re.finditer(r"(?m)^\s*➡️\s*", text):
+        next_line = text[match.end():].splitlines()
+        if TITLE_RE.search(next_line[0] if next_line else ""):
+            starts.append(match.start())
+    chunks = [text[start:end].strip() for start, end in zip(starts, [*starts[1:], len(text)])] if starts else [text]
     return [chunk.strip() for chunk in chunks if VACANCY_RE.search(chunk)]
 
 
@@ -129,11 +137,14 @@ def parse_page(source, html_text):
         post_url = "https://t.me/" + post["post"]
         for index, segment in enumerate(post_segments(text)):
             lines = [line.strip() for line in segment.splitlines() if line.strip()]
-            title = re.sub(r"^➡️\s*", "", lines[0])[:180] if lines else ""
+            title_line = next((line for line in lines if TITLE_RE.search(line) and
+                               not re.search(r"вакансии\s+по\s+c\s*\+\s*\+", line, re.I)),
+                              lines[0] if lines else "")
+            title = re.sub(r"^➡️\s*|^💻\s*", "", title_line)[:180]
             salary = _salary_fields(segment)
             location = _location(segment)
             region, country = _normalized_region(source, location, salary)
-            seniority = "senior" if re.search(r"\b(senior|lead|staff|principal|ведущ\w*|старш\w*)\b", title, re.I) else None
+            seniority = "senior" if re.search(r"\b(senior|lead|staff|principal|ведущ\w*|старш\w*)\b|тимлид", title, re.I) else None
             role_match = bool(VACANCY_RE.search(title))
             senior_match = seniority == "senior" or bool(re.search(r"\b(hft|low[- ]latency|high[- ]frequency)\b", title, re.I))
             employer = None

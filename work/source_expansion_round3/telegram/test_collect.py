@@ -34,6 +34,16 @@ class TelegramParserTests(unittest.TestCase):
             result = collect.collect(channels=("cppdevjob",), page_limit=1, delay=0)
         self.assertEqual(result["attempts"][0]["status"], "ok")
 
+    def test_current_markup_reads_inner_post_id_and_skips_channel_header(self):
+        fixture = '''<div class="tgme_widget_message_wrap js-widget_message_wrap"><div class="tgme_widget_message" data-post="cppdevjob/2569">
+          <div class="tgme_widget_message_text">Вакансии по C++ — си-плюс-плюс<br>💻 Senior C++ Engineer | Example<br>📍 Москва<br>380 000–450 000 ₽ на руки</div>
+          ➡️ Откликнуться<br><time datetime="2026-11-12T08:00:00+00:00"></time></div></div>'''
+        rows, _ = collect.parse_page("cppdevjob", fixture)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["url"], "https://t.me/cppdevjob/2569")
+        self.assertEqual(rows[0]["title"], "Senior C++ Engineer | Example")
+        self.assertEqual(rows[0]["region"], "Russia")
+
 
 if __name__ == "__main__":
     unittest.main()

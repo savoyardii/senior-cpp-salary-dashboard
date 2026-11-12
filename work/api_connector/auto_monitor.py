@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 
 CPP = re.compile(r'c\s*\+\s*\+|с\s*\+\s*\+', re.I)
 ROLE = re.compile(r'engineer|developer|programmer|software|quant(?:itative)? developer|инженер|разработчик|программист', re.I)
-SENIOR_TITLE = re.compile(r'\b(senior|sr\.?|lead|leader|staff|principal)\b|старш|ведущ|главн', re.I)
+SENIOR_TITLE = re.compile(r'\b(senior|sr\.?|lead|leader|staff|principal)\b|старш|ведущ|главн|тимлид', re.I)
 EXPERIENCE = re.compile(r'(?<![\d–—-])\b(?P<low>\d{1,2})\s*(?:(?:[-–—]|\bto\b|\band\b|\bдо\b)\s*(?P<high>\d{1,2}))?\s*\+?\s*(?:years?|yrs?|лет|года?|год)\b', re.I)
 JUNIOR = re.compile(r'\b(junior|graduate|intern|internship|trainee|entry[- ]level)\b|стаж[её]р|младш', re.I)
 OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+обучен|researcher|\btrader\b|учител|военнослуж|chauffeur|driver|водител', re.I)
