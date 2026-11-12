@@ -1,0 +1,44 @@
+[
+  {
+    "url": "https://zarplata.ru/vacancy/138678458",
+    "http": 200,
+    "final_url": "https://zarplata.ru/vacancy/138678458",
+    "bytes": 779113,
+    "raw": "work/source_expansion_round2/russia/raw/detail_0.html"
+  },
+  {
+    "url": "https://zarplata.ru/vacancy/138515561",
+    "http": 200,
+    "final_url": "https://zarplata.ru/vacancy/138515561",
+    "bytes": 762112,
+    "raw": "work/source_expansion_round2/russia/raw/detail_1.html"
+  },
+  {
+    "url": "https://zarplata.ru/vacancy/138782073",
+    "http": 200,
+    "final_url": "https://zarplata.ru/vacancy/138782073",
+    "bytes": 765859,
+    "raw": "work/source_expansion_round2/russia/raw/detail_2.html"
+  },
+  {
+    "url": "https://careers.kaspersky.ru/vacancies",
+    "http": 200,
+    "final_url": "https://careers.kaspersky.ru/vacancies",
+    "bytes": 185548,
+    "raw": "work/source_expansion_round2/russia/raw/detail_3.html"
+  },
+  {
+    "url": "https://sobes.tech/vacancies?search=C%2B%2B",
+    "http": 200,
+    "final_url": "https://sobes.tech/vacancies?search=C%2B%2B",
+    "bytes": 467376,
+    "raw": "work/source_expansion_round2/russia/raw/detail_4.html"
+  },
+  {
+    "url": "https://yandex.ru/jobs/vacancies/veduschiy-razrabotchik-tehlid-v-videoplatformu-45543",
+    "http": 200,
+    "final_url": "https://yandex.ru/jobs/vacancies/veduschiy-razrabotchik-tehlid-v-videoplatformu-45543",
+    "bytes": 320405,
+    "raw": "work/source_expansion_round2/russia/raw/detail_5.html"
+  }
+]

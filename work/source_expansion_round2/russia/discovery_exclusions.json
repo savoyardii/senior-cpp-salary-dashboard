@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://sobes.tech/vacancies/7c6cbd8f-d0f4-42a7-9008-f3fdd026d358-c-c-developer",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_0.html",
+    "bytes": 241198,
+    "visible_header": "IT-вакансии 12 ноября 2026 г. в 14:31 0 просмотров C/C++ Developer Москва, Россия Гибрид / Офис",
+    "russia_eligible": false,
+    "exclusion_reason": "no_explicit_senior_employer_undisclosed",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/87c93e89-2f38-4e71-89cc-7035051b1d5a-razrabotchik-c",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_1.html",
+    "bytes": 252041,
+    "visible_header": "Разработчик C++ | Московская Биржа - sobes.tech IT-вакансии Московская Биржа 12 ноября 2026 г. в 13:30 0 просмотров Разработчик C++ Удалёнка / Гибрид Middle",
+    "russia_eligible": false,
+    "exclusion_reason": "Middle_not_senior_russia_not_explicit",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/3c9d8119-ff42-473d-899b-815d8c0ac646-senior-system-developer-c-hft",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_2.html",
+    "bytes": 313958,
+    "visible_header": "Senior System Developer (C++ / HFT) - sobes.tech IT-вакансии 12 ноября 2026 г. в 11:45 0 просмотров Senior System Developer (C++ / HFT) 6 000 $ – 10 000 $ Удалёнка Senior",
+    "russia_eligible": false,
+    "exclusion_reason": "country_unknown_period_unknown_employer_undisclosed_possible_previous_Martsun_mirror",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/a990f574-c59b-410a-9396-6bcce9e5ad63-senior-system-developer",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_3.html",
+    "bytes": 249475,
+    "visible_header": "Senior System Developer - sobes.tech IT-вакансии 12 ноября 2026 г. в 12:14 0 просмотров Senior System Developer Удалёнка Senior",
+    "russia_eligible": false,
+    "exclusion_reason": "country_unknown_employer_undisclosed_salary_not_disclosed",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/3daa659b-47d5-4f2d-9997-721e2ffe80da-senior-system-developer",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_4.html",
+    "bytes": 247916,
+    "visible_header": "Senior System Developer - sobes.tech IT-вакансии 12 ноября 2026 г. в 12:15 0 просмотров Senior System Developer Удалёнка Senior",
+    "russia_eligible": false,
+    "exclusion_reason": "country_unknown_employer_undisclosed_salary_not_disclosed_possible_duplicate",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/d15e0cb8-064d-448a-b034-ce1f77ec8bb6-c-developer",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_5.html",
+    "bytes": 242163,
+    "visible_header": "C++ Developer - sobes.tech IT-вакансии 12 ноября 2026 г. в 09:12 0 просмотров C++ Developer Минск, Беларусь Гибрид / Офис",
+    "russia_eligible": false,
+    "exclusion_reason": "Belarus_not_Russia",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/a3794648-3a6a-4411-9cc9-132cfd6ef60b-c-developer",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_6.html",
+    "bytes": 230442,
+    "visible_header": "C++ Developer - sobes.tech IT-вакансии 12 ноября 2026 г. в 09:13 0 просмотров C++ Developer Минск, Беларусь Офис Middle",
+    "russia_eligible": false,
+    "exclusion_reason": "Belarus_not_Russia",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/f188ffd5-5b1b-465b-a951-28d622931772-c-trading-developer-quant-trading-team",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_7.html",
+    "bytes": 218783,
+    "visible_header": "C++ Trading Developer, Quant Trading Team | Crypto.com - sobes.tech IT-вакансии Crypto.com 12 ноября 2026 г. в 06:32 0 просмотров C++ Trading Developer, Quant Trading Team London, Великобритания Гибрид",
+    "russia_eligible": false,
+    "exclusion_reason": "London_forwarded_to_London_researcher_seniority_not_explicit",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  },
+  {
+    "url": "https://sobes.tech/vacancies/0f09ff32-0d10-4396-bd7f-21c2d5e7677c-c-trading-developer-quant-trading-team",
+    "http": 200,
+    "raw": "work/source_expansion_round2/russia/raw/expanded_8.html",
+    "bytes": 214914,
+    "visible_header": "C++ Trading Developer, Quant Trading Team | Crypto.com - sobes.tech IT-вакансии Crypto.com 12 ноября 2026 г. в 06:31 0 просмотров C++ Trading Developer, Quant Trading Team Hong Kong, Гонконг (САР)",
+    "russia_eligible": false,
+    "exclusion_reason": "Hong_Kong_not_Russia",
+    "description_available": "full visible publisher description in raw HTML and adjacent .txt; market estimates excluded",
+    "status": "listed_on_publisher_employer_status_unverified",
+    "observed_date": "2026-11-12"
+  }
+]

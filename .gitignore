@@ -1,0 +1,9 @@
+.env
+**/.env
+__pycache__/
+*.py[cod]
+.DS_Store
+work/api_connector/logs/
+work/api_connector/data/snapshots/
+work/source_expansion_round2/**/raw/
+work/salary-dashboard/

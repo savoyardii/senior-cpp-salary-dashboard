@@ -1,0 +1,66 @@
+{
+  "www.jobs.service.gov.uk": {
+    "attempts": 25,
+    "http_statuses": {
+      "200": 25
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.reed.co.uk": {
+    "attempts": 8,
+    "http_statuses": {
+      "410": 1,
+      "200": 7
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.ecmselection.co.uk": {
+    "attempts": 6,
+    "http_statuses": {
+      "200": 6
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.client-server.com": {
+    "attempts": 1,
+    "http_statuses": {
+      "200": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.hunterbond.com": {
+    "attempts": 1,
+    "http_statuses": {
+      "200": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.quant-capital.co.uk": {
+    "attempts": 1,
+    "http_statuses": {
+      "403": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.efinancialcareers.co.uk": {
+    "attempts": 1,
+    "http_statuses": {
+      "405": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.totaljobs.com": {
+    "attempts": 1,
+    "http_statuses": {
+      "timeout": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  },
+  "www.cv-library.co.uk": {
+    "attempts": 1,
+    "http_statuses": {
+      "403": 1
+    },
+    "note": "No auth, payment, keys or UA change"
+  }
+}

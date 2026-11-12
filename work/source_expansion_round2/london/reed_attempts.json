@@ -1,0 +1,1062 @@
+[
+  {
+    "url": "https://www.reed.co.uk/jobs/senior-software-engineer-c/57428662",
+    "final_url": "https://www.reed.co.uk/jobs/senior-software-engineer-c/57428662",
+    "http_status": 200,
+    "raw_file": "raw/73ceab80f844ebfb.html",
+    "text_file": "raw/73ceab80f844ebfb.txt",
+    "bytes": 274532,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Senior  Software Engineer C++",
+        "description": "<p><strong>Senior C++ Software Engineer - AI & Engineering Software</strong></p><p><strong>Location:</strong> Central London, primarily office-based with some flexibility</p><p>We're partnering with an AI startup building software to help engineers design and develop physical products faster. Combining machine learning with complex engineering software, their platform helps bring new hardware ideas closer to production.</p><p>They're looking for a Senior C++ Software Engineer to take ownership of core software as the company moves from research prototypes into customer deployments. This is a hands-on opportunity to shape the architecture, improve performance, and build the foundations of an evolving product.</p><p><strong>What you'll be doing</strong></p><ul><li><p>Design and develop production software in C++, working closely with researchers and software engineers.</p></li><li><p>Shape the platform's architecture, defining clear interfaces between its computational engine, Python backend, CAD integrations, and user interface.</p></li><li><p>Turn research prototypes into reliable, testable, and maintainable product capabilities.</p></li><li><p>Identify performance bottlenecks and improve computational efficiency, including GPU execution where relevant.</p></li><li><p>Reduce complexity in the codebase and make it easier to introduce new features and customer integrations.</p></li><li><p>Translate evolving product and research requirements into practical technical decisions, taking work from initial design through implementation.</p></li></ul><p><strong>What we're looking for</strong></p><ul><li><p>Strong commercial C++ experience and a track record of delivering high-quality production software.</p></li><li><p>Experience owning substantial components or building complex software products end-to-end.</p></li><li><p>Sound architectural judgement around interfaces, testing, performance, and technical debt.</p></li><li><p>Confidence working through ambiguous problems and explaining the trade-offs behind your decisions.</p></li><li><p>The ability to work across different technologies, with Python experience particularly useful.</p></li><li><p>A self-motivated approach and enthusiasm for working closely with a small, highly technical team.</p></li></ul><p><strong>Experience that would stand out</strong></p><ul><li><p>Game engines, graphics, rendering, CAD, computational geometry, simulation, robotics, or scientific software.</p></li><li><p>GPU programming, CUDA, or other performance-sensitive computing.</p></li><li><p>Integrating components written in different languages.</p></li><li><p>Taking research-led software into production.</p></li><li><p>A personal interest in hardware, engineering, or building things.</p></li></ul><p>You don't need a PhD or a mechanical engineering background. We're interested in engineers who can demonstrate strong coding skills, thoughtful technical decisions, and ownership of software that works in practice.</p><p><strong>Why join?</strong></p><p>You'll have significant influence over the codebase and technical direction at an early stage, working alongside researchers tackling challenging engineering problems. There's scope to grow into broader architectural ownership as the product and team expand.</p><p><strong>Interested? Get in touch to discuss the role.</strong></p>",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Understanding Recruitment",
+          "propertyID": "JobId",
+          "value": 57428662
+        },
+        "datePosted": "2026-10-06T14:30:45.260Z",
+        "validThrough": "2026-11-17T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "Understanding Recruitment",
+          "sameAs": "https://www.reed.co.uk/company-profile/Understanding-Recruitment-6500"
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": ""
+          }
+        },
+        "baseSalary": {
+          "@type": "MonetaryAmount",
+          "currency": "GBP",
+          "value": {
+            "@type": "QuantitativeValue",
+            "minValue": 10000,
+            "maxValue": 80000,
+            "unitText": "YEAR"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/engineering-jobs",
+              "name": "Engineering"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/engineering-jobs",
+              "name": "Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/software-engineer-jobs?keywords=Software+Engineer",
+              "name": "Software Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-software-engineer-c%2F57428662",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-software-engineer-c%2F57428662",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-london?keywords=Senior+Software+Engineer+C%2B%2B&locationName=London&jobId=57428662",
+      "/",
+      "/jobs/engineering-jobs",
+      "/jobs/engineering-jobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/company-profile/Understanding-Recruitment-6500",
+      "/company-profile/Understanding-Recruitment-6500",
+      "#skills",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/associate-backend-software-engineer/57457146?source=details.similarjobs",
+      "/jobs/platform-engineering-lead/57489761?source=details.similarjobs",
+      "/jobs/senior-c-programmer/57440443?source=details.similarjobs",
+      "/jobs/senior-software-engineer/57518524?source=details.similarjobs",
+      "/jobs/senior-software-engineer/57553163?source=details.similarjobs",
+      "/jobs/senior-software-engineer-c-defence-systems/57534191?source=details.similarjobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "https://www.reed.co.uk/courses/software-testing?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_software%20testing_courses",
+      "/courses/software-engineering-with-ai-deep-learning-neural-networks-software-testing/546651?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=software%20testing_courses_546651",
+      "/courses/software-testing-training-software-engineering-with-ai-web-development-and-qa/538067?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=software%20testing_courses_538067",
+      "/courses/cbit-associate-extended-diploma-in-software-engineering-level-5-accredited-by-bcs/513680?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=software%20testing_courses_513680",
+      "https://www.reed.co.uk/courses/software-testing?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_software%20testing_courses",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57428662",
+      "/policies",
+      "/policies",
+      "/jobs/understanding-recruitment/p7454",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  },
+  {
+    "url": "https://www.reed.co.uk/jobs/senior-software-engineer-c-defence-systems/57534191",
+    "final_url": "https://www.reed.co.uk/jobs/senior-software-engineer-c-defence-systems/57534191",
+    "http_status": 200,
+    "raw_file": "raw/7e395ea84ac0e9fa.html",
+    "text_file": "raw/7e395ea84ac0e9fa.txt",
+    "bytes": 230560,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Senior Software Engineer (C++ / Defence Systems)",
+        "description": "<p><strong>JMB90</strong> - Senior Software Engineer (C++ / Defence Systems)<br><strong><br>Location:</strong> North London<br><strong><br>Salary:</strong> Dependent on experience<br><strong><br>Job Type:</strong> Full-Time, Permanent<br><br><strong>Overview</strong><br>First Military Recruitment are currently seeking a Senior Software Engineer on behalf of one of our clients.<br><br>The successful candidate will take responsibility for the design, development, testing and maintenance of software used within innovative defence and technology products. You will work across the full software development lifecycle, providing technical expertise while supporting and mentoring less experienced engineers.<br><br><strong>Duties and Responsibilities</strong></p><ul><li>Design, develop, implement and test software for new and existing products.</li><li>Take ownership of software projects from initial specification through to verification.</li><li>Maintain and enhance existing software in line with business and customer requirements.</li><li>Apply sound engineering practices to deliver reliable, high-quality software.</li><li>Provide technical guidance and support to junior colleagues.</li><li>Liaise with customers, suppliers and engineering teams on software-related matters.</li></ul><p><strong>Skills and Qualifications</strong></p><ul><li>Excellent understanding and practical experience of C++.</li><li>Experience working across the full software development lifecycle.</li><li>Good understanding of Microsoft Visual Studio 2022/2026.</li><li>Degree in a relevant subject.</li><li>Strong written and verbal communication skills.</li><li>GUI/UX or HCI experience would be advantageous.</li><li>Knowledge of scripting languages such as Python or PowerShell would be beneficial.</li></ul>",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "First Military Recruitment",
+          "propertyID": "JobId",
+          "value": 57534191
+        },
+        "datePosted": "2026-11-05T13:42:14.397Z",
+        "validThrough": "2026-12-17T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "First Military Recruitment",
+          "sameAs": ""
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Enfield",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": "EN3"
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/information-technology-jobs?keywords=Information+Technology",
+              "name": "Information Technology"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/engineering-jobs",
+              "name": "Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/software-engineer-jobs?keywords=Software+Engineer",
+              "name": "Software Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-software-engineer-c-defence-systems%2F57534191",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-software-engineer-c-defence-systems%2F57534191",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-enfield?keywords=Senior+Software+Engineer+%28C%2B%2B+%2F+Defence+Systems%29&locationName=Enfield&jobId=57534191",
+      "/",
+      "/jobs/information-technology-jobs?keywords=Information+Technology",
+      "/jobs/engineering-jobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "#skills",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/senior-antenna-engineer-defence-radar-systems/57534164?source=details.similarjobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57534191",
+      "/policies",
+      "/policies",
+      "https://www.reed.co.uk/courses/cplusplus?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_c%2B%2B_courses",
+      "/courses/c-javascript-and-python-programming/230650?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=c%2B%2B_courses_230650",
+      "/courses/coding-and-programming-diploma/503485?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=c%2B%2B_courses_503485",
+      "/courses/advanced-software-and-web-developer-diploma/433019?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=c%2B%2B_courses_433019",
+      "https://www.reed.co.uk/courses/cplusplus?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_c%2B%2B_courses",
+      "/jobs/first-military-recruitment/p41997",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  },
+  {
+    "url": "https://www.reed.co.uk/jobs/senior-c-software-engineer-selby-jennings/57459424",
+    "final_url": "https://www.reed.co.uk/jobs/senior-c-software-engineer-selby-jennings/57459424",
+    "http_status": 200,
+    "raw_file": "raw/226270fc690e19ee.html",
+    "text_file": "raw/226270fc690e19ee.txt",
+    "bytes": 232735,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Senior/C++ Software Engineer - Selby Jennings",
+        "description": " <p>A leading global electronic trading and market-making firm is expanding its engineering teams and is seeking experienced C&#43;&#43; engineers to work on some of the most performance-critical systems in the industry.</p> <p>Unlike traditional software roles, opportunities exist across multiple business lines and technology stacks, allowing engineers to focus on the areas that best align with their interests and expertise. Teams are responsible for building and optimising the  systems that power global trading operations across a broad range of asset classes.</p> <br /><br />What You'll Work On <br /><br /><p>Depending on team alignment and experience, responsibilities may include:</p> <ul> <li>Designing and developing ultra-low-latency order entry systems.</li><li>Building and optimising options trading platforms.</li><li>Developing market data infrastructure and exchange connectivity.</li><li>Improving execution performance through deep systems-level optimisation.</li><li>Creating scalable distributed systems that process vast amounts of real-time data.</li><li>Working closely with traders, quantitative researchers, and fellow engineers to solve complex technical challenges.</li><li>Driving architectural decisions and contributing to the technical direction of critical trading platforms.</li></ul> <br /><br />What We're Looking For <br /><br /><ul> <li>Strong commercial experience with modern C&#43;&#43;.</li><li>Expertise in performance optimisation, multithreading, concurrency, and Linux.</li><li>Strong understanding of systems programming fundamentals.</li><li>Experience building highly performant, business-critical software.</li><li>Excellent problem-solving skills and a passion for engineering excellence.</li><li>Ability to thrive in a collaborative, fast-paced environment.</li></ul> <br /><br />Beneficial Experience <br /><br /><ul> <li>Low-latency trading systems.</li><li>Exchange connectivity and market data.</li><li>Options or derivatives trading technology.</li><li>Network optimisation and kernel bypass technologies.</li><li>High-performance distributed systems.</li><li>Financial markets, trading, or quantitative environments.</li></ul> <br /><br />Why Join? <br /><br /><ul> <li>Work alongside world-class engineers, quantitative researchers, and traders.</li><li>Significant ownership and direct impact on revenue-generating systems.</li><li>A highly technical engineering culture where performance and innovation are valued.</li><li>Opportunities across multiple trading desks and business areas.</li><li>Access to challenging technical problems at exceptional scale.</li><li>Competitive compensation, bonus potential, and long-term career growth.</li></ul> <p>This is an excellent opportunity for senior C&#43;&#43; engineers who enjoy solving complex performance challenges and want to build technology that sits directly at the heart of global financial markets.</p> <br />",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "eFinancialCareers",
+          "propertyID": "JobId",
+          "value": 57459424
+        },
+        "datePosted": "2026-10-14T17:15:52.000Z",
+        "validThrough": "2026-12-04T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "eFinancialCareers",
+          "sameAs": ""
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": ""
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/information-technology-jobs?keywords=Information+Technology",
+              "name": "Information Technology"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/engineering-jobs",
+              "name": "Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/software-engineer-jobs?keywords=Software+Engineer",
+              "name": "Software Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-c-software-engineer-selby-jennings%2F57459424",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-c-software-engineer-selby-jennings%2F57459424",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-london?keywords=Senior%2FC%2B%2B+Software+Engineer+-+Selby+Jennings&locationName=London&jobId=57459424",
+      "/",
+      "/jobs/information-technology-jobs?keywords=Information+Technology",
+      "/jobs/engineering-jobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/phd-quant-selby-jennings/57472432?source=details.similarjobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57459424",
+      "/policies",
+      "/policies",
+      "https://www.reed.co.uk/courses/financial-analysis?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_financial%20analysis_courses",
+      "/courses/stock-trading-day-trading-technical-analysis-chart-patterns-risk-management/547284?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=financial%20analysis_courses_547284",
+      "/courses/stock-market-maestro-a-guide-to-successful-stock-trading/315695?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=financial%20analysis_courses_315695",
+      "/courses/networking-tcp-ip-socket-programming-interview-perspective-c-cpp/393663?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=financial%20analysis_courses_393663",
+      "https://www.reed.co.uk/courses/financial-analysis?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_financial%20analysis_courses",
+      "/jobs/efinancial-careers/p74850",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  },
+  {
+    "url": "https://www.reed.co.uk/jobs/senior-quant-developer-c-leading-quant-systematic-fund/57480646",
+    "final_url": "https://www.reed.co.uk/jobs/senior-quant-developer-c-leading-quant-systematic-fund/57480646",
+    "http_status": 200,
+    "raw_file": "raw/cccf74fdbf8187a1.html",
+    "text_file": "raw/cccf74fdbf8187a1.txt",
+    "bytes": 263382,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Senior Quant Developer C++- Leading Quant & Systematic Fund",
+        "description": "<strong>Summary</strong><br /><br />Senior Quant Developer / Low-Latency C&#43;&#43; Engineer at a leading quant & systematic fund. Looking for an exceptional low-level C&#43;&#43; programmer with deep metaprogramming experience and a minimum of 7&#43; years' professional C&#43;&#43; experience (since university/graduation). <br /><br />In this role, you will: <br /><ul> <li>Develop, optimize, and maintain high-performance C&#43;&#43; code for ultra-low-latency trading systems.</li><li>Work on strategy interaction with FPGA to ensure seamless integration.</li><li>Collaborate with infrastructure and network teams to ensure optimal system performance.</li></ul> <br /><strong>Skills and Experience Required</strong><br /><ul> <li>Minimum 7&#43; years' C&#43;&#43; experience</li><li>In-depth knowledge of memory management, multithreading, CPU cache optimization, and Linux</li><li>Solid understanding of infrastructure and network basics</li></ul> <br /><strong>Desirable</strong><br /><ul> <li>Ideally BSc, MSc and/or PhD in Computer Science, Mathematics or Physics</li><li>Ideally HFT experience (client is open, however, to a non-finance background, especially if personal projects are finance-related)</li></ul> <br /><strong>Benefits</strong><br /><ul> <li>Top of the market salary &#43; bonuses &#43; generous benefits package</li><li>Latest technologies & opportunity to work on deeply complex problems with significant impact</li></ul> <br /><br />Whilst we carefully review all applications, to all jobs, due to the high volume of applications we receive it is not possible to respond to those who have not been successful. <br /><br /><b>Contact</b><br />If you think you're a good match for the role and would like further info, please contact: <br /><br /><strong>Ali Wilson</strong><br /><br />(&#43;44) <br />in/alexander-wilson-050 <br /><br />",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "eFinancialCareers",
+          "propertyID": "JobId",
+          "value": 57480646
+        },
+        "datePosted": "2026-10-21T13:36:01.000Z",
+        "validThrough": "2026-12-04T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "eFinancialCareers",
+          "sameAs": ""
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": ""
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/information-technology-jobs?keywords=Information+Technology",
+              "name": "Information Technology"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/developer-jobs?keywords=Developer",
+              "name": "Developer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/cplusplus-developer-jobs?keywords=Cplusplus+Developer",
+              "name": "Cplusplus Developer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-quant-developer-c-leading-quant-systematic-fund%2F57480646",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsenior-quant-developer-c-leading-quant-systematic-fund%2F57480646",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-london?keywords=Senior+Quant+Developer+C%2B%2B-+Leading+Quant+%26+Systematic+Fund&locationName=London&jobId=57480646",
+      "/",
+      "/jobs/information-technology-jobs?keywords=Information+Technology",
+      "/jobs/developer-jobs?keywords=Developer",
+      "/jobs/cplusplus-developer-jobs?keywords=Cplusplus+Developer",
+      "/jobs/cplusplus-developer-jobs?keywords=Cplusplus+Developer",
+      "/jobs/senior-pricing-quant-developer-analyst-commodities-risk-pricing-leading-global-hedge-fund/57480632?source=details.similarjobs",
+      "/jobs/senior-quantitative-developer-orbis-consultants-london/57515416?source=details.similarjobs",
+      "/jobs/quantitative-developer-c-python-london-world-leading-hedge-fund/57446036?source=details.similarjobs",
+      "/jobs/quantitative-developer-systematic-man-group-plc/57446302?source=details.similarjobs",
+      "/jobs/principal-network-engineer-systematic-quant-fund/57484198?source=details.similarjobs",
+      "/jobs/uk-fund-hiring-entry-level-quant-analysts-systematic-equity-team/57527811?source=details.similarjobs",
+      "/jobs/cplusplus-developer-jobs?keywords=Cplusplus+Developer",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57480646",
+      "/policies",
+      "/policies",
+      "https://www.reed.co.uk/courses/networking?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_networking_courses",
+      "/courses/networking-tcp-ip-socket-programming-interview-perspective-c-cpp/393663?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_393663",
+      "/courses/virtual-instructor-led-comptia-network-training/271213?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_271213",
+      "/courses/comptia-network-training-course-virtual-instructor-led/73168?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_73168",
+      "https://www.reed.co.uk/courses/networking?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_networking_courses",
+      "/jobs/efinancial-careers/p74850",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  },
+  {
+    "url": "https://www.reed.co.uk/jobs/software-engineer-c-rust/57459421",
+    "final_url": "https://www.reed.co.uk/jobs/software-engineer-c-rust/57459421",
+    "http_status": 200,
+    "raw_file": "raw/3dbc97d061b1215f.html",
+    "text_file": "raw/3dbc97d061b1215f.txt",
+    "bytes": 266247,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Software Engineer - C++ / Rust",
+        "description": "<b>£60,000 to 75,000 GBP</b><br /><br /><b>Bonus</b><br /><br /><b>Onsite WORKING</b><br /><br /><strong>Location:</strong> Central London, Greater London - United Kingdom <strong> Type:</strong> Permanent <br /><br /><b>Software Engineer - C&#43;&#43; / Rust</b><br /><br /><strong>Location:</strong> Cambridge <br /><br /><strong>Salary:</strong> Up to £75,000 &#43; bonus <br /><br /><strong>Level:</strong> Consultant / Senior Consultant <br /><br /><strong>Security:</strong> Must be eligible for UK Security Clearance <br /><br /><b>The Opportunity</b><br /><br />We're looking for Software Engineers with experience in C&#43;&#43; or Rust to join an innovative technology team developing advanced network security products. <br /><br />You'll work on specialist software and hardware solutions designed to protect critical digital infrastructure across defence, security, energy and the public sector. This is an opportunity to contribute to technically challenging projects with real-world impact,  working on products that address complex security requirements. <br /><br />You'll join a highly skilled engineering team where software is developed in-house, with a strong emphasis on technical quality, collaboration and continuous improvement. From enhancing existing products to developing next-generation capabilities, you'll have  the opportunity to make a tangible contribution to the direction of the technology. <br /><br /><b>Key Responsibilities</b> <ul> <li>Design, develop and maintain high-quality software for advanced network security products.</li><li>Contribute to the development of secure, reliable and maintainable applications.</li><li>Work across a range of technologies, including low-level software, Linux-based applications and embedded systems.</li><li>Collaborate with other engineers through code reviews, pair programming and technical discussions.</li><li>Apply modern software engineering practices, including test-driven development (TDD) and Agile methodologies.</li><li>Help improve development processes, software quality and engineering standards.</li><li>Contribute to technical problem-solving across complex software and security challenges.</li><li>Work collaboratively across the wider business, with opportunities to engage in customer support and other technical activities.</li></ul> <b>Essential Skills & Experience</b><br /><br />We're interested in engineers with approximately 2-5 years of software engineering experience, gained through relevant professional experience and/or qualifications. <br /><br />You should have experience in some of the following areas: <ul> <li><strong>C&#43;&#43; (modern C&#43;&#43; and STL) or Rust.</strong></li><li>Python development.</li><li>Linux application development.</li><li>Bare-metal programming, embedded systems or real-time operating systems.</li><li>Cloud application development.</li><li>Network security or secure communications.</li></ul> <b>Interested?</b><br /><br />If you're a Software Engineer with experience in C&#43;&#43; or Rust and want to work on challenging, security-focused technology with real-world applications, we'd like to hear from you. <br /><br /><strong>Please note:</strong> Candidates must be eligible to obtain UK Security Clearance. <br /><br />",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "eFinancialCareers",
+          "propertyID": "JobId",
+          "value": 57459421
+        },
+        "datePosted": "2026-10-14T17:15:48.000Z",
+        "validThrough": "2026-11-25T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "eFinancialCareers",
+          "sameAs": ""
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": ""
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/information-technology-jobs?keywords=Information+Technology",
+              "name": "Information Technology"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/engineering-jobs",
+              "name": "Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/software-engineer-jobs?keywords=Software+Engineer",
+              "name": "Software Engineer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsoftware-engineer-c-rust%2F57459421",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fsoftware-engineer-c-rust%2F57459421",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-london?keywords=Software+Engineer+-+C%2B%2B+%2F+Rust&locationName=London&jobId=57459421",
+      "/",
+      "/jobs/information-technology-jobs?keywords=Information+Technology",
+      "/jobs/engineering-jobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "/jobs/associate-backend-software-engineer/57457146?source=details.similarjobs",
+      "/jobs/software-engineer/57459412?source=details.similarjobs",
+      "/jobs/senior-rust-engineer/57474338?source=details.similarjobs",
+      "/jobs/software-engineer/57501427?source=details.similarjobs",
+      "/jobs/rust-software-engineer-low-latency-hft-crypto-tribus/57446040?source=details.similarjobs",
+      "/jobs/software-engineer-trading-technology-tier-1-quantitative-trading/57446623?source=details.similarjobs",
+      "/jobs/software-engineer-jobs?keywords=Software+Engineer",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57459421",
+      "/policies",
+      "/policies",
+      "https://www.reed.co.uk/courses/learn-rust?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_rust_courses",
+      "/courses/rust-programming-basics-to-advanced-professional-training/544946?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=rust_courses_544946",
+      "/courses/it-software-and-cyber-security-training/486013?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=rust_courses_486013",
+      "/courses/networking-tcp-ip-socket-programming-interview-perspective-c-cpp/393663?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=rust_courses_393663",
+      "https://www.reed.co.uk/courses/learn-rust?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_rust_courses",
+      "/jobs/efinancial-careers/p74850",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  },
+  {
+    "url": "https://www.reed.co.uk/jobs/team-lead-c-quant-development-london-global-hedge-fund/57480626",
+    "final_url": "https://www.reed.co.uk/jobs/team-lead-c-quant-development-london-global-hedge-fund/57480626",
+    "http_status": 200,
+    "raw_file": "raw/f8aa35be32961322.html",
+    "text_file": "raw/f8aa35be32961322.txt",
+    "bytes": 275898,
+    "jsonld": [
+      {
+        "@context": "https://schema.org/",
+        "@type": "JobPosting",
+        "title": "Team Lead - C++ Quant Development  London- Global Hedge Fund",
+        "description": "<b>Salary:</b> £600-800k target range <br /><br /><b>Summary:</b><br /><br />My client is one of the world's most prestigious hedge funds. They have a unique and exciting opportunity for an experienced, hands-on Team Lead to contribute to their continued success. <br /><br />As the London Team Lead, you will lead and mentor a small team of Quantitative Developers, providing technical guidance and driving the overall direction of the team while remaining highly hands-on. You'll play a key role in the design, architecture and implementation  of low-latency C&#43;&#43; systems that are not only robust, resilient and accurate, but also exceptionally fast and efficient. <br /><br />The successful Team Lead will be an exceptional communicator, with the confidence to work directly with central trading teams to optimise the firm's overall execution performance. You will need to be a strong technologist, but also have an excellent understanding  of trading and the commercial impact of technology, with the ability to build strong relationships across the business. <br /><br /><b>Skills and Experience Required:</b><br /><ul> <li>12&#43; years' experience in hands-on software development, including 7&#43; years within front-office financial markets</li><li>Proven track record as a senior contributor or technical lead</li><li>Deep-level OO programming skills in C&#43;&#43;, including C&#43;&#43;17/20 and multithreaded/asynchronous environments</li><li>Strong understanding of data structures and algorithms, as well as low-latency and real-time system design</li><li>Strong understanding of electronic trading and execution systems</li><li>Excellent communication skills and experience working directly with trading teams</li><li>Bachelor's degree (or higher) in Computer Science, Engineering or another quantitative discipline</li></ul> <br /><b>Rewards and Incentives:</b><br /><ul> <li>Significant salary &#43; bonus and opportunities for growth</li><li>Greenfield work with significant impact in a highly visible and high-profile area of the business</li><li>Highly collaborative culture where strong technical ideas are implemented</li><li>Senior leadership position while remaining genuinely hands-on</li></ul> <br /><br />Whilst we carefully review all applications, to all jobs, due to the high volume of applications we receive it is not possible to respond to those who have not been successful. <br /><br /><b>Contact</b><br />If you feel you're suitable for this role, want to hear about similar positions, or would like help hiring similar developers for your company, then please send your CV or get in touch: <br /><br /><strong>Richard Allan</strong><br /><br />&#43;44 (0) <br />in/richardallanok/ <br /><br />",
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "eFinancialCareers",
+          "propertyID": "JobId",
+          "value": 57480626
+        },
+        "datePosted": "2026-10-21T13:35:50.000Z",
+        "validThrough": "2026-12-04T23:55:00.000Z",
+        "employmentType": "FULL_TIME",
+        "hiringOrganization": {
+          "@type": "Organization",
+          "name": "eFinancialCareers",
+          "sameAs": ""
+        },
+        "jobLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "London",
+            "addressRegion": "South East England",
+            "addressCountry": "GB",
+            "postalCode": ""
+          }
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.reed.co.uk",
+              "name": "Home"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/information-technology-jobs?keywords=Information+Technology",
+              "name": "Information Technology"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/developer-jobs?keywords=Developer",
+              "name": "Developer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://www.reed.co.uk/jobs/manager-developer-jobs?keywords=Manager+Developer",
+              "name": "Manager Developer"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "",
+              "name": "Job Details"
+            }
+          }
+        ]
+      }
+    ],
+    "links": [
+      "/",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/authentication/register?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fteam-lead-c-quant-development-london-global-hedge-fund%2F57480626",
+      "/account/jobs/shortlisted-jobs",
+      "/authentication/login?returnTo=%2Fweb-jobseeker-jobs%2Fjobs%2Fteam-lead-c-quant-development-london-global-hedge-fund%2F57480626",
+      "/",
+      "/courses/?itm_source=js_navigation&itm_medium=jobseeker&itm_campaign=courses_tab&itm_content=standard_version",
+      "/career-advice/",
+      "/recruiter/",
+      "/popularjobs",
+      "/jobs/jobs-in-london?keywords=Team+Lead+-+C%2B%2B+Quant+Development+London-+Global+Hedge+Fund&locationName=London&jobId=57480626",
+      "/",
+      "/jobs/information-technology-jobs?keywords=Information+Technology",
+      "/jobs/developer-jobs?keywords=Developer",
+      "/jobs/manager-developer-jobs?keywords=Manager+Developer",
+      "/jobs/manager-developer-jobs?keywords=Manager+Developer",
+      "/jobs/senior-programme-manager-x2/57522624?source=details.similarjobs",
+      "/jobs/head-of-fp-a/57473349?source=details.similarjobs",
+      "/jobs/finance-director/57544472?source=details.similarjobs",
+      "/jobs/finance-analyst-pensions/57544583?source=details.similarjobs",
+      "/jobs/financial-controller/57428818?source=details.similarjobs",
+      "/jobs/senior-programmes-manager/57559150?source=details.similarjobs",
+      "/jobs/manager-developer-jobs?keywords=Manager+Developer",
+      "https://reed.co.uk",
+      "/enquiries?reportJobRef=57480626",
+      "/policies",
+      "/policies",
+      "https://www.reed.co.uk/courses/networking?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_networking_courses",
+      "/courses/networking-tcp-ip-socket-programming-interview-perspective-c-cpp/393663?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_393663",
+      "/courses/c-coding-bootcamp-job-ready-in-weeks-career-set-for-life/338144?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_338144",
+      "/courses/solid-simplified-software-design-fundamentals/339289?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=networking_courses_339289",
+      "https://www.reed.co.uk/courses/networking?itm_source=js_job_details&itm_medium=jobseeker&itm_campaign=recommended_courses_panel&itm_content=view_networking_courses",
+      "/jobs/efinancial-careers/p74850",
+      "/enquiries",
+      "/jobs",
+      "/recruiterdirectory",
+      "/jobs/remote-jobs?workingOption=remote",
+      "/popularjobs",
+      "/location",
+      "/popularsearches",
+      "/career-advice/",
+      "/tax-calculator",
+      "/average-salary",
+      "/help",
+      "https://www.reed.com/offices",
+      "/html-sitemap",
+      "/recruiter?directjob=recruiter",
+      "/recruiter/post-a-job?directjob=recruiter",
+      "/recruiter/cv-search?directjob=recruiter",
+      "/recruiter/recruitment-agencies?directjob=recruiter",
+      "/recruiter-advice/?directjob=recruiter",
+      "/courses/help",
+      "/courses/contact-us",
+      "/courses/",
+      "/courses/directory",
+      "/courses/discount",
+      "/courses/free",
+      "/courses/awarding-bodies",
+      "/courses/career-guides",
+      "/courses/providers/",
+      "/courses/html-sitemap",
+      "/about",
+      "https://www.reed.com/careers/jobs?businessDivision=Reed.co.uk",
+      "/press-office",
+      "/corporate-governance",
+      "https://www.reed.co.uk/cdn/jobseeker/pdf/Reed_MSA_Statement.pdf",
+      "https://candidate.reed.co.uk/candlogin.asp",
+      "https://client.reed.co.uk/",
+      "https://www.reed.com/",
+      "https://www.reed.com/",
+      "https://www.reed.com/learning",
+      "https://www.reedinpartnership.co.uk/",
+      "https://www.reed.com/careers",
+      "/james-reed/",
+      "https://www.reed.com/podcasts",
+      "https://www.reed.com/esg-and-sustainability",
+      "https://philco.org.uk/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://feeds.captivate.fm/james-reed-all-about-business/",
+      "https://itunes.apple.com/GB/app/id1040443949?mt=8",
+      "https://play.google.com/store/apps/details?id=com.reedcouk.jobs&referrer=af_tranid%3D_HgKgkJ-aFiIn4G5iigdZQ%26pid%3DWebsite_Footer%26utm_source%3DWebsite_Footer",
+      "https://www.facebook.com/reedcouk",
+      "https://www.instagram.com/reedcouk/",
+      "https://www.tiktok.com/@reedjobs",
+      "/policies"
+    ]
+  }
+]

@@ -1,0 +1,315 @@
+{
+  "jobposting_records": 21,
+  "net_new_strict": 3,
+  "net_new_strict_with_salary": 1,
+  "records": [
+    {
+      "source": "Yandex Delivery Careers",
+      "source_id": "delivery-infrastructure-developer",
+      "employer": "Яндекс",
+      "title": "Старший разработчик инфраструктуры на С++",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": true,
+      "net_new": true,
+      "exclusion_reasons": []
+    },
+    {
+      "source": "Sobes.tech",
+      "source_id": "aae698e5-1579-4388-90e6-b1b6bd2c5300",
+      "employer": "JETLYN",
+      "title": "C++ Developer (System Programming / COM & RPC)",
+      "salary_min": 350000,
+      "salary_max": 450000,
+      "period": "MONTH",
+      "tax_basis": "net",
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "publisher_current_employer_status_unverified_old_post"
+      ]
+    },
+    {
+      "source": "Quick Offer",
+      "source_id": "112846",
+      "employer": "confidential",
+      "title": "Senior C++ CUDA Developer",
+      "salary_min": null,
+      "salary_max": 320000,
+      "period": "MONTH",
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "employer_undisclosed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138678458",
+      "employer": "Система Безопасных Коммуникаций",
+      "title": "Senior Разработчик C++",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": true,
+      "net_new": true,
+      "exclusion_reasons": []
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138515561",
+      "employer": "Zelax",
+      "title": "Ведущий разработчик встроенного ПО (team lead)",
+      "salary_min": 400000,
+      "salary_max": 400000,
+      "period": "MONTH",
+      "tax_basis": "net",
+      "strict_eligible": true,
+      "net_new": true,
+      "exclusion_reasons": []
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138782073",
+      "employer": "INWAVE (ООО Микроволновая Электроника)",
+      "title": "Руководитель разработки ПО / Team Lead (разработка встраиваемого ПО/embedded)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "cpp_optional_alternative_to_verilog"
+      ]
+    },
+    {
+      "source": "Yandex Careers",
+      "source_id": "45543",
+      "employer": "Яндекс",
+      "title": "Ведущий разработчик / техлид в видеоплатформу",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "no_required_cpp_signal",
+        "Go_required_cpp_tag_only"
+      ]
+    },
+    {
+      "source": "Kaspersky Careers",
+      "source_id": "25783",
+      "employer": "Лаборатория Касперского",
+      "title": "Senior Developer C++ (CyberTrace)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": true,
+      "net_new": false,
+      "exclusion_reasons": []
+    },
+    {
+      "source": "Kaspersky Careers",
+      "source_id": "26051",
+      "employer": "Лаборатория Касперского",
+      "title": "Software Architect (Network Security)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "network_architect_cpp_category_only_programming_merely_desirable"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139431460",
+      "employer": "Лящ Максим Михайлович",
+      "title": "Frontend-разработчик (Desktop / Electron) в VoiceOS",
+      "salary_min": 330000,
+      "salary_max": 330000,
+      "period": "MONTH",
+      "tax_basis": "gross",
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_not_confirmed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139351881",
+      "employer": "Информационные Технологии",
+      "title": "Главный конструктор беспилотных аппаратов (БПА)",
+      "salary_min": 500000,
+      "salary_max": null,
+      "period": "MONTH",
+      "tax_basis": "gross",
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_not_confirmed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "135928560",
+      "employer": "КИТТ",
+      "title": "ML -инженер (CV)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_not_confirmed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139351882",
+      "employer": "Информационные Технологии",
+      "title": "Главный конструктор беспилотных аппаратов (БПА)",
+      "salary_min": 500000,
+      "salary_max": null,
+      "period": "MONTH",
+      "tax_basis": "gross",
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_not_confirmed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139097088",
+      "employer": "Международный Научно-Технологический Центр Миэт",
+      "title": "Инженер-программист C++ / Qt /QML",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_absent_title_body_senior_word_refers_to_other_context"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139082565",
+      "employer": "StormWall™",
+      "title": "Ведущий разработчик / Senior C (Linux)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "no_required_cpp_signal"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139121325",
+      "employer": "АВАКС",
+      "title": "Инженер-программист Embedded C / STM32 (Middle/Senior)",
+      "salary_min": 260000,
+      "salary_max": null,
+      "period": "MONTH",
+      "tax_basis": "net",
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "no_required_cpp_signal"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "137307096",
+      "employer": "Инженерный Центр Икар",
+      "title": "Ведущий инженер (динамика полётов) \"Руднево\"",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "flight_dynamics_engineer_cpp_is_desirable_not_core_required"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "139214190",
+      "employer": "StormWall™",
+      "title": "Team lead C (Linux)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "no_required_cpp_signal"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138927840",
+      "employer": "Новые Телеком Решения (НТР)",
+      "title": "Team Lead ML",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "ML_lead_cpp_not_required_core_language"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138544591",
+      "employer": "ChillBase",
+      "title": "Motion Designer (Gamedev, Unreal Engine)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "seniority_not_confirmed"
+      ]
+    },
+    {
+      "source": "Zarplata",
+      "source_id": "138661212",
+      "employer": "СПУТНИКС",
+      "title": "IT – Архитектор (Data-инженер)",
+      "salary_min": null,
+      "salary_max": null,
+      "period": null,
+      "tax_basis": null,
+      "strict_eligible": false,
+      "net_new": true,
+      "exclusion_reasons": [
+        "data_architect_cpp_optional_language"
+      ]
+    }
+  ]
+}

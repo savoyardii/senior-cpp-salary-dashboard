@@ -1,0 +1,63 @@
+[
+  {
+    "url": "https://career.habr.com/vacancies?q=C%2B%2B&type=all",
+    "error": "<urlopen error [Errno 54] Connection reset by peer>"
+  },
+  {
+    "url": "https://www.zarplata.ru/vacancies?text=Senior%20C%2B%2B",
+    "http": 200,
+    "final_url": "https://zarplata.ru/vacancies?text=Senior%20C%2B%2B",
+    "bytes": 1072179,
+    "raw": "work/source_expansion_round2/russia/raw/probe_1.html"
+  },
+  {
+    "url": "https://www.rabota.ru/vacancy/?query=Senior%20C%2B%2B",
+    "http": 200,
+    "final_url": "https://www.rabota.ru/vacancy/?query=Senior%20C%2B%2B",
+    "bytes": 1085407,
+    "raw": "work/source_expansion_round2/russia/raw/probe_2.html"
+  },
+  {
+    "url": "https://careers.kaspersky.ru/",
+    "http": 200,
+    "final_url": "https://careers.kaspersky.ru/",
+    "bytes": 99004,
+    "raw": "work/source_expansion_round2/russia/raw/probe_3.html"
+  },
+  {
+    "url": "https://dostavka.yandex.ru/careers/jobs/infrastructure-developer/",
+    "http": 200,
+    "final_url": "https://dostavka.yandex.ru/careers/jobs/infrastructure-developer/",
+    "bytes": 567427,
+    "raw": "work/source_expansion_round2/russia/raw/probe_4.html"
+  },
+  {
+    "url": "https://sobes.tech/ru/vacancies/aae698e5-1579-4388-90e6-b1b6bd2c5300-c-developer-system-programming-com-rpc",
+    "http": 200,
+    "final_url": "https://sobes.tech/vacancies/aae698e5-1579-4388-90e6-b1b6bd2c5300-c-developer-system-programming-com-rpc",
+    "bytes": 269196,
+    "raw": "work/source_expansion_round2/russia/raw/probe_5.html"
+  },
+  {
+    "url": "https://quick-offer.ru/job/senior-c-cuda-developer-112846",
+    "http": 200,
+    "final_url": "https://quick-offer.ru/job/senior-c-cuda-developer-112846",
+    "bytes": 219416,
+    "raw": "work/source_expansion_round2/russia/raw/probe_6.html"
+  },
+  {
+    "url": "https://yandex.ru/jobs/vacancies?skills=62",
+    "http": 200,
+    "final_url": "https://yandex.ru/jobs/vacancies?skills=62",
+    "bytes": 463636,
+    "raw": "work/source_expansion_round2/russia/raw/probe_7.html"
+  },
+  {
+    "url": "https://hunttech.ru/vacancies",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://team.positive.com/vacancies/",
+    "error": "<urlopen error [Errno 54] Connection reset by peer>"
+  }
+]

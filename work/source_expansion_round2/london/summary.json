@@ -1,0 +1,8 @@
+{
+  "http_attempts": 45,
+  "raw_unique_detail_records": 28,
+  "strict_records": 9,
+  "new_strict_records": 1,
+  "new_strict_with_amount_and_period": 1,
+  "new_strict_salary_candidates_excluding_source_anomaly": 1
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.spectral.salary-dashboard-refresh</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/opt/homebrew/bin/python3</string>
+    <string>/Users/zakharkorchagin/Documents/Codex/2026-11-10/https-spectral-tech-junior-ai-data/work/api_connector/refresh.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/zakharkorchagin/Documents/Codex/2026-11-10/https-spectral-tech-junior-ai-data</string>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>1</integer>
+    <key>Hour</key><integer>9</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+  <key>StandardOutPath</key><string>/Users/zakharkorchagin/Documents/Codex/2026-11-10/https-spectral-tech-junior-ai-data/work/api_connector/logs/refresh.log</string>
+  <key>StandardErrorPath</key><string>/Users/zakharkorchagin/Documents/Codex/2026-11-10/https-spectral-tech-junior-ai-data/work/api_connector/logs/refresh-error.log</string>
+</dict>
+</plist>

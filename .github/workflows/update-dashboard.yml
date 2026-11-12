@@ -1,0 +1,68 @@
+name: Refresh and publish salary dashboard
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: salary-dashboard-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Run offline regression checks
+        run: python -m unittest discover -s work/api_connector -p test_statistics.py
+
+      - name: Refresh sources and rebuild dashboard
+        env:
+          HEADCOUNTLABS_API_KEY: ${{ secrets.HEADCOUNTLABS_API_KEY }}
+          SUPERJOB_APP_SECRET: ${{ secrets.SUPERJOB_APP_SECRET }}
+        run: python work/api_connector/refresh.py
+
+      - name: Check dashboard display
+        run: node work/salary_dashboard_publish/test_display.js
+
+      - name: Commit refreshed snapshot and dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add work/api_connector/data/latest.json outputs/salary_dashboard.html outputs/salary_api_audit.json work/salary_dashboard_publish/dist/index.html work/salary_dashboard_publish/dist/salary_api_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh salary dashboard data"
+            git push
+          fi
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: work/salary_dashboard_publish/dist
+
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4

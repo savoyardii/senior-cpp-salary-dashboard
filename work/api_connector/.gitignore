@@ -1,0 +1,6 @@
+.env
+data/*
+!data/latest.json
+data/snapshots/
+__pycache__/
+logs/
