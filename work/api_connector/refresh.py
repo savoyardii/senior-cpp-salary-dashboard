@@ -5,6 +5,7 @@ from pathlib import Path
 import json
 import math
 import hashlib
+import importlib.util
 import subprocess
 import sys
 
@@ -118,6 +119,97 @@ def public_jobboards(previous, now):
     return sources
 
 
+def load_collector(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+def expanded_public_sources(previous, now):
+    """Collect permitted public feeds and employer ATS listings; retain last good data per feed."""
+    folder = ROOT / 'work/source_expansion_round3'
+    old = {row.get('source'): row for row in previous.get('sources', [])}
+    fresh = []
+    errors = {}
+
+    def add(source, records, error=None, observed=None):
+        if error:
+            kept = deepcopy(old[source]) if source in old else {
+                'source': source, 'records': [], 'observed_at': None, 'status': 'error', 'refresh_policy': 'weekly'}
+            kept.update(refresh_attempted_at=now, refresh_error=error)
+            fresh.append(kept)
+            return
+        fresh.append({'source': source, 'records': records, 'status': 'queried',
+                      'observed_at': observed or now, 'retrieved_at': now, 'refresh_policy': 'weekly'})
+
+    def collect(name, relative_path, function='collect', **kwargs):
+        module = load_collector(name, folder / relative_path)
+        return getattr(module, function)(**kwargs)
+
+    try:
+        rows = collect('greenhouse_collector', 'ats/collect.py')
+        for row in rows:
+            source = row['source']
+            records = [{'region': item['region'], 'query': 'public ATS board C++', 'raw': item}
+                       for item in row.get('records', [])]
+            add(source, records, None if row.get('status') == 'queried' else str(row.get('request', {}).get('status')),
+                row.get('observed_at'))
+    except Exception as exc:
+        errors['greenhouse'] = type(exc).__name__
+        for source in ('Greenhouse: DV Trading', 'Greenhouse: DRW', 'Greenhouse: Engineers Gate',
+                       'Greenhouse: GSR', 'Greenhouse: iSAM', 'Greenhouse: Qube Research & Technologies',
+                       'Greenhouse: Maven Securities', 'Greenhouse: Point72'):
+            add(source, [], errors['greenhouse'])
+
+    try:
+        rows = collect('lever_ashby_collector', 'lever_ashby/collect.py')
+        for row in rows:
+            add(row['source'], row.get('records', []), None if row.get('status') == 'queried' else
+                ', '.join(str(req.get('status')) for req in row.get('requests', [])), row.get('observed_at'))
+    except Exception as exc:
+        errors['lever_ashby'] = type(exc).__name__
+        for source in ('Lever: MARGO Group', 'Lever: Crypto.com', 'Lever: Wintermute',
+                       'Lever: Zurich Instruments', 'Ashby: Teza Technologies', 'Ashby: TradingHub',
+                       'Ashby: Smarkets', 'Ashby: Keyrock'):
+            add(source, [], errors['lever_ashby'])
+
+    try:
+        result = collect('telegram_collector', 'telegram/collect.py', channels=(
+            'cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'))
+        channel_status = {row['channel']: row['status'] for row in result.get('attempts', []) if row.get('page') == 1}
+        for channel in ('cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'):
+            source = f'Telegram @{channel}'
+            records = [{'region': row['region'], 'query': 'public Telegram preview', 'raw': row}
+                       for row in result.get('records', []) if row.get('source') == source and row.get('region')]
+            status = channel_status.get(channel)
+            add(source, records, None if status == 'ok' else str(status or 'no successful page'), result.get('observed_at'))
+    except Exception as exc:
+        errors['telegram'] = type(exc).__name__
+        for channel in ('cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'):
+            add(f'Telegram @{channel}', [], errors['telegram'])
+
+    try:
+        result = collect('hh_rss_collector', 'russia/hh_rss.py')
+        records = [{'region': 'Russia', 'query': 'HeadHunter public RSS', 'raw': row}
+                   for row in result.get('records', [])]
+        error = None if result.get('status') == 'queried' and any(r.get('status') == 'ok' for r in result.get('requests', [])) else result.get('status', 'no successful query')
+        add('HeadHunter RSS', records, error, result.get('observed_at'))
+    except Exception as exc:
+        add('HeadHunter RSS', [], type(exc).__name__)
+
+    for name, path in (('SwissDevJobs', 'uk_ch/swissdevjobs.py'), ('Himalayas', 'uk_ch/himalayas.py')):
+        try:
+            result = collect(name.lower() + '_collector', path)
+            records = result.get('records', [])
+            if name == 'SwissDevJobs':
+                records = [{'region': row['region'], 'query': 'SwissDevJobs RSS', 'raw': row['raw']} for row in records]
+            add(name, records, None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
+        except Exception as exc:
+            add(name, [], type(exc).__name__)
+    return fresh
+
+
 def save_and_build(snapshot):
     if SNAPSHOT.exists():
         archive_snapshot(json.loads(SNAPSHOT.read_text()))
@@ -153,6 +245,7 @@ def refresh():
             source['retrieved_at'] = None
             sources.append(source)
     sources.extend(public_jobboards(old, now))
+    sources.extend(expanded_public_sources(old, now))
     adzuna = previous.get('Adzuna')
     if adzuna:
         adzuna = deepcopy(adzuna)
@@ -162,7 +255,7 @@ def refresh():
     snapshot = {
         'observed_at': now,
         'fx': fx,
-        'refresh_policy': 'Weekly Headcount Labs, SuperJob, and Работа России refresh. Adzuna is a static pilot snapshot and is never queried here.',
+        'refresh_policy': 'Weekly API, public RSS/Telegram preview, and employer ATS refresh. Adzuna is a static pilot snapshot and is never queried here.',
         'sources': sources,
     }
     assert all(row['source'] != 'Adzuna' or row.get('requests_used', 0) <= row.get('request_cap', 0) for row in sources)

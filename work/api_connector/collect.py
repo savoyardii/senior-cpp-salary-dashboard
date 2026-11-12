@@ -128,6 +128,7 @@ def superjob(key):
     headers = {"X-Api-App-Id": key, "Accept": "application/json"}
     queries = ("C++", "С++", "Senior C++", "low latency", "HFT")
     for query in queries:
+        query_records = 0
         for page in range(5):
             params = urllib.parse.urlencode({"keyword": query, "count": 100, "page": page, "no_agreement": 0})
             try:
@@ -135,7 +136,10 @@ def superjob(key):
                 rows = data.get("objects", [])
                 result["records"].extend({"region": "Russia", "query": query, "raw": row} for row in rows)
                 result["requests"].append({"query": query, "page": page, "returned": len(rows), "total": data.get("total"), "status": "ok"})
-                if not data.get("more"):
+                query_records += len(rows)
+                total = data.get("total")
+                # Trust total over an inconsistent `more` flag, but stay within SuperJob's 500-result cap.
+                if not rows or (isinstance(total, int) and total > 0 and query_records >= total) or (not total and not data.get("more")):
                     break
             except RuntimeError as exc:
                 result["requests"].append({"query": query, "page": page, "status": str(exc)})

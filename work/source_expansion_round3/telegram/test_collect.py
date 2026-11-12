@@ -1,0 +1,32 @@
+import sys
+import unittest
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+import collect
+
+
+class TelegramParserTests(unittest.TestCase):
+    def test_collects_public_post_and_salary_without_account(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="switzerlanddevjobs/42">
+          <div class="tgme_widget_message"><div class="tgme_widget_message_text">Weekly C++ roles<br>
+          ➡️ Senior C++ Engineer | Example AG<br>[📍 Zurich] [💰 CHF 140'000 - 180'000]
+          <a href="https://example.org/job">Apply</a></div><time datetime="2026-11-12T08:00:00+00:00"></time></div></div>'''
+        rows, posts = collect.parse_page("switzerlanddevjobs", fixture)
+        self.assertEqual(len(posts), 1)
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["url"], "https://t.me/switzerlanddevjobs/42")
+        self.assertEqual(rows[0]["region"], "Switzerland")
+        self.assertEqual(rows[0]["country"], "CH")
+        self.assertIn("CHF 140'000 - 180'000", rows[0]["salary_raw_snippet"])
+        self.assertEqual((rows[0]["salary_min"], rows[0]["salary_max"]), (140000, 180000))
+        self.assertEqual(rows[0]["published_at"], "2026-11-12T08:00:00+00:00")
+
+    def test_ignores_non_cpp_post(self):
+        fixture = '<div class="tgme_widget_message_wrap" data-post="devitjobs/3"><div>Python Developer</div></div>'
+        rows, _ = collect.parse_page("devitjobs", fixture)
+        self.assertEqual(rows, [])
+
+
+if __name__ == "__main__":
+    unittest.main()

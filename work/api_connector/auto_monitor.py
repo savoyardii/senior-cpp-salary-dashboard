@@ -13,6 +13,12 @@ JUNIOR = re.compile(r'\b(junior|graduate|intern|internship|trainee|entry[- ]leve
 OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+обучен|researcher|\btrader\b|учител|военнослуж|chauffeur|driver|водител', re.I)
 NUMBER = r'(?:\d{1,3}(?:[ ,.]\d{3})+(?:[,.]\d+)?|\d+(?:[,.]\d+)?)'
 BONUS = re.compile(r'total comp|target comp|\bTC\b|\bOTE\b|bonus|equity|sign[- ]?on|one[- ]?time|единоврем|преми|бонус|подъ[её]мн', re.I)
+NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas'}
+NORMALIZED_PREFIXES = ('Telegram @', 'Greenhouse:', 'HH RSS:', 'Lever:', 'Ashby:')
+
+
+def normalized_source(source):
+    return source in NORMALIZED_SOURCES or str(source or '').startswith(NORMALIZED_PREFIXES)
 
 
 def value(item):
@@ -26,6 +32,8 @@ def clean(text):
 
 def fields(source, record):
     raw = record['raw']
+    if normalized_source(source):
+        return str(raw.get('title') or ''), str(raw.get('employer') or ''), str(raw.get('description') or ''), raw
     if source in {'Zarplata', 'UK Government Work Hub', 'Yandex Delivery Careers', 'Kaspersky Careers', 'ITJobsWatch', 'Finder', 'Reed', 'Hunter Bond'}:
         return str(raw.get('title', '')), str(raw.get('employer') or ''), str(raw.get('description') or ''), raw
     if source == 'Headcount Labs':
@@ -41,6 +49,13 @@ def fields(source, record):
 
 
 def location_rows(source, region, raw):
+    if normalized_source(source):
+        location = raw.get('location') or raw.get('city') or ''
+        if isinstance(location, list):
+            location = ', '.join(str(x) for x in location if x)
+        country = raw.get('country') or {'Russia': 'RU', 'London, UK': 'GB', 'Switzerland': 'CH'}.get(region, '')
+        return [{'city': str(raw.get('city') or location or ('London' if region == 'London, UK' else '')),
+                 'country': str(country), 'remote': bool(raw.get('remote'))}]
     if source in {'Zarplata', 'UK Government Work Hub', 'Yandex Delivery Careers', 'Kaspersky Careers', 'ITJobsWatch', 'Finder', 'Reed', 'Hunter Bond'}:
         location = raw.get('location') or raw.get('city') or ''
         if isinstance(location, list):
@@ -87,6 +102,28 @@ def local_market(region, locations):
 
 
 def active(source, raw):
+    if normalized_source(source):
+        if source.startswith('Greenhouse:'):
+            return not raw.get('is_closed')
+        expiry = raw.get('expires_at') or raw.get('validThrough')
+        published = raw.get('published_at') or raw.get('source_posted_at') or raw.get('first_published')
+        stamp = expiry or published
+        try:
+            if isinstance(stamp, (int, float)):
+                if stamp > 100_000_000_000:
+                    stamp /= 1000
+                date = datetime.fromtimestamp(stamp, timezone.utc)
+            else:
+                try:
+                    date = datetime.fromisoformat(str(stamp).replace('Z', '+00:00'))
+                except ValueError:
+                    from email.utils import parsedate_to_datetime
+                    date = parsedate_to_datetime(str(stamp))
+            if date.tzinfo is None:
+                date = date.replace(tzinfo=timezone.utc)
+            return date >= datetime.now(timezone.utc) if expiry else date >= datetime.now(timezone.utc) - timedelta(days=90)
+        except (TypeError, ValueError, OverflowError):
+            return False
     if source == 'Headcount Labs':
         postings = raw.get('postings', [])
         return not raw.get('stale') and (not postings or any(p.get('posting_status') == 'listed' for p in postings))
@@ -304,6 +341,14 @@ def salary_rows(source, region, raw, description):
                           'basis': raw.get('salary_basis') or 'job_board',
                           'snippet': raw.get('salary_snippet') or raw.get('salary_raw_snippet') or raw.get('raw_salary_snippet'),
                           'tax_basis': basis, 'compensation': compensation, 'employment_basis': 'unknown'})
+    if normalized_source(source):
+        low, high, currency, period = (raw.get(k) for k in ('salary_min', 'salary_max', 'currency', 'period'))
+        if currency == expected and period in {'month', 'MONTH', 'year', 'YEAR', 'day', 'DAY'} and valid_pay(low, high):
+            found.append({'min': low, 'max': high, 'currency': expected, 'period': period.casefold(),
+                          'basis': raw.get('salary_basis') or 'job_board',
+                          'snippet': raw.get('salary_snippet') or raw.get('salary_raw_snippet'),
+                          'tax_basis': raw.get('tax_basis') if raw.get('tax_basis') in {'gross', 'net'} else 'unknown',
+                          'compensation': raw.get('compensation_kind') or 'unknown', 'employment_basis': 'unknown'})
     # SuperJob/Trudvsem numeric fields omit period: only explicit text evidence can qualify.
     if not found and not blocked:
         parsed = salary_from_description(description, expected)
@@ -313,6 +358,9 @@ def salary_rows(source, region, raw, description):
 
 
 def job_urls(source, raw):
+    if normalized_source(source):
+        values = [raw.get('url'), raw.get('applyUrl'), *raw.get('links', [])]
+        return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
     values = [value(p.get('posting_url')) or value(p.get('application_url')) for p in raw.get('postings', [])] if source == 'Headcount Labs' else [raw.get('link') or raw.get('vac_url') or raw.get('redirect_url') or raw.get('url')]
     return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
 
@@ -339,14 +387,15 @@ def build_monitor(snapshot):
     candidates, source_rows, excluded = [], [], []
     for source in snapshot.get('sources', []):
         name = source.get('source')
-        if name not in expected_sources:
+        if name not in expected_sources and not normalized_source(name):
             continue
         # A rebuild timestamp is not evidence of a source retrieval.
         observed = (source.get('pilot_observed_at') or source.get('observed_at')) if name == 'Adzuna' else (source.get('retrieved_at') or source.get('observed_at'))
         qualified = 0
-        for record in source.get('records', []):
+        for entry in source.get('records', []):
+            record = entry if isinstance(entry.get('raw'), dict) else {'region': entry.get('region'), 'raw': entry}
             title, employer, description, raw = fields(name, record)
-            identity = str(raw.get('job_id') or raw.get('id') or raw.get('link') or '')
+            identity = str(raw.get('job_id') or raw.get('id') or raw.get('source_id') or raw.get('link') or '')
             urls = job_urls(name, raw)
             for region in record_regions(name, record):
                 regional = {**record, 'region': region}

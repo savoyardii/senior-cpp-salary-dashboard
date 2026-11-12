@@ -34,7 +34,14 @@ jobs:
           python-version: "3.12"
 
       - name: Run offline regression checks
-        run: python -m unittest discover -s work/api_connector -p test_statistics.py
+        run: |
+          python -m unittest discover -s work/api_connector -p test_statistics.py
+          python work/source_expansion_round3/ats/test_collect.py
+          python work/source_expansion_round3/lever_ashby/test_collect.py
+          python work/source_expansion_round3/telegram/test_collect.py
+          python work/source_expansion_round3/russia/test_hh_rss.py
+          python work/source_expansion_round3/uk_ch/swissdevjobs.py --self-check
+          python work/source_expansion_round3/uk_ch/himalayas.py --self-check
 
       - name: Refresh sources and rebuild dashboard
         env:
