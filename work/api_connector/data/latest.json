@@ -1,10 +1,10 @@
 {
-  "observed_at": "2026-11-12T18:54:28.932806+00:00",
+  "observed_at": "2026-11-12T19:23:19.612645+00:00",
   "fx": {
     "provider": "ExchangeRate-API",
     "base": "USD",
     "updated_at": "Thu, 12 Nov 2026 00:02:31 +0000",
-    "fetched_at": "2026-11-12T18:54:28.973934+00:00",
+    "fetched_at": "2026-11-12T19:23:19.655822+00:00",
     "rates": {
       "USD": 1,
       "CHF": 0.831838,
@@ -42122,7 +42122,7 @@
       "records_before_dedupe": 396,
       "duplicate_hits_removed": 21,
       "retrieved_at": "2026-11-11T13:38:41.519398+00:00",
-      "refresh_attempted_at": "2026-11-12T18:54:28.932806+00:00",
+      "refresh_attempted_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_error": "HTTP 503"
     },
     {
@@ -52214,7 +52214,7 @@
       "status": "queried",
       "records_before_dedupe": 138,
       "duplicate_hits_removed": 69,
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00"
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00"
     },
     {
       "source": "Работа России",
@@ -57687,7 +57687,7 @@
       "status": "queried",
       "records_before_dedupe": 84,
       "duplicate_hits_removed": 16,
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00"
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00"
     },
     {
       "source": "Yandex Delivery Careers",
@@ -57744,7 +57744,7 @@
       "observed_at": "2026-11-12T12:54:09.566420+00:00",
       "retrieved_at": "2026-11-12T12:54:09.566420+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-12T18:54:28.932806+00:00",
+      "refresh_attempted_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_error": "no_strict_current_records; retained prior snapshot"
     },
     {
@@ -57935,7 +57935,7 @@
       "observed_at": "2026-11-12T12:54:09.566420+00:00",
       "retrieved_at": "2026-11-12T12:54:09.566420+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-12T18:54:28.932806+00:00",
+      "refresh_attempted_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_error": "no_strict_current_records; retained prior snapshot"
     },
     {
@@ -58308,7 +58308,7 @@
             "region": "London, UK",
             "published_at": "2026-05-14T10:15:15-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58333,7 +58333,7 @@
             "region": "London, UK",
             "published_at": "2026-08-14T17:26:40-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58358,7 +58358,7 @@
             "region": "London, UK",
             "published_at": "2026-03-10T15:13:53-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58383,7 +58383,7 @@
             "region": "London, UK",
             "published_at": "2026-10-12T14:18:28-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58408,7 +58408,7 @@
             "region": "London, UK",
             "published_at": "2026-10-15T15:05:02-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58433,7 +58433,7 @@
             "region": "London, UK",
             "published_at": "2026-08-10T18:43:54-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:25.708603+00:00",
+            "observed_at": "2026-11-12T19:29:36.539727+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58444,8 +58444,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:00:25.708603+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:36.539727+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -58467,7 +58467,7 @@
             "region": "London, UK",
             "published_at": "2026-08-19T13:29:53-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58492,7 +58492,7 @@
             "region": "London, UK",
             "published_at": "2026-05-11T04:39:46-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58517,7 +58517,7 @@
             "region": "London, UK",
             "published_at": "2026-11-06T12:11:46-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58542,7 +58542,7 @@
             "region": "London, UK",
             "published_at": "2026-05-15T06:41:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58567,7 +58567,7 @@
             "region": "London, UK",
             "published_at": "2026-08-07T11:52:54-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58592,7 +58592,7 @@
             "region": "London, UK",
             "published_at": "2025-11-05T12:24:39-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58617,7 +58617,7 @@
             "region": "London, UK",
             "published_at": "2025-08-18T11:02:03-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58642,7 +58642,7 @@
             "region": "London, UK",
             "published_at": "2026-06-02T06:30:49-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58667,7 +58667,7 @@
             "region": "London, UK",
             "published_at": "2026-08-19T12:17:16-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58692,7 +58692,7 @@
             "region": "London, UK",
             "published_at": "2026-07-13T05:04:35-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58717,7 +58717,7 @@
             "region": "London, UK",
             "published_at": "2026-04-09T09:50:29-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58742,7 +58742,7 @@
             "region": "London, UK",
             "published_at": "2025-11-04T12:42:37-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.572767+00:00",
+            "observed_at": "2026-11-12T19:29:36.786493+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58753,11 +58753,9 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T18:42:18.572767+00:00",
-      "retrieved_at": "2026-11-12T18:35:16.902436+00:00",
-      "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-12T18:54:28.932806+00:00",
-      "refresh_error": "TimeoutError"
+      "observed_at": "2026-11-12T19:29:36.786493+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
+      "refresh_policy": "weekly"
     },
     {
       "source": "Greenhouse: Engineers Gate",
@@ -58778,7 +58776,7 @@
             "region": "London, UK",
             "published_at": "2026-09-25T14:00:58-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:00:46.917847+00:00",
+            "observed_at": "2026-11-12T19:29:36.961707+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58789,8 +58787,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:00:46.917847+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:36.961707+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -58812,7 +58810,7 @@
             "region": "London, UK",
             "published_at": "2026-09-17T11:19:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.798869+00:00",
+            "observed_at": "2026-11-12T19:29:37.071074+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58837,7 +58835,7 @@
             "region": "London, UK",
             "published_at": "2026-09-28T15:54:17-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T18:42:18.798869+00:00",
+            "observed_at": "2026-11-12T19:29:37.071074+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58848,11 +58846,9 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T18:42:18.798869+00:00",
-      "retrieved_at": "2026-11-12T18:35:16.902436+00:00",
-      "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-12T18:54:28.932806+00:00",
-      "refresh_error": "TimeoutError"
+      "observed_at": "2026-11-12T19:29:37.071074+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
+      "refresh_policy": "weekly"
     },
     {
       "source": "Greenhouse: iSAM",
@@ -58873,7 +58869,7 @@
             "region": "London, UK",
             "published_at": "2026-07-13T06:37:52-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.197732+00:00",
+            "observed_at": "2026-11-12T19:29:37.159433+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58898,7 +58894,7 @@
             "region": "London, UK",
             "published_at": "2026-09-07T07:20:11-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.197732+00:00",
+            "observed_at": "2026-11-12T19:29:37.159433+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58909,8 +58905,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:08.197732+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:37.159433+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -58932,7 +58928,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T09:57:57-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58957,7 +58953,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T10:10:35-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -58982,7 +58978,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T09:56:30-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59007,7 +59003,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T09:16:09-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59032,7 +59028,7 @@
             "region": "London, UK",
             "published_at": "2023-01-05T09:46:19-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59057,7 +59053,7 @@
             "region": "London, UK",
             "published_at": "2024-11-28T11:19:56-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59082,7 +59078,7 @@
             "region": "London, UK",
             "published_at": "2025-06-26T05:24:22-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59107,7 +59103,7 @@
             "region": "London, UK",
             "published_at": "2025-11-19T06:24:25-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59132,7 +59128,7 @@
             "region": "London, UK",
             "published_at": "2025-07-23T10:49:59-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59157,7 +59153,7 @@
             "region": "London, UK",
             "published_at": "2026-11-03T04:56:02-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59182,7 +59178,7 @@
             "region": "London, UK",
             "published_at": "2026-01-23T10:28:08-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59207,7 +59203,7 @@
             "region": "London, UK",
             "published_at": "2026-11-03T05:30:06-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59232,7 +59228,7 @@
             "region": "London, UK",
             "published_at": "2026-09-02T10:04:14-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59257,7 +59253,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T11:25:27-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59282,7 +59278,7 @@
             "region": "London, UK",
             "published_at": "2026-10-13T05:48:33-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59307,7 +59303,7 @@
             "region": "London, UK",
             "published_at": "2025-10-08T09:28:26-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59332,7 +59328,7 @@
             "region": "London, UK",
             "published_at": "2026-09-30T09:25:32-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59357,32 +59353,7 @@
             "region": "London, UK",
             "published_at": "2026-07-01T05:02:29-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
-            "status": "listed_by_public_employer_board",
-            "salary_min": null,
-            "salary_max": null,
-            "currency": null,
-            "period": null,
-            "salary_provenance": null
-          }
-        },
-        {
-          "region": "London, UK",
-          "query": "public ATS board C++",
-          "raw": {
-            "source": "Greenhouse: Qube Research & Technologies",
-            "source_id": "4104778002",
-            "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/4104778002",
-            "title": "Quantitative Researcher",
-            "employer": "Qube Research & Technologies",
-            "description": "&lt;p&gt;&lt;strong&gt;Your future role within QRT&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Your core objective is to create high quality predictive signals.&lt;/li&gt;\n&lt;li&gt;By leveraging access to large and diversified datasets you will identify statistical patterns and opportunities.&lt;/li&gt;\n&lt;li&gt;Share and discuss research results, methodology, data sets and processes with other researchers.&lt;/li&gt;\n&lt;li&gt;Implement the signals and the relevant datasets within the global execution platform.&lt;/li&gt;\n&lt;li&gt;Monitor signal behaviour and model performance over time.&lt;/li&gt;\n&lt;li&gt;You would lead the full strategy research cycle from signal generation to implementation.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Your present skillset&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in a quantitative field such as data science, statistics, mathematics, physics or engineering.&lt;/li&gt;\n&lt;li&gt;Strong knowledge in statistics, machine learning, NLP or AI techniques is a plus.&lt;/li&gt;\n&lt;li&gt;Capacity to multi-task in a fast paced environment while keeping strong attention to detail.&lt;/li&gt;\n&lt;li&gt;Coding skills required in at least one leading programming language (Python, R, Matlab and /or C++, C#).&lt;/li&gt;\n&lt;li&gt;Experience in exploring large datasets across multiple time frames is a plus.&lt;/li&gt;\n&lt;li&gt;Intellectual curiosity to explore new data sets, solve complex problems, drive innovative processes and connect the dots between multiple fields.&lt;/li&gt;\n&lt;li&gt;Capacity to work with autonomy within a collegial and collaborative environment.&lt;/li&gt;\n&lt;li&gt;Strong capacity to communicate with technologists, data scientists and traders across the globe.&lt;/li&gt;\n&lt;li&gt;Proven track record in delivering successful systematic strategies.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
-            "location": "London",
-            "city": "London",
-            "country": "GB",
-            "region": "London, UK",
-            "published_at": "2023-08-14T05:03:02-04:00",
-            "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59407,7 +59378,32 @@
             "region": "Switzerland",
             "published_at": "2023-10-03T12:54:35-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
+            "status": "listed_by_public_employer_board",
+            "salary_min": null,
+            "salary_max": null,
+            "currency": null,
+            "period": null,
+            "salary_provenance": null
+          }
+        },
+        {
+          "region": "London, UK",
+          "query": "public ATS board C++",
+          "raw": {
+            "source": "Greenhouse: Qube Research & Technologies",
+            "source_id": "4104778002",
+            "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/4104778002",
+            "title": "Quantitative Researcher",
+            "employer": "Qube Research & Technologies",
+            "description": "&lt;p&gt;&lt;strong&gt;Your future role within QRT&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Your core objective is to create high quality predictive signals.&lt;/li&gt;\n&lt;li&gt;By leveraging access to large and diversified datasets you will identify statistical patterns and opportunities.&lt;/li&gt;\n&lt;li&gt;Share and discuss research results, methodology, data sets and processes with other researchers.&lt;/li&gt;\n&lt;li&gt;Implement the signals and the relevant datasets within the global execution platform.&lt;/li&gt;\n&lt;li&gt;Monitor signal behaviour and model performance over time.&lt;/li&gt;\n&lt;li&gt;You would lead the full strategy research cycle from signal generation to implementation.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Your present skillset&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in a quantitative field such as data science, statistics, mathematics, physics or engineering.&lt;/li&gt;\n&lt;li&gt;Strong knowledge in statistics, machine learning, NLP or AI techniques is a plus.&lt;/li&gt;\n&lt;li&gt;Capacity to multi-task in a fast paced environment while keeping strong attention to detail.&lt;/li&gt;\n&lt;li&gt;Coding skills required in at least one leading programming language (Python, R, Matlab and /or C++, C#).&lt;/li&gt;\n&lt;li&gt;Experience in exploring large datasets across multiple time frames is a plus.&lt;/li&gt;\n&lt;li&gt;Intellectual curiosity to explore new data sets, solve complex problems, drive innovative processes and connect the dots between multiple fields.&lt;/li&gt;\n&lt;li&gt;Capacity to work with autonomy within a collegial and collaborative environment.&lt;/li&gt;\n&lt;li&gt;Strong capacity to communicate with technologists, data scientists and traders across the globe.&lt;/li&gt;\n&lt;li&gt;Proven track record in delivering successful systematic strategies.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+            "location": "London",
+            "city": "London",
+            "country": "GB",
+            "region": "London, UK",
+            "published_at": "2023-08-14T05:03:02-04:00",
+            "expires_at": null,
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59432,7 +59428,7 @@
             "region": "London, UK",
             "published_at": "2025-09-05T07:15:49-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59457,7 +59453,7 @@
             "region": "London, UK",
             "published_at": "2025-08-13T13:09:37-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59482,7 +59478,7 @@
             "region": "London, UK",
             "published_at": "2025-09-25T07:55:50-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59507,7 +59503,7 @@
             "region": "London, UK",
             "published_at": "2026-01-20T13:22:27-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59532,7 +59528,7 @@
             "region": "London, UK",
             "published_at": "2026-10-12T05:48:24-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59557,7 +59553,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T06:38:17-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59582,7 +59578,7 @@
             "region": "London, UK",
             "published_at": "2026-11-12T08:54:58-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59607,7 +59603,7 @@
             "region": "London, UK",
             "published_at": "2025-09-09T06:19:07-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.551790+00:00",
+            "observed_at": "2026-11-12T19:29:37.275610+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59618,8 +59614,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:08.551790+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:37.275610+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -59641,7 +59637,7 @@
             "region": "London, UK",
             "published_at": "2024-09-18T06:57:13-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.680184+00:00",
+            "observed_at": "2026-11-12T19:29:37.486110+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59666,7 +59662,7 @@
             "region": "London, UK",
             "published_at": "2025-09-05T10:26:56-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.680184+00:00",
+            "observed_at": "2026-11-12T19:29:37.486110+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59691,7 +59687,7 @@
             "region": "London, UK",
             "published_at": "2026-10-22T12:17:38-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.680184+00:00",
+            "observed_at": "2026-11-12T19:29:37.486110+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59716,7 +59712,7 @@
             "region": "London, UK",
             "published_at": "2026-10-09T09:58:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:08.680184+00:00",
+            "observed_at": "2026-11-12T19:29:37.486110+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59727,8 +59723,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:08.680184+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:37.486110+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -59750,7 +59746,7 @@
             "region": "London, UK",
             "published_at": "2024-08-15T17:08:20-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:12.171582+00:00",
+            "observed_at": "2026-11-12T19:29:37.605976+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59775,7 +59771,7 @@
             "region": "London, UK",
             "published_at": "2024-08-15T17:02:22-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:12.171582+00:00",
+            "observed_at": "2026-11-12T19:29:37.605976+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59800,7 +59796,7 @@
             "region": "London, UK",
             "published_at": "2026-09-01T08:39:19-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-12T19:01:12.171582+00:00",
+            "observed_at": "2026-11-12T19:29:37.605976+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -59811,8 +59807,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:12.171582+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:37.605976+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -59833,7 +59829,7 @@
             ],
             "country": "GB",
             "published_at": 1768236614811,
-            "observed_at": "2026-11-12T19:01:12.495972+00:00",
+            "observed_at": "2026-11-12T19:29:38.767630+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -59861,7 +59857,7 @@
             ],
             "country": "GB",
             "published_at": 1768238840984,
-            "observed_at": "2026-11-12T19:01:12.495972+00:00",
+            "observed_at": "2026-11-12T19:29:38.767630+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -59876,8 +59872,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:12.495972+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:38.767630+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -59898,7 +59894,7 @@
             ],
             "country": "GB",
             "published_at": 1794454342820,
-            "observed_at": "2026-11-12T19:01:13.962782+00:00",
+            "observed_at": "2026-11-12T19:29:39.627623+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -59913,8 +59909,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:13.962782+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:39.627623+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -59935,7 +59931,7 @@
             ],
             "country": "GB",
             "published_at": 1619881390307,
-            "observed_at": "2026-11-12T19:01:14.846804+00:00",
+            "observed_at": "2026-11-12T19:29:39.811534+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -59963,7 +59959,7 @@
             ],
             "country": "GB",
             "published_at": 1701165457773,
-            "observed_at": "2026-11-12T19:01:14.846804+00:00",
+            "observed_at": "2026-11-12T19:29:39.811534+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -59991,7 +59987,7 @@
             ],
             "country": "GB",
             "published_at": 1611095193849,
-            "observed_at": "2026-11-12T19:01:14.846804+00:00",
+            "observed_at": "2026-11-12T19:29:39.811534+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60019,7 +60015,7 @@
             ],
             "country": "GB",
             "published_at": 1711972583795,
-            "observed_at": "2026-11-12T19:01:14.846804+00:00",
+            "observed_at": "2026-11-12T19:29:39.811534+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60034,16 +60030,16 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:14.846804+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:39.811534+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "Lever: Zurich Instruments",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:20.818597+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:39.952299+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -60066,7 +60062,7 @@
             ],
             "country": "GB",
             "published_at": "2026-10-08T13:04:47.393+00:00",
-            "observed_at": "2026-11-12T19:01:21.345147+00:00",
+            "observed_at": "2026-11-12T19:29:40.123211+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60096,7 +60092,7 @@
             ],
             "country": "GB",
             "published_at": "2026-07-07T13:43:47.997+00:00",
-            "observed_at": "2026-11-12T19:01:21.345147+00:00",
+            "observed_at": "2026-11-12T19:29:40.123211+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60111,8 +60107,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:21.345147+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:40.123211+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -60133,7 +60129,7 @@
             ],
             "country": "GB",
             "published_at": "2026-06-11T13:52:42.606+00:00",
-            "observed_at": "2026-11-12T19:01:21.383175+00:00",
+            "observed_at": "2026-11-12T19:29:40.245336+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60148,8 +60144,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:21.383175+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:40.245336+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -60170,7 +60166,7 @@
             ],
             "country": "GB",
             "published_at": "2024-05-07T09:58:57.173+00:00",
-            "observed_at": "2026-11-12T19:01:21.530639+00:00",
+            "observed_at": "2026-11-12T19:29:40.453160+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60198,7 +60194,7 @@
             ],
             "country": "GB",
             "published_at": "2026-08-24T14:59:11.200+00:00",
-            "observed_at": "2026-11-12T19:01:21.530639+00:00",
+            "observed_at": "2026-11-12T19:29:40.453160+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60226,7 +60222,7 @@
             ],
             "country": "GB",
             "published_at": "2026-01-15T10:48:08.706+00:00",
-            "observed_at": "2026-11-12T19:01:21.530639+00:00",
+            "observed_at": "2026-11-12T19:29:40.453160+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60254,7 +60250,7 @@
             ],
             "country": "GB",
             "published_at": "2026-11-09T08:49:02.130+00:00",
-            "observed_at": "2026-11-12T19:01:21.530639+00:00",
+            "observed_at": "2026-11-12T19:29:40.453160+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60282,7 +60278,7 @@
             ],
             "country": "GB",
             "published_at": "2026-11-09T16:13:51.204+00:00",
-            "observed_at": "2026-11-12T19:01:21.530639+00:00",
+            "observed_at": "2026-11-12T19:29:40.453160+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -60297,16 +60293,16 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:21.530639+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:40.453160+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "Ashby: Keyrock",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:21.564632+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:40.592346+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -60331,7 +60327,7 @@
             "period": null,
             "salary_raw_snippet": "260 000–300 000 ₽ · налоговый статус суммы не указан",
             "published_at": "2026-10-26T09:05:03+00:00",
-            "observed_at": "2026-11-12T19:01:22.207275+00:00",
+            "observed_at": "2026-11-12T19:29:41.864474+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60370,7 +60366,7 @@
             "period": null,
             "salary_raw_snippet": "380 000–450 000 ₽ на руки + премии",
             "published_at": "2026-10-29T09:00:54+00:00",
-            "observed_at": "2026-11-12T19:01:22.215838+00:00",
+            "observed_at": "2026-11-12T19:29:41.873335+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60412,7 +60408,7 @@
             "period": null,
             "salary_raw_snippet": "Оплата — 288–316 тыс. ₽. Удалённая работа по России, требуется гражданство РФ. Оформление только через ИП.",
             "published_at": "2026-11-02T09:00:56+00:00",
-            "observed_at": "2026-11-12T19:01:22.224864+00:00",
+            "observed_at": "2026-11-12T19:29:41.882022+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60454,7 +60450,7 @@
             "period": null,
             "salary_raw_snippet": "В подробном описании указаны 200–250 тысяч ₽ на руки. Полный день, офис у метро «Новочеркасская» в Петербурге.",
             "published_at": "2026-11-06T09:00:54+00:00",
-            "observed_at": "2026-11-12T19:01:22.234179+00:00",
+            "observed_at": "2026-11-12T19:29:41.890879+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60495,7 +60491,7 @@
             "period": null,
             "salary_raw_snippet": "Гибрид в Москве, гибкое начало дня. До 320 000 ₽ на руки плюс премии, ТК РФ и ДМС.",
             "published_at": "2026-11-09T09:05:10+00:00",
-            "observed_at": "2026-11-12T19:01:22.241262+00:00",
+            "observed_at": "2026-11-12T19:29:41.897650+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60537,7 +60533,7 @@
             "period": null,
             "salary_raw_snippet": "от 220 000 ₽",
             "published_at": "2026-08-07T18:02:11+00:00",
-            "observed_at": "2026-11-12T19:01:23.643982+00:00",
+            "observed_at": "2026-11-12T19:29:43.669603+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60578,7 +60574,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-11T07:04:56+00:00",
-            "observed_at": "2026-11-12T19:01:23.645430+00:00",
+            "observed_at": "2026-11-12T19:29:43.671056+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60619,7 +60615,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-11T18:00:22+00:00",
-            "observed_at": "2026-11-12T19:01:23.647393+00:00",
+            "observed_at": "2026-11-12T19:29:43.673012+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60660,7 +60656,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-12T09:55:13+00:00",
-            "observed_at": "2026-11-12T19:01:23.652978+00:00",
+            "observed_at": "2026-11-12T19:29:43.678526+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60698,7 +60694,7 @@
             "period": null,
             "salary_raw_snippet": "— Зарплата в рублях (можно в валюте), прозрачная система бонусов",
             "published_at": "2026-09-04T11:28:31+00:00",
-            "observed_at": "2026-11-12T19:01:23.671895+00:00",
+            "observed_at": "2026-11-12T19:29:43.697213+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60736,7 +60732,7 @@
             "period": null,
             "salary_raw_snippet": "Удалённо. 170 000–270 000 ₽ в месяц на руки",
             "published_at": "2026-10-14T12:00:33+00:00",
-            "observed_at": "2026-11-12T19:01:23.678885+00:00",
+            "observed_at": "2026-11-12T19:29:43.704121+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60776,7 +60772,7 @@
             "period": null,
             "salary_raw_snippet": "Офис, Москва. От 200 000 ₽ в месяц до вычета налогов",
             "published_at": "2026-10-16T09:04:00+00:00",
-            "observed_at": "2026-11-12T19:01:23.680130+00:00",
+            "observed_at": "2026-11-12T19:29:43.705357+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60816,7 +60812,7 @@
             "period": null,
             "salary_raw_snippet": "Вместе курсы стоят 108 000 ₽, но по акции оба обойдутся в 59 000 ₽. Экономия — 49 000 ₽ 🔥",
             "published_at": "2026-10-22T17:28:11+00:00",
-            "observed_at": "2026-11-12T19:01:23.695489+00:00",
+            "observed_at": "2026-11-12T19:29:43.720485+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60857,7 +60853,7 @@
             "period": null,
             "salary_raw_snippet": "📍 Разница в цене — почти 50 тысяч рублей. Можно освоить больше, не выходя за рамки запланированного бюджета.",
             "published_at": "2026-10-25T17:30:32+00:00",
-            "observed_at": "2026-11-12T19:01:23.710471+00:00",
+            "observed_at": "2026-11-12T19:29:43.735164+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60898,7 +60894,7 @@
             "period": null,
             "salary_raw_snippet": "от 100 000 ₽",
             "published_at": "2026-07-16T18:46:13+00:00",
-            "observed_at": "2026-11-12T19:01:25.048692+00:00",
+            "observed_at": "2026-11-12T19:29:45.509491+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60932,14 +60928,14 @@
             "location": [
               "Навигация: База знаний • Задачи • Собеседования"
             ],
-            "description": "Вакансии по C++ — си-плюс-плюс, cpp, Си, C, STL, Boost\n\n\n🗺 Разработчик С++/QT\nот 160 000 до 300 000 ₽\nУдалёнка\n\nHpace – разрабатываем сайты, highload-проекты и IT-решения.\n\nТребования:\n– Продвинутые навыки работы с Linux (Ubuntu/Debian).\n– Уверенное владение Qt6 и C++17.\n– Понимание принципов работы низкоуровневых приложений.\n– Опыт работы с сетевыми протоколами (REST-API, WebSocket).\n– Понимание формирования структур JSON.\n– Высшее образование (техническое, физико-математическое или в области программирования — бакалавр и выше, желательно).\n– Навыки командной работы.\n– Опыт работы с Git.\n\n➡️ Подробнее о вакансии на career.habr.com\n\n📍 Навигация: База знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤1\n\n\n3.31K views18:28",
+            "description": "Вакансии по C++ — си-плюс-плюс, cpp, Си, C, STL, Boost\n\n\n🗺 Разработчик С++/QT\nот 160 000 до 300 000 ₽\nУдалёнка\n\nHpace – разрабатываем сайты, highload-проекты и IT-решения.\n\nТребования:\n– Продвинутые навыки работы с Linux (Ubuntu/Debian).\n– Уверенное владение Qt6 и C++17.\n– Понимание принципов работы низкоуровневых приложений.\n– Опыт работы с сетевыми протоколами (REST-API, WebSocket).\n– Понимание формирования структур JSON.\n– Высшее образование (техническое, физико-математическое или в области программирования — бакалавр и выше, желательно).\n– Навыки командной работы.\n– Опыт работы с Git.\n\n➡️ Подробнее о вакансии на career.habr.com\n\n📍 Навигация: База знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤1\n\n\n3.32K views18:28",
             "salary_min": 0.0,
             "salary_max": 300.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "от 160 000 до 300 000 ₽",
             "published_at": "2026-07-21T18:28:37+00:00",
-            "observed_at": "2026-11-12T19:01:25.061753+00:00",
+            "observed_at": "2026-11-12T19:29:45.522271+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -60980,7 +60976,7 @@
             "period": null,
             "salary_raw_snippet": "от 264 000 до 290 000 ₽",
             "published_at": "2026-07-27T18:01:32+00:00",
-            "observed_at": "2026-11-12T19:01:25.067455+00:00",
+            "observed_at": "2026-11-12T19:29:45.528059+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -61021,7 +61017,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-07-30T18:03:13+00:00",
-            "observed_at": "2026-11-12T19:01:25.098940+00:00",
+            "observed_at": "2026-11-12T19:29:45.559924+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -61062,7 +61058,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-07-31T18:01:59+00:00",
-            "observed_at": "2026-11-12T19:01:25.100727+00:00",
+            "observed_at": "2026-11-12T19:29:45.561746+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -61103,7 +61099,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-04T18:03:42+00:00",
-            "observed_at": "2026-11-12T19:01:25.107292+00:00",
+            "observed_at": "2026-11-12T19:29:45.568417+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -61144,7 +61140,7 @@
             "period": null,
             "salary_raw_snippet": "от 300 000 ₽",
             "published_at": "2026-08-05T07:34:10+00:00",
-            "observed_at": "2026-11-12T19:01:25.115532+00:00",
+            "observed_at": "2026-11-12T19:29:45.576777+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -61167,8 +61163,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:35.682171+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:59.974661+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -61195,7 +61191,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-23T10:41:03+00:00",
-            "observed_at": "2026-11-12T19:01:25.716995+00:00",
+            "observed_at": "2026-11-12T19:29:46.683519+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61235,7 +61231,7 @@
             "period": null,
             "salary_raw_snippet": "от 250 000 ₽ за месяц, до вычета налогов",
             "published_at": "2026-10-26T10:40:27+00:00",
-            "observed_at": "2026-11-12T19:01:25.727599+00:00",
+            "observed_at": "2026-11-12T19:29:46.693798+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61279,7 +61275,7 @@
             "period": null,
             "salary_raw_snippet": "от 50 000 ₽",
             "published_at": "2026-10-27T10:30:40+00:00",
-            "observed_at": "2026-11-12T19:01:25.728947+00:00",
+            "observed_at": "2026-11-12T19:29:46.695059+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61320,7 +61316,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-30T10:10:26+00:00",
-            "observed_at": "2026-11-12T19:01:25.749721+00:00",
+            "observed_at": "2026-11-12T19:29:46.714309+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61360,7 +61356,7 @@
             "period": null,
             "salary_raw_snippet": "от 288 000 до 316 000 ₽",
             "published_at": "2026-11-02T11:00:47+00:00",
-            "observed_at": "2026-11-12T19:01:25.767369+00:00",
+            "observed_at": "2026-11-12T19:29:46.731897+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61400,7 +61396,7 @@
             "period": null,
             "salary_raw_snippet": "🔴В 2025 году Россияне заработали 5,3 млрд рублей на арбитраже криптовалют | По данным Минфин 32% граждан покинули своё место работы поскольку в среднем уже в первый месяц смогли заработать 250 000 рублей, а через 2-3 месяца с легкостью вышли на семизначные числа. | Там объясняют, как имея телефон и доступ в интернет заработать свои первые $3000. Причём разжёвывают так доступно, что поймёт даже ребенок. Кстати, на канале сегодня вышла новая рабочая связка!",
             "published_at": "2026-11-05T15:02:25+00:00",
-            "observed_at": "2026-11-12T19:01:25.784407+00:00",
+            "observed_at": "2026-11-12T19:29:46.749114+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61439,7 +61435,7 @@
             "period": null,
             "salary_raw_snippet": "от 130 000 до 240 000 ₽ за месяц, на руки",
             "published_at": "2026-10-05T10:30:40+00:00",
-            "observed_at": "2026-11-12T19:01:27.198501+00:00",
+            "observed_at": "2026-11-12T19:29:48.619713+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61484,7 +61480,7 @@
             "period": null,
             "salary_raw_snippet": "до 365 000 ₽ за месяц",
             "published_at": "2026-10-09T10:41:07+00:00",
-            "observed_at": "2026-11-12T19:01:27.212923+00:00",
+            "observed_at": "2026-11-12T19:29:48.633934+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61528,7 +61524,7 @@
             "period": null,
             "salary_raw_snippet": "от 180 000 до 350 000 ₽ за месяц, на руки",
             "published_at": "2026-10-10T10:31:12+00:00",
-            "observed_at": "2026-11-12T19:01:27.217480+00:00",
+            "observed_at": "2026-11-12T19:29:48.638448+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61569,7 +61565,7 @@
             "period": null,
             "salary_raw_snippet": "от 200 000 ₽ за месяц, на руки",
             "published_at": "2026-10-11T10:31:06+00:00",
-            "observed_at": "2026-11-12T19:01:27.220688+00:00",
+            "observed_at": "2026-11-12T19:29:48.641617+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61614,7 +61610,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-12T10:31:06+00:00",
-            "observed_at": "2026-11-12T19:01:27.222908+00:00",
+            "observed_at": "2026-11-12T19:29:48.643822+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61656,7 +61652,7 @@
             "period": null,
             "salary_raw_snippet": "от 220 000 до 280 000 ₽ за месяц, до вычета налогов",
             "published_at": "2026-10-13T10:21:04+00:00",
-            "observed_at": "2026-11-12T19:01:27.236756+00:00",
+            "observed_at": "2026-11-12T19:29:48.657427+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61697,7 +61693,7 @@
             "period": null,
             "salary_raw_snippet": "от 125 700 ₽ за месяц, до вычета налогов",
             "published_at": "2026-10-17T10:30:10+00:00",
-            "observed_at": "2026-11-12T19:01:27.253260+00:00",
+            "observed_at": "2026-11-12T19:29:48.673215+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61741,7 +61737,7 @@
             "period": null,
             "salary_raw_snippet": "от 350 000 до 500 000 ₽ за месяц, на руки",
             "published_at": "2026-10-18T10:20:33+00:00",
-            "observed_at": "2026-11-12T19:01:27.266626+00:00",
+            "observed_at": "2026-11-12T19:29:48.685910+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61783,7 +61779,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-21T10:40:30+00:00",
-            "observed_at": "2026-11-12T19:01:27.280828+00:00",
+            "observed_at": "2026-11-12T19:29:48.699466+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61825,7 +61821,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-09-06T10:40:11+00:00",
-            "observed_at": "2026-11-12T19:01:28.633759+00:00",
+            "observed_at": "2026-11-12T19:29:50.359881+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61865,7 +61861,7 @@
             "period": null,
             "salary_raw_snippet": "от 260 000 до 300 000 ₽",
             "published_at": "2026-09-16T10:10:48+00:00",
-            "observed_at": "2026-11-12T19:01:28.653099+00:00",
+            "observed_at": "2026-11-12T19:29:50.380627+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61908,7 +61904,7 @@
             "period": null,
             "salary_raw_snippet": "до 320 000 ₽ за месяц",
             "published_at": "2026-09-20T10:20:38+00:00",
-            "observed_at": "2026-11-12T19:01:28.655191+00:00",
+            "observed_at": "2026-11-12T19:29:50.382702+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61950,7 +61946,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-09-22T10:20:38+00:00",
-            "observed_at": "2026-11-12T19:01:28.660971+00:00",
+            "observed_at": "2026-11-12T19:29:50.388402+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -61994,7 +61990,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-09-23T10:20:42+00:00",
-            "observed_at": "2026-11-12T19:01:28.662516+00:00",
+            "observed_at": "2026-11-12T19:29:50.389934+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -62033,7 +62029,7 @@
             "period": null,
             "salary_raw_snippet": "от 180 000 до 210 000 ₽ за месяц",
             "published_at": "2026-09-26T10:31:20+00:00",
-            "observed_at": "2026-11-12T19:01:28.680587+00:00",
+            "observed_at": "2026-11-12T19:29:50.408007+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -62076,7 +62072,7 @@
             "period": null,
             "salary_raw_snippet": "до 320 000 ₽ за месяц, на руки",
             "published_at": "2026-09-27T10:31:22+00:00",
-            "observed_at": "2026-11-12T19:01:28.683919+00:00",
+            "observed_at": "2026-11-12T19:29:50.411278+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -62121,7 +62117,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-09-29T10:31:03+00:00",
-            "observed_at": "2026-11-12T19:01:28.689787+00:00",
+            "observed_at": "2026-11-12T19:29:50.417073+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -62164,7 +62160,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-01T10:30:30+00:00",
-            "observed_at": "2026-11-12T19:01:28.699756+00:00",
+            "observed_at": "2026-11-12T19:29:50.426942+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -62186,8 +62182,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:35.682171+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:59.974661+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -62214,7 +62210,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-29T13:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:29.395666+00:00",
+            "observed_at": "2026-11-12T19:29:51.467376+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62257,7 +62253,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-29T13:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:29.395859+00:00",
+            "observed_at": "2026-11-12T19:29:51.467564+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62300,7 +62296,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-30T08:25:58+00:00",
-            "observed_at": "2026-11-12T19:01:29.396377+00:00",
+            "observed_at": "2026-11-12T19:29:51.468092+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62343,7 +62339,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-11-06T08:25:54+00:00",
-            "observed_at": "2026-11-12T19:01:29.397734+00:00",
+            "observed_at": "2026-11-12T19:29:51.469476+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62386,7 +62382,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-11-12T13:25:57+00:00",
-            "observed_at": "2026-11-12T19:01:29.399398+00:00",
+            "observed_at": "2026-11-12T19:29:51.471134+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62429,7 +62425,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-11-12T13:25:57+00:00",
-            "observed_at": "2026-11-12T19:01:29.399576+00:00",
+            "observed_at": "2026-11-12T19:29:51.471312+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62472,7 +62468,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-09T07:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:30.813930+00:00",
+            "observed_at": "2026-11-12T19:29:53.403178+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62515,7 +62511,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-15T12:25:56+00:00",
-            "observed_at": "2026-11-12T19:01:30.815307+00:00",
+            "observed_at": "2026-11-12T19:29:53.404510+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62557,7 +62553,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-15T12:25:56+00:00",
-            "observed_at": "2026-11-12T19:01:30.815482+00:00",
+            "observed_at": "2026-11-12T19:29:53.404703+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62599,7 +62595,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-10-15T12:25:56+00:00",
-            "observed_at": "2026-11-12T19:01:30.815796+00:00",
+            "observed_at": "2026-11-12T19:29:53.405024+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62639,7 +62635,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-09-17T12:26:07+00:00",
-            "observed_at": "2026-11-12T19:01:32.214051+00:00",
+            "observed_at": "2026-11-12T19:29:55.266822+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62681,7 +62677,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-09-17T12:26:07+00:00",
-            "observed_at": "2026-11-12T19:01:32.214237+00:00",
+            "observed_at": "2026-11-12T19:29:55.267010+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62723,7 +62719,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-09-17T12:26:07+00:00",
-            "observed_at": "2026-11-12T19:01:32.214555+00:00",
+            "observed_at": "2026-11-12T19:29:55.267321+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62763,7 +62759,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-09-18T07:26:04+00:00",
-            "observed_at": "2026-11-12T19:01:32.215081+00:00",
+            "observed_at": "2026-11-12T19:29:55.267870+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62806,7 +62802,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-09-25T07:26:03+00:00",
-            "observed_at": "2026-11-12T19:01:32.216346+00:00",
+            "observed_at": "2026-11-12T19:29:55.269166+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62849,7 +62845,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-01T12:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:32.217183+00:00",
+            "observed_at": "2026-11-12T19:29:55.270032+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62891,7 +62887,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-01T12:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:32.217360+00:00",
+            "observed_at": "2026-11-12T19:29:55.270203+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62933,7 +62929,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-10-01T12:26:00+00:00",
-            "observed_at": "2026-11-12T19:01:32.217650+00:00",
+            "observed_at": "2026-11-12T19:29:55.270509+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62973,7 +62969,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-02T07:26:05+00:00",
-            "observed_at": "2026-11-12T19:01:32.218126+00:00",
+            "observed_at": "2026-11-12T19:29:55.271009+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -62997,8 +62993,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:35.682171+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:59.974661+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -63018,14 +63014,14 @@
             "location": [
               "City of London"
             ],
-            "description": "➡️ Quantitative Developer – Python/Java, Market Risk & FRTB | CBSbutler Holdings Limited trading as CBSbutler⁣\n[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣\nhttps://tinyurl.com/39yy2ac5 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n👍1\n\n\n316 views09:35",
+            "description": "➡️ Quantitative Developer – Python/Java, Market Risk & FRTB | CBSbutler Holdings Limited trading as CBSbutler⁣\n[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣\nhttps://tinyurl.com/39yy2ac5 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n👍1\n\n\n320 views09:35",
             "salary_min": 70000.0,
             "salary_max": 110000.0,
             "currency": "GBP",
             "period": null,
             "salary_raw_snippet": "[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣",
             "published_at": "2026-11-10T09:35:59+00:00",
-            "observed_at": "2026-11-12T19:01:32.874191+00:00",
+            "observed_at": "2026-11-12T19:29:56.441321+00:00",
             "links": [
               "https://t.me/devitjobs",
               "https://t.me/devitjobs",
@@ -63047,8 +63043,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:35.682171+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:59.974661+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -63081,13 +63077,13 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
-            "id": "139375198",
-            "title": "Системный аналитик (Software & Hardware)",
+            "id": "139192339",
+            "title": "Программист разработчик",
             "employer": null,
             "region": "Russia",
-            "url": "https://hh.ru/vacancy/139375198",
+            "url": "https://hh.ru/vacancy/139192339",
             "published_at": null,
-            "description": "Вакансия компании: Лаборатория моделирования систем Создана: 11.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: не указан",
+            "description": "Вакансия компании: ИТ-Транс Создана: 06.11.2026 Регион: Набережные Челны Предполагаемый уровень месячного дохода: от 190 000 ₽",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
@@ -63103,13 +63099,13 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
-            "id": "139192339",
-            "title": "Программист разработчик",
+            "id": "139375198",
+            "title": "Системный аналитик (Software & Hardware)",
             "employer": null,
             "region": "Russia",
-            "url": "https://hh.ru/vacancy/139192339",
+            "url": "https://hh.ru/vacancy/139375198",
             "published_at": null,
-            "description": "Вакансия компании: ИТ-Транс Создана: 06.11.2026 Регион: Набережные Челны Предполагаемый уровень месячного дохода: от 190 000 ₽",
+            "description": "Вакансия компании: Лаборатория моделирования систем Создана: 11.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: не указан",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
@@ -63659,6 +63655,28 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
+            "id": "139430922",
+            "title": "Системный программист (Middle/ Senior)",
+            "employer": null,
+            "region": "Russia",
+            "url": "https://hh.ru/vacancy/139430922",
+            "published_at": null,
+            "description": "Вакансия компании: Рубеж, Группа компаний Создана: 12.11.2026 Регион: Саратов Предполагаемый уровень месячного дохода: не указан",
+            "salary_min": null,
+            "salary_max": null,
+            "currency": null,
+            "period": null,
+            "salary_basis": null,
+            "source": "HeadHunter RSS",
+            "queries": [
+              "Senior C++"
+            ]
+          }
+        },
+        {
+          "region": "Russia",
+          "query": "HeadHunter public RSS",
+          "raw": {
             "id": "138825239",
             "title": "Senior Java-разработчик",
             "employer": null,
@@ -63688,28 +63706,6 @@
             "url": "https://hh.ru/vacancy/139438364",
             "published_at": null,
             "description": "Вакансия компании: Новые Телеком Решения (НТР) Создана: 12.11.2026 Регион: Санкт-Петербург Предполагаемый уровень месячного дохода: не указан",
-            "salary_min": null,
-            "salary_max": null,
-            "currency": null,
-            "period": null,
-            "salary_basis": null,
-            "source": "HeadHunter RSS",
-            "queries": [
-              "Senior C++"
-            ]
-          }
-        },
-        {
-          "region": "Russia",
-          "query": "HeadHunter public RSS",
-          "raw": {
-            "id": "139430922",
-            "title": "Системный программист (Middle/ Senior)",
-            "employer": null,
-            "region": "Russia",
-            "url": "https://hh.ru/vacancy/139430922",
-            "published_at": null,
-            "description": "Вакансия компании: Рубеж, Группа компаний Создана: 12.11.2026 Регион: Саратов Предполагаемый уровень месячного дохода: не указан",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
@@ -63769,13 +63765,13 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
-            "id": "139268578",
-            "title": "Backend-разработчик (из Unity/Unreal в TypeScript)",
+            "id": "139407199",
+            "title": "Инженер-программист",
             "employer": null,
             "region": "Russia",
-            "url": "https://hh.ru/vacancy/139268578",
+            "url": "https://hh.ru/vacancy/139407199",
             "published_at": null,
-            "description": "Вакансия компании: Маджестик Девелопмент Создана: 09.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: не указан",
+            "description": "Вакансия компании: РОСКОСМОС Создана: 12.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: от 180 000 ₽",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
@@ -63791,13 +63787,13 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
-            "id": "139407199",
-            "title": "Инженер-программист",
+            "id": "139268578",
+            "title": "Backend-разработчик (из Unity/Unreal в TypeScript)",
             "employer": null,
             "region": "Russia",
-            "url": "https://hh.ru/vacancy/139407199",
+            "url": "https://hh.ru/vacancy/139268578",
             "published_at": null,
-            "description": "Вакансия компании: РОСКОСМОС Создана: 12.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: от 180 000 ₽",
+            "description": "Вакансия компании: Маджестик Девелопмент Создана: 09.11.2026 Регион: Москва Предполагаемый уровень месячного дохода: не указан",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
@@ -64034,28 +64030,6 @@
           "region": "Russia",
           "query": "HeadHunter public RSS",
           "raw": {
-            "id": "134371884",
-            "title": "Старший С++ разработчик (Лимасcол, Кипр)",
-            "employer": null,
-            "region": "Russia",
-            "url": "https://hh.ru/vacancy/134371884",
-            "published_at": null,
-            "description": "Вакансия компании: MetaQuotes Software Corp. Создана: 17.10.2026 Регион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 5 500 до 7 000 €",
-            "salary_min": null,
-            "salary_max": null,
-            "currency": null,
-            "period": null,
-            "salary_basis": null,
-            "source": "HeadHunter RSS",
-            "queries": [
-              "low latency C++"
-            ]
-          }
-        },
-        {
-          "region": "Russia",
-          "query": "HeadHunter public RSS",
-          "raw": {
             "id": "138755993",
             "title": "Senior / Lead Developer (Rust, C/C++, Python)",
             "employer": null,
@@ -64073,11 +64047,33 @@
               "low latency C++"
             ]
           }
+        },
+        {
+          "region": "Russia",
+          "query": "HeadHunter public RSS",
+          "raw": {
+            "id": "134371884",
+            "title": "Старший С++ разработчик (Лимасcол, Кипр)",
+            "employer": null,
+            "region": "Russia",
+            "url": "https://hh.ru/vacancy/134371884",
+            "published_at": null,
+            "description": "Вакансия компании: MetaQuotes Software Corp. Создана: 17.10.2026 Регион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 5 500 до 7 000 €",
+            "salary_min": null,
+            "salary_max": null,
+            "currency": null,
+            "period": null,
+            "salary_basis": null,
+            "source": "HeadHunter RSS",
+            "queries": [
+              "low latency C++"
+            ]
+          }
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:35.685020+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:29:59.977294+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -64095,7 +64091,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-08T23:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 110000,
             "salary_max": 140000,
             "currency": "CHF",
@@ -64116,7 +64112,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-04T23:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 85000,
             "salary_max": 105000,
             "currency": "CHF",
@@ -64137,7 +64133,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-28T09:32:02+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 120000,
             "currency": "CHF",
@@ -64158,7 +64154,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-28T09:32:01+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 120000,
             "currency": "CHF",
@@ -64179,7 +64175,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-28T09:32:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 120000,
             "currency": "CHF",
@@ -64200,7 +64196,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-28T09:31:58+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 130000,
             "currency": "CHF",
@@ -64221,7 +64217,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-28T09:31:57+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 120000,
             "currency": "CHF",
@@ -64242,7 +64238,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-19T22:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 130000,
             "currency": "CHF",
@@ -64263,7 +64259,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-19T22:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 100000,
             "salary_max": 130000,
             "currency": "CHF",
@@ -64284,7 +64280,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-10-13T22:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 120000,
             "salary_max": 160000,
             "currency": "CHF",
@@ -64305,7 +64301,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-06-22T22:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 140000,
             "salary_max": 180000,
             "currency": "CHF",
@@ -64326,7 +64322,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-04-19T22:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 80000,
             "salary_max": 90000,
             "currency": "CHF",
@@ -64347,7 +64343,7 @@
             "location": "Switzerland",
             "country": "CH",
             "source_posted_at": "2025-11-13T23:00:00+00:00",
-            "observed_at": "2026-11-12T19:01:38.467938+00:00",
+            "observed_at": "2026-11-12T19:30:03.248228+00:00",
             "salary_min": 70000,
             "salary_max": 90000,
             "currency": "CHF",
@@ -64358,8 +64354,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:38.467938+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:30:03.248228+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -64404,7 +64400,7 @@
             "source_posted_at": "2026-11-12T07:42:08+00:00",
             "expires_at": "2027-01-11T07:42:07+00:00",
             "expiry_timestamp": 1799653327,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64507,7 +64503,7 @@
             "source_posted_at": "2026-11-11T22:28:03+00:00",
             "expires_at": "2027-01-10T22:28:03+00:00",
             "expiry_timestamp": 1799620083,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64553,7 +64549,7 @@
             "source_posted_at": "2026-10-23T04:28:29+00:00",
             "expires_at": "2026-12-22T04:28:28+00:00",
             "expiry_timestamp": 1797913708,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64661,7 +64657,7 @@
             "source_posted_at": "2026-11-01T12:13:49+00:00",
             "expires_at": "2026-12-13T09:09:37+00:00",
             "expiry_timestamp": 1797152977,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64716,7 +64712,7 @@
             "source_posted_at": "2026-11-05T11:39:21+00:00",
             "expires_at": "2027-01-04T11:39:21+00:00",
             "expiry_timestamp": 1799062761,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64770,7 +64766,7 @@
             "source_posted_at": "2026-09-23T10:04:56+00:00",
             "expires_at": "2026-11-22T10:04:55+00:00",
             "expiry_timestamp": 1795341895,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64878,7 +64874,7 @@
             "source_posted_at": "2026-11-11T22:28:03+00:00",
             "expires_at": "2027-01-10T22:28:03+00:00",
             "expiry_timestamp": 1799620083,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -64979,7 +64975,7 @@
             "source_posted_at": "2026-11-01T12:13:49+00:00",
             "expires_at": "2026-12-13T09:09:37+00:00",
             "expiry_timestamp": 1797152977,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -65034,7 +65030,7 @@
             "source_posted_at": "2026-11-05T11:39:21+00:00",
             "expires_at": "2027-01-04T11:39:21+00:00",
             "expiry_timestamp": 1799062761,
-            "observed_at": "2026-11-12T19:01:38.821871+00:00",
+            "observed_at": "2026-11-12T19:30:03.619350+00:00",
             "seniority": [
               "Senior"
             ],
@@ -65062,8 +65058,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-12T19:01:38.821871+00:00",
-      "retrieved_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:30:03.619350+00:00",
+      "retrieved_at": "2026-11-12T19:23:19.612645+00:00",
       "refresh_policy": "weekly"
     },
     {

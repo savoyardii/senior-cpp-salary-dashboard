@@ -1,10 +1,10 @@
 {
-  "observed_at": "2026-11-12T18:54:28.932806+00:00",
+  "observed_at": "2026-11-12T19:23:19.612645+00:00",
   "fx": {
     "provider": "ExchangeRate-API",
     "base": "USD",
     "updated_at": "Thu, 12 Nov 2026 00:02:31 +0000",
-    "fetched_at": "2026-11-12T18:54:28.973934+00:00",
+    "fetched_at": "2026-11-12T19:23:19.655822+00:00",
     "rates": {
       "USD": 1,
       "CHF": 0.831838,
@@ -27,7 +27,7 @@
       "source": "SuperJob",
       "records": 69,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -36,7 +36,7 @@
       "source": "Работа России",
       "records": 68,
       "qualified_records": 6,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -90,7 +90,7 @@
       "source": "Greenhouse: DV Trading",
       "records": 6,
       "qualified_records": 1,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -99,16 +99,16 @@
       "source": "Greenhouse: DRW",
       "records": 12,
       "qualified_records": 2,
-      "updated_at": "2026-11-12T18:35:16.902436+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
-      "refresh_error": "TimeoutError",
+      "refresh_error": null,
       "refresh_policy": "weekly"
     },
     {
       "source": "Greenhouse: Engineers Gate",
       "records": 1,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -117,16 +117,16 @@
       "source": "Greenhouse: GSR",
       "records": 2,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:35:16.902436+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
-      "refresh_error": "TimeoutError",
+      "refresh_error": null,
       "refresh_policy": "weekly"
     },
     {
       "source": "Greenhouse: iSAM",
       "records": 2,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -135,7 +135,7 @@
       "source": "Greenhouse: Qube Research & Technologies",
       "records": 28,
       "qualified_records": 7,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -144,7 +144,7 @@
       "source": "Greenhouse: Maven Securities",
       "records": 4,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -153,7 +153,7 @@
       "source": "Greenhouse: Point72",
       "records": 3,
       "qualified_records": 1,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -162,7 +162,7 @@
       "source": "Lever: MARGO Group",
       "records": 2,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -171,7 +171,7 @@
       "source": "Lever: Crypto.com",
       "records": 1,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -180,7 +180,7 @@
       "source": "Lever: Wintermute",
       "records": 4,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -189,7 +189,7 @@
       "source": "Lever: Zurich Instruments",
       "records": 0,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -198,7 +198,7 @@
       "source": "Ashby: Teza Technologies",
       "records": 2,
       "qualified_records": 1,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -207,7 +207,7 @@
       "source": "Ashby: TradingHub",
       "records": 1,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -216,7 +216,7 @@
       "source": "Ashby: Smarkets",
       "records": 5,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -225,7 +225,7 @@
       "source": "Ashby: Keyrock",
       "records": 0,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -234,7 +234,7 @@
       "source": "Telegram @cppdevjob",
       "records": 21,
       "qualified_records": 5,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -243,7 +243,7 @@
       "source": "Telegram @c_rabota",
       "records": 24,
       "qualified_records": 4,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -252,7 +252,7 @@
       "source": "Telegram @switzerlanddevjobs",
       "records": 19,
       "qualified_records": 16,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -261,7 +261,7 @@
       "source": "Telegram @devitjobs",
       "records": 1,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -270,7 +270,7 @@
       "source": "HeadHunter RSS",
       "records": 46,
       "qualified_records": 0,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -279,7 +279,7 @@
       "source": "SwissDevJobs",
       "records": 13,
       "qualified_records": 4,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -288,7 +288,7 @@
       "source": "Himalayas",
       "records": 9,
       "qualified_records": 3,
-      "updated_at": "2026-11-12T18:54:28.932806+00:00",
+      "updated_at": "2026-11-12T19:23:19.612645+00:00",
       "status": "queried",
       "refresh_error": null,
       "refresh_policy": "weekly"
@@ -820,7 +820,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8203078002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Greenhouse: Qube Research & Technologies",
@@ -828,7 +828,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8607638002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -1129,7 +1129,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/drweng/jobs/7976003"
           ],
-          "observed_at": "2026-11-12T18:35:16.902436+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Adzuna",
@@ -1206,7 +1206,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/dvtrading/jobs/4721260005"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -1949,7 +1949,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1187847151810/834a1168-b595-11f1-b9fd-bbcf99b669df"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -1979,7 +1979,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1027739001993/f9bb8068-6e2b-11f1-ac73-1996bddbbd0d"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2009,7 +2009,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1027739001993/5069bea8-9b12-11f1-800d-3160d0db64b8"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2039,7 +2039,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1117154036911/9140cdc8-13f3-11f1-a8b6-8123d4ac677e"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2069,7 +2069,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1097746729816/240669a6-c6e0-11f1-aa68-7523fb122f6d"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2099,7 +2099,7 @@
           "urls": [
             "https://trudvsem.ru/vacancy/card/1027739001993/add63fc6-cc52-11f1-83b1-37322656cbc9"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2555,7 +2555,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/drweng/jobs/8359461"
           ],
-          "observed_at": "2026-11-12T18:35:16.902436+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2585,7 +2585,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8052117002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2615,7 +2615,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8932115002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2645,7 +2645,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8857906002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2675,7 +2675,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8117154002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2705,7 +2705,7 @@
           "urls": [
             "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8381639002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2735,7 +2735,7 @@
           "urls": [
             "https://boards.greenhouse.io/point72/jobs/8408288002?gh_jid=8408288002"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2765,7 +2765,7 @@
           "urls": [
             "https://jobs.ashbyhq.com/teza-technologies/28cde40f-178f-45f8-82ca-a913ef8b0812"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2801,7 +2801,7 @@
             "https://t.me/cpp_interview_lib",
             "https://t.me/proglibrary"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @cppdevjob",
@@ -2815,7 +2815,7 @@
             "https://t.me/cpp_interview_lib",
             "https://t.me/proglibrary"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @cppdevjob",
@@ -2828,7 +2828,7 @@
             "https://t.me/cpp_problems_lib",
             "https://t.me/cpp_interview_lib"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @cppdevjob",
@@ -2841,7 +2841,7 @@
             "https://t.me/cpp_problems_lib",
             "https://t.me/cpp_interview_lib"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [
@@ -2864,7 +2864,7 @@
             "https://t.me/cpp_problems_lib",
             "https://t.me/cpp_interview_lib"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "min": 200000,
@@ -2885,7 +2885,7 @@
             "https://t.me/cpp_problems_lib",
             "https://t.me/cpp_interview_lib"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary": [],
@@ -2916,7 +2916,7 @@
             "https://t.me/cppdevjob",
             "https://t.me/eugeniy_ggg"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2950,7 +2950,7 @@
             "https://t.me/best_itjob",
             "https://t.me/it_rab"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -2984,7 +2984,7 @@
             "https://t.me/best_itjob",
             "https://t.me/it_rab"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @c_rabota",
@@ -2997,7 +2997,7 @@
             "https://t.me/best_itjob",
             "https://t.me/it_rab"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3032,7 +3032,7 @@
             "https://t.me/best_itjob",
             "https://t.me/it_rab"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3067,7 +3067,7 @@
             "https://tinyurl.com/5xj2hsfv",
             "https://tinyurl.com/3dvxc26a"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3080,7 +3080,7 @@
             "https://tinyurl.com/2hy2vd7u",
             "https://tinyurl.com/5xj2hsfv"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3092,7 +3092,7 @@
             "https://tinyurl.com/y4nmcf6b",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3104,7 +3104,7 @@
             "https://tinyurl.com/2hy2vd7u",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3116,7 +3116,7 @@
             "https://tinyurl.com/y4nmcf6b",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3151,7 +3151,7 @@
             "https://tinyurl.com/5xj2hsfv",
             "https://tinyurl.com/3dvxc26a"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3164,7 +3164,7 @@
             "https://tinyurl.com/2hy2vd7u",
             "https://tinyurl.com/5xj2hsfv"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3176,7 +3176,7 @@
             "https://tinyurl.com/y4nmcf6b",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3188,7 +3188,7 @@
             "https://tinyurl.com/2hy2vd7u",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3200,7 +3200,7 @@
             "https://tinyurl.com/y4nmcf6b",
             "https://tinyurl.com/ua4vu5r6"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3235,7 +3235,7 @@
             "https://tinyurl.com/3h6jumxn",
             "https://tinyurl.com/yap243w5"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3248,7 +3248,7 @@
             "https://tinyurl.com/3h6jumxn",
             "https://tinyurl.com/yap243w5"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3261,7 +3261,7 @@
             "https://tinyurl.com/3h6jumxn",
             "https://tinyurl.com/3k3f662r"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3274,7 +3274,7 @@
             "https://tinyurl.com/3k3f662r",
             "https://tinyurl.com/3h6jumxn"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3287,7 +3287,7 @@
             "https://tinyurl.com/3k3f662r",
             "https://tinyurl.com/4m5kwtfs"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         },
         {
           "source": "Telegram @switzerlanddevjobs",
@@ -3300,7 +3300,7 @@
             "https://tinyurl.com/3k3f662r",
             "https://tinyurl.com/4m5kwtfs"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3330,7 +3330,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [
@@ -3348,7 +3348,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary": [
@@ -3366,7 +3366,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_estimate": false,
@@ -3392,7 +3392,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Developer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [
@@ -3410,7 +3410,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Developer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary": [
@@ -3428,7 +3428,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Developer-C"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_estimate": false,
@@ -3454,7 +3454,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C-oder-C---Industrial-Systems"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [
@@ -3472,7 +3472,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C-oder-C---Industrial-Systems"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary": [
@@ -3490,7 +3490,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer-C-oder-C---Industrial-Systems"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_estimate": false,
@@ -3516,7 +3516,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Threema-AG-WebRTC-Engineer-100"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [
@@ -3534,7 +3534,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Threema-AG-WebRTC-Engineer-100"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary": [
@@ -3552,7 +3552,7 @@
           "urls": [
             "https://swissdevjobs.ch/jobs/Threema-AG-WebRTC-Engineer-100"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_estimate": false,
@@ -3578,7 +3578,7 @@
           "urls": [
             "https://himalayas.app/companies/fluent-trade-technologies/jobs/senior-c-engineer"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3608,7 +3608,7 @@
           "urls": [
             "https://himalayas.app/companies/startup-talents/jobs/senior-rust-c-backend-engineer-remote-eu"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -3638,7 +3638,7 @@
           "urls": [
             "https://himalayas.app/companies/nvidia/jobs/senior-c-software-engineer-ai-developer-tools"
           ],
-          "observed_at": "2026-11-12T18:54:28.932806+00:00"
+          "observed_at": "2026-11-12T19:23:19.612645+00:00"
         }
       ],
       "salary_candidates": [],
@@ -9379,7 +9379,7 @@
       "urls": [
         "https://tambov.superjob.ru/vakansii/programmist-asutp-51780741.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист АСУТП",
       "employer": "Группа Компаний РУСАГРО",
@@ -9393,7 +9393,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/vizrt-razrabotchik-52173341.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Vizrt разработчик",
       "employer": "Матч ТВ",
@@ -9407,7 +9407,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/game-tools-developer-52186959.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Game Tools Developer (C++)",
       "employer": "Леста Игры",
@@ -9421,7 +9421,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/ui-unreal-engine-developer-52187017.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "UI Unreal Engine Developer",
       "employer": "Леста Игры",
@@ -9435,7 +9435,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/gameplay-developer-52187100.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Gameplay Developer",
       "employer": "Леста Игры",
@@ -9449,7 +9449,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/mod-developer-52187149.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Mod Developer (Python &amp; React)",
       "employer": "Леста Игры",
@@ -9463,7 +9463,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/developer-c-52235265.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Developer C++",
       "employer": "Лаборатория Касперского",
@@ -9477,7 +9477,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/project-manager-52235288.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Project manager",
       "employer": "Лаборатория Касперского",
@@ -9492,7 +9492,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/data-scientist-52266919.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Data Scientist, Корзина товаров",
       "employer": "OZON: Старт карьеры",
@@ -9507,7 +9507,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/embedded-linux-engineer-52280956.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Embedded Linux Engineer",
       "employer": "Автономные Технологии",
@@ -9521,7 +9521,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/stazher-programmist-52298567.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Стажер-программист",
       "employer": "Figma",
@@ -9536,7 +9536,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/inzhener-programmist-52280959.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист (C++/Python)",
       "employer": "Автономные Технологии",
@@ -9550,7 +9550,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/embedded-razrabotchik-52280965.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Embedded разработчик",
       "employer": "Автономные Технологии",
@@ -9564,7 +9564,7 @@
       "urls": [
         "https://krasnoznamensk-mo.superjob.ru/vakansii/inzhener-programmist-2-kategorii-52183641.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист 2 категории",
       "employer": "НПО ОРИОН",
@@ -9579,7 +9579,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/inzhener-programmist-1-kategorii-52183738.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист 1 категории",
       "employer": "НПО ОРИОН",
@@ -9593,7 +9593,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218356.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9608,7 +9608,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218357.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9623,7 +9623,7 @@
       "urls": [
         "https://nsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218358.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9638,7 +9638,7 @@
       "urls": [
         "https://ekaterinburg.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218359.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9653,7 +9653,7 @@
       "urls": [
         "https://kazan.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218360.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9668,7 +9668,7 @@
       "urls": [
         "https://nn.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218361.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9683,7 +9683,7 @@
       "urls": [
         "https://krasnoyarsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218362.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9698,7 +9698,7 @@
       "urls": [
         "https://chelyabinsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218363.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9713,7 +9713,7 @@
       "urls": [
         "https://ufa.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218364.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9728,7 +9728,7 @@
       "urls": [
         "https://krasnodar.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218365.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9743,7 +9743,7 @@
       "urls": [
         "https://samara.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218366.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9758,7 +9758,7 @@
       "urls": [
         "https://rnd.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218367.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9773,7 +9773,7 @@
       "urls": [
         "https://omsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218368.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9788,7 +9788,7 @@
       "urls": [
         "https://voronezh.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218369.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9803,7 +9803,7 @@
       "urls": [
         "https://perm.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218370.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9818,7 +9818,7 @@
       "urls": [
         "https://volgograd.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218371.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9833,7 +9833,7 @@
       "urls": [
         "https://saratov.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218372.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9848,7 +9848,7 @@
       "urls": [
         "https://tyumen.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218373.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9863,7 +9863,7 @@
       "urls": [
         "https://tolyatti.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218374.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -9878,7 +9878,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/golang-razrabotchik-52269486.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Golang разработчик",
       "employer": "F6",
@@ -9892,7 +9892,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/uchitel-informatiki-52285669.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Учитель Информатики",
       "employer": "Школа № 1212 Щукино",
@@ -9907,7 +9907,7 @@
       "urls": [
         "https://ekaterinburg.superjob.ru/vakansii/inzhener-programmist-c-52294194.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист C++",
       "employer": "Группа Синара",
@@ -9921,7 +9921,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/risk-tehnolog-52294312.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Риск-технолог (МСБ)",
       "employer": "Альфа-Банк",
@@ -9937,7 +9937,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/uchitel-informatiki-i-matematiki-52301534.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Учитель информатики и математики",
       "employer": "Школа 887",
@@ -9953,7 +9953,7 @@
       "urls": [
         "https://nn.superjob.ru/vakansii/uchitel-matematiki-52282035.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Учитель математики, физики, информатики",
       "employer": "En+ Group",
@@ -9969,7 +9969,7 @@
       "urls": [
         "https://www.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901214.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -9985,7 +9985,7 @@
       "urls": [
         "https://spb.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901215.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10001,7 +10001,7 @@
       "urls": [
         "https://rnd.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901216.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10017,7 +10017,7 @@
       "urls": [
         "https://lugansk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901217.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10033,7 +10033,7 @@
       "urls": [
         "https://abakan.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901220.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10049,7 +10049,7 @@
       "urls": [
         "https://orenburg.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901221.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10065,7 +10065,7 @@
       "urls": [
         "https://omsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901222.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10081,7 +10081,7 @@
       "urls": [
         "https://stavropol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-51901224.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту (служба в ВМП ДНР)",
       "employer": "СТОПФАЕР",
@@ -10097,7 +10097,7 @@
       "urls": [
         "https://makhachkala.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218375.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10112,7 +10112,7 @@
       "urls": [
         "https://barnaul.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218376.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10127,7 +10127,7 @@
       "urls": [
         "https://izhevsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218377.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10142,7 +10142,7 @@
       "urls": [
         "https://habarovsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218378.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10157,7 +10157,7 @@
       "urls": [
         "https://ulyanovsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218379.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10172,7 +10172,7 @@
       "urls": [
         "https://irkutsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218380.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10187,7 +10187,7 @@
       "urls": [
         "https://stavropol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218381.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10202,7 +10202,7 @@
       "urls": [
         "https://sevastopol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218382.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10217,7 +10217,7 @@
       "urls": [
         "https://simferopol.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218383.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10232,7 +10232,7 @@
       "urls": [
         "https://tomsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218384.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10247,7 +10247,7 @@
       "urls": [
         "https://kemerovo.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218385.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10262,7 +10262,7 @@
       "urls": [
         "https://orenburg.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218386.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10277,7 +10277,7 @@
       "urls": [
         "https://novokuznetsk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218387.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10292,7 +10292,7 @@
       "urls": [
         "https://ryazan.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218388.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10307,7 +10307,7 @@
       "urls": [
         "https://cheboksary.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218389.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10322,7 +10322,7 @@
       "urls": [
         "https://ulan-ude.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218390.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10337,7 +10337,7 @@
       "urls": [
         "https://kaliningrad.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218391.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10352,7 +10352,7 @@
       "urls": [
         "https://penza.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218392.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10367,7 +10367,7 @@
       "urls": [
         "https://kursk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218393.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10382,7 +10382,7 @@
       "urls": [
         "https://belgorod.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218394.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10397,7 +10397,7 @@
       "urls": [
         "https://bryansk.superjob.ru/vakansii/voennosluzhaschij-po-kontraktu-52218395.html"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Военнослужащий по контракту / Крым, отношение, военные и тыловые специальности, водитель, повар",
       "employer": "СТОПФАЕР",
@@ -10412,7 +10412,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1087017011113/6b8ac940-ddb6-11f1-8848-6f99e28577a1"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик C++",
       "employer": "АО \"НПФ \"МИКРАН\"",
@@ -10426,7 +10426,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1037804018614/20872cf8-9553-11f1-9253-c35c7c22d563"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик C++/QML",
       "employer": "ООО \"СТЦ\"",
@@ -10440,7 +10440,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1037804018614/90a759a8-6b8e-11f0-a528-d549be31d974"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Junior C++ разработчик",
       "employer": "ООО \"СТЦ\"",
@@ -10455,7 +10455,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1026200000111/4196d9e8-3978-11f1-9a2a-17c964ea3db7"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик C#/NET.",
       "employer": "ПРИО-ВНЕШТОРГБАНК (ПАО)",
@@ -10470,7 +10470,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1156658049613/31ea3e80-d377-11f1-8095-7786b3ff4397"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "ООО \"СОФТ-ГОРИЗОНТ\"",
@@ -10484,7 +10484,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1055008001201/42572f98-18fc-11ef-b501-cb26dff57dd7"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "ООО \"КОРИФЕЙ",
@@ -10499,7 +10499,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7eb8e970-e5bf-11e5-bc70-4376a32b3f45/d82f68b8-15cd-11f0-a940-e7d0d2cf29b1"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер (отд.4)",
       "employer": "АО \"ЦКБА\"",
@@ -10513,7 +10513,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1167746822946/79b2cbf8-4953-11f1-b4d8-b7a0ba5a93f0"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Бизнес-аналитик ИТ",
       "employer": "ООО \"РСХБ-ИНТЕХ\"",
@@ -10529,7 +10529,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/0ad1f490-326a-11f1-b443-0128ed62de58"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист микроконтроллеров",
       "employer": "Миракс",
@@ -10544,7 +10544,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/cd673dc0-d1e4-11f1-b4a4-47d9292de166"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Секретарь на ресепшн",
       "employer": "Новый Старт",
@@ -10560,7 +10560,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1025203565166/9c73f9ef-55a0-11f0-9d55-d549be31d974"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-разработчик",
       "employer": "ООО \"ВЗОР\"",
@@ -10574,7 +10574,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/09e36d74-d45e-11f1-8891-d72479708e81"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Руководитель группы разработки",
       "employer": "Стек-ИТ",
@@ -10589,7 +10589,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/aa025cd0-cdf1-11f1-a06f-fbf8ae5f6e59"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий менеджер по работе с клиентами (финансовый сектор) [МТС Веб Сервисы]",
       "employer": "МТС",
@@ -10604,7 +10604,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/86c0b934-ce0d-11f1-acc4-3f3a02315f4e"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Сетевой инженер [MWS Cloud Platform]",
       "employer": "МТС",
@@ -10619,7 +10619,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027402317700/c928b888-76c5-11f1-a41f-c3af44321512"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "АО \"СМЭУ\"",
@@ -10634,7 +10634,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/5147746474134/9a6783c4-2443-11f1-89a6-53287c563eeb"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "IT-директор мобильного приложения",
       "employer": "ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ \"СЕРВИС ОФОРМЛЕНИЯ НЕДВИЖИМОСТИ\"",
@@ -10649,7 +10649,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1242200015166/7bee45a0-5e46-11f0-bad6-d549be31d974"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист",
       "employer": "ООО \"ПИЭСПИ ИНТЕРНЕШНЛ\"",
@@ -10664,7 +10664,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027801525608/bc44f698-a075-11f1-ae19-97b17645c340"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист (middle) C/C++",
       "employer": "ПАО \"ИНТЕЛТЕХ\"",
@@ -10678,7 +10678,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/8ad8f205-d31a-11f1-a28e-952c60408284"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист C++",
       "employer": "Группа Синара",
@@ -10692,7 +10692,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1037804018614/107fd9b8-712c-11f1-8093-61b073a087e6"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист C/С++ (STM32)",
       "employer": "ООО \"СТЦ\"",
@@ -10706,7 +10706,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1217800031195/d263076d-d391-11f1-97b0-2d1ddb2e4006"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "ООО \"НЭК ТЕХ\"",
@@ -10720,7 +10720,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1087017011113/3f0a3720-ddb1-11f1-87a4-09d0e8c84613"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер по верификации FPGA",
       "employer": "АО \"НПФ \"МИКРАН\"",
@@ -10735,7 +10735,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/43801f60-11ce-11ef-be31-3950de1bc4b3"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-электроник 2 категории (управления 453)",
       "employer": "РЕШЕТНЁВ",
@@ -10750,7 +10750,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1023402464403/e26e6eb8-d16b-11f1-bddd-75870adb5ddc"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Преподаватель (в колледжах, университетах и других вузах)",
       "employer": "ГАПОУ \"ВКУИНТ ИМ. Ю. ГАГАРИНА\"",
@@ -10766,7 +10766,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1141831004072/4fc79559-e954-11f0-b96a-d92b1f162aa8"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер - программист",
       "employer": "ООО КОНЦЕРН \"АКСИОН\"",
@@ -10780,7 +10780,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/9d197b40-2d81-11f1-ac54-c7fb2a974cd9"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер управления КТВ",
       "employer": "МТС",
@@ -10795,7 +10795,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1136733017354/089c6e91-8b20-11f1-aeca-c9464de5d4ac"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-технолог",
       "employer": "ООО \"РТС\"",
@@ -10810,7 +10810,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1136733017354/a8d30bd9-5fec-11f1-8c7d-0f19594344d3"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер-технолог",
       "employer": "ООО \"РТС\"",
@@ -10824,7 +10824,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1077847477740/2bdfe395-a38e-11ed-9eaf-ed798474fbe2"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-электроник",
       "employer": "АО \"НПО \"СПАРК\"",
@@ -10838,7 +10838,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1097746763102/97012478-a85f-11f1-8a32-2b6903e6a9c2"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Начальник отдела разработки программного обеспечения",
       "employer": "АО \"НПП \"САЛЮТ\"",
@@ -10853,7 +10853,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1192536002900/0b217208-7382-11f1-a2ba-317386bbe7a2"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Риелтор/агент по недвижимости",
       "employer": "ООО \"МЕТРИКА\"",
@@ -10869,7 +10869,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1021401004877/ac606248-e8e4-11ef-a95d-e7d0d2cf29b1"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер по автоматизированным системам управления технологией производства (АСУ ТП)",
       "employer": "ООО \"НМ\"",
@@ -10883,7 +10883,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1236300023849/0ed70a47-c724-11f1-aa68-7523fb122f6d"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер по машинному обучению",
       "employer": "ООО \"ФИНТЕХ-МАРКЕТ\"",
@@ -10897,7 +10897,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1076164014805/e6e50bd3-c40f-11f1-9dff-97d306130813"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист C#",
       "employer": "ООО \"ОБЕРМЕЙСТЕР\"",
@@ -10912,7 +10912,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1107232016583/06b358b8-76d3-11f1-a41f-c3af44321512"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист C#",
       "employer": "ООО \"СТРОИТЕЛЬНЫЙ ДВОР\"",
@@ -10927,7 +10927,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1157847290985/809c81d8-188a-11f1-8162-0bc462b2a22d"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист C++",
       "employer": "АО \"ОКЕНИТ\"",
@@ -10941,7 +10941,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1226600012330/9aa3b5d0-7812-11f0-b2d9-cb26dff57dd7"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист C++",
       "employer": "ООО \"РЕГЛАБ\"",
@@ -10955,7 +10955,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1226600012330/1f7fff18-780f-11f0-b2d9-cb26dff57dd7"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист C#",
       "employer": "ООО \"РЕГЛАБ\"",
@@ -10969,7 +10969,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1037835069986/12281070-d9f0-11f1-a92b-0daf2d824c6c"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Администратор 1С",
       "employer": "ООО \"ТРАНСОЙЛ\"",
@@ -10985,7 +10985,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027739001993/0d3d6e48-eed1-11ef-b3ec-e7d0d2cf29b1"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Заместитель начальника отдела по разработке на С++",
       "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
@@ -11000,7 +11000,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027807573925/889ca4d0-3330-11f1-bae7-834137f14917"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Учитель информатики и ИКТ",
       "employer": "ГБОУ ШКОЛА № 634 С УГЛУБЛЕННЫМ ИЗУЧЕНИЕМ АНГЛИЙСКОГО ЯЗЫКА ПРИМОРСКОГО РАЙОНА САНКТ-ПЕТЕРБУРГА",
@@ -11015,7 +11015,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1166952054609/0a318120-2dd0-11f1-8ac2-61ac2858f806"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер-программист",
       "employer": "ООО \"КСК ЭЛКОМ\"",
@@ -11029,7 +11029,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68b4da84-d2c1-11f1-b4a4-47d9292de166"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
       "employer": "Самарский филиал ООО РН-Проектирование Добыча",
@@ -11044,7 +11044,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/68a263f4-d2c1-11f1-b4a4-47d9292de166"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Главный специалист Авторского надзора в Отдел проектирования подстанций (вахта)",
       "employer": "Самарский филиал ООО РН-Проектирование Добыча",
@@ -11059,7 +11059,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/4ef4d2d4-ace2-11f1-9fdd-b1b3beb9d7ff"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Слесарь строительный",
       "employer": "МФТИ",
@@ -11075,7 +11075,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/5147746474134/9b241c30-d6ac-11f1-8891-d72479708e81"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Механик (литейное производство)",
       "employer": "ООО \"Джобкарт\"",
@@ -11091,7 +11091,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/7c1206d0-d62b-11f1-8891-d72479708e81"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Директор представительства",
       "employer": "Образовательный холдинг СИНЕРГИЯ",
@@ -11107,7 +11107,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/298122b0-d62c-11f1-b2ef-ab79fed554e9"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Директор представительства",
       "employer": "Образовательный холдинг СИНЕРГИЯ",
@@ -11123,7 +11123,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/06eea425-cddf-11f1-a06f-fbf8ae5f6e59"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор плавления жиров",
       "employer": "ГК Русагро",
@@ -11139,7 +11139,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/9fa850e0-cd4d-11f1-a4f3-d96998355502"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Контролер по отгрузке готовой продукции",
       "employer": "ГК Русагро",
@@ -11155,7 +11155,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/539b8400-cd4e-11f1-b79b-5f0ce528fb8f"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор мониторинга",
       "employer": "ГК Русагро",
@@ -11171,7 +11171,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/9beb48e5-cd4d-11f1-a06f-fbf8ae5f6e59"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Аппаратчик",
       "employer": "ГК Русагро",
@@ -11187,7 +11187,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/f95bcf15-acf3-11f1-8638-4995cd87d3e4"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Водитель (форд транзит)",
       "employer": "ФГУП «РАДОН»",
@@ -11203,7 +11203,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/a34bdd75-cd4d-11f1-b79b-5f0ce528fb8f"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор сушильных установок",
       "employer": "ГК Русагро",
@@ -11219,7 +11219,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/904b0ed5-cd4d-11f1-a4f3-d96998355502"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор-наладчик",
       "employer": "ГК Русагро",
@@ -11235,7 +11235,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/e7f27075-cd4c-11f1-b79b-5f0ce528fb8f"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор оборудования (гидрогенизаторщик)",
       "employer": "ГК Русагро",
@@ -11251,7 +11251,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/e209dd15-cd24-11f1-acc4-3f3a02315f4e"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Оператор пульта управления",
       "employer": "ГК Русагро",
@@ -11267,7 +11267,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1164350073645/2fa88820-b5b8-11f1-b9fd-bbcf99b669df"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Менеджер (в торговле)",
       "employer": "ООО \"СОНЛАЙТ\"",
@@ -11283,7 +11283,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1027700404797/b3bc8af0-d1e5-11f1-a28e-952c60408284"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Механик (литейное производство)",
       "employer": "JOBCART.RU",
@@ -11299,7 +11299,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/1097604013781/a9d7e620-de73-11f1-8798-75bc1c1c1094"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик RPA",
       "employer": "ООО \"СЕВЕРСТАЛЬ-ЦЕНТР ЕДИНОГО СЕРВИСА\"",
@@ -11314,7 +11314,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/2b20b634-b1bf-11f1-965d-c9051aad3960"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
       "employer": "МФТИ",
@@ -11328,7 +11328,7 @@
       "urls": [
         "https://trudvsem.ru/vacancy/card/7226c750-02f1-11eb-8600-bfd13399602c/3081f904-b588-11f1-823b-a9fe92e671b2"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Специалист по робототехнике (автономное движение платформы)",
       "employer": "МФТИ",
@@ -11344,7 +11344,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/dvtrading/jobs/4695141005"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Software Developer (DV Equities)",
       "employer": "DV Trading",
@@ -11358,7 +11358,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/dvtrading/jobs/4671558005"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Global Currency Hedge Trader",
       "employer": "DV Trading",
@@ -11373,7 +11373,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/dvtrading/jobs/4742955005"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Graduate Software Engineer (DV Commodities)",
       "employer": "DV Trading",
@@ -11389,7 +11389,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/dvtrading/jobs/4744284005"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Software Engineer (DV Commodities)",
       "employer": "DV Trading",
@@ -11403,7 +11403,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/dvtrading/jobs/4719125005"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer Intern - Summer 2027 (DV Commodities)",
       "employer": "DV Trading",
@@ -11418,7 +11418,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/8126077"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Cloud Performance Engineer",
       "employer": "DRW",
@@ -11433,7 +11433,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7912433"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Equity Dispersion Trader",
       "employer": "DRW",
@@ -11448,7 +11448,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7929846"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Trading Analyst",
       "employer": "DRW",
@@ -11463,7 +11463,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7957241"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Trading Analyst",
       "employer": "DRW",
@@ -11479,7 +11479,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7377981"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Research Engineer (Options)",
       "employer": "DRW",
@@ -11493,7 +11493,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7175503"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Senior Software Engineer, Cumberland/Options Data",
       "employer": "DRW",
@@ -11507,7 +11507,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/8007851"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Developer",
       "employer": "DRW",
@@ -11521,7 +11521,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7942281"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Developer Intern",
       "employer": "DRW",
@@ -11536,7 +11536,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7797389"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer - Cumberland/Options Front Office Systems",
       "employer": "DRW",
@@ -11551,7 +11551,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/drweng/jobs/7375738"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer, Research – Cumberland Systematic",
       "employer": "DRW",
@@ -11566,7 +11566,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/engineersgate/jobs/8233715"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer",
       "employer": "Engineers Gate",
@@ -11580,7 +11580,7 @@
       "urls": [
         "https://job-boards.eu.greenhouse.io/gsrmarkets/jobs/4978886101"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quant Developer",
       "employer": "GSR",
@@ -11595,7 +11595,7 @@
       "urls": [
         "https://job-boards.eu.greenhouse.io/gsrmarkets/jobs/4988265101"
       ],
-      "observed_at": "2026-11-12T18:35:16.902436+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Senior Low Latency Engineer",
       "employer": "GSR",
@@ -11609,7 +11609,7 @@
       "urls": [
         "https://job-boards.eu.greenhouse.io/isam/jobs/4922213101"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer - iSAM Securities ",
       "employer": "iSAM",
@@ -11624,7 +11624,7 @@
       "urls": [
         "https://job-boards.eu.greenhouse.io/isam/jobs/4969754101"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Trader",
       "employer": "iSAM",
@@ -11640,7 +11640,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8777855002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "2027 – Internship or Graduate, FPGA Engineering ",
       "employer": "Qube Research & Technologies",
@@ -11655,7 +11655,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8785833002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "2027 - Internship, Quantitative Research and Trading",
       "employer": "Qube Research & Technologies",
@@ -11672,7 +11672,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8773084002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "2027 - Internship, Software Engineering and Quantitative Development",
       "employer": "Qube Research & Technologies",
@@ -11687,7 +11687,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8931696002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Quantitative Developer - ETF Market Making",
       "employer": "Qube Research & Technologies",
@@ -11701,7 +11701,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/6557829002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Crypto Market Access Lead - C++",
       "employer": "Qube Research & Technologies",
@@ -11715,7 +11715,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/7746883002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Digital Assets - Quantitative Researcher",
       "employer": "Qube Research & Technologies",
@@ -11730,7 +11730,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8150185002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Front Office Pricing Modelling Quant - Rates Volatility",
       "employer": "Qube Research & Technologies",
@@ -11744,7 +11744,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8088244002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Front Office Quantitative Developer – Digital Assets",
       "employer": "Qube Research & Technologies",
@@ -11758,7 +11758,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8927982002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Market Access Platform Lead",
       "employer": "Qube Research & Technologies",
@@ -11772,7 +11772,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8381640002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Product Security Engineer",
       "employer": "Qube Research & Technologies",
@@ -11786,7 +11786,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8911518002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer - C++",
       "employer": "Qube Research & Technologies",
@@ -11800,7 +11800,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8225791002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer - Digital Assets (C++)",
       "employer": "Qube Research & Technologies",
@@ -11814,7 +11814,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8883229002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer - Front End, React/C#",
       "employer": "Qube Research & Technologies",
@@ -11825,12 +11825,12 @@
     },
     {
       "source": "Greenhouse: Qube Research & Technologies",
-      "id": "4104778002",
+      "id": "6845873002",
       "urls": [
-        "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/4104778002"
+        "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/6845873002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
-      "region": "London, UK",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
+      "region": "Switzerland",
       "title": "Quantitative Researcher",
       "employer": "Qube Research & Technologies",
       "reasons": [
@@ -11840,12 +11840,12 @@
     },
     {
       "source": "Greenhouse: Qube Research & Technologies",
-      "id": "6845873002",
+      "id": "4104778002",
       "urls": [
-        "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/6845873002"
+        "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/4104778002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
-      "region": "Switzerland",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
+      "region": "London, UK",
       "title": "Quantitative Researcher",
       "employer": "Qube Research & Technologies",
       "reasons": [
@@ -11859,7 +11859,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8154555002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Researcher – PhD & Postdoc Opportunities",
       "employer": "Qube Research & Technologies",
@@ -11874,7 +11874,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8185063002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Senior Linux Platform Engineer - Trading Infrastructure",
       "employer": "Qube Research & Technologies",
@@ -11888,7 +11888,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8883144002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer - Research Platforms",
       "employer": "Qube Research & Technologies",
@@ -11902,7 +11902,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8931599002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer – Systems & Infrastructure",
       "employer": "Qube Research & Technologies",
@@ -11916,7 +11916,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8939127002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Trading Systems Engineer",
       "employer": "Qube Research & Technologies",
@@ -11931,7 +11931,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/8159393002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Trading Systems Reliability Engineer",
       "employer": "Qube Research & Technologies",
@@ -11945,7 +11945,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/mavensecuritiesholdingltd/jobs/6049003"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Developer - Options Market Making - Relocate to Chicago",
       "employer": "Maven Securities",
@@ -11959,7 +11959,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/mavensecuritiesholdingltd/jobs/7163447"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Python Developer - Data & Analytics Team - Options Market Making",
       "employer": "Maven Securities",
@@ -11974,7 +11974,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/mavensecuritiesholdingltd/jobs/8263271"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Trading Analyst - QPT (Quantitative Positional Trading)",
       "employer": "Maven Securities",
@@ -11990,7 +11990,7 @@
       "urls": [
         "https://job-boards.greenhouse.io/mavensecuritiesholdingltd/jobs/8230037"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Women in Technology Spring Week 2027",
       "employer": "Maven Securities",
@@ -12006,7 +12006,7 @@
       "urls": [
         "https://boards.greenhouse.io/point72/jobs/7318012002?gh_jid=7318012002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Cubist Quantitative Researcher",
       "employer": "Point72",
@@ -12022,7 +12022,7 @@
       "urls": [
         "https://boards.greenhouse.io/point72/jobs/7297657002?gh_jid=7297657002"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Researcher - Intern",
       "employer": "Point72",
@@ -12039,7 +12039,7 @@
       "urls": [
         "https://jobs.lever.co/margo-group/06955d46-68ce-454b-8338-584eaa3589a7"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C# / .NET Developer – Front Office, Electronic & Low Latency Trading Systems",
       "employer": "Lever: MARGO Group",
@@ -12055,7 +12055,7 @@
       "urls": [
         "https://jobs.lever.co/margo-group/f93cf28e-4336-4ab3-8e75-d2efdea3718b"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Developer – High Frequency Trading (HFT Systems)",
       "employer": "Lever: MARGO Group",
@@ -12070,7 +12070,7 @@
       "urls": [
         "https://jobs.lever.co/crypto/6e73f32b-5892-441f-88d6-8748ad0aeb4d"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++  Trading Developer, Quant Trading Team",
       "employer": "Lever: Crypto.com",
@@ -12084,7 +12084,7 @@
       "urls": [
         "https://jobs.lever.co/wintermute-trading/4cab7a75-4304-4590-90c5-6755dbd97d36"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Quant Developer",
       "employer": "Lever: Wintermute",
@@ -12099,7 +12099,7 @@
       "urls": [
         "https://jobs.lever.co/wintermute-trading/89c2714e-7748-42ab-a03c-36fc821f7362"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Quant Developer - Options",
       "employer": "Lever: Wintermute",
@@ -12114,7 +12114,7 @@
       "urls": [
         "https://jobs.lever.co/wintermute-trading/8c31337e-9989-4cf2-9cab-e876cbc96f10"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "C++ Trading Platform Developer",
       "employer": "Lever: Wintermute",
@@ -12129,7 +12129,7 @@
       "urls": [
         "https://jobs.lever.co/wintermute-trading/d059ea72-e3d2-42ce-bbb3-d47531e0c933"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Core Developer (Python)",
       "employer": "Lever: Wintermute",
@@ -12144,7 +12144,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/teza-technologies/7319556d-40bf-442e-bb78-e658e938a7a3"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Researcher, PhD",
       "employer": "Ashby: Teza Technologies",
@@ -12160,7 +12160,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/tradinghub/10a15c19-9c9e-4dda-b95c-e2936d618dea"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer",
       "employer": "Ashby: TradingHub",
@@ -12175,7 +12175,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/smarkets/aaaf901f-77c0-4b35-9240-ed4cfa668ba9"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Software Engineer",
       "employer": "Ashby: Smarkets",
@@ -12191,7 +12191,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/smarkets/4b43e52a-5b3d-4e33-86fe-3af2c21a5434"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Senior Backend Software Engineer",
       "employer": "Ashby: Smarkets",
@@ -12205,7 +12205,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/smarkets/59c8a1d1-25b6-4350-840c-9eb370d14330"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Engineering Team Lead/Manager",
       "employer": "Ashby: Smarkets",
@@ -12220,7 +12220,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/smarkets/3038bed9-d75e-45b9-9283-9db6b4ab93f8"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Data Engineer",
       "employer": "Ashby: Smarkets",
@@ -12235,7 +12235,7 @@
       "urls": [
         "https://jobs.ashbyhq.com/smarkets/2f6612ce-41c7-4011-9357-1c5c5f7cb215"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Dev Ops Engineer",
       "employer": "Ashby: Smarkets",
@@ -12255,7 +12255,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Top Selection ищет C-разработчика для телефонии и медиастриминга",
       "employer": "",
@@ -12277,7 +12277,7 @@
         "https://t.me/cpp_interview_lib",
         "https://t.me/proglibrary"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Артис ищет C/C++-разработчика в команду offensive security",
       "employer": "",
@@ -12297,7 +12297,7 @@
         "https://t.me/cpp_interview_lib",
         "https://t.me/proglibrary"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Vital Partners ищет Middle C/C++ с зарплатой до 320 тысяч на руки",
       "employer": "",
@@ -12317,7 +12317,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "☕️ Программист C++",
       "employer": "",
@@ -12337,7 +12337,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "⚡️ C/C++ Developer",
       "employer": "",
@@ -12357,7 +12357,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🤨 Разработчик C++",
       "employer": "",
@@ -12374,7 +12374,7 @@
         "https://t.me/cppdevjob",
         "https://t.me/HR_IrinaIL"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🔥 Руководитель / Начальник отдела разработки ПО (C++)",
       "employer": "",
@@ -12394,7 +12394,7 @@
         "https://proglib.academy/ai-agents",
         "https://proglib.academy/?utm_source=telegram&amp;utm_medium=posev&amp;utm_campaign=course_gift_2&amp;utm_content=cppdevjob"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "💥 ИИ для разработчиков — применение нейросетей в повседневной разработке: работа с кодом, тестирование и ревью.",
       "employer": "",
@@ -12413,7 +12413,7 @@
         "https://proglib.academy/ai-agents",
         "https://proglib.academy/?utm_source=telegram&amp;utm_medium=posev&amp;utm_campaign=course_gift_3&amp;utm_content=cppdevjob"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "💥 ИИ для разработчиков — применение нейросетей в повседневной разработке: работа с кодом, тестирование и ревью.",
       "employer": "",
@@ -12433,7 +12433,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "😏 Разработчик C++",
       "employer": "",
@@ -12452,7 +12452,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🗺 Разработчик С++/QT",
       "employer": "",
@@ -12472,7 +12472,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🔫 C/C++ разработчик",
       "employer": "",
@@ -12492,7 +12492,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🌉C++-разработчик (Chromium)",
       "employer": "",
@@ -12512,7 +12512,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "⌨️ Backend-разработчик (Rust, C++)",
       "employer": "",
@@ -12532,7 +12532,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "🎈 C++ разработчик (QT)",
       "employer": "",
@@ -12552,7 +12552,7 @@
         "https://t.me/cpp_problems_lib",
         "https://t.me/cpp_interview_lib"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "⌨️ Ведущий системный программист С/С++ QNX",
       "employer": "",
@@ -12570,7 +12570,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "DevOps-инженер (Middle/Senior)",
       "employer": "",
@@ -12588,7 +12588,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Младший разработчик / Junior C++",
       "employer": "",
@@ -12607,7 +12607,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист С (С++) в группу системной разработки",
       "employer": "",
@@ -12625,7 +12625,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Backend разработчик",
       "employer": "",
@@ -12641,7 +12641,7 @@
         "https://t.me/c_rabota",
         "https://t.me/+tfcQIEyo9UcwN2Zi"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "C/C++ Работа вакансии",
       "employer": "",
@@ -12661,7 +12661,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик системы компьютерного зрения на C++",
       "employer": "",
@@ -12679,7 +12679,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист C++ Software Engineer – Platform (Embedded)",
       "employer": "",
@@ -12697,7 +12697,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик/системный программист C/C++",
       "employer": "",
@@ -12716,7 +12716,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
       "employer": "",
@@ -12734,7 +12734,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик frontend, Qt",
       "employer": "",
@@ -12752,7 +12752,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "-Проводить код-ревью, внедрять и поддерживать инженерные практики (кодстайл, тестирование, CI/CD, документация), заботится о надежности и сопровождаемости системы",
       "employer": "",
@@ -12770,7 +12770,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик С++ (Linux)",
       "employer": "",
@@ -12789,7 +12789,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Системный программист C/C++ (Windows)",
       "employer": "",
@@ -12808,7 +12808,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "C++ Developer (VoIP/Телеком)",
       "employer": "",
@@ -12826,7 +12826,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Middle разработчик C/C++ (гибрид из Мск)",
       "employer": "",
@@ -12844,7 +12844,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "C/C++ developer (Junior)",
       "employer": "",
@@ -12864,7 +12864,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Разработчик C# /.NET (WPF, EF Core, SQL) | Удаленно",
       "employer": "Удаленно",
@@ -12884,7 +12884,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Senior.Net разработчик",
       "employer": "",
@@ -12903,7 +12903,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Системный разработчик (стажёр) в команду умных устройств",
       "employer": "",
@@ -12923,7 +12923,7 @@
         "https://t.me/best_itjob",
         "https://t.me/it_rab"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "С++ Developer",
       "employer": "",
@@ -12941,7 +12941,7 @@
         "https://tinyurl.com/y4nmcf6b",
         "https://tinyurl.com/ua4vu5r6"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "C++ Engineer – Trading Systems | Rockstar Recruiting AG⁣",
       "employer": "Rockstar Recruiting AG⁣",
@@ -12959,7 +12959,7 @@
         "https://tinyurl.com/2hy2vd7u",
         "https://tinyurl.com/ua4vu5r6"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "C++ Engineer – Trading Systems | Rockstar Recruiting AG⁣",
       "employer": "Rockstar Recruiting AG⁣",
@@ -12977,7 +12977,7 @@
         "https://tinyurl.com/y4nmcf6b",
         "https://tinyurl.com/ua4vu5r6"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "C++ Engineer – Trading Systems | Rockstar Recruiting AG⁣",
       "employer": "Rockstar Recruiting AG⁣",
@@ -12996,7 +12996,7 @@
         "https://tinyurl.com/26579ef2",
         "https://tinyurl.com/39yy2ac5"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "London, UK",
       "title": "Quantitative Developer – Python/Java, Market Risk & FRTB | CBSbutler Holdings Limited trading as CBSbutler⁣",
       "employer": "CBSbutler Holdings Limited trading as CBSbutler⁣",
@@ -13011,25 +13011,9 @@
       "urls": [
         "https://hh.ru/vacancy/139431460"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Frontend-разработчик (Desktop / Electron) в VoiceOS",
-      "employer": "",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "seniority_not_established",
-        "inactive_or_old"
-      ]
-    },
-    {
-      "source": "HeadHunter RSS",
-      "id": "139375198",
-      "urls": [
-        "https://hh.ru/vacancy/139375198"
-      ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
-      "region": "Russia",
-      "title": "Системный аналитик (Software & Hardware)",
       "employer": "",
       "reasons": [
         "cpp_not_core_requirement",
@@ -13043,9 +13027,25 @@
       "urls": [
         "https://hh.ru/vacancy/139192339"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист разработчик",
+      "employer": "",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "seniority_not_established",
+        "inactive_or_old"
+      ]
+    },
+    {
+      "source": "HeadHunter RSS",
+      "id": "139375198",
+      "urls": [
+        "https://hh.ru/vacancy/139375198"
+      ],
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
+      "region": "Russia",
+      "title": "Системный аналитик (Software & Hardware)",
       "employer": "",
       "reasons": [
         "cpp_not_core_requirement",
@@ -13059,7 +13059,7 @@
       "urls": [
         "https://hh.ru/vacancy/139114920"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Junior Golang разработчик",
       "employer": "",
@@ -13076,7 +13076,7 @@
       "urls": [
         "https://hh.ru/vacancy/139211052"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Системный аналитик (Robotics Domain)",
       "employer": "",
@@ -13093,7 +13093,7 @@
       "urls": [
         "https://hh.ru/vacancy/139363156"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Программист С++ Linux (middle +\\senior)",
       "employer": "",
@@ -13107,7 +13107,7 @@
       "urls": [
         "https://hh.ru/vacancy/138895372"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-тестировщик / QA-Engineer",
       "employer": "",
@@ -13123,7 +13123,7 @@
       "urls": [
         "https://hh.ru/vacancy/139287193"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер 1 категории службы информационых технологий",
       "employer": "",
@@ -13139,7 +13139,7 @@
       "urls": [
         "https://hh.ru/vacancy/139151750"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "",
@@ -13155,7 +13155,7 @@
       "urls": [
         "https://hh.ru/vacancy/139352221"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Middle Backend Developer TypeScript (node.js)",
       "employer": "",
@@ -13171,7 +13171,7 @@
       "urls": [
         "https://hh.ru/vacancy/139393417"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Бизнес-аналитик",
       "employer": "",
@@ -13188,7 +13188,7 @@
       "urls": [
         "https://hh.ru/vacancy/139281391"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-программист",
       "employer": "",
@@ -13204,7 +13204,7 @@
       "urls": [
         "https://hh.ru/vacancy/139375212"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер по тестированию программно-аппаратных комплексов",
       "employer": "",
@@ -13220,7 +13220,7 @@
       "urls": [
         "https://hh.ru/vacancy/139213538"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Computer Vision Engineer (intern/junior)",
       "employer": "",
@@ -13237,7 +13237,7 @@
       "urls": [
         "https://hh.ru/vacancy/139163876"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Тестировщик ПО",
       "employer": "",
@@ -13254,7 +13254,7 @@
       "urls": [
         "https://hh.ru/vacancy/139124965"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Backend-разработчик",
       "employer": "",
@@ -13270,7 +13270,7 @@
       "urls": [
         "https://hh.ru/vacancy/139160728"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Python Backend Engineer",
       "employer": "",
@@ -13286,7 +13286,7 @@
       "urls": [
         "https://hh.ru/vacancy/139157762"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Заместитель генерального директора по техническому развитию (СТО)",
       "employer": "",
@@ -13303,7 +13303,7 @@
       "urls": [
         "https://hh.ru/vacancy/139360134"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Руководитель группы разработки",
       "employer": "",
@@ -13320,7 +13320,7 @@
       "urls": [
         "https://hh.ru/vacancy/139268842"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Android-разработчик (AOSP)",
       "employer": "",
@@ -13336,7 +13336,7 @@
       "urls": [
         "https://hh.ru/vacancy/138745259"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Middle C++ разработчик",
       "employer": "",
@@ -13351,7 +13351,7 @@
       "urls": [
         "https://hh.ru/vacancy/139281829"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "C++-разработчик (senior, highload)",
       "employer": "",
@@ -13365,7 +13365,7 @@
       "urls": [
         "https://hh.ru/vacancy/139411085"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Machine Learning Engineer (Computer Vision)",
       "employer": "",
@@ -13382,7 +13382,7 @@
       "urls": [
         "https://hh.ru/vacancy/139207956"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Quant trader",
       "employer": "",
@@ -13399,7 +13399,7 @@
       "urls": [
         "https://hh.ru/vacancy/139339786"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Fullstack .NET Developer (Senior)",
       "employer": "",
@@ -13414,7 +13414,7 @@
       "urls": [
         "https://hh.ru/vacancy/139326350"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "C++ / Rust Developer (Middle / Senior) HFT",
       "employer": "",
@@ -13428,9 +13428,24 @@
       "urls": [
         "https://hh.ru/vacancy/139415015"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий программист",
+      "employer": "",
+      "reasons": [
+        "cpp_not_core_requirement",
+        "inactive_or_old"
+      ]
+    },
+    {
+      "source": "HeadHunter RSS",
+      "id": "139430922",
+      "urls": [
+        "https://hh.ru/vacancy/139430922"
+      ],
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
+      "region": "Russia",
+      "title": "Системный программист (Middle/ Senior)",
       "employer": "",
       "reasons": [
         "cpp_not_core_requirement",
@@ -13443,7 +13458,7 @@
       "urls": [
         "https://hh.ru/vacancy/138825239"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Senior Java-разработчик",
       "employer": "",
@@ -13458,7 +13473,7 @@
       "urls": [
         "https://hh.ru/vacancy/139438364"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Старший инженер-программист С++",
       "employer": "",
@@ -13468,26 +13483,11 @@
     },
     {
       "source": "HeadHunter RSS",
-      "id": "139430922",
-      "urls": [
-        "https://hh.ru/vacancy/139430922"
-      ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
-      "region": "Russia",
-      "title": "Системный программист (Middle/ Senior)",
-      "employer": "",
-      "reasons": [
-        "cpp_not_core_requirement",
-        "inactive_or_old"
-      ]
-    },
-    {
-      "source": "HeadHunter RSS",
       "id": "139351881",
       "urls": [
         "https://hh.ru/vacancy/139351881"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Главный конструктор беспилотных аппаратов (БПА)",
       "employer": "",
@@ -13503,7 +13503,7 @@
       "urls": [
         "https://hh.ru/vacancy/139442118"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Ведущий инженер машинного обучения",
       "employer": "",
@@ -13515,13 +13515,13 @@
     },
     {
       "source": "HeadHunter RSS",
-      "id": "139268578",
+      "id": "139407199",
       "urls": [
-        "https://hh.ru/vacancy/139268578"
+        "https://hh.ru/vacancy/139407199"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
-      "title": "Backend-разработчик (из Unity/Unreal в TypeScript)",
+      "title": "Инженер-программист",
       "employer": "",
       "reasons": [
         "cpp_not_core_requirement",
@@ -13531,13 +13531,13 @@
     },
     {
       "source": "HeadHunter RSS",
-      "id": "139407199",
+      "id": "139268578",
       "urls": [
-        "https://hh.ru/vacancy/139407199"
+        "https://hh.ru/vacancy/139268578"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
-      "title": "Инженер-программист",
+      "title": "Backend-разработчик (из Unity/Unreal в TypeScript)",
       "employer": "",
       "reasons": [
         "cpp_not_core_requirement",
@@ -13551,7 +13551,7 @@
       "urls": [
         "https://hh.ru/vacancy/138715675"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Quantitative Researcher (HFT)",
       "employer": "",
@@ -13568,7 +13568,7 @@
       "urls": [
         "https://hh.ru/vacancy/139323321"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Старший программист С/С++",
       "employer": "",
@@ -13582,7 +13582,7 @@
       "urls": [
         "https://hh.ru/vacancy/139227172"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Исполнительный директор (CEO)",
       "employer": "",
@@ -13599,7 +13599,7 @@
       "urls": [
         "https://hh.ru/vacancy/139165141"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Legal Assistant",
       "employer": "",
@@ -13616,7 +13616,7 @@
       "urls": [
         "https://hh.ru/vacancy/133406309"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Quantitative Researcher",
       "employer": "",
@@ -13633,7 +13633,7 @@
       "urls": [
         "https://hh.ru/vacancy/138908848"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Аналитик DevOps/SRE (команда инфраструктуры)",
       "employer": "",
@@ -13650,7 +13650,7 @@
       "urls": [
         "https://hh.ru/vacancy/138530721"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Senior Golang Developer (Global Trading Platform)",
       "employer": "",
@@ -13665,7 +13665,7 @@
       "urls": [
         "https://hh.ru/vacancy/138786837"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Инженер-разработчик",
       "employer": "",
@@ -13681,7 +13681,7 @@
       "urls": [
         "https://hh.ru/vacancy/136645775"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Старший разработчик (С++) [ИРТЕЯ]",
       "employer": "",
@@ -13695,21 +13695,7 @@
       "urls": [
         "https://hh.ru/vacancy/134371859"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
-      "region": "Russia",
-      "title": "Старший С++ разработчик (Лимасcол, Кипр)",
-      "employer": "",
-      "reasons": [
-        "inactive_or_old"
-      ]
-    },
-    {
-      "source": "HeadHunter RSS",
-      "id": "134371884",
-      "urls": [
-        "https://hh.ru/vacancy/134371884"
-      ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Старший С++ разработчик (Лимасcол, Кипр)",
       "employer": "",
@@ -13723,9 +13709,23 @@
       "urls": [
         "https://hh.ru/vacancy/138755993"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Russia",
       "title": "Senior / Lead Developer (Rust, C/C++, Python)",
+      "employer": "",
+      "reasons": [
+        "inactive_or_old"
+      ]
+    },
+    {
+      "source": "HeadHunter RSS",
+      "id": "134371884",
+      "urls": [
+        "https://hh.ru/vacancy/134371884"
+      ],
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
+      "region": "Russia",
+      "title": "Старший С++ разработчик (Лимасcол, Кипр)",
       "employer": "",
       "reasons": [
         "inactive_or_old"
@@ -13737,7 +13737,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Rockstar-Recruiting-AG-Rust-Engineer"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Rust Engineer @ Rockstar Recruiting AG [CHF 110'000 - 140'000]",
       "employer": "Rockstar Recruiting AG",
@@ -13752,7 +13752,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/FP-Robotics-AG-Software-Engineer-Robotics-80-100"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Software Engineer Robotics 80-100% @ F&P Robotics AG [CHF 85'000 - 105'000]",
       "employer": "F&P Robotics AG",
@@ -13767,7 +13767,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Cudos-AG-Software-Architekt-und-Fullstack-Engineer"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Software Architekt und Fullstack Engineer @ Cudos AG [CHF 100'000 - 130'000]",
       "employer": "Cudos AG",
@@ -13782,7 +13782,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Cudos-AG-Senior-Software-Engineer--Architekt"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Senior Software Engineer & Architekt @ Cudos AG [CHF 100'000 - 120'000]",
       "employer": "Cudos AG",
@@ -13796,7 +13796,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/ERNI-Schweiz-AG-Embedded-Software-Engineer--IoT--Applications-a---Zrich"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Embedded Software Engineer – IoT & Applications (a) - Zürich @ ERNI Schweiz AG [CHF 100'000 - 130'000]",
       "employer": "ERNI Schweiz AG",
@@ -13811,7 +13811,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/ERNI-Schweiz-AG-Embedded-Software-Engineer--IoT--Applications-a---Bern"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Embedded Software Engineer – IoT & Applications (a) - Bern @ ERNI Schweiz AG [CHF 100'000 - 130'000]",
       "employer": "ERNI Schweiz AG",
@@ -13826,7 +13826,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Rockstar-Recruiting-AG-C-Engineer--Trading-Systems"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "C++ Engineer – Trading Systems @ Rockstar Recruiting AG [CHF 140'000 - 180'000]",
       "employer": "Rockstar Recruiting AG",
@@ -13841,7 +13841,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Cudos-AG-Junior-Software-Engineer-im-Cross-Company-Programm"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Junior Software Engineer im Cross-Company-Programm @ Cudos AG [CHF 80'000 - 90'000]",
       "employer": "Cudos AG",
@@ -13858,7 +13858,7 @@
       "urls": [
         "https://swissdevjobs.ch/jobs/Intonate-Software-Engineer"
       ],
-      "observed_at": "2026-11-12T18:54:28.932806+00:00",
+      "observed_at": "2026-11-12T19:23:19.612645+00:00",
       "region": "Switzerland",
       "title": "Software Engineer @ Intonate [CHF 70'000 - 90'000]",
       "employer": "Intonate",
