@@ -35,7 +35,8 @@ assert(cards.includes('100–180 тыс.')&&cards.includes('Вакансий в 
 assert(cards.includes('40–250 тыс.')&&cards.includes('Вакансий в расчёте: 7'),'London card must combine manual and API salary records and dedupe duplicates');
 assert(cards.includes('Вакансий в расчёте: 1'),'Russia card must combine the single local-currency salary record');
 assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
-assert(cards.includes('SwissDevJobs')&&cards.includes('Headcount Labs'),'Expanded cards must retain source names from the merged sample');
+assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
+assert(!/Налоговая база не уточнена|SwissDevJobs|Headcount Labs/.test(jobs()),'Expanded vacancies must show only pay range and employer under the link');
 const explicit=Number(nodes['api-kpis'].children[0].children[0].textContent);
 nodes.level.value='all';vm.runInContext('render();renderApi()',context);
 const all=Number(nodes['api-kpis'].children[0].children[0].textContent);
