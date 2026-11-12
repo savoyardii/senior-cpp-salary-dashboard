@@ -32,4 +32,4 @@ assert '__DATA__' not in page and '__API_STATS__' not in page and '__MANUAL_STAT
 (ROOT / 'outputs/salary_sample_audited.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2))
 (DIST / 'index.html').write_text(page)
 (ROOT / 'work/expanded_sample/dashboard_check.js').write_text(page.split('<script>')[1].split('</script>')[0])
-print(f"Dashboard built: {len(rows)} static reference records; {sum(r['qualified_roles'] for r in monitor['regions'])} code-filtered API roles")
+print(f"Dashboard built: {len(rows)} audited reference records; {sum(r['qualified_roles'] for r in monitor['regions'])} code-filtered API roles")

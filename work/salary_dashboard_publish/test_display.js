@@ -29,9 +29,17 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
  assert(!text.includes(period==='month'?'/ год':'/ месяц'));
  assert(!/тыс\.[^/]*тыс\./.test(text));
 }
+vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
+const cards=content(nodes.regions);
+assert(cards.includes('100–120 тыс.')&&cards.includes('Зарплатных наблюдений: 3'),'Swiss card must use explicit-Senior API salary observations');
+assert(cards.includes('40–200 тыс.')&&cards.includes('Зарплатных наблюдений: 4'),'London card must use explicit-Senior API salary observations');
+assert(cards.includes('Зарплатных наблюдений: 1'),'Russia card must show the single API salary observation');
 const explicit=Number(nodes['api-kpis'].children[0].children[0].textContent);
 nodes.level.value='all';vm.runInContext('render();renderApi()',context);
 const all=Number(nodes['api-kpis'].children[0].children[0].textContent);
+const allCards=content(nodes.regions);
+assert(allCards.includes('100–160 тыс.')&&allCards.includes('Зарплатных наблюдений: 4'),'All-level Swiss card must include the experience-based observation');
+assert(allCards.includes('40–220 тыс.')&&allCards.includes('Зарплатных наблюдений: 5'),'All-level London card must include the experience-based observation');
 assert(all>explicit,'API Senior filter must affect the displayed counts');
 nodes.segment.value='finance';vm.runInContext('render();renderApi()',context);
 assert(Number(nodes['api-kpis'].children[0].children[0].textContent)<all,'API segment filter must affect the counts');
