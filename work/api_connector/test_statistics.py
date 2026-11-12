@@ -44,6 +44,30 @@ class SalaryEvidenceTests(unittest.TestCase):
             self.assertFalse(m.valid_pay(*bounds))
 
 
+class HiringIndexTests(unittest.TestCase):
+    def test_missing_key_does_not_make_requests(self):
+        with patch.object(collect, 'request_json') as request:
+            result = collect.hiring_index('')
+        request.assert_not_called()
+        self.assertEqual(result['status'], 'missing_key')
+
+    def test_collects_bounded_regional_search_and_normalizes_salary(self):
+        row = {'_id': 'posting-1', 'title': 'Senior C++ Engineer', 'company_name': 'Example',
+               'description': 'Requires 5+ years C++ experience', 'city': 'London', 'country_code': 'GB',
+               'remote_flag': 'true', 'posting_url': 'https://jobs.example/jobs/1',
+               'posted_at': '2026-11-10', 'salary': {'min': 90000, 'max': 120000,
+               'currency': 'GBP', 'period': '1 YEAR'}}
+        with patch.object(collect, 'request_json', return_value=({'jobs': [row], 'total_pages': 1}, {})) as request:
+            result = collect.hiring_index('test-key')
+        self.assertEqual(request.call_count, 3)
+        self.assertLessEqual(request.call_count, result['request_cap'])
+        london = next(item['raw'] for item in result['records'] if item['region'] == 'London, UK')
+        self.assertEqual((london['salary_min'], london['salary_max'], london['currency'], london['period']),
+                         (90000, 120000, 'GBP', 'year'))
+        self.assertTrue(london['remote'])
+        self.assertEqual(london['application_url'], row['posting_url'])
+
+
 class ScopeAndDedupTests(unittest.TestCase):
     def test_senior_uses_lower_bound_not_upper(self):
         for text in ('5+ years of experience', '6 years of software development experience', '7+ years experience in C++', '10 years professional experience', 'опыт работы от 6 лет'):
@@ -117,6 +141,10 @@ class ScopeAndDedupTests(unittest.TestCase):
         group = m.build_monitor({'sources': [{'source': 'UK Government Work Hub',
                                    'records': [{'region': 'London, UK', 'raw': raw}]}]})['groups'][0]
         self.assertEqual(group['segment'], 'trading_finance')
+
+    def test_cpp_as_one_option_among_languages_is_not_a_core_requirement(self):
+        description = 'Proficiency in Go, Python, C++, or another statically typed language is required.'
+        self.assertFalse(m.cpp_is_required('Senior Software Engineer', description))
 
     def test_same_title_different_requisitions_not_silently_collapsed(self):
         raw = {'title': {'value': 'Senior C++ Developer'}, 'employer_name': {'value': 'Example'},

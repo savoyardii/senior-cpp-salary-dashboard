@@ -175,10 +175,12 @@ def expanded_public_sources(previous, now):
             add(source, [], errors['lever_ashby'])
 
     try:
-        result = collect('telegram_collector', 'telegram/collect.py', channels=(
-            'cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'))
+        telegram_channels = ('cppdevjob', 'c_rabota', 'forcpp', 'ProCxxJobs',
+                             'phystechcareerchannel', 'careerspace',
+                             'switzerlanddevjobs', 'devitjobs')
+        result = collect('telegram_collector', 'telegram/collect.py', channels=telegram_channels)
         channel_status = {row['channel']: row['status'] for row in result.get('attempts', []) if row.get('page') == 1}
-        for channel in ('cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'):
+        for channel in telegram_channels:
             source = f'Telegram @{channel}'
             records = [{'region': row['region'], 'query': 'public Telegram preview', 'raw': row}
                        for row in result.get('records', []) if row.get('source') == source and row.get('region')]
@@ -186,7 +188,8 @@ def expanded_public_sources(previous, now):
             add(source, records, None if status == 'ok' else str(status or 'no successful page'), result.get('observed_at'))
     except Exception as exc:
         errors['telegram'] = type(exc).__name__
-        for channel in ('cppdevjob', 'c_rabota', 'switzerlanddevjobs', 'devitjobs'):
+        for channel in ('cppdevjob', 'c_rabota', 'forcpp', 'ProCxxJobs',
+                        'phystechcareerchannel', 'careerspace', 'switzerlanddevjobs', 'devitjobs'):
             add(f'Telegram @{channel}', [], errors['telegram'])
 
     try:
@@ -207,6 +210,11 @@ def expanded_public_sources(previous, now):
             add(name, records, None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
         except Exception as exc:
             add(name, [], type(exc).__name__)
+    try:
+        result = collect('devitjobs_uk_collector', 'uk_ch/devitjobs_uk.py')
+        add(result['source'], result.get('records', []), None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
+    except Exception as exc:
+        add('DevITjobs UK RSS', [], type(exc).__name__)
     return fresh
 
 
@@ -228,6 +236,7 @@ def refresh():
     keys = collect.secrets()
     fresh = [
         collect.dedupe(collect.headcount(keys.get('HEADCOUNTLABS_API_KEY', ''))),
+        collect.dedupe(collect.hiring_index(keys.get('HIRINGINDEX_API_KEY', ''))),
         collect.dedupe(collect.superjob(keys.get('SUPERJOB_APP_SECRET', ''))),
         collect.dedupe(collect.trudvsem()),
     ]
@@ -274,10 +283,29 @@ def refresh_fx_only():
     print('FX rates refreshed:', snapshot['fx'].get('updated_at') or snapshot['fx'].get('refresh_error'))
 
 
+def refresh_public_only():
+    """Refresh RSS, Telegram and ATS feeds without repeating credentialed APIs or slow legacy collectors."""
+    now = datetime.now(timezone.utc).isoformat()
+    snapshot = json.loads(SNAPSHOT.read_text()) if SNAPSHOT.exists() else {'sources': []}
+    by_source = {row.get('source'): row for row in snapshot.get('sources', [])}
+    for row in expanded_public_sources(snapshot, now):
+        by_source[row['source']] = row
+    updated = {**snapshot, 'observed_at': now,
+               'refresh_policy': 'Public RSS/Telegram/employer ATS refreshed; credentialed APIs and legacy job boards unchanged.',
+               'sources': list(by_source.values())}
+    save_and_build(updated)
+    print('Public sources refreshed:', now)
+    for source in updated['sources']:
+        if source.get('retrieved_at') == now:
+            print(f"{source['source']}: {len(source.get('records', []))} records")
+
+
 if __name__ == '__main__':
     if sys.argv[1:] == ['--fx-only']:
         refresh_fx_only()
+    elif sys.argv[1:] == ['--public-only']:
+        refresh_public_only()
     elif not sys.argv[1:]:
         refresh()
     else:
-        raise SystemExit('Usage: refresh.py [--fx-only]')
+        raise SystemExit('Usage: refresh.py [--fx-only|--public-only]')

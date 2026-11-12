@@ -4,6 +4,7 @@ import unicodedata
 import html
 import math
 from datetime import datetime, timedelta, timezone
+from urllib.parse import unquote, urlsplit, urlunsplit
 
 CPP = re.compile(r'c\s*\+\s*\+|с\s*\+\s*\+', re.I)
 ROLE = re.compile(r'engineer|developer|programmer|software|quant(?:itative)? developer|инженер|разработчик|программист', re.I)
@@ -13,7 +14,7 @@ JUNIOR = re.compile(r'\b(junior|graduate|intern|internship|trainee|entry[- ]leve
 OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+обучен|researcher|\btrader\b|учител|военнослуж|chauffeur|driver|водител', re.I)
 NUMBER = r'(?:\d{1,3}(?:[ ,.]\d{3})+(?:[,.]\d+)?|\d+(?:[,.]\d+)?)'
 BONUS = re.compile(r'total comp|target comp|\bTC\b|\bOTE\b|bonus|equity|sign[- ]?on|one[- ]?time|единоврем|преми|бонус|подъ[её]мн', re.I)
-NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas'}
+NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs UK RSS', 'Hiring Index'}
 NORMALIZED_PREFIXES = ('Telegram @', 'Greenhouse:', 'HH RSS:', 'Lever:', 'Ashby:')
 
 
@@ -53,15 +54,15 @@ def location_rows(source, region, raw):
         location = raw.get('location') or raw.get('city') or ''
         if isinstance(location, list):
             location = ', '.join(str(x) for x in location if x)
-        country = raw.get('country') or {'Russia': 'RU', 'London, UK': 'GB', 'Switzerland': 'CH'}.get(region, '')
-        return [{'city': str(raw.get('city') or location or ('London' if region == 'London, UK' else '')),
+        country = raw.get('country') or ''
+        return [{'city': str(raw.get('city') or location),
                  'country': str(country), 'remote': bool(raw.get('remote'))}]
     if source in {'Zarplata', 'UK Government Work Hub', 'Yandex Delivery Careers', 'Kaspersky Careers', 'ITJobsWatch', 'Finder', 'Reed', 'Hunter Bond'}:
         location = raw.get('location') or raw.get('city') or ''
         if isinstance(location, list):
             location = ', '.join(str(x) for x in location if x)
-        city = raw.get('city') or ('London' if region == 'London, UK' else str(location))
-        return [{'city': str(city), 'country': raw.get('country') or ('RU' if region == 'Russia' else 'GB' if region == 'London, UK' else '')}]
+        city = raw.get('city') or str(location)
+        return [{'city': str(city), 'country': raw.get('country') or ''}]
     if source == 'SuperJob':
         return [{'city': (raw.get('town') or {}).get('title', ''), 'country': 'RU', 'remote': False}]
     if source == 'Adzuna':
@@ -92,9 +93,11 @@ def local_market(region, locations):
         city = str(loc.get('city') or '').casefold()
         alternatives = loc.get('alternatives') or []
         alt_countries = {str((x.get('value', x)).get('country') or '').upper() for x in alternatives if isinstance(x, dict) and isinstance(x.get('value', x), dict)}
-        if region == 'Switzerland' and (country == 'CH' or ('CH' in alt_countries and loc.get('remote')) or (not country and city in {'bern', 'zug', 'zürich', 'zurich', 'stefa', 'stäfa'})):
+        swiss_city = re.search(r'\b(?:bern|zug|zürich|zurich|stefa|stäfa|geneva|genève|basel|lausanne|chur|winterthur|lucerne|luzern|st gallen|lugano|biel|bienna)\b', city, re.I)
+        if region == 'Switzerland' and (country == 'CH' or ('CH' in alt_countries and loc.get('remote')) or (not country and swiss_city)):
             return True
-        if region == 'London, UK' and 'london' in city and (country in {'GB', 'UK'} or not country):
+        london_postcode = re.search(r'\b(?:EC|WC|N|NW|E|SE|SW|W|BR|CR|DA|EN|HA|IG|KT|RM|SM|TW|UB|WD)\d[A-Z]?\b', city, re.I)
+        if region == 'London, UK' and (re.search(r'\blondon\b', city) or london_postcode) and country in {'GB', 'UK', ''}:
             return True
         if region == 'Russia' and (country == 'RU' or ('RU' in alt_countries and loc.get('remote'))):
             return True
@@ -102,6 +105,15 @@ def local_market(region, locations):
 
 
 def active(source, raw):
+    if str(source or '').startswith('Telegram @'):
+        stamp = raw.get('published_at')
+        try:
+            published = datetime.fromisoformat(str(stamp).replace('Z', '+00:00'))
+            if published.tzinfo is None:
+                published = published.replace(tzinfo=timezone.utc)
+            return datetime.now(timezone.utc) - timedelta(days=90) <= published <= datetime.now(timezone.utc) + timedelta(days=1)
+        except (TypeError, ValueError):
+            return False
     if normalized_source(source):
         if source.startswith('Greenhouse:'):
             return not raw.get('is_closed')
@@ -128,7 +140,19 @@ def active(source, raw):
         postings = raw.get('postings', [])
         return not raw.get('stale') and (not postings or any(p.get('posting_status') == 'listed' for p in postings))
     if source == 'Adzuna':
-        return True  # Search results were live when this finite pilot snapshot was collected.
+        created = raw.get('created')
+        if created:
+            try:
+                if isinstance(created, (int, float)):
+                    date = datetime.fromtimestamp(created, timezone.utc)
+                else:
+                    date = datetime.fromisoformat(str(created).replace('Z', '+00:00'))
+                    if date.tzinfo is None:
+                        date = date.replace(tzinfo=timezone.utc)
+                return date >= datetime.now(timezone.utc) - timedelta(days=90)
+            except (TypeError, ValueError, OverflowError, OSError):
+                return False
+        return True  # The pilot API result was live at collection; age is unknown without `created`.
     if source == 'Работа России':
         stamp = raw.get('date_modify') or raw.get('creation-date')
         try:
@@ -165,8 +189,7 @@ def active(source, raw):
 def senior(title, description):
     if JUNIOR.search(title):
         return False
-    if SENIOR_TITLE.search(title):
-        return True
+    explicit_senior = bool(SENIOR_TITLE.search(title))
     # Only experience requirements qualify; company age and contract duration do not.
     for match in EXPERIENCE.finditer(description):
         context = description[max(0, match.start() - 70):match.end() + 90]
@@ -174,10 +197,12 @@ def senior(title, description):
             continue
         if re.search(r'sales|marketing|recruit|accounting|продаж|маркетинг|бухгалтер', context, re.I):
             continue
+        if explicit_senior and int(match['low']) <= 3 and re.search(r'experience|professional|commercial|опыт|стаж|разработ', context, re.I):
+            return False
         if int(match['low']) >= 5 and re.search(r'experience|professional|commercial|опыт|стаж|разработ', context, re.I):
             if not re.search(r'up to|at most|до\s*$', description[max(0, match.start() - 15):match.start()], re.I):
                 return True
-    return False
+    return explicit_senior
 
 
 def exclusion_reasons(source, record):
@@ -187,7 +212,7 @@ def exclusion_reasons(source, record):
         reasons.append('not_software_development_role')
     if JUNIOR.search(title):
         reasons.append('junior_role')
-    core = CPP.search(title) or (CPP.search(description) and re.search(r'(?:required|must|proficien|expert|strong|develop|development|разработ|знани|опыт).{0,100}(?:c\s*\+\s*\+|с\s*\+\s*\+)|(?:c\s*\+\s*\+|с\s*\+\s*\+).{0,80}(?:required|must|proficien|expert|strong|develop|разработ|опыт)', description, re.I))
+    core = cpp_is_required(title, description)
     if not core:
         reasons.append('cpp_not_core_requirement')
     if not senior(title, description):
@@ -197,6 +222,61 @@ def exclusion_reasons(source, record):
     if not local_market(record.get('region', ''), location_rows(source, record.get('region', ''), raw)):
         reasons.append('outside_local_market')
     return reasons
+
+
+OPTIONAL_CPP = re.compile(
+    r'\b(?:nice to have|nice-to-have|preferred|preferably|a plus|plus|bonus|advantage|optional|desirable|'
+    r'not required|not essential|желател\w*|будет плюсом|не обязател\w*|на выбор)\b', re.I)
+CPP_ALTERNATIVE = re.compile(
+    r'(?:c\s*\+\s*\+|с\s*\+\s*\+).{0,45}\b(?:or|oder|либо|или)\b.{0,45}\b(?:rust|go|c#|java|kotlin|python|kdb)\b|'
+    r'\b(?:rust|go|c#|java|kotlin|python|kdb)\b.{0,45}\b(?:or|oder|либо|или)\b.{0,45}(?:c\s*\+\s*\+|с\s*\+\s*\+)|'
+    r'(?:c\s*\+\s*\+|с\s*\+\s*\+)[^.;\n]{0,80}\bor another (?:statically typed )?language\b', re.I)
+CPP_NOT_REQUIRED = re.compile(
+    r'(?:if you don.t know|we can teach|can be taught|не знаете|научим).{0,80}(?:c\s*\+\s*\+|с\s*\+\s*\+)|'
+    r'(?:c\s*\+\s*\+|с\s*\+\s*\+).{0,80}(?:if you don.t know|we can teach|can be taught|не знаете|научим)', re.I)
+
+
+def cpp_optional(text):
+    for sentence in re.split(r'[.!?;\n]', text or ''):
+        if CPP.search(sentence) and (OPTIONAL_CPP.search(sentence) or CPP_ALTERNATIVE.search(sentence) or CPP_NOT_REQUIRED.search(sentence)):
+            return True
+    return False
+
+
+def cpp_is_required(title, description):
+    if CPP.search(title):
+        other_languages = sum(bool(re.search(pattern, title, re.I)) for pattern in
+                              (r'\bpython\b', r'\bkdb\b', r'\brust\b', r'\bgo\b', r'\bc#\b', r'\bjava\b', r'\bkotlin\b'))
+        return other_languages < 2 and not cpp_optional(title) and not cpp_optional(description)
+    for match in CPP.finditer(description):
+        context = description[max(0, match.start() - 100):match.end() + 100]
+        if cpp_optional(context):
+            continue
+        if re.search(r'\b(?:required|must[- ]have|proficien\w*|expert\w*|strong|experience|experienced|develop|development|'
+                     r'knowledge|skills?)\b|(?:разработ\w*|знани\w*|опыт\w*|владени\w*)', context, re.I):
+            return True
+    return False
+
+
+def description_market_conflict(region, description):
+    """Reject a listing when its explicit Location field contradicts the source location."""
+    description = html.unescape(re.sub(r'<[^>]+>', ' ', description or ''))
+    match = re.search(r'\b(?:location|office location|место работы|локация)\s*:\s*([^\n.;|]{2,100})', description, re.I)
+    if not match:
+        # Some boards omit a Location label and put the hiring office in the first sentence.
+        match = re.search(r'\b(?:team|office|role|position)\s+in\s+((?:Amsterdam|Cambridge|Oxford|Manchester|Bristol|Edinburgh|London|'
+                          r'Zurich|Zürich|Geneva|Genève|Basel|Lausanne|Bern|Moscow|Москва|Санкт-Петербург|Казань|Новосибирск|Екатеринбург)\b[^\n.;|]{0,50})',
+                          description[:900], re.I)
+    if not match:
+        return False
+    stated = match.group(1).casefold()
+    markets = {
+        'Switzerland': re.compile(r'\b(?:switzerland|schweiz|zurich|zürich|geneva|genève|basel|lausanne|bern|zug|chur)\b', re.I),
+        'London, UK': re.compile(r'\blondon\b', re.I),
+        'Russia': re.compile(r'\b(?:russia|росси\w*|москв\w*|санкт[- ]?петербург\w*|казан\w*|новосибирск\w*|екатеринбург\w*)\b', re.I),
+    }
+    # A location label that only says remote/Europe/UK does not identify a local pay market.
+    return not markets[region].search(stated)
 
 
 def relevant(source, record):
@@ -359,10 +439,25 @@ def salary_rows(source, region, raw, description):
 
 def job_urls(source, raw):
     if normalized_source(source):
-        values = [raw.get('url'), raw.get('applyUrl'), *raw.get('links', [])]
+        # Related links often point to channel home pages or referral lists; they are not job identity.
+        values = [raw.get('application_url'), raw.get('url'), raw.get('applyUrl')]
         return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
     values = [value(p.get('posting_url')) or value(p.get('application_url')) for p in raw.get('postings', [])] if source == 'Headcount Labs' else [raw.get('link') or raw.get('vac_url') or raw.get('redirect_url') or raw.get('url')]
     return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
+
+
+def canonical_job_url(url):
+    parts = urlsplit(url)
+    host = parts.netloc.casefold().removeprefix('www.')
+    return urlunsplit((parts.scheme.casefold(), host, unquote(parts.path).rstrip('/'), '', ''))
+
+
+def meaningful_title_tokens(title, employer=''):
+    generic = {'senior', 'sr', 'lead', 'leader', 'staff', 'principal', 'software', 'engineer',
+               'engineering', 'developer', 'development', 'programmer', 'c', 'c++', 'role', 'the',
+               'and', 'for', 'in', 'of', 'a', 'an'}
+    tokens = set(clean(title).split()) - generic - set(clean(employer).split())
+    return {'quant' if token.startswith('quantit') else token for token in tokens}
 
 
 def segment(title, description):
@@ -375,11 +470,15 @@ def segment(title, description):
 
 
 def record_regions(source, record):
-    regions = set(record.get('regions') or [record.get('region')])
+    raw = record['raw']
+    locations = location_rows(source, record.get('region'), raw)
+    claimed = set(record.get('regions') or [record.get('region')])
+    # Search-query labels are candidate markets, not proof of location. Headcount postings
+    # can expose several source locations for one job; accept only markets those locations prove.
     if source == 'Headcount Labs':
-        locations = location_rows(source, record.get('region'), record['raw'])
-        regions.update(r for r in ('Switzerland', 'London, UK', 'Russia') if local_market(r, locations))
-    return [r for r in ('Switzerland', 'London, UK', 'Russia') if r in regions]
+        claimed = set(r for r in ('Switzerland', 'London, UK', 'Russia') if local_market(r, locations))
+    return [r for r in ('Switzerland', 'London, UK', 'Russia')
+            if r in claimed and local_market(r, locations)]
 
 
 def build_monitor(snapshot):
@@ -396,10 +495,19 @@ def build_monitor(snapshot):
             record = entry if isinstance(entry.get('raw'), dict) else {'region': entry.get('region'), 'raw': entry}
             title, employer, description, raw = fields(name, record)
             identity = str(raw.get('job_id') or raw.get('id') or raw.get('source_id') or raw.get('link') or '')
-            urls = job_urls(name, raw)
             for region in record_regions(name, record):
                 regional = {**record, 'region': region}
                 reasons = exclusion_reasons(name, regional)
+                if name == 'Adzuna' and description_market_conflict(region, description):
+                    reasons.append('description_location_conflicts_with_source_location')
+                urls = job_urls(name, raw)
+                if name == 'Headcount Labs':
+                    urls = list(dict.fromkeys(
+                        url for posting in raw.get('postings', [])
+                        if posting.get('posting_status') == 'listed' and
+                        local_market(region, location_rows(name, region, {'postings': [posting]}))
+                        for url in (value(posting.get('posting_url')) or value(posting.get('application_url')),)
+                        if isinstance(url, str) and url.startswith(('https://', 'http://'))))
                 reference = {'source': name, 'id': identity, 'urls': urls, 'observed_at': observed}
                 if reasons:
                     excluded.append({**reference, 'region': region, 'title': title, 'employer': employer, 'reasons': reasons})
@@ -424,18 +532,26 @@ def build_monitor(snapshot):
     groups = []
     buckets = {}
     for row in candidates:
-        key = (row['region'], clean(row['employer']), clean(row['city']))
+        key = (row['region'], clean(row['city']))
         group = None
         for possible in buckets.get(key, []):
-            same_identity = any(r['source'] == row['source'] and r['id'] == row['reference']['id'] for r in possible['records'])
-            shared_url = bool(set(row['reference']['urls']) & {url for ref in possible['records'] for url in ref['urls']})
+            row_id = row['reference']['id']
+            same_identity = bool(row_id) and any(r['source'] == row['source'] and r['id'] == row_id for r in possible['records'])
+            row_urls = {canonical_job_url(url) for url in row['reference']['urls']}
+            group_urls = {canonical_job_url(url) for ref in possible['records'] for url in ref['urls']}
+            shared_url = bool(row_urls & group_urls)
             cross_source = row['source'] not in possible['sources']
-            description_match = any(min(len(d), len(row['description'])) >= 120 and
-                                    (d.startswith(row['description'][:300]) or row['description'].startswith(d[:300]) or
-                                     SequenceMatcher(None, d[:500], row['description'][:500]).ratio() >= .9)
-                                    for d in possible['_descriptions'])
-            title_match = SequenceMatcher(None, clean(possible['title']), clean(row['title'])).ratio() >= .74
-            if same_identity or shared_url or (row['employer'] and cross_source and title_match and description_match):
+            old_title_tokens = meaningful_title_tokens(possible['title'], possible['employer'])
+            new_title_tokens = meaningful_title_tokens(row['title'], row['employer'])
+            title_match = old_title_tokens == new_title_tokens and SequenceMatcher(
+                None, clean(possible['title']), clean(row['title'])).ratio() >= .72
+            description_match = any(
+                min(len(d), len(row['description'])) >= 250 and
+                (d.startswith(row['description']) or row['description'].startswith(d) or
+                 SequenceMatcher(None, d, row['description']).ratio() >= .96)
+                for d in possible['_descriptions'])
+            same_employer = clean(possible['employer']) == clean(row['employer']) and bool(clean(row['employer']))
+            if same_identity or shared_url or (same_employer and cross_source and title_match and description_match):
                 group = possible
                 break
         if group is None:
@@ -492,7 +608,7 @@ def build_monitor(snapshot):
 
     regions = summarize_groups(groups)
     return {'observed_at': snapshot.get('observed_at'), 'fx': snapshot.get('fx'),
-            'method': 'Код проверяет C++, уровень, географию, статус, валюту и период. Явный Senior и опыт от 5 лет отмечены отдельно. Дубли объединяются по ID/URL либо по работодателю, роли, рынку и совпадению описания. Это группы вакансий, не независимые работодатели. Неизвестные форматы оплаты выделены отдельно; прогнозы и зарплаты без даты источника исключены.',
+            'method': 'Код требует подтверждения обязательного C++ и seniority; проверяет рынок по географии публикации, сверяет её с явной локацией в описании. Дубли объединяются по непустому ID/прямой ссылке или совпадающей роли и почти идентичному описанию; сопутствующие ссылки не считаются ID вакансии. Это группы вакансий, не независимые работодатели. Неизвестные форматы оплаты выделены отдельно; прогнозы и зарплаты без даты источника исключены.',
             'sources': source_rows, 'regions': regions, 'groups': groups, 'excluded': excluded}
 
 

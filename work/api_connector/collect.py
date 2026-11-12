@@ -149,6 +149,51 @@ def superjob(key):
     return result
 
 
+def hiring_index(key):
+    """Read a bounded C++ slice from Hiring Index's free RapidAPI tier."""
+    result = {"source": "Hiring Index", "requests": [], "errors": [], "records": [],
+              "request_cap": 3, "result_cap": 300, "status": "missing_key" if not key else "queried"}
+    if not key:
+        return result
+    headers = {"x-rapidapi-host": "hiringindex.p.rapidapi.com", "x-rapidapi-key": key,
+               "Accept": "application/json", "Content-Type": "application/json"}
+    # 300 rows per run keeps a weekly schedule below the free tier's 2,500 monthly result quota.
+    regions = (("Switzerland", "CH", None), ("London, UK", "GB", "London"), ("Russia", "RU", None))
+    for region, country, city in regions:
+        for page in (1,):
+            body = {"keywords": ["C++"], "country_codes": [country], "days_ago": 90,
+                    "page": page, "limit": 100}
+            if city:
+                body["cities"] = [city]
+            try:
+                data, _ = request_json("https://hiringindex.p.rapidapi.com/jobs/search", headers, body)
+            except RuntimeError as exc:
+                result["errors"].append({"region": region, "page": page, "status": str(exc)})
+                break
+            rows = data.get("jobs", [])
+            result["requests"].append({"region": region, "page": page, "returned": len(rows), "status": "ok"})
+            for row in rows:
+                pay = row.get("salary") or {}
+                period = str(pay.get("period") or "").casefold()
+                period = "year" if "year" in period else "month" if "month" in period else "day" if "day" in period else None
+                raw = {
+                    "id": row.get("_id"), "title": row.get("title") or "",
+                    "employer": row.get("company_name") or "",
+                    "description": row.get("description") or "",
+                    "city": row.get("city") or "", "country": row.get("country_code") or country,
+                    "remote": str(row.get("remote_flag") or "").casefold() == "true",
+                    "url": row.get("posting_url") or row.get("apply_url") or "",
+                    "application_url": row.get("apply_url") or row.get("posting_url") or "",
+                    "source_posted_at": row.get("posted_at") or row.get("first_seen_at"),
+                    "expires_at": row.get("validThrough"), "salary_min": pay.get("min"),
+                    "salary_max": pay.get("max"), "currency": pay.get("currency"), "period": period,
+                    "salary_basis": "job_board" if pay else None, "salary_snippet": row.get("salary_text"),
+                }
+                result["records"].append({"region": region, "query": "C++", "raw": raw})
+    result["status"] = "queried" if result["requests"] else "error"
+    return result
+
+
 def trudvsem():
     result = {"source": "Работа России", "requests": [], "records": []}
     for query in ("C++ разработчик", "C++ инженер", "C++ программист", "ведущий C++"):

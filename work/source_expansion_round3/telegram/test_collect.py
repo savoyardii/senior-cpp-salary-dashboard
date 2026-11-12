@@ -52,6 +52,52 @@ class TelegramParserTests(unittest.TestCase):
         self.assertEqual(rows[0]["title"], "Старший инженер-программист C++/Qt")
         self.assertEqual(rows[0]["region"], "Russia")
 
+    def test_new_channels_strip_channel_name_and_keep_salary_scale(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="forcpp/42"><div>
+          Job for C, C++ Developers<br>Senior C++ Engineer<br>Location: Russia<br>Salary: $5–7k per month
+        </div></div>'''
+        rows, _ = collect.parse_page("forcpp", fixture)
+        self.assertEqual(rows[0]["title"], "Senior C++ Engineer")
+        self.assertEqual(rows[0]["region"], "Russia")
+        self.assertEqual((rows[0]["salary_min"], rows[0]["salary_max"]), (5000, 7000))
+        self.assertEqual(rows[0]["period"], "month")
+
+    def test_multi_grade_pay_is_not_merged_and_worldwide_rub_is_unassigned(self):
+        salary = collect._salary_fields("Salary: 5–7k USD/month (middle), 7–14k USD/month (senior)")
+        self.assertIsNone(salary["salary_min"])
+        self.assertIsNone(salary["period"])
+        self.assertEqual(collect._normalized_region("ProCxxJobs", "remote по всему миру", {
+            "currency": "RUB", "salary_raw_snippet": "200000 RUB/month"}), (None, None))
+
+    def test_period_is_not_guessed_from_unrelated_description(self):
+        salary = collect._salary_fields("Оплата — 288–316 тыс. ₽. Рабочий день с 9 до 18 часов.")
+        self.assertIsNone(salary["period"])
+
+    def test_direct_job_link_is_preserved(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="forcpp/43"><div>
+          Job for C, C++ Developers<br>Senior C++ Engineer<br>Location: Russia<br>
+          <a href="https://jobs.example/role">https://jobs.example/role</a>
+        </div></div>'''
+        rows, _ = collect.parse_page("forcpp", fixture)
+        self.assertEqual(rows[0]["application_url"], "https://jobs.example/role")
+
+    def test_company_about_page_is_not_a_job_link(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="ProCxxJobs/43"><div>
+          Pro.* Jobs<br>Senior C++ Engineer<br>Location: Russia<br>
+          <a href="https://example.com/about">https://example.com/about</a>
+        </div></div>'''
+        rows, _ = collect.parse_page("ProCxxJobs", fixture)
+        self.assertIsNone(rows[0]["application_url"])
+
+    def test_company_name_next_to_about_link_is_not_used_as_job_url(self):
+        fixture = '''<div class="tgme_widget_message_wrap" data-post="ProCxxJobs/44"><div>
+          Pro.* Jobs<br>NS Digital (https://example.com/about)<br>
+          Senior C++ Developer<br>Salary: 230–345 тыс. ₽ в месяц
+        </div></div>'''
+        rows, _ = collect.parse_page("ProCxxJobs", fixture)
+        self.assertEqual(rows[0]["employer"], "NS Digital")
+        self.assertIsNone(rows[0]["application_url"])
+
 
 if __name__ == "__main__":
     unittest.main()

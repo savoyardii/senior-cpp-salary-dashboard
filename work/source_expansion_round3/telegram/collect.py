@@ -15,6 +15,10 @@ ROOT = Path(__file__).resolve().parent
 CHANNELS = {
     "cppdevjob": "RU",
     "c_rabota": "RU",
+    "forcpp": None,
+    "ProCxxJobs": None,
+    "phystechcareerchannel": None,
+    "careerspace": None,
     "switzerlanddevjobs": "CH",
     "devitjobs": "GB",
     "jobsineu": None,
@@ -24,7 +28,16 @@ PAGE_LIMIT = 3
 VACANCY_RE = re.compile(r"(?:c/c\+\+|c\+\+|c\s*\+\+|\bhft\b|\bhigh[- ]frequency\b|\blow[- ]latency\b|\bquant(?:itative)? developer\b|\btrading systems\b)", re.I)
 SALARY_RE = re.compile(r"[^\n]*(?:₽|руб\w*|CHF|£|GBP|\$|USD|EUR|€)[^\n]*", re.I)
 TITLE_RE = re.compile(r"c\s*\+\s*\+|c/c\+\+|hft|low[- ]latency|high[- ]frequency|quant|engineer|developer|разработчик|инженер|программист|ищет", re.I)
-CHANNEL_HEADER = re.compile(r"вакансии\s+по\s+c\s*\+\s*\+|c/c\+\+\s+работа\s+вакансии", re.I)
+CHANNEL_HEADERS = {
+    "cppdevjob": re.compile(r"^вакансии по c\s*\+\s*\+", re.I),
+    "c_rabota": re.compile(r"^c/c\+\+ работа вакансии(?:\s+#.*)?$", re.I),
+    "forcpp": re.compile(r"^job for c, c\+\+ developers$", re.I),
+    "ProCxxJobs": re.compile(r"^pro\.\* jobs$", re.I),
+    "phystechcareerchannel": re.compile(r"^phystech\.career$", re.I),
+    "careerspace": re.compile(r"^careerspace$", re.I),
+    "switzerlanddevjobs": re.compile(r"^switzerland dev jobs$", re.I),
+    "devitjobs": re.compile(r"^devitjobs$", re.I),
+}
 
 
 class TelegramHTML(HTMLParser):
@@ -90,36 +103,63 @@ def _salary_fields(segment):
                      ("$", "USD"), ("USD", "USD"), ("€", "EUR"), ("EUR", "EUR"))
                     if re.search(re.escape(token), snippet, re.I)), None)
     amounts = []
+    amount_re = re.compile(r"(?<![\w])(?P<number>\d[\d,'’ .]*\d|\d)(?P<scale>\s*(?:k|к|тыс\.?|m|млн))?", re.I)
     for token in matches:
-        for number in re.findall(r"(?<![\w])\d[\d,'’]*(?:\.\d+)?\s*[kK]?", token):
-            number = number.replace("'", "").replace("’", "").replace(",", "").replace(" ", "")
-            multiplier = 1000 if number.lower().endswith("k") else 1
+        for match in amount_re.finditer(token):
+            number = re.sub(r"[\s,'’]", "", match.group("number"))
             try:
-                amounts.append(float(number.rstrip("kK")) * multiplier)
+                amount = float(number.replace(",", ".") if number.count(",") == 1 and len(number.rsplit(",", 1)[-1]) != 3 else number.replace(",", ""))
+                scale = (match.group("scale") or "").strip().casefold()
+                if scale in {"k", "к", "тыс", "тыс."}:
+                    amount *= 1000
+                elif scale in {"m", "млн"}:
+                    amount *= 1_000_000
+                amounts.append((amount, scale))
             except ValueError:
-                pass
-    period = "year" if re.search(r"\b(?:per year|per annum|yearly|annually|annual|p\.a\.)\b|/(?:year|yr)\b", snippet, re.I) else None
-    if re.search(r"\b(?:per month|monthly|month)\b|/(?:month|mo)\b", snippet, re.I):
+                continue
+    amounts = list(dict.fromkeys(amounts))
+    period_context = snippet
+    period = "year" if re.search(r"\b(?:per year|per annum|yearly|annually|annual|p\.a\.)\b|/(?:year|yr)\b|в год|год(?:а|ов)?", period_context, re.I) else None
+    if re.search(r"\b(?:per month|monthly|month)\b|/(?:month|mo)\b|в месяц|ежемесяч|за месяц", period_context, re.I):
         period = "month"
-    if re.search(r"\b(?:per day|daily|day rate)\b|/day\b", snippet, re.I):
+    if re.search(r"\b(?:per day|daily|day rate)\b|/day\b|в день|за день", period_context, re.I):
         period = "day"
-    return {"salary_min": min(amounts) if amounts else None,
-            "salary_max": max(amounts) if amounts else None,
+    # Multiple grade-specific ranges in one post cannot safely become one senior salary range.
+    low = high = None
+    if len(amounts) == 1:
+        low = high = amounts[0][0]
+    elif len(amounts) == 2:
+        first, second = amounts
+        shared_scale = second[1] if not first[1] else first[1] if not second[1] else None
+        values = [item[0] for item in amounts]
+        if shared_scale in {"k", "к", "тыс", "тыс."}:
+            values = [number * 1000 for number, item in zip(values, amounts) if item[1] == ""] + [number for number, item in zip(values, amounts) if item[1] != ""]
+        elif shared_scale in {"m", "млн"}:
+            values = [number * 1_000_000 for number, item in zip(values, amounts) if item[1] == ""] + [number for number, item in zip(values, amounts) if item[1] != ""]
+        low, high = sorted(values)
+    else:
+        period = None
+    return {"salary_min": low, "salary_max": high,
             "currency": currency, "period": period, "salary_raw_snippet": snippet}
 
 
 def _location(segment):
-    match = re.search(r"(?:📍\s*|Location\s*:\s*|(?:office|офис|гибрид|локация|город)[^\n]*?\()([^\]\n)]+)", segment, re.I)
+    match = re.search(r"(?:📍\s*|Location\s*:\s*|(?:office|офис|гибрид|локация|город|место работы)\s*[:—-]?\s*|Компания рассматривает кандидатов только из\s*)([^\]\n).;]+)", segment, re.I)
     return match.group(1).strip() if match else None
 
 
 def _normalized_region(channel, location, salary):
     location_l = (location or "").lower()
-    if channel == "switzerlanddevjobs" or "switzerland" in location_l or "schweiz" in location_l or "zurich" in location_l or "zürich" in location_l or "geneva" in location_l or "basel" in location_l or "chur" in location_l:
+    swiss_place = re.search(r"\b(?:switzerland|schweiz|zurich|zürich|geneva|genève|basel|lausanne|bern|zug|chur)\b", location_l)
+    remote_europe = re.search(r"\b(?:remote|remotely|eu(?:rope)?|europe[- ]wide|worldwide|anywhere)\b", location_l)
+    if swiss_place or (channel == "switzerlanddevjobs" and salary.get("currency") == "CHF" and not remote_europe):
         return "Switzerland", "CH"
     if channel == "devitjobs" and "london" in location_l:
         return "London, UK", "GB"
-    if channel in {"cppdevjob", "c_rabota"} and (salary.get("currency") == "RUB" or re.search(r"\b(?:Russia|Россия|РФ|Москва|Санкт-Петербург|Петербург|Казань|Новосибирск|Екатеринбург)\b", (location or "") + " " + (salary.get("salary_raw_snippet") or ""), re.I)):
+    location_text = location or ""
+    explicit_ru = re.search(r"\b(?:Russia|Россия|РФ|Москва|Санкт-Петербург\w*|Петербург\w*|Казань|Новосибирск|Екатеринбург|СПб)\b", location_text, re.I)
+    remote_global = re.search(r"\b(?:worldwide|world wide|по всему миру|worldwide remote|remote europe|europe[- ]wide|anywhere)\b", location_text, re.I)
+    if explicit_ru or (salary.get("currency") == "RUB" and not remote_global):
         return "Russia", "RU"
     if "london" in location_l:
         return "London, UK", "GB"
@@ -133,14 +173,20 @@ def parse_page(source, html_text):
     for post in parser.posts:
         text = re.sub(r"[ \t]+", " ", post["text"])
         text = re.sub(r" *\n *", "\n", text).strip()
+        header = CHANNEL_HEADERS.get(source)
+        if header:
+            text = "\n".join(line for line in text.splitlines() if not header.search(line.strip()))
+            text = text.strip()
         if not text or not post.get("post"):
             continue
         post_url = "https://t.me/" + post["post"]
-        for index, segment in enumerate(post_segments(text)):
+        segments = post_segments(text)
+        for index, segment in enumerate(segments):
             lines = [line.strip() for line in segment.splitlines() if line.strip()]
-            title_line = next((line for line in lines if TITLE_RE.search(line) and not CHANNEL_HEADER.search(line)),
+            title_line = next((line for line in lines if TITLE_RE.search(line) and not line.lstrip().startswith("#")),
                               lines[0] if lines else "")
-            title = re.sub(r"^➡️\s*|^💻\s*", "", title_line)[:180]
+            labeled_title = re.search(r"(?:позиция|вакансия|должность|role|position)\s*[:—-]\s*(.+)", title_line, re.I)
+            title = re.sub(r"^➡️\s*|^💻\s*|^[^\w#]*", "", labeled_title.group(1) if labeled_title else title_line).strip()[:180]
             salary = _salary_fields(segment)
             location = _location(segment)
             region, country = _normalized_region(source, location, salary)
@@ -150,10 +196,28 @@ def parse_page(source, html_text):
             employer = None
             if " | " in title:
                 employer = title.rsplit(" | ", 1)[-1].strip() or None
+            if not employer:
+                company_match = re.search(r"(?:компания|company|название компании|работодатель)\s*[:—-]\s*[«\"']?([^\n,;»\"']{2,80})", segment, re.I)
+                if not company_match:
+                    company_match = re.search(r"\bв\s+([A-ZА-ЯЁ][\wА-ЯЁа-яё.& -]{1,60}?)\s*[—–-]\s*компания\b", segment)
+                if not company_match:
+                    company_match = re.search(r"(?:^|\n)\s*([A-ZА-ЯЁ][\wА-ЯЁа-яё.& -]{1,60}?)\s*\(https?://[^\s)]+\)", segment)
+                employer = company_match.group(1).strip(" .»\"'") if company_match else None
+            visible_urls = {url.rstrip(".,)") for url in re.findall(r"https?://[^\s<>]+", segment)}
+            direct_links = []
+            for link in post["links"]:
+                if link.rstrip(".,)") not in visible_urls:
+                    continue
+                parts = urllib.parse.urlsplit(link)
+                job_host = re.match(r"(?:jobs?|careers?)\.", parts.netloc, re.I)
+                job_path = re.search(r"/(?:jobs?|vacanc(?:y|ies)|careers?|positions?|openings?)(?:/|$)", parts.path, re.I)
+                if job_host or job_path:
+                    direct_links.append(link)
             out.append({
                 "source": f"Telegram @{source}",
                 "source_id": f"{post['post']}:{index}",
                 "url": post_url,
+                "application_url": direct_links[0] if len(direct_links) == 1 else None,
                 "title": title,
                 "employer": employer,
                 "region": region,
@@ -210,7 +274,16 @@ def collect(channels=None, page_limit=PAGE_LIMIT, delay=0.7):
             attempts.append(attempt)
             if page < page_limit:
                 time.sleep(delay)
-    deduped = {row["source_id"]: row for row in candidates}
+    deduped = {}
+    fingerprints = set()
+    for row in candidates:
+        description = re.sub(r"\s+\d[\d,.]*\s*[kк]?(?:\s+views?|\s+просмотр\w*).*$", "", row["description"], flags=re.I)
+        fingerprint = (row["source"], re.sub(r"\W+", " ", row["title"].casefold()).strip(),
+                       re.sub(r"\W+", " ", description.casefold()).strip())
+        if fingerprint in fingerprints:
+            continue
+        fingerprints.add(fingerprint)
+        deduped[row["source_id"]] = row
     return {"observed_at": datetime.now(timezone.utc).isoformat(), "sources": list(CHANNELS),
             "attempts": attempts, "records": list(deduped.values())}
 
