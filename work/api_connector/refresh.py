@@ -215,6 +215,26 @@ def expanded_public_sources(previous, now):
         add(result['source'], result.get('records', []), None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
     except Exception as exc:
         add('DevITjobs UK RSS', [], type(exc).__name__)
+
+    try:
+        module = load_collector('new_public_sources_collector', folder / 'uk_ch/new_sources.py')
+        for function in ('collect_ictjobs', 'collect_yubhub', 'collect_active_vacancies'):
+            try:
+                result = getattr(module, function)()
+                add(result['source'], result.get('records', []),
+                    None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
+            except Exception as exc:
+                add({'collect_ictjobs': 'ictjobs.ch RSS', 'collect_yubhub': 'YubHub',
+                     'collect_active_vacancies': 'Active Vacancies'}[function], [], type(exc).__name__)
+        try:
+            result = module.collect_jobserve(collect.secrets().get('JOBSERVE_RSS_URL', ''))
+            add(result['source'], result.get('records', []),
+                None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
+        except Exception as exc:
+            add('JobServe RSS', [], type(exc).__name__)
+    except Exception as exc:
+        for source in ('ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS'):
+            add(source, [], type(exc).__name__)
     return fresh
 
 

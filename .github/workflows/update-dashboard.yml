@@ -49,6 +49,7 @@ jobs:
           HEADCOUNTLABS_API_KEY: ${{ secrets.HEADCOUNTLABS_API_KEY }}
           HIRINGINDEX_API_KEY: ${{ secrets.HIRINGINDEX_API_KEY }}
           SUPERJOB_APP_SECRET: ${{ secrets.SUPERJOB_APP_SECRET }}
+          JOBSERVE_RSS_URL: ${{ secrets.JOBSERVE_RSS_URL }}
         run: python work/api_connector/refresh.py
 
       - name: Check dashboard display

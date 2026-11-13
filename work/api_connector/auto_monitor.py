@@ -14,7 +14,8 @@ JUNIOR = re.compile(r'\b(junior|graduate|intern|internship|trainee|entry[- ]leve
 OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+обучен|researcher|\btrader\b|учител|военнослуж|chauffeur|driver|водител', re.I)
 NUMBER = r'(?:\d{1,3}(?:[ ,.]\d{3})+(?:[,.]\d+)?|\d+(?:[,.]\d+)?)'
 BONUS = re.compile(r'total comp|target comp|\bTC\b|\bOTE\b|bonus|equity|sign[- ]?on|one[- ]?time|единоврем|преми|бонус|подъ[её]мн', re.I)
-NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs UK RSS', 'Hiring Index'}
+NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs UK RSS', 'Hiring Index',
+                      'ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS'}
 NORMALIZED_PREFIXES = ('Telegram @', 'Greenhouse:', 'HH RSS:', 'Lever:', 'Ashby:')
 
 
@@ -440,7 +441,7 @@ def salary_rows(source, region, raw, description):
 def job_urls(source, raw):
     if normalized_source(source):
         # Related links often point to channel home pages or referral lists; they are not job identity.
-        values = [raw.get('application_url'), raw.get('url'), raw.get('applyUrl')]
+        values = [raw.get('application_url'), raw.get('url'), raw.get('applyUrl'), raw.get('activevacancies_url')]
         return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
     values = [value(p.get('posting_url')) or value(p.get('application_url')) for p in raw.get('postings', [])] if source == 'Headcount Labs' else [raw.get('link') or raw.get('vac_url') or raw.get('redirect_url') or raw.get('url')]
     return list(dict.fromkeys(url for url in values if isinstance(url, str) and url.startswith(('https://', 'http://'))))
