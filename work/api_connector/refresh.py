@@ -143,12 +143,12 @@ def expanded_public_sources(previous, now):
         fresh.append({'source': source, 'records': records, 'status': 'queried',
                       'observed_at': observed or now, 'retrieved_at': now, 'refresh_policy': 'weekly'})
 
-    def collect(name, relative_path, function='collect', **kwargs):
+    def load_records(name, relative_path, function='collect', **kwargs):
         module = load_collector(name, folder / relative_path)
         return getattr(module, function)(**kwargs)
 
     try:
-        rows = collect('greenhouse_collector', 'ats/collect.py')
+        rows = load_records('greenhouse_collector', 'ats/collect.py')
         for row in rows:
             source = row['source']
             records = [{'region': item['region'], 'query': 'public ATS board C++', 'raw': item}
@@ -163,7 +163,7 @@ def expanded_public_sources(previous, now):
             add(source, [], errors['greenhouse'])
 
     try:
-        rows = collect('lever_ashby_collector', 'lever_ashby/collect.py')
+        rows = load_records('lever_ashby_collector', 'lever_ashby/collect.py')
         for row in rows:
             add(row['source'], row.get('records', []), None if row.get('status') == 'queried' else
                 ', '.join(str(req.get('status')) for req in row.get('requests', [])), row.get('observed_at'))
@@ -178,7 +178,7 @@ def expanded_public_sources(previous, now):
         telegram_channels = ('cppdevjob', 'c_rabota', 'forcpp', 'ProCxxJobs',
                              'phystechcareerchannel', 'careerspace',
                              'switzerlanddevjobs', 'devitjobs')
-        result = collect('telegram_collector', 'telegram/collect.py', channels=telegram_channels)
+        result = load_records('telegram_collector', 'telegram/collect.py', channels=telegram_channels)
         channel_status = {row['channel']: row['status'] for row in result.get('attempts', []) if row.get('page') == 1}
         for channel in telegram_channels:
             source = f'Telegram @{channel}'
