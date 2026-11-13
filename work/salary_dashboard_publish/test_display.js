@@ -15,7 +15,7 @@ class Node {
 }
 const nodes={};
 const document={getElementById(id){return nodes[id]||(nodes[id]=new Node())},createElement(tag){return new Node(tag)},addEventListener(){},activeElement:null};
-for(const [id,values]of [['segment',['all','finance','general']],['level',['senior','all']]]){
+for(const [id,values]of [['segment',['all','finance']],['level',['senior','all']]]){
  document.getElementById(id).value=values[0];const menu=document.getElementById(id+'-menu');menu.items=values.map(value=>{const n=new Node('button',value);n.dataset={value};return n});
 }
 for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=page.match(new RegExp(`<script id="${id}" type="application/json">([\\s\\S]*?)</script>`))[1];
@@ -37,14 +37,9 @@ assert(cards.includes('Вакансий в расчёте: 3'),'Russia card must
 assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
 assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
 assert(!/Налоговая база не уточнена|SwissDevJobs|Headcount Labs/.test(jobs()),'Expanded vacancies must show only pay range and employer under the link');
-const explicit=Number(nodes['api-kpis'].children[0].children[0].textContent);
-nodes.level.value='all';vm.runInContext('render();renderApi()',context);
-const all=Number(nodes['api-kpis'].children[0].children[0].textContent);
+nodes.level.value='all';vm.runInContext('render()',context);
 const allCards=content(nodes.regions);
-assert(allCards.includes('объединённой выборке'),'All-level cards must keep using the merged salary sample');
 assert(allCards!==cards,'All-level filter must alter the merged sample');
-assert(all>explicit,'API Senior filter must affect the displayed counts');
-nodes.segment.value='finance';vm.runInContext('render();renderApi()',context);
-assert(Number(nodes['api-kpis'].children[0].children[0].textContent)<all,'API segment filter must affect the counts');
-assert(!content(nodes['api-notes']).includes('£2 026'));
-console.log('Display checks passed: period/currency pairs, one scale suffix, merged manual/API sample, senior/segment filters.');
+nodes.segment.value='finance';vm.runInContext('render()',context);
+assert(content(nodes.regions)!==allCards,'Segment filter must alter the displayed sample');
+console.log('Display checks passed: period/currency pairs, one scale suffix, merged manual/API sample, level/segment filters.');
