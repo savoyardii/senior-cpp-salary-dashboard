@@ -31,7 +31,7 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
 }
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 const cards=content(nodes.regions);
-for(const name of ['Switzerland','London, UK','Russia']){
+for(const name of ['Швейцария','Лондон','Россия']){
  const card=nodes.regions.children.find(region=>content(region).includes(name));
  assert(card,`${name} card must be rendered`);
  const count=Number(content(card).match(/Вакансий в расчёте: (\d+)/)?.[1]);
