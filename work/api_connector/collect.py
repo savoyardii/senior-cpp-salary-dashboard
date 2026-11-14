@@ -224,14 +224,12 @@ def jooble(keys):
     markets = (("Russia", "ru.jooble.org", keys.get("JOOBLE_RU_API_KEY"), "Russia"),
                ("London, UK", "uk.jooble.org", keys.get("JOOBLE_UK_API_KEY"), "London"),
                ("Switzerland", "ch.jooble.org", keys.get("JOOBLE_CH_API_KEY"), "Switzerland"))
-    if not all(key for _, _, key, _ in markets):
+    available = [(region, host, key, location) for region, host, key, location in markets if key]
+    result["missing_regions"] = [region for region, _, key, _ in markets if not key]
+    if not available:
         result["status"] = "missing_key"
-        result["missing_regions"] = [region for region, _, key, _ in markets if not key]
         return result
-    for region, host, key, location in markets:
-        if not key:
-            result["requests"].append({"region": region, "status": "missing_key"})
-            continue
+    for region, host, key, location in available:
         try:
             data, _ = request_json(f"https://{host}/api/{urllib.parse.quote(key, safe='')}",
                                    {"Accept": "application/json"},
