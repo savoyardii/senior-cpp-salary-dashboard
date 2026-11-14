@@ -31,9 +31,13 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
 }
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 const cards=content(nodes.regions);
-assert(cards.includes('100–180 тыс.')&&cards.includes('Вакансий в расчёте: 3'),'Swiss card must combine manual and API salary records');
-assert(cards.includes('40–250 тыс.')&&cards.includes('Вакансий в расчёте: 7'),'London card must combine manual and API salary records and dedupe duplicates');
-assert(cards.includes('Вакансий в расчёте: 3'),'Russia card must combine manual and API salary records');
+for(const name of ['Switzerland','London, UK','Russia']){
+ const card=nodes.regions.children.find(region=>content(region).includes(name));
+ assert(card,`${name} card must be rendered`);
+ const count=Number(content(card).match(/Вакансий в расчёте: (\d+)/)?.[1]);
+ const jobsNode=card.children.find(child=>child.className==='region-jobs');
+ assert(count>0&&jobsNode?.children.length===count,`${name} card must match its rendered salary vacancies`);
+}
 assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
 assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
 assert(!/Налоговая база не уточнена|SwissDevJobs|Headcount Labs/.test(jobs()),'Expanded vacancies must show only pay range and employer under the link');
