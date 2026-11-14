@@ -217,6 +217,34 @@ def collect_active_vacancies():
             "requests_used": requests_used, "records": list(rows.values())}
 
 
+def collect_habr():
+    now = datetime.now(timezone.utc)
+    url = "https://career.habr.com/vacancies/rss?currency=RUR&sort=relevance&type=all&q=C%2B%2B"
+    root = ET.fromstring(fetch(url, "application/rss+xml,application/xml,text/xml;q=0.9"))
+    records = {}
+    for item in root.findall(".//item"):
+        title = text(item.findtext("title"))
+        description = text(item.findtext("description") or "")
+        link = (item.findtext("link") or "").strip()
+        posted = dated(item.findtext("pubDate"))
+        if (not CPP.search(title + " " + description) or not valid_url(link, {"career.habr.com"})
+                or not re.search(r"/vacancies/\d+", urlsplit(link).path)):
+            continue
+        if posted and not now - timedelta(days=90) <= posted <= now + timedelta(days=1):
+            continue
+        match = re.search(r"(?:вакансия компании:\s*)([^.\n]+)", description, re.I)
+        key = urlsplit(link).path.rstrip("/")
+        records[key] = {"region": "Russia", "query": "C++ RSS", "raw": {
+            "id": key.rsplit("/", 1)[-1], "title": title, "employer": match.group(1).strip() if match else "",
+            "description": description, "url": link, "location": "Russia", "city": "Russia",
+            "country": "RU", "source_posted_at": posted.isoformat() if posted else None,
+            "observed_at": now.isoformat(), "is_closed": False,
+        }}
+    return {"source": "Habr Career RSS", "status": "queried", "observed_at": now.isoformat(),
+            "refresh_policy": "weekly; public C++ RSS; recent vacancies; Russian market", "requests_used": 1,
+            "records": list(records.values())}
+
+
 def collect_jobserve(feed_url):
     if not feed_url:
         return {"source": "JobServe RSS", "status": "requires_login", "records": [],

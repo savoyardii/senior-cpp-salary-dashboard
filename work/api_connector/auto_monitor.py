@@ -15,7 +15,8 @@ OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+о�
 NUMBER = r'(?:\d{1,3}(?:[ ,.]\d{3})+(?:[,.]\d+)?|\d+(?:[,.]\d+)?)'
 BONUS = re.compile(r'total comp|target comp|\bTC\b|\bOTE\b|bonus|equity|sign[- ]?on|one[- ]?time|единоврем|преми|бонус|подъ[её]мн', re.I)
 NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs UK RSS', 'Hiring Index',
-                      'ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS'}
+                      'ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS', 'Habr Career RSS',
+                      'Jooble API', 'Careerjet API', 'Techmap API'}
 NORMALIZED_PREFIXES = ('Telegram @', 'Greenhouse:', 'HH RSS:', 'Lever:', 'Ashby:')
 
 

@@ -193,7 +193,7 @@ def expanded_public_sources(previous, now):
             add(f'Telegram @{channel}', [], errors['telegram'])
 
     try:
-        result = collect('hh_rss_collector', 'russia/hh_rss.py')
+        result = load_records('hh_rss_collector', 'russia/hh_rss.py')
         records = [{'region': 'Russia', 'query': 'HeadHunter public RSS', 'raw': row}
                    for row in result.get('records', [])]
         error = None if result.get('status') == 'queried' and any(r.get('status') == 'ok' for r in result.get('requests', [])) else result.get('status', 'no successful query')
@@ -203,7 +203,7 @@ def expanded_public_sources(previous, now):
 
     for name, path in (('SwissDevJobs', 'uk_ch/swissdevjobs.py'), ('Himalayas', 'uk_ch/himalayas.py')):
         try:
-            result = collect(name.lower() + '_collector', path)
+            result = load_records(name.lower() + '_collector', path)
             records = result.get('records', [])
             if name == 'SwissDevJobs':
                 records = [{'region': row['region'], 'query': 'SwissDevJobs RSS', 'raw': row['raw']} for row in records]
@@ -211,21 +211,21 @@ def expanded_public_sources(previous, now):
         except Exception as exc:
             add(name, [], type(exc).__name__)
     try:
-        result = collect('devitjobs_uk_collector', 'uk_ch/devitjobs_uk.py')
+        result = load_records('devitjobs_uk_collector', 'uk_ch/devitjobs_uk.py')
         add(result['source'], result.get('records', []), None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
     except Exception as exc:
         add('DevITjobs UK RSS', [], type(exc).__name__)
 
     try:
         module = load_collector('new_public_sources_collector', folder / 'uk_ch/new_sources.py')
-        for function in ('collect_ictjobs', 'collect_yubhub', 'collect_active_vacancies'):
+        for function in ('collect_ictjobs', 'collect_yubhub', 'collect_active_vacancies', 'collect_habr'):
             try:
                 result = getattr(module, function)()
                 add(result['source'], result.get('records', []),
                     None if result.get('status') == 'queried' else result.get('status'), result.get('observed_at'))
             except Exception as exc:
                 add({'collect_ictjobs': 'ictjobs.ch RSS', 'collect_yubhub': 'YubHub',
-                     'collect_active_vacancies': 'Active Vacancies'}[function], [], type(exc).__name__)
+                     'collect_active_vacancies': 'Active Vacancies', 'collect_habr': 'Habr Career RSS'}[function], [], type(exc).__name__)
         try:
             result = module.collect_jobserve(collect.secrets().get('JOBSERVE_RSS_URL', ''))
             add(result['source'], result.get('records', []),
@@ -233,7 +233,7 @@ def expanded_public_sources(previous, now):
         except Exception as exc:
             add('JobServe RSS', [], type(exc).__name__)
     except Exception as exc:
-        for source in ('ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS'):
+        for source in ('ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'Habr Career RSS', 'JobServe RSS'):
             add(source, [], type(exc).__name__)
     return fresh
 
@@ -259,6 +259,9 @@ def refresh():
         collect.dedupe(collect.hiring_index(keys.get('HIRINGINDEX_API_KEY', ''))),
         collect.dedupe(collect.superjob(keys.get('SUPERJOB_APP_SECRET', ''))),
         collect.dedupe(collect.trudvsem()),
+        collect.dedupe(collect.jooble(keys)),
+        collect.dedupe(collect.techmap(keys.get('TECHMAP_RAPIDAPI_KEY', ''), previous.get('Techmap API'))),
+        collect.dedupe(collect.careerjet(keys.get('CAREERJET_API_KEY', ''), keys.get('CAREERJET_USER_IP', ''))),
     ]
     sources = []
     for source in fresh:
@@ -269,6 +272,10 @@ def refresh():
             kept = deepcopy(previous[source['source']])
             kept['refresh_attempted_at'] = now
             kept['refresh_error'] = ', '.join(sorted({row.get('status', 'unknown') for row in source.get('requests', []) if row.get('status') != 'ok'})) or source.get('status') or 'no_successful_requests'
+            if source['source'] == 'Techmap API':
+                for key in ('requests_used_month', 'quota_month', 'request_cap_month'):
+                    if key in source:
+                        kept[key] = source[key]
             sources.append(kept)
         else:
             source['retrieved_at'] = None
@@ -288,6 +295,7 @@ def refresh():
         'sources': sources,
     }
     assert all(row['source'] != 'Adzuna' or row.get('requests_used', 0) <= row.get('request_cap', 0) for row in sources)
+    assert all(row['source'] != 'Techmap API' or row.get('requests_used_month', 0) <= row.get('request_cap_month', 15) for row in sources)
     SNAPSHOT.parent.mkdir(exist_ok=True)
     save_and_build(snapshot)
     print('Dashboard refreshed:', now)

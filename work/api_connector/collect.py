@@ -7,6 +7,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import base64
 
 ROOT = Path(__file__).resolve().parent
 ENV_FILE = ROOT / ".env"
@@ -215,6 +216,150 @@ def trudvsem():
                 result["requests"].append({"query": query, "offset": offset, "status": str(exc) or "invalid_response"})
                 break
     result["status"] = "queried"
+    return result
+
+
+def jooble(keys):
+    result = {"source": "Jooble API", "requests": [], "records": [], "request_cap": 3}
+    markets = (("Russia", "ru.jooble.org", keys.get("JOOBLE_RU_API_KEY"), "Russia"),
+               ("London, UK", "uk.jooble.org", keys.get("JOOBLE_UK_API_KEY"), "London"),
+               ("Switzerland", "ch.jooble.org", keys.get("JOOBLE_CH_API_KEY"), "Switzerland"))
+    if not all(key for _, _, key, _ in markets):
+        result["status"] = "missing_key"
+        result["missing_regions"] = [region for region, _, key, _ in markets if not key]
+        return result
+    for region, host, key, location in markets:
+        if not key:
+            result["requests"].append({"region": region, "status": "missing_key"})
+            continue
+        try:
+            data, _ = request_json(f"https://{host}/api/{urllib.parse.quote(key, safe='')}",
+                                   {"Accept": "application/json"},
+                                   {"keywords": "C++", "location": location, "page": "1", "ResultOnPage": 50})
+            if not isinstance(data, dict):
+                raise RuntimeError("invalid_response")
+            rows = data.get("jobs", [])
+            if not isinstance(rows, list):
+                raise RuntimeError("invalid_response")
+            result["requests"].append({"region": region, "returned": len(rows), "total": data.get("totalCount"), "status": "ok"})
+            for row in rows:
+                if not isinstance(row, dict):
+                    continue
+                url = row.get("link") or ""
+                salary = str(row.get("salary") or "")
+                raw = {"id": str(row.get("id") or url), "title": row.get("title") or "",
+                       "employer": row.get("company") or "", "description": (row.get("snippet") or "") + (f" Salary: {salary}" if salary else ""),
+                       "location": row.get("location") or location, "city": row.get("location") or location,
+                       "country": {"Russia": "RU", "London, UK": "GB", "Switzerland": "CH"}[region],
+                       "url": url, "source_posted_at": row.get("updated"), "salary_snippet": salary,
+                       "salary_basis": "job_board" if salary else None}
+                result["records"].append({"region": region, "query": "C++", "raw": raw})
+        except RuntimeError as exc:
+            result["requests"].append({"region": region, "status": str(exc)})
+    result["status"] = "queried" if result["requests"] else "missing_key"
+    return result
+
+
+def techmap(key, previous=None):
+    month = datetime.now(timezone.utc).strftime("%Y-%m")
+    used = (previous or {}).get("requests_used_month", 0) if (previous or {}).get("quota_month") == month else 0
+    result = {"source": "Techmap API", "requests": [], "records": [], "request_cap_month": 15,
+              "requests_used_month": used, "quota_month": month}
+    if not key:
+        result["status"] = "missing_key"
+        return result
+    if used + 3 > result["request_cap_month"]:
+        result["status"] = "monthly_free_request_cap_reached"
+        return result
+    headers = {"X-RapidAPI-Key": key, "X-RapidAPI-Host": "daily-international-job-postings.p.rapidapi.com",
+               "Accept": "application/json"}
+    markets = (("Switzerland", "ch"), ("London, UK", "uk"), ("Russia", "ru"))
+    for region, country in markets:
+        params = urllib.parse.urlencode({"countryCode": country, "title": "C++", "page": 1, "pageSize": 10, "sort": "newest"})
+        try:
+            result["requests_used_month"] += 1
+            data, _ = request_json("https://daily-international-job-postings.p.rapidapi.com/api/v2/jobs/search?" + params, headers)
+            if not isinstance(data, dict):
+                raise RuntimeError("invalid_response")
+            rows = data.get("result", data.get("jobs", []))
+            if not isinstance(rows, list):
+                raise RuntimeError("invalid_response")
+            result["requests"].append({"region": region, "returned": len(rows), "status": "ok"})
+            country_code = {"Switzerland": "CH", "London, UK": "GB", "Russia": "RU"}[region]
+            for row in rows:
+                if not isinstance(row, dict):
+                    continue
+                schema = row.get("jsonLD") or {}
+                if not isinstance(schema, dict):
+                    schema = {}
+                place = schema.get("jobLocation") or {}
+                if not isinstance(place, dict):
+                    place = {}
+                address = place.get("address") or {}
+                if isinstance(address, list):
+                    address = address[0] if address else {}
+                address_city = address if isinstance(address, str) else address.get("addressLocality") if isinstance(address, dict) else ""
+                city = row.get("city") or address_city or place.get("name") or region
+                pay = schema.get("baseSalary") or {}
+                if not isinstance(pay, dict):
+                    pay = {}
+                value = pay.get("value") or {}
+                if not isinstance(value, dict):
+                    value = {}
+                unit = str(value.get("unitText") or "").casefold()
+                period = "year" if "year" in unit or "annual" in unit else "month" if "month" in unit else "day" if "day" in unit else None
+                raw = {"id": str(schema.get("identifier") or row.get("id") or row.get("url") or ""),
+                       "title": row.get("title") or schema.get("title") or "", "employer": row.get("company") or "",
+                       "description": schema.get("description") or row.get("description") or "",
+                       "location": city, "city": city, "country": country_code,
+                       "url": schema.get("url") or row.get("url") or "", "source_posted_at": row.get("dateCreated") or schema.get("datePosted"),
+                       "expires_at": schema.get("validThrough"), "salary_min": value.get("minValue"),
+                       "salary_max": value.get("maxValue"), "currency": pay.get("currency") or row.get("salaryCurrency"),
+                       "period": period, "salary_basis": "job_board" if pay else None}
+                result["records"].append({"region": region, "query": "C++", "raw": raw})
+        except RuntimeError as exc:
+            result["requests"].append({"region": region, "status": str(exc)})
+    result["status"] = "queried" if result["requests"] else "missing_key"
+    return result
+
+
+def careerjet(key, user_ip):
+    result = {"source": "Careerjet API", "requests": [], "records": []}
+    if not key or not user_ip:
+        result["status"] = "missing_key_or_user_ip"
+        return result
+    auth = base64.b64encode((key + ":").encode()).decode()
+    markets = (("Switzerland", "de_CH", "Switzerland", "CH"),
+               ("London, UK", "en_GB", "London", "GB"),
+               ("Russia", "ru_RU", "Russia", "RU"))
+    for region, locale, location, country in markets:
+        params = urllib.parse.urlencode({"keywords": "C++", "location": location, "locale_code": locale,
+                                         "sort": "date", "page": 1, "page_size": 50,
+                                         "user_ip": user_ip, "user_agent": "SpectralSalaryDashboard/1.0"})
+        try:
+            data, _ = request_json("https://search.api.careerjet.net/v4/query?" + params,
+                                   {"Authorization": "Basic " + auth, "Accept": "application/json"})
+            if not isinstance(data, dict):
+                raise RuntimeError("invalid_response")
+            rows = data.get("jobs", [])
+            if not isinstance(rows, list):
+                raise RuntimeError("invalid_response")
+            result["requests"].append({"region": region, "returned": len(rows), "total": data.get("hits"), "status": "ok"})
+            for row in rows:
+                if not isinstance(row, dict):
+                    continue
+                pay_period = {"Y": "year", "M": "month", "D": "day"}.get(str(row.get("salary_type") or "").upper())
+                raw = {"id": str(row.get("url") or row.get("title") or ""), "title": row.get("title") or "",
+                       "employer": row.get("company") or "", "description": row.get("description") or "",
+                       "location": row.get("locations") or location, "city": row.get("locations") or location,
+                       "country": country, "url": row.get("url") or "", "source_posted_at": row.get("date"),
+                       "salary_min": row.get("salary_min"), "salary_max": row.get("salary_max"),
+                       "currency": row.get("salary_currency_code"), "period": pay_period,
+                       "salary_basis": "job_board" if pay_period else None, "salary_snippet": row.get("salary")}
+                result["records"].append({"region": region, "query": "C++", "raw": raw})
+        except RuntimeError as exc:
+            result["requests"].append({"region": region, "status": str(exc)})
+    result["status"] = "queried" if result["requests"] else "missing_key"
     return result
 
 

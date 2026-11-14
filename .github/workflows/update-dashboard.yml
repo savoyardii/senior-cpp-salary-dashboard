@@ -50,6 +50,12 @@ jobs:
           HIRINGINDEX_API_KEY: ${{ secrets.HIRINGINDEX_API_KEY }}
           SUPERJOB_APP_SECRET: ${{ secrets.SUPERJOB_APP_SECRET }}
           JOBSERVE_RSS_URL: ${{ secrets.JOBSERVE_RSS_URL }}
+          JOOBLE_RU_API_KEY: ${{ secrets.JOOBLE_RU_API_KEY }}
+          JOOBLE_UK_API_KEY: ${{ secrets.JOOBLE_UK_API_KEY }}
+          JOOBLE_CH_API_KEY: ${{ secrets.JOOBLE_CH_API_KEY }}
+          TECHMAP_RAPIDAPI_KEY: ${{ secrets.TECHMAP_RAPIDAPI_KEY }}
+          CAREERJET_API_KEY: ${{ secrets.CAREERJET_API_KEY }}
+          CAREERJET_USER_IP: ${{ secrets.CAREERJET_USER_IP }}
         run: python work/api_connector/refresh.py
 
       - name: Check dashboard display
