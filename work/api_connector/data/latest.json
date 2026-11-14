@@ -1,15 +1,15 @@
 {
-  "observed_at": "2026-11-13T12:31:01.188428+00:00",
+  "observed_at": "2026-11-14T07:19:22.226228+00:00",
   "fx": {
     "provider": "ExchangeRate-API",
     "base": "USD",
-    "updated_at": "Fri, 13 Nov 2026 00:02:31 +0000",
-    "fetched_at": "2026-11-13T12:31:01.250251+00:00",
+    "updated_at": "Sat, 14 Nov 2026 00:02:31 +0000",
+    "fetched_at": "2026-11-14T07:19:22.274018+00:00",
     "rates": {
       "USD": 1,
-      "CHF": 0.83437,
-      "GBP": 0.755149,
-      "RUB": 82.849685
+      "CHF": 0.838606,
+      "GBP": 0.756419,
+      "RUB": 82.504954
     }
   },
   "refresh_policy": "Weekly API, public RSS/Telegram preview, and employer ATS refresh. Adzuna is a static pilot snapshot and is never queried here.",
@@ -48655,7 +48655,9 @@
       "status": "queried",
       "records_before_dedupe": 441,
       "duplicate_hits_removed": 19,
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00"
+      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
+      "refresh_error": "HTTP 503, TimeoutError"
     },
     {
       "source": "Hiring Index",
@@ -48668,7 +48670,7 @@
       "records_before_dedupe": 0,
       "duplicate_hits_removed": 0,
       "retrieved_at": null,
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "missing_key"
     },
     {
@@ -48796,7 +48798,7 @@
               "link": "https://www.superjob.ru/clients/gk-rusagro-874575/vacancies.html",
               "industry": [],
               "description": "Группа Компаний «РУСАГРО» - это крупнейший вертикальный агрохолдинг России. В настоящее время занимает лидирующие позиции в производстве сахара, свиноводстве, растениеводстве и масложировом бизнесе. Земельный банк Группы – более 600 тыс. га. В 2015 г. по версии ряда инвестиционных банков Группа Компаний «Русагро» была признана одной из самых прибыльных и быстрорастущих компаний мира в потребительском сегменте в СНГ. Акции Компании торгуются на Лондонской и Московской биржах.\n\nОсновные активы Группы Компаний «Русагро» расположены в Белгородской, Тамбовской, Свердловской, Воронежской, Самарской, Курской и Орловской областях, а также в Приморском крае, что обеспечивает региональную диверсификацию бизнеса. Штаб-квартира холдинга находится в Москве.\n\nВо всех бизнес-направлениях Группа активно внедряет современные мировые технологии как с точки зрения оборудования, так и с точки зрения управленческих практик.\n\nГеография продаж «Русагро» постоянно расширяется. В настоящее время Компания реализует продукцию более чем в 80 регионах России и более чем в 15 странах мира.\n\nПродукция «Русагро» продается под следующими торговыми марками:\n\n\"Русский сахар\", \"Чайкофский\", \"Брауни\", \"Mon Cafe\", \"Теплые традиции\" (рис, крупа), \"Мечта хозяйки\", \"Щедрое лето\", \"Провансаль ЕЖК\", \"ЕЖК Готовим дома\", \"Маслава\", \"Soya&Co, \"Слово мясника\".\n\nВ компании работают более 20 тысяч человек. Группа рассматривает своих сотрудников как главную и самостоятельную ценность и предоставляет им возможность реализовать свой потенциал, совершенствовать имеющиеся знания и навыки, а также участвовать в интересных инновационных проектах.\n\nНеотъемлемой и важной частью деятельности Группы Компаний «Русагро» является корпоративная социальная ответственность. Компания способствует развитию регионов своего присутствия, заботится о защите окружающей среды, осуществляет профессиональное управление охраной здоровья сотрудников и безопасностью труда, своевременно выплачивает налоги и заработную плату, а также осуществляет широкую благотворительную деятельность, направленную на развитие образования.",
-              "vacancy_count": 343,
+              "vacancy_count": 344,
               "staff_count": "1000 — 5000",
               "client_logo": "https://public.superjob.ru/images/clients_logos.ru/874575_68d27dd6e751cec595c21d483dcef279.jpg",
               "address": null,
@@ -49867,7 +49869,7 @@
             "payment_to": 0,
             "date_pub_to": 1796481904,
             "date_archived": 0,
-            "date_published": 1794494704,
+            "date_published": 1794581104,
             "address": null,
             "profession": "Data Scientist, Корзина товаров",
             "work": null,
@@ -53690,7 +53692,7 @@
             "payment_to": 0,
             "date_pub_to": 1796625909,
             "date_archived": 0,
-            "date_published": 1793860943,
+            "date_published": 1794638543,
             "address": null,
             "profession": "Golang разработчик",
             "work": null,
@@ -54104,7 +54106,7 @@
             "payment_to": 0,
             "date_pub_to": 1795792255,
             "date_archived": 0,
-            "date_published": 1794496255,
+            "date_published": 1794582655,
             "address": "Москва, пр-кт Андропова, д. 18 к. 5",
             "profession": "Риск-технолог (МСБ)",
             "work": null,
@@ -58760,7 +58762,7 @@
       "status": "queried",
       "records_before_dedupe": 138,
       "duplicate_hits_removed": 69,
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00"
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00"
     },
     {
       "source": "Работа России",
@@ -64162,7 +64164,7 @@
       "status": "queried",
       "records_before_dedupe": 82,
       "duplicate_hits_removed": 15,
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00"
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00"
     },
     {
       "source": "Yandex Delivery Careers",
@@ -64219,7 +64221,7 @@
       "observed_at": "2026-11-12T12:54:09.566420+00:00",
       "retrieved_at": "2026-11-12T12:54:09.566420+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "no_strict_current_records; retained prior snapshot"
     },
     {
@@ -64410,7 +64412,7 @@
       "observed_at": "2026-11-12T12:54:09.566420+00:00",
       "retrieved_at": "2026-11-12T12:54:09.566420+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "no_strict_current_records; retained prior snapshot"
     },
     {
@@ -64783,7 +64785,7 @@
             "region": "London, UK",
             "published_at": "2026-05-14T10:15:15-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64808,7 +64810,7 @@
             "region": "London, UK",
             "published_at": "2026-08-14T17:26:40-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64833,7 +64835,7 @@
             "region": "London, UK",
             "published_at": "2026-03-10T15:13:53-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64858,7 +64860,7 @@
             "region": "London, UK",
             "published_at": "2026-10-12T14:18:28-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64883,7 +64885,7 @@
             "region": "London, UK",
             "published_at": "2026-10-15T15:05:02-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64908,7 +64910,7 @@
             "region": "London, UK",
             "published_at": "2026-08-10T18:43:54-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.214683+00:00",
+            "observed_at": "2026-11-14T07:23:13.143603+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64919,8 +64921,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.214683+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.143603+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -64942,7 +64944,7 @@
             "region": "London, UK",
             "published_at": "2026-08-19T13:29:53-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64967,7 +64969,7 @@
             "region": "London, UK",
             "published_at": "2026-05-11T04:39:46-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -64992,7 +64994,7 @@
             "region": "London, UK",
             "published_at": "2026-11-06T12:11:46-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65017,7 +65019,7 @@
             "region": "London, UK",
             "published_at": "2026-05-15T06:41:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65042,7 +65044,7 @@
             "region": "London, UK",
             "published_at": "2026-08-07T11:52:54-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65067,7 +65069,7 @@
             "region": "London, UK",
             "published_at": "2025-11-05T12:24:39-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65092,7 +65094,7 @@
             "region": "London, UK",
             "published_at": "2025-08-18T11:02:03-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65117,7 +65119,7 @@
             "region": "London, UK",
             "published_at": "2026-06-02T06:30:49-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65142,7 +65144,7 @@
             "region": "London, UK",
             "published_at": "2026-08-19T12:17:16-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65167,7 +65169,7 @@
             "region": "London, UK",
             "published_at": "2026-07-13T05:04:35-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65192,7 +65194,7 @@
             "region": "London, UK",
             "published_at": "2026-04-09T09:50:29-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65217,7 +65219,7 @@
             "region": "London, UK",
             "published_at": "2025-11-04T12:42:37-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.381057+00:00",
+            "observed_at": "2026-11-14T07:23:13.369982+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65228,8 +65230,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.381057+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.369982+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -65251,7 +65253,7 @@
             "region": "London, UK",
             "published_at": "2026-09-25T14:00:58-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.541586+00:00",
+            "observed_at": "2026-11-14T07:23:13.573672+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65262,8 +65264,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.541586+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.573672+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -65285,7 +65287,7 @@
             "region": "London, UK",
             "published_at": "2026-09-17T11:19:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.651857+00:00",
+            "observed_at": "2026-11-14T07:23:13.694119+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65310,7 +65312,7 @@
             "region": "London, UK",
             "published_at": "2026-09-28T15:54:17-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.651857+00:00",
+            "observed_at": "2026-11-14T07:23:13.694119+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65321,8 +65323,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.651857+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.694119+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -65344,7 +65346,7 @@
             "region": "London, UK",
             "published_at": "2026-07-13T06:37:52-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.717878+00:00",
+            "observed_at": "2026-11-14T07:23:13.781784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65369,7 +65371,7 @@
             "region": "London, UK",
             "published_at": "2026-09-07T07:20:11-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.717878+00:00",
+            "observed_at": "2026-11-14T07:23:13.781784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65380,8 +65382,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.717878+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.781784+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -65403,7 +65405,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T09:57:57-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65428,7 +65430,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T10:10:35-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65453,7 +65455,7 @@
             "region": "London, UK",
             "published_at": "2026-09-08T09:56:30-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65478,7 +65480,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T09:16:09-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65503,7 +65505,7 @@
             "region": "London, UK",
             "published_at": "2023-01-05T09:46:19-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65528,7 +65530,7 @@
             "region": "London, UK",
             "published_at": "2024-11-28T11:19:56-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65553,7 +65555,7 @@
             "region": "London, UK",
             "published_at": "2025-06-26T05:24:22-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65578,7 +65580,7 @@
             "region": "London, UK",
             "published_at": "2025-11-19T06:24:25-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65603,7 +65605,7 @@
             "region": "London, UK",
             "published_at": "2025-07-23T10:49:59-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65628,7 +65630,7 @@
             "region": "London, UK",
             "published_at": "2026-11-03T04:56:02-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65653,7 +65655,7 @@
             "region": "London, UK",
             "published_at": "2026-01-23T10:28:08-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65678,7 +65680,7 @@
             "region": "London, UK",
             "published_at": "2026-11-03T05:30:06-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65703,7 +65705,7 @@
             "region": "London, UK",
             "published_at": "2026-09-02T10:04:14-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65728,7 +65730,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T11:25:27-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65753,7 +65755,7 @@
             "region": "London, UK",
             "published_at": "2026-10-13T05:48:33-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65778,7 +65780,7 @@
             "region": "London, UK",
             "published_at": "2025-10-08T09:28:26-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65803,7 +65805,7 @@
             "region": "London, UK",
             "published_at": "2026-09-30T09:25:32-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65828,32 +65830,7 @@
             "region": "London, UK",
             "published_at": "2026-07-01T05:02:29-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
-            "status": "listed_by_public_employer_board",
-            "salary_min": null,
-            "salary_max": null,
-            "currency": null,
-            "period": null,
-            "salary_provenance": null
-          }
-        },
-        {
-          "region": "Switzerland",
-          "query": "public ATS board C++",
-          "raw": {
-            "source": "Greenhouse: Qube Research & Technologies",
-            "source_id": "6845873002",
-            "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/6845873002",
-            "title": "Quantitative Researcher",
-            "employer": "Qube Research & Technologies",
-            "description": "&lt;p&gt;Qube Research &amp;amp; Technologies (QRT) is a global quantitative and systematic investment manager, operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative mindset which enables us to solve the most complex challenges. QRT’s culture of innovation continuously drives our ambition to deliver high quality returns for our investors.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;br&gt;Your future role within QRT&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Your core objective is to create high quality predictive signals.&lt;/li&gt;\n&lt;li&gt;By leveraging access to large and diversified datasets you will identify statistical patterns and opportunities.&lt;/li&gt;\n&lt;li&gt;Share and discuss research results, methodology, data sets and processes with other researchers.&lt;/li&gt;\n&lt;li&gt;Implement the signals and the relevant datasets within the global execution platform.&lt;/li&gt;\n&lt;li&gt;Monitor signal behaviour and model performance over time.&lt;/li&gt;\n&lt;li&gt;You would lead the full strategy research cycle from signal generation to implementation.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Your present skillset&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in a quantitative field such as data science, statistics, mathematics, physics or engineering.&lt;/li&gt;\n&lt;li&gt;Strong knowledge in statistics, machine learning, NLP or AI techniques is a plus.&lt;/li&gt;\n&lt;li&gt;Capacity to multi-task in a fast paced environment while keeping strong attention to detail.&lt;/li&gt;\n&lt;li&gt;Coding skills required in at least one leading programing language (Python, R, Matlab and /or C++, C#).&lt;/li&gt;\n&lt;li&gt;Experience in exploring large datasets across multiple time frames is a plus.&lt;/li&gt;\n&lt;li&gt;Intellectual curiosity to explore new data sets, solve complex problems, drive innovative processes and connect the dots between multiple fields.&lt;/li&gt;\n&lt;li&gt;Capacity to work with autonomy within a collegial and collaborative environment.&lt;/li&gt;\n&lt;li&gt;Strong capacity to communicate with technologists, data scientists and traders across the globe.&lt;/li&gt;\n&lt;li&gt;Proven track record in delivering successful systematic strategies.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;br&gt;QRT is an equal opportunity employer. We welcome diversity as essential to our success. QRT empowers employees to work openly and respectfully to achieve collective success. In addition to professional achievement, we are offering initiatives and programs to enable employees achieve a healthy work-life balance.&lt;/p&gt;",
-            "location": "Zurich",
-            "city": "Zurich",
-            "country": "CH",
-            "region": "Switzerland",
-            "published_at": "2023-10-03T12:54:35-04:00",
-            "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65878,7 +65855,32 @@
             "region": "London, UK",
             "published_at": "2023-08-14T05:03:02-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
+            "status": "listed_by_public_employer_board",
+            "salary_min": null,
+            "salary_max": null,
+            "currency": null,
+            "period": null,
+            "salary_provenance": null
+          }
+        },
+        {
+          "region": "Switzerland",
+          "query": "public ATS board C++",
+          "raw": {
+            "source": "Greenhouse: Qube Research & Technologies",
+            "source_id": "6845873002",
+            "url": "https://job-boards.greenhouse.io/quberesearchandtechnologies/jobs/6845873002",
+            "title": "Quantitative Researcher",
+            "employer": "Qube Research & Technologies",
+            "description": "&lt;p&gt;Qube Research &amp;amp; Technologies (QRT) is a global quantitative and systematic investment manager, operating in all liquid asset classes across the world. We are a technology and data driven group implementing a scientific approach to investing. Combining data, research, technology and trading expertise has shaped QRT’s collaborative mindset which enables us to solve the most complex challenges. QRT’s culture of innovation continuously drives our ambition to deliver high quality returns for our investors.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;br&gt;Your future role within QRT&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Your core objective is to create high quality predictive signals.&lt;/li&gt;\n&lt;li&gt;By leveraging access to large and diversified datasets you will identify statistical patterns and opportunities.&lt;/li&gt;\n&lt;li&gt;Share and discuss research results, methodology, data sets and processes with other researchers.&lt;/li&gt;\n&lt;li&gt;Implement the signals and the relevant datasets within the global execution platform.&lt;/li&gt;\n&lt;li&gt;Monitor signal behaviour and model performance over time.&lt;/li&gt;\n&lt;li&gt;You would lead the full strategy research cycle from signal generation to implementation.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Your present skillset&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Advanced degree in a quantitative field such as data science, statistics, mathematics, physics or engineering.&lt;/li&gt;\n&lt;li&gt;Strong knowledge in statistics, machine learning, NLP or AI techniques is a plus.&lt;/li&gt;\n&lt;li&gt;Capacity to multi-task in a fast paced environment while keeping strong attention to detail.&lt;/li&gt;\n&lt;li&gt;Coding skills required in at least one leading programing language (Python, R, Matlab and /or C++, C#).&lt;/li&gt;\n&lt;li&gt;Experience in exploring large datasets across multiple time frames is a plus.&lt;/li&gt;\n&lt;li&gt;Intellectual curiosity to explore new data sets, solve complex problems, drive innovative processes and connect the dots between multiple fields.&lt;/li&gt;\n&lt;li&gt;Capacity to work with autonomy within a collegial and collaborative environment.&lt;/li&gt;\n&lt;li&gt;Strong capacity to communicate with technologists, data scientists and traders across the globe.&lt;/li&gt;\n&lt;li&gt;Proven track record in delivering successful systematic strategies.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;br&gt;QRT is an equal opportunity employer. We welcome diversity as essential to our success. QRT empowers employees to work openly and respectfully to achieve collective success. In addition to professional achievement, we are offering initiatives and programs to enable employees achieve a healthy work-life balance.&lt;/p&gt;",
+            "location": "Zurich",
+            "city": "Zurich",
+            "country": "CH",
+            "region": "Switzerland",
+            "published_at": "2023-10-03T12:54:35-04:00",
+            "expires_at": null,
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65903,7 +65905,7 @@
             "region": "London, UK",
             "published_at": "2025-09-05T07:15:49-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65928,7 +65930,7 @@
             "region": "London, UK",
             "published_at": "2025-08-13T13:09:37-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65953,7 +65955,7 @@
             "region": "London, UK",
             "published_at": "2025-09-25T07:55:50-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -65978,7 +65980,7 @@
             "region": "London, UK",
             "published_at": "2026-01-20T13:22:27-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66003,7 +66005,7 @@
             "region": "London, UK",
             "published_at": "2026-10-12T05:48:24-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66028,7 +66030,7 @@
             "region": "London, UK",
             "published_at": "2026-11-05T06:38:17-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66053,7 +66055,7 @@
             "region": "London, UK",
             "published_at": "2026-11-12T08:54:58-05:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66078,7 +66080,7 @@
             "region": "London, UK",
             "published_at": "2025-09-09T06:19:07-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.792259+00:00",
+            "observed_at": "2026-11-14T07:23:13.872784+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66089,8 +66091,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.792259+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:13.872784+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66112,7 +66114,7 @@
             "region": "London, UK",
             "published_at": "2024-09-18T06:57:13-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.951493+00:00",
+            "observed_at": "2026-11-14T07:23:14.098558+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66137,7 +66139,7 @@
             "region": "London, UK",
             "published_at": "2025-09-05T10:26:56-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.951493+00:00",
+            "observed_at": "2026-11-14T07:23:14.098558+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66162,7 +66164,7 @@
             "region": "London, UK",
             "published_at": "2026-10-22T12:17:38-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.951493+00:00",
+            "observed_at": "2026-11-14T07:23:14.098558+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66187,7 +66189,7 @@
             "region": "London, UK",
             "published_at": "2026-10-09T09:58:44-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:26.951493+00:00",
+            "observed_at": "2026-11-14T07:23:14.098558+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66198,8 +66200,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:26.951493+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:14.098558+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66221,7 +66223,7 @@
             "region": "London, UK",
             "published_at": "2024-08-15T17:08:20-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:27.041542+00:00",
+            "observed_at": "2026-11-14T07:23:14.244419+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66246,7 +66248,7 @@
             "region": "London, UK",
             "published_at": "2024-08-15T17:02:22-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:27.041542+00:00",
+            "observed_at": "2026-11-14T07:23:14.244419+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66271,7 +66273,7 @@
             "region": "London, UK",
             "published_at": "2026-09-01T08:39:19-04:00",
             "expires_at": null,
-            "observed_at": "2026-11-13T12:34:27.041542+00:00",
+            "observed_at": "2026-11-14T07:23:14.244419+00:00",
             "status": "listed_by_public_employer_board",
             "salary_min": null,
             "salary_max": null,
@@ -66282,8 +66284,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.041542+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:14.244419+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66304,7 +66306,7 @@
             ],
             "country": "GB",
             "published_at": 1768236614811,
-            "observed_at": "2026-11-13T12:34:27.173908+00:00",
+            "observed_at": "2026-11-14T07:23:14.458608+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66332,7 +66334,7 @@
             ],
             "country": "GB",
             "published_at": 1768238840984,
-            "observed_at": "2026-11-13T12:34:27.173908+00:00",
+            "observed_at": "2026-11-14T07:23:14.458608+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66347,8 +66349,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.173908+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:14.458608+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66369,7 +66371,7 @@
             ],
             "country": "GB",
             "published_at": 1794454342820,
-            "observed_at": "2026-11-13T12:34:27.386735+00:00",
+            "observed_at": "2026-11-14T07:23:15.094897+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66384,8 +66386,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.386735+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:15.094897+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66406,7 +66408,7 @@
             ],
             "country": "GB",
             "published_at": 1619881390307,
-            "observed_at": "2026-11-13T12:34:27.667580+00:00",
+            "observed_at": "2026-11-14T07:23:15.709843+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66434,7 +66436,7 @@
             ],
             "country": "GB",
             "published_at": 1701165457773,
-            "observed_at": "2026-11-13T12:34:27.667580+00:00",
+            "observed_at": "2026-11-14T07:23:15.709843+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66462,7 +66464,7 @@
             ],
             "country": "GB",
             "published_at": 1611095193849,
-            "observed_at": "2026-11-13T12:34:27.667580+00:00",
+            "observed_at": "2026-11-14T07:23:15.709843+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66490,7 +66492,7 @@
             ],
             "country": "GB",
             "published_at": 1711972583795,
-            "observed_at": "2026-11-13T12:34:27.667580+00:00",
+            "observed_at": "2026-11-14T07:23:15.709843+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66505,16 +66507,16 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.667580+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:15.709843+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "Lever: Zurich Instruments",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.819944+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:16.141602+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66537,7 +66539,7 @@
             ],
             "country": "GB",
             "published_at": "2026-10-08T13:04:47.393+00:00",
-            "observed_at": "2026-11-13T12:34:27.916822+00:00",
+            "observed_at": "2026-11-14T07:23:16.465119+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66567,7 +66569,7 @@
             ],
             "country": "GB",
             "published_at": "2026-07-07T13:43:47.997+00:00",
-            "observed_at": "2026-11-13T12:34:27.916822+00:00",
+            "observed_at": "2026-11-14T07:23:16.465119+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66582,8 +66584,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:27.916822+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:16.465119+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66604,7 +66606,7 @@
             ],
             "country": "GB",
             "published_at": "2026-06-11T13:52:42.606+00:00",
-            "observed_at": "2026-11-13T12:34:28.004043+00:00",
+            "observed_at": "2026-11-14T07:23:16.602019+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66619,8 +66621,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:28.004043+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:16.602019+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66641,7 +66643,7 @@
             ],
             "country": "GB",
             "published_at": "2024-05-07T09:58:57.173+00:00",
-            "observed_at": "2026-11-13T12:34:28.136445+00:00",
+            "observed_at": "2026-11-14T07:23:16.772345+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66669,7 +66671,7 @@
             ],
             "country": "GB",
             "published_at": "2026-08-24T14:59:11.200+00:00",
-            "observed_at": "2026-11-13T12:34:28.136445+00:00",
+            "observed_at": "2026-11-14T07:23:16.772345+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66697,7 +66699,7 @@
             ],
             "country": "GB",
             "published_at": "2026-01-15T10:48:08.706+00:00",
-            "observed_at": "2026-11-13T12:34:28.136445+00:00",
+            "observed_at": "2026-11-14T07:23:16.772345+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66725,7 +66727,7 @@
             ],
             "country": "GB",
             "published_at": "2026-11-09T08:49:02.130+00:00",
-            "observed_at": "2026-11-13T12:34:28.136445+00:00",
+            "observed_at": "2026-11-14T07:23:16.772345+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66753,7 +66755,7 @@
             ],
             "country": "GB",
             "published_at": "2026-11-09T16:13:51.204+00:00",
-            "observed_at": "2026-11-13T12:34:28.136445+00:00",
+            "observed_at": "2026-11-14T07:23:16.772345+00:00",
             "status": "published_by_public_employer_ats",
             "salary_min": null,
             "salary_max": null,
@@ -66768,16 +66770,16 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:28.136445+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:16.772345+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "Ashby: Keyrock",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-13T12:34:28.244344+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:16.853035+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -66798,14 +66800,14 @@
             "location": [
               "· Москва или Зеленоград"
             ],
-            "description": "💻 Vital Partners ищет senior C/C++-разработчика для защитного ПО\n\n380 000–450 000 ₽ на руки + премии\nГибрид · Москва или Зеленоград\n\nНужно проектировать модули и базы данных, участвовать в архитектурных решениях и координировать разработчиков. В стеке — C++17/20, Qt5, PostgreSQL и Linux.\n\nТребуются от 5 лет опыта ведущим C/C++-разработчиком, работа над проектами информационной безопасности и знание основ криптографии.\n\nВакансию ведёт агентство Vital Partners, конечный работодатель не назван. Оформление по ТК РФ, ДМС после испытательного срока.\n\nВакансия и отклик\n\n➡️ База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔2\n\n\n2.63K views09:00",
+            "description": "💻 Vital Partners ищет senior C/C++-разработчика для защитного ПО\n\n380 000–450 000 ₽ на руки + премии\nГибрид · Москва или Зеленоград\n\nНужно проектировать модули и базы данных, участвовать в архитектурных решениях и координировать разработчиков. В стеке — C++17/20, Qt5, PostgreSQL и Linux.\n\nТребуются от 5 лет опыта ведущим C/C++-разработчиком, работа над проектами информационной безопасности и знание основ криптографии.\n\nВакансию ведёт агентство Vital Partners, конечный работодатель не назван. Оформление по ТК РФ, ДМС после испытательного срока.\n\nВакансия и отклик\n\n➡️ База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔2\n\n\n2.64K views09:00",
             "salary_min": 380000.0,
             "salary_max": 450000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "380 000–450 000 ₽ на руки + премии",
             "published_at": "2026-10-29T09:00:54+00:00",
-            "observed_at": "2026-11-13T12:34:29.572712+00:00",
+            "observed_at": "2026-11-14T07:23:17.769369+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -66843,14 +66845,14 @@
             "location": [
               "в Санкт-Петербурге · зарплата не указана"
             ],
-            "description": "💻 Dr.Web ищет C++-разработчика для антивирусных решений под Windows\n\nОфис в Санкт-Петербурге · зарплата не указана\n\nПредстоит развивать инфраструктуру интеграции антивирусных решений: добавлять логику, улучшать архитектуру, писать тесты и поддерживать выпущенные версии.\n\nНужны C++11/14/17, STL и опыт многопоточной разработки. WinAPI, WinDbg и умение анализировать аварийные дампы будут плюсом.\n\nОфис на Петроградской стороне, гибкое начало дня. Предлагают официальное оформление, ДМС со стоматологией и обеды.\n\nВакансия и отклик\n\n➡️ База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n\n\n\n2.59K views09:01",
+            "description": "💻 Dr.Web ищет C++-разработчика для антивирусных решений под Windows\n\nОфис в Санкт-Петербурге · зарплата не указана\n\nПредстоит развивать инфраструктуру интеграции антивирусных решений: добавлять логику, улучшать архитектуру, писать тесты и поддерживать выпущенные версии.\n\nНужны C++11/14/17, STL и опыт многопоточной разработки. WinAPI, WinDbg и умение анализировать аварийные дампы будут плюсом.\n\nОфис на Петроградской стороне, гибкое начало дня. Предлагают официальное оформление, ДМС со стоматологией и обеды.\n\nВакансия и отклик\n\n➡️ База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n\n\n\n2.61K views09:01",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-31T09:01:32+00:00",
-            "observed_at": "2026-11-13T12:34:29.576369+00:00",
+            "observed_at": "2026-11-14T07:23:17.771688+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -66884,14 +66886,14 @@
             "region": "Russia",
             "country": "RU",
             "location": [],
-            "description": "💻 Top Selection ищет Senior C/C++-разработчика для платёжного ядра\n\nВ проекте обрабатывают миллионы операций в день и работают с платёжными системами, включая SWIFT и СПФС. В стеке — C/C++, RPG, IBM i и DB2.\n\nПонадобятся опыт работы в ИТ от трёх лет и английский для чтения документации.\n\nОплата — 288–316 тыс. ₽. Удалённая работа по России, требуется гражданство РФ. Оформление только через ИП.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔7👍3❤1\n\n\n2.37K views09:00",
+            "description": "💻 Top Selection ищет Senior C/C++-разработчика для платёжного ядра\n\nВ проекте обрабатывают миллионы операций в день и работают с платёжными системами, включая SWIFT и СПФС. В стеке — C/C++, RPG, IBM i и DB2.\n\nПонадобятся опыт работы в ИТ от трёх лет и английский для чтения документации.\n\nОплата — 288–316 тыс. ₽. Удалённая работа по России, требуется гражданство РФ. Оформление только через ИП.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔7👍3❤1\n\n\n2.4K views09:00",
             "salary_min": 288000.0,
             "salary_max": 316000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "Оплата — 288–316 тыс. ₽. Удалённая работа по России, требуется гражданство РФ. Оформление только через ИП.",
             "published_at": "2026-11-02T09:00:56+00:00",
-            "observed_at": "2026-11-13T12:34:29.578547+00:00",
+            "observed_at": "2026-11-14T07:23:17.773042+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -66929,14 +66931,14 @@
             "location": [
               "е на Петроградской стороне в Петербурге"
             ],
-            "description": "💻 Dr.Web ищет C++-разработчика для защитного ПО под UNIX\n\nКоманда создаёт продукты для защиты серверов и рабочих станций на UNIX-подобных системах.\n\nНужны C++11/14/17, STL, знание POSIX и опыт работы с Linux или FreeBSD. Асинхронное программирование, Boost.Asio и понимание SMTP, IMAP и HTTP будут плюсом.\n\nРабота в офисе на Петроградской стороне в Петербурге. Гибкое начало дня, ДМС со стоматологией и горячие обеды.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔4\n\n\n2.12K views09:00",
+            "description": "💻 Dr.Web ищет C++-разработчика для защитного ПО под UNIX\n\nКоманда создаёт продукты для защиты серверов и рабочих станций на UNIX-подобных системах.\n\nНужны C++11/14/17, STL, знание POSIX и опыт работы с Linux или FreeBSD. Асинхронное программирование, Boost.Asio и понимание SMTP, IMAP и HTTP будут плюсом.\n\nРабота в офисе на Петроградской стороне в Петербурге. Гибкое начало дня, ДМС со стоматологией и горячие обеды.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔4\n\n\n2.14K views09:00",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-11-05T09:00:44+00:00",
-            "observed_at": "2026-11-13T12:34:29.582962+00:00",
+            "observed_at": "2026-11-14T07:23:17.775748+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -66972,14 +66974,14 @@
             "location": [
               "у метро «Новочеркасская» в Петербурге"
             ],
-            "description": "💻 Артис ищет C/C++-разработчика в команду offensive security\n\nПредстоит разрабатывать инструменты для проверок безопасности Windows. Первые месяцы — работать под руководством ментора, затем брать собственные модули.\n\nКоммерческий опыт необязателен. Нужны практика на C/C++, собственные проекты или CTF, знакомство с WinAPI, PE-форматом и чтением x86/x64-кода в дизассемблере.\n\nВ подробном описании указаны 200–250 тысяч ₽ на руки. Полный день, офис у метро «Новочеркасская» в Петербурге.\n\nПосмотреть вакансию · Написать по поводу вакансии\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔8❤3\n\n\n2.09K views09:00",
+            "description": "💻 Артис ищет C/C++-разработчика в команду offensive security\n\nПредстоит разрабатывать инструменты для проверок безопасности Windows. Первые месяцы — работать под руководством ментора, затем брать собственные модули.\n\nКоммерческий опыт необязателен. Нужны практика на C/C++, собственные проекты или CTF, знакомство с WinAPI, PE-форматом и чтением x86/x64-кода в дизассемблере.\n\nВ подробном описании указаны 200–250 тысяч ₽ на руки. Полный день, офис у метро «Новочеркасская» в Петербурге.\n\nПосмотреть вакансию · Написать по поводу вакансии\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔8❤3\n\n\n2.12K views09:00",
             "salary_min": 200000.0,
             "salary_max": 250000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "В подробном описании указаны 200–250 тысяч ₽ на руки. Полный день, офис у метро «Новочеркасская» в Петербурге.",
             "published_at": "2026-11-06T09:00:54+00:00",
-            "observed_at": "2026-11-13T12:34:29.584701+00:00",
+            "observed_at": "2026-11-14T07:23:17.776802+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67016,14 +67018,14 @@
             "location": [
               "е в Петербурге, гибкое начало дня"
             ],
-            "description": "💻 Dr.Web ищет C++-разработчика для анализа сетевого трафика\n\nПредстоит создавать многопоточные сетевые приложения и парсеры протоколов под Windows.\n\nНужны от 2 лет работы с C++, опыт сетевого программирования и анализа аварийных дампов. Знание Windows Filtering Platform и внутреннего устройства Windows будет плюсом.\n\nРабота в офисе в Петербурге, гибкое начало дня. Есть ДМС со стоматологией и горячие обеды.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔2\n\n\n1.99K views09:02",
+            "description": "💻 Dr.Web ищет C++-разработчика для анализа сетевого трафика\n\nПредстоит создавать многопоточные сетевые приложения и парсеры протоколов под Windows.\n\nНужны от 2 лет работы с C++, опыт сетевого программирования и анализа аварийных дампов. Знание Windows Filtering Platform и внутреннего устройства Windows будет плюсом.\n\nРабота в офисе в Петербурге, гибкое начало дня. Есть ДМС со стоматологией и горячие обеды.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔2\n\n\n2.02K views09:02",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-11-07T09:02:56+00:00",
-            "observed_at": "2026-11-13T12:34:29.586161+00:00",
+            "observed_at": "2026-11-14T07:23:17.777698+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67059,14 +67061,14 @@
             "location": [
               "в Москве, гибкое начало дня"
             ],
-            "description": "💻 Vital Partners ищет Middle C/C++ с зарплатой до 320 тысяч на руки\n\nПродуктовая компания разрабатывает ПО для защиты информации и операционные системы. В команде четыре C/C++-разработчика. Предстоит создавать модули и проектировать базы данных.\n\nНужны от 3 лет опыта, Qt5, PostgreSQL, Linux, многопоточность и управление памятью. Важны опыт в информационной безопасности и знание основ криптографии.\n\nГибрид в Москве, гибкое начало дня. До 320 000 ₽ на руки плюс премии, ТК РФ и ДМС.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n👍1\n\n\n1.61K views09:05",
+            "description": "💻 Vital Partners ищет Middle C/C++ с зарплатой до 320 тысяч на руки\n\nПродуктовая компания разрабатывает ПО для защиты информации и операционные системы. В команде четыре C/C++-разработчика. Предстоит создавать модули и проектировать базы данных.\n\nНужны от 3 лет опыта, Qt5, PostgreSQL, Linux, многопоточность и управление памятью. Важны опыт в информационной безопасности и знание основ криптографии.\n\nГибрид в Москве, гибкое начало дня. До 320 000 ₽ на руки плюс премии, ТК РФ и ДМС.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n👍1\n\n\n1.64K views09:05",
             "salary_min": 320000.0,
             "salary_max": 320000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "Гибрид в Москве, гибкое начало дня. До 320 000 ₽ на руки плюс премии, ТК РФ и ДМС.",
             "published_at": "2026-11-09T09:05:10+00:00",
-            "observed_at": "2026-11-13T12:34:29.589320+00:00",
+            "observed_at": "2026-11-14T07:23:17.779653+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67102,14 +67104,14 @@
             "location": [
               "а России, оформление по ТК РФ"
             ],
-            "description": "💻 DIS Group ищет тимлида C++/Java для платформы данных «Селена»\n\nВы будете руководить командой и писать сложные низкоуровневые компоненты: развивать движок запросов, повышать производительность и надёжность системы.\n\nНужны от 6 лет коммерческой разработки, экспертное владение C++17/20 и знание Java 17. Важен опыт создания или глубокой оптимизации движков и планировщиков запросов.\n\nУдалённо из любого города России, оформление по ТК РФ. Зарплату обсуждают.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤1\n\n\n1.38K views09:01",
+            "description": "💻 DIS Group ищет тимлида C++/Java для платформы данных «Селена»\n\nВы будете руководить командой и писать сложные низкоуровневые компоненты: развивать движок запросов, повышать производительность и надёжность системы.\n\nНужны от 6 лет коммерческой разработки, экспертное владение C++17/20 и знание Java 17. Важен опыт создания или глубокой оптимизации движков и планировщиков запросов.\n\nУдалённо из любого города России, оформление по ТК РФ. Зарплату обсуждают.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤1\n\n\n1.43K views09:01",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-11-10T09:01:50+00:00",
-            "observed_at": "2026-11-13T12:34:29.591155+00:00",
+            "observed_at": "2026-11-14T07:23:17.780739+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67147,14 +67149,14 @@
             "location": [
               "е в Петербурге, гибкое начало дня"
             ],
-            "description": "💻 Dr.Web ищет C++-разработчика драйверов ядра Windows\n\nПредстоит разрабатывать драйверы и системные сервисы, исследовать механизмы Windows и искать способы обезвреживания руткитов.\n\nНужны C++, понимание C и Assembler x86/x64, знание внутреннего устройства Windows и опыт отладки драйверов. Из инструментов — IDA и WinDbg.\n\nРабота в офисе в Петербурге, гибкое начало дня. ТК РФ, ДМС со стоматологией и горячие обеды. Зарплату обсуждают индивидуально.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔1\n\n\n1.28K views09:04",
+            "description": "💻 Dr.Web ищет C++-разработчика драйверов ядра Windows\n\nПредстоит разрабатывать драйверы и системные сервисы, исследовать механизмы Windows и искать способы обезвреживания руткитов.\n\nНужны C++, понимание C и Assembler x86/x64, знание внутреннего устройства Windows и опыт отладки драйверов. Из инструментов — IDA и WinDbg.\n\nРабота в офисе в Петербурге, гибкое начало дня. ТК РФ, ДМС со стоматологией и горячие обеды. Зарплату обсуждают индивидуально.\n\nОткликнуться\n\n➡️ Навигация: База знаний • Задачи • Собеседования\n\n🐸 Библиотека программиста\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔1\n\n\n1.32K views09:04",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-11-11T09:04:45+00:00",
-            "observed_at": "2026-11-13T12:34:29.592904+00:00",
+            "observed_at": "2026-11-14T07:23:17.781753+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67197,7 +67199,7 @@
             "period": null,
             "salary_raw_snippet": "от 220 000 ₽",
             "published_at": "2026-08-07T18:02:11+00:00",
-            "observed_at": "2026-11-13T12:34:31.420942+00:00",
+            "observed_at": "2026-11-14T07:23:19.279898+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67239,7 +67241,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-11T07:04:56+00:00",
-            "observed_at": "2026-11-13T12:34:31.422060+00:00",
+            "observed_at": "2026-11-14T07:23:19.280482+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67274,14 +67276,14 @@
             "location": [
               "(Москва"
             ],
-            "description": "🤨 Разработчик C++\nОфис (Москва)\n\nEKSLi — российская технологическая компания, разрабатывающая интеллектуальные системы оптической сортировки для агропромышленности.\n\nТребования:\n— Уверенное владение современным C++ (17/20), владение ROS2 или готовность его изучать;\n— Понимание принципов работы с многопоточным и асинхронным кодом;\n— Понимание основ обработки изображений для CV, владение OpenCV или готовность ее изучать;\n— Владение базовыми вещами: git, ssh, cmake, linux и так далее.\n\n➡️ Подробнее о вакансии на hh.ru\n\n📍 Навигация: База знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤3🤔2\n\n\n4.26K views18:00",
+            "description": "🤨 Разработчик C++\nОфис (Москва)\n\nEKSLi — российская технологическая компания, разрабатывающая интеллектуальные системы оптической сортировки для агропромышленности.\n\nТребования:\n— Уверенное владение современным C++ (17/20), владение ROS2 или готовность его изучать;\n— Понимание принципов работы с многопоточным и асинхронным кодом;\n— Понимание основ обработки изображений для CV, владение OpenCV или готовность ее изучать;\n— Владение базовыми вещами: git, ssh, cmake, linux и так далее.\n\n➡️ Подробнее о вакансии на hh.ru\n\n📍 Навигация: База знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n❤3🤔2\n\n\n4.27K views18:00",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-11T18:00:22+00:00",
-            "observed_at": "2026-11-13T12:34:31.423606+00:00",
+            "observed_at": "2026-11-14T07:23:19.281252+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67316,14 +67318,14 @@
             "location": [
               "(Санкт-Петербург, метро Площадь Мужества"
             ],
-            "description": "🔥 Руководитель / Начальник отдела разработки ПО (C++)\nДоход по договоренности (оклад + премия)\nОфис (Санкт-Петербург, метро Площадь Мужества)\n\nИщем технического лидера с сильной базой в C++ и опытом управления командой для работы над сложными высоконагруженными системами и ПАК!\n\n❇️ Чем предстоит заниматься:\n— Управление и развитие: распределение задач, контроль выполнения, декомпозиция ТЗ на законченные блоки, участие в подборе и развитии сотрудников (в подчинении до 10 разработчиков).\n— Технический руль: оценка качества кода (Code Review), управление версиями ПО, отладка и управление рисками разработки.\n— Архитектура: проектирование, оптимизация производительности и поиск сложных ошибок.\n\n❇️ Что для нас важно:\n— Управленческий бэкграунд: опыт руководства командой разработчиков от 5–7 человек.\n— Технический стек: отличный опыт разработки на C++ (обязательно), опыт под Linux и разработки ПО для ПАКов.\n— Архитектурные навыки: понимание принципов построения высоконагруженных систем, сетевых технологий.\n— Криптография: понимание основ криптографии (плюсом будет знание нормативной базы по разработке СКЗИ в РФ).\n— Образование: высшее техническое (ИТ, физмат, радиоэлектроника).\n— Личные качества: системность, инициативность и неравнодушие к продукту.\n\n🔜 Что мы предлагаем:\n— Стабильность: оформление по ТК РФ в аккредитованную IT-компанию (со всеми льготами).\n— Испытательный срок: 3 месяца.\n— График: Пн–Пт, с 09:30 до 18:30.\n\n🔗 Для отклика присылайте резюме @HR_IrinaIL\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔6👍3❤1\n\n\n4.67K views09:55",
+            "description": "🔥 Руководитель / Начальник отдела разработки ПО (C++)\nДоход по договоренности (оклад + премия)\nОфис (Санкт-Петербург, метро Площадь Мужества)\n\nИщем технического лидера с сильной базой в C++ и опытом управления командой для работы над сложными высоконагруженными системами и ПАК!\n\n❇️ Чем предстоит заниматься:\n— Управление и развитие: распределение задач, контроль выполнения, декомпозиция ТЗ на законченные блоки, участие в подборе и развитии сотрудников (в подчинении до 10 разработчиков).\n— Технический руль: оценка качества кода (Code Review), управление версиями ПО, отладка и управление рисками разработки.\n— Архитектура: проектирование, оптимизация производительности и поиск сложных ошибок.\n\n❇️ Что для нас важно:\n— Управленческий бэкграунд: опыт руководства командой разработчиков от 5–7 человек.\n— Технический стек: отличный опыт разработки на C++ (обязательно), опыт под Linux и разработки ПО для ПАКов.\n— Архитектурные навыки: понимание принципов построения высоконагруженных систем, сетевых технологий.\n— Криптография: понимание основ криптографии (плюсом будет знание нормативной базы по разработке СКЗИ в РФ).\n— Образование: высшее техническое (ИТ, физмат, радиоэлектроника).\n— Личные качества: системность, инициативность и неравнодушие к продукту.\n\n🔜 Что мы предлагаем:\n— Стабильность: оформление по ТК РФ в аккредитованную IT-компанию (со всеми льготами).\n— Испытательный срок: 3 месяца.\n— График: Пн–Пт, с 09:30 до 18:30.\n\n🔗 Для отклика присылайте резюме @HR_IrinaIL\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n🤔6👍3❤1\n\n\n4.68K views09:55",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-12T09:55:13+00:00",
-            "observed_at": "2026-11-13T12:34:31.428128+00:00",
+            "observed_at": "2026-11-14T07:23:19.283486+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67362,7 +67364,7 @@
             "period": null,
             "salary_raw_snippet": "— Зарплата в рублях (можно в валюте), прозрачная система бонусов",
             "published_at": "2026-09-04T11:28:31+00:00",
-            "observed_at": "2026-11-13T12:34:31.443400+00:00",
+            "observed_at": "2026-11-14T07:23:19.291087+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67394,14 +67396,14 @@
             "region": "Russia",
             "country": "RU",
             "location": [],
-            "description": "Senior C++ / Qt Developer — Кулонспецкомплект\nУдалённо. 170 000–270 000 ₽ в месяц на руки\n\nLightform — desktop-приложение для управления архитектурным и динамическим освещением.\n\nТребования и условия:\n— Современный C++17/20, Qt 5/6 и Qt Quick/QML\n— Коммерческий desktop-опыт, многопоточность и real-time приложения\n— UDP/TCP, сложные UI, CMake и Git\n— Стек проекта: Qt 6, Windows x64, DMX/Art-Net. Оформление в штат или по ИП\n\nПодробнее и отклик на HH\n\nНавигация: База знаний • Задачи • Собеседования\n🤔10\n\n\n3.66K views12:00",
+            "description": "Senior C++ / Qt Developer — Кулонспецкомплект\nУдалённо. 170 000–270 000 ₽ в месяц на руки\n\nLightform — desktop-приложение для управления архитектурным и динамическим освещением.\n\nТребования и условия:\n— Современный C++17/20, Qt 5/6 и Qt Quick/QML\n— Коммерческий desktop-опыт, многопоточность и real-time приложения\n— UDP/TCP, сложные UI, CMake и Git\n— Стек проекта: Qt 6, Windows x64, DMX/Art-Net. Оформление в штат или по ИП\n\nПодробнее и отклик на HH\n\nНавигация: База знаний • Задачи • Собеседования\n🤔10\n\n\n3.67K views12:00",
             "salary_min": 170000.0,
             "salary_max": 270000.0,
             "currency": "RUB",
             "period": "month",
             "salary_raw_snippet": "Удалённо. 170 000–270 000 ₽ в месяц на руки",
             "published_at": "2026-10-14T12:00:33+00:00",
-            "observed_at": "2026-11-13T12:34:31.444721+00:00",
+            "observed_at": "2026-11-14T07:23:19.291797+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67437,14 +67439,14 @@
             "location": [
               ", Москва"
             ],
-            "description": "Middle+ / Senior C++ Developer — ЕМЕ\nОфис, Москва. От 200 000 ₽ в месяц до вычета налогов\n\nРазвитие in-memory ядра векторно-графовой базы данных: индексы, поиск, память и многопоточность.\n\nТребования и условия:\n— Уверенный C++, алгоритмы и структуры данных\n— Разработка под Linux и/или Windows, производительный и тестируемый код\n— СУБД, ANN-индексы, профилирование и работа с CPU cache будут плюсом\n\nПодробнее и отклик на HH\n\nНавигация: База знаний • Задачи • Собеседования\n🤔7❤2\n\n\n3.51K views09:04",
+            "description": "Middle+ / Senior C++ Developer — ЕМЕ\nОфис, Москва. От 200 000 ₽ в месяц до вычета налогов\n\nРазвитие in-memory ядра векторно-графовой базы данных: индексы, поиск, память и многопоточность.\n\nТребования и условия:\n— Уверенный C++, алгоритмы и структуры данных\n— Разработка под Linux и/или Windows, производительный и тестируемый код\n— СУБД, ANN-индексы, профилирование и работа с CPU cache будут плюсом\n\nПодробнее и отклик на HH\n\nНавигация: База знаний • Задачи • Собеседования\n🤔7❤2\n\n\n3.52K views09:04",
             "salary_min": 200000.0,
             "salary_max": 200000.0,
             "currency": "RUB",
             "period": "month",
             "salary_raw_snippet": "Офис, Москва. От 200 000 ₽ в месяц до вычета налогов",
             "published_at": "2026-10-16T09:04:00+00:00",
-            "observed_at": "2026-11-13T12:34:31.445651+00:00",
+            "observed_at": "2026-11-14T07:23:19.292271+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67478,14 +67480,14 @@
             "region": "Russia",
             "country": "RU",
             "location": [],
-            "description": "💻 Top Selection ищет C-разработчика для телефонии и медиастриминга\n\n260 000–300 000 ₽ · налоговый статус суммы не указан\nУдалённо только из РФ · договор с ИП\n\nНужен разработчик, который умеет находить узкие места и ускорять низкоуровневый код под Linux.\n\nВ названии вакансии стоит C++, но основной язык проекта — C. Perl используют для тестов.\n\nОжидают от 3 лет разработки на C, опыт с VoIP или медиастримингом, знание SIP, RTP/RTCP, UDP/TCP и сокетов. Для отладки и замеров пригодятся gdb, Valgrind и perf.\n\nПроект — до конца года с возможностью продолжения. Опыт с Asterisk, Kamailio, OpenSIPS или WebRTC будет плюсом.\n\n➡️ Вакансия и отклик\n\nБаза знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n\n\n\n2.63K views09:05",
+            "description": "💻 Top Selection ищет C-разработчика для телефонии и медиастриминга\n\n260 000–300 000 ₽ · налоговый статус суммы не указан\nУдалённо только из РФ · договор с ИП\n\nНужен разработчик, который умеет находить узкие места и ускорять низкоуровневый код под Linux.\n\nВ названии вакансии стоит C++, но основной язык проекта — C. Perl используют для тестов.\n\nОжидают от 3 лет разработки на C, опыт с VoIP или медиастримингом, знание SIP, RTP/RTCP, UDP/TCP и сокетов. Для отладки и замеров пригодятся gdb, Valgrind и perf.\n\nПроект — до конца года с возможностью продолжения. Опыт с Asterisk, Kamailio, OpenSIPS или WebRTC будет плюсом.\n\n➡️ Вакансия и отклик\n\nБаза знаний • Задачи • Собеседования\n\nPlease open Telegram to view this post\nVIEW IN TELEGRAM\n\n\n\n\n\n2.64K views09:05",
             "salary_min": 260000.0,
             "salary_max": 300000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "260 000–300 000 ₽ · налоговый статус суммы не указан",
             "published_at": "2026-10-26T09:05:03+00:00",
-            "observed_at": "2026-11-13T12:34:31.466951+00:00",
+            "observed_at": "2026-11-14T07:23:19.302676+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67527,7 +67529,7 @@
             "period": null,
             "salary_raw_snippet": "от 160 000 до 300 000 ₽",
             "published_at": "2026-07-21T18:28:37+00:00",
-            "observed_at": "2026-11-13T12:34:33.286232+00:00",
+            "observed_at": "2026-11-14T07:23:20.791706+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67569,7 +67571,7 @@
             "period": null,
             "salary_raw_snippet": "от 264 000 до 290 000 ₽",
             "published_at": "2026-07-27T18:01:32+00:00",
-            "observed_at": "2026-11-13T12:34:33.288377+00:00",
+            "observed_at": "2026-11-14T07:23:20.792840+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67611,7 +67613,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-07-30T18:03:13+00:00",
-            "observed_at": "2026-11-13T12:34:33.313468+00:00",
+            "observed_at": "2026-11-14T07:23:20.805674+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67653,7 +67655,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-07-31T18:01:59+00:00",
-            "observed_at": "2026-11-13T12:34:33.314880+00:00",
+            "observed_at": "2026-11-14T07:23:20.806404+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67695,7 +67697,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-08-04T18:03:42+00:00",
-            "observed_at": "2026-11-13T12:34:33.320149+00:00",
+            "observed_at": "2026-11-14T07:23:20.809103+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67737,7 +67739,7 @@
             "period": null,
             "salary_raw_snippet": "от 300 000 ₽",
             "published_at": "2026-08-05T07:34:10+00:00",
-            "observed_at": "2026-11-13T12:34:33.322888+00:00",
+            "observed_at": "2026-11-14T07:23:20.810548+00:00",
             "links": [
               "https://t.me/cppdevjob",
               "https://t.me/cppdevjob",
@@ -67760,8 +67762,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -67782,14 +67784,14 @@
             "location": [
               "#офис"
             ],
-            "description": "#senior #200k #удаленка #гибрид #офис\n\nАСКОН\nDevOps-инженер (Middle/Senior)\nот 250 000 ₽ за месяц, до вычета налогов\nОпыт работы: 3–6 лет\nПолная занятость\nГрафик: 5/2\nФормат работы: удалённо или гибрид или офис\n\n☑️ Чем предстоит заниматься\n-разработка различных процедур автоматизации для проекта КОМПАС-3D, проектов приложений КОМПАС-3D, вспомогательных проектов\n-разработка CI/CD пайплайнов\n-разворачивание и настройка сборочных и тестовых стендов\n-управление сборочной и тестовой инфраструктурой, реагирование на инциденты\n-контроль прав доступа к проектам\n-развитие систем мониторинга и логирования\n-поддержка разработчиков\n-Gitlab\n-Jira/Confluence\n-Ansible\n-Powershell / Bash / Python\n-Grafana/Prometheus\n-Proxmox\n\n☑️ Наши пожелания к кандидатам\n-знание концепции CI/CD, опыт работы с Jenkins или Gitlab CI\n-навыки автоматизации с использованием скриптов (Powershell / Bash / Python) и Ansible\n-знание Windows и Linux систем на уровне уверенного пользователя / администратора, уверенная работа с командной строкой\n-знание систем виртуализации (VMware / Proxmox)\n-знание Docker\n-знание систем контроля версий Git, SVN\n-понимание процессов компиляции и линковки в C++, работы системы сборки CMake, менеджера зависимостей Conan\n-знание работы локальных сетей, маршрутизации, VLAN\n-опыт работы с Grafana / Prometheus\n-Будет плюсом:\n-опыт работы с PostgreSQL, MySQL\n-знание SQL\n-знание сборки пакетов deb/rpm, организация локальных репозиториев пакетов\n-понимание работы Microsoft Installer (msi)\n\nКонтакты: info@ascon.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n❤1🤔1\n\n\n990 views10:40",
+            "description": "#senior #200k #удаленка #гибрид #офис\n\nАСКОН\nDevOps-инженер (Middle/Senior)\nот 250 000 ₽ за месяц, до вычета налогов\nОпыт работы: 3–6 лет\nПолная занятость\nГрафик: 5/2\nФормат работы: удалённо или гибрид или офис\n\n☑️ Чем предстоит заниматься\n-разработка различных процедур автоматизации для проекта КОМПАС-3D, проектов приложений КОМПАС-3D, вспомогательных проектов\n-разработка CI/CD пайплайнов\n-разворачивание и настройка сборочных и тестовых стендов\n-управление сборочной и тестовой инфраструктурой, реагирование на инциденты\n-контроль прав доступа к проектам\n-развитие систем мониторинга и логирования\n-поддержка разработчиков\n-Gitlab\n-Jira/Confluence\n-Ansible\n-Powershell / Bash / Python\n-Grafana/Prometheus\n-Proxmox\n\n☑️ Наши пожелания к кандидатам\n-знание концепции CI/CD, опыт работы с Jenkins или Gitlab CI\n-навыки автоматизации с использованием скриптов (Powershell / Bash / Python) и Ansible\n-знание Windows и Linux систем на уровне уверенного пользователя / администратора, уверенная работа с командной строкой\n-знание систем виртуализации (VMware / Proxmox)\n-знание Docker\n-знание систем контроля версий Git, SVN\n-понимание процессов компиляции и линковки в C++, работы системы сборки CMake, менеджера зависимостей Conan\n-знание работы локальных сетей, маршрутизации, VLAN\n-опыт работы с Grafana / Prometheus\n-Будет плюсом:\n-опыт работы с PostgreSQL, MySQL\n-знание SQL\n-знание сборки пакетов deb/rpm, организация локальных репозиториев пакетов\n-понимание работы Microsoft Installer (msi)\n\nКонтакты: info@ascon.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n❤1🤔1\n\n\n994 views10:40",
             "salary_min": 250000.0,
             "salary_max": 250000.0,
             "currency": "RUB",
             "period": "month",
             "salary_raw_snippet": "от 250 000 ₽ за месяц, до вычета налогов",
             "published_at": "2026-10-26T10:40:27+00:00",
-            "observed_at": "2026-11-13T12:34:34.464478+00:00",
+            "observed_at": "2026-11-14T07:23:21.558521+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -67827,14 +67829,14 @@
             "location": [
               "Vital Partners"
             ],
-            "description": "#intern #офис\n\nVital Partners\nМладший разработчик / Junior C++\nот 50 000 ₽\nПолная занятость\nФормат работы: офис (Зеленоград)\n\n☑️ Чем предстоит заниматься\n-Разработка программных модулей на C++\n-Написанием программной документации\n\n☑️ Наши пожелания к кандидатам\n-Высшее/незаконченное высшее техническое образование (информационные технологии, прикладная информатика)\n-Знание языка С++17 (или выше)\n-Знание и понимание принципов ООП, базовых алгоритмов, паттернов разработки\n-Будет плюсом:\n-Опыт личных или учебных проектов\n-Опыт работы с Linux\n-Понимание многопоточности\n\nКонтакты: resume@vitalpartners.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n🤔4\n\n\n1.01K views10:30",
+            "description": "#intern #офис\n\nVital Partners\nМладший разработчик / Junior C++\nот 50 000 ₽\nПолная занятость\nФормат работы: офис (Зеленоград)\n\n☑️ Чем предстоит заниматься\n-Разработка программных модулей на C++\n-Написанием программной документации\n\n☑️ Наши пожелания к кандидатам\n-Высшее/незаконченное высшее техническое образование (информационные технологии, прикладная информатика)\n-Знание языка С++17 (или выше)\n-Знание и понимание принципов ООП, базовых алгоритмов, паттернов разработки\n-Будет плюсом:\n-Опыт личных или учебных проектов\n-Опыт работы с Linux\n-Понимание многопоточности\n\nКонтакты: resume@vitalpartners.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n🤔4\n\n\n1.02K views10:30",
             "salary_min": 50000.0,
             "salary_max": 50000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "от 50 000 ₽",
             "published_at": "2026-10-27T10:30:40+00:00",
-            "observed_at": "2026-11-13T12:34:34.465585+00:00",
+            "observed_at": "2026-11-14T07:23:21.559092+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -67867,14 +67869,14 @@
             "region": "Russia",
             "country": "RU",
             "location": [],
-            "description": "#senior #300k #удаленка\n\nTop Selection\nBackend разработчик\nот 288 000 до 316 000 ₽\nПолная занятость\nФормат работы: можно удалённо\n\n☑️ Чем предстоит заниматься\n-Разработка и поддержка проекта ядрового функционала банка\n-Исправление дефектов программного обеспечения\n-Техническое проектирование и кодирование программного обеспечения\n-Согласование требований заказчика и технических заданий, участие в их проработке\n-Консультация смежных подразделений\n-Подготовка технической документации\n\n☑️ Наши пожелания к кандидатам\n-📌 Стаж работы в области информационных технологий от 3-х лет\n-📌 Опыт промышленной разработки минимум на одном языке программирования высокого уровня (приоритет: RPG, C/C++)\n-Опыт работы с СУБД\n-Опыт работы с системами контроля версий\n-Будет плюсом:\n-Знание платформы IBMi\n-Знание IBM RPG\n-Знание С/С++\n-Опыт работы с IBM DB2\n-Понимание Continuous Integration и Delivery\n-Опыт работы с Gradle\n-Опыт работы с Jira, Confluence\n-Знание специфики банковский процессов\n\nКонтакты: info@top-selection.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n\n\n\n492 views11:00",
+            "description": "#senior #300k #удаленка\n\nTop Selection\nBackend разработчик\nот 288 000 до 316 000 ₽\nПолная занятость\nФормат работы: можно удалённо\n\n☑️ Чем предстоит заниматься\n-Разработка и поддержка проекта ядрового функционала банка\n-Исправление дефектов программного обеспечения\n-Техническое проектирование и кодирование программного обеспечения\n-Согласование требований заказчика и технических заданий, участие в их проработке\n-Консультация смежных подразделений\n-Подготовка технической документации\n\n☑️ Наши пожелания к кандидатам\n-📌 Стаж работы в области информационных технологий от 3-х лет\n-📌 Опыт промышленной разработки минимум на одном языке программирования высокого уровня (приоритет: RPG, C/C++)\n-Опыт работы с СУБД\n-Опыт работы с системами контроля версий\n-Будет плюсом:\n-Знание платформы IBMi\n-Знание IBM RPG\n-Знание С/С++\n-Опыт работы с IBM DB2\n-Понимание Continuous Integration и Delivery\n-Опыт работы с Gradle\n-Опыт работы с Jira, Confluence\n-Знание специфики банковский процессов\n\nКонтакты: info@top-selection.ru\n\n🔥 Подписаться на наши каналы / @best_itjob / @it_rab\n\n\n\n497 views11:00",
             "salary_min": 288000.0,
             "salary_max": 316000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "от 288 000 до 316 000 ₽",
             "published_at": "2026-11-02T11:00:47+00:00",
-            "observed_at": "2026-11-13T12:34:34.487097+00:00",
+            "observed_at": "2026-11-14T07:23:21.570269+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -67917,7 +67919,7 @@
             "period": "month",
             "salary_raw_snippet": "от 130 000 до 240 000 ₽ за месяц, на руки",
             "published_at": "2026-10-05T10:30:40+00:00",
-            "observed_at": "2026-11-13T12:34:36.224015+00:00",
+            "observed_at": "2026-11-14T07:23:23.106519+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -67963,7 +67965,7 @@
             "period": "month",
             "salary_raw_snippet": "до 365 000 ₽ за месяц",
             "published_at": "2026-10-09T10:41:07+00:00",
-            "observed_at": "2026-11-13T12:34:36.235826+00:00",
+            "observed_at": "2026-11-14T07:23:23.112411+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68008,7 +68010,7 @@
             "period": "month",
             "salary_raw_snippet": "от 180 000 до 350 000 ₽ за месяц, на руки",
             "published_at": "2026-10-10T10:31:12+00:00",
-            "observed_at": "2026-11-13T12:34:36.239545+00:00",
+            "observed_at": "2026-11-14T07:23:23.114252+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68052,7 +68054,7 @@
             "period": "month",
             "salary_raw_snippet": "от 200 000 ₽ за месяц, на руки",
             "published_at": "2026-10-11T10:31:06+00:00",
-            "observed_at": "2026-11-13T12:34:36.242163+00:00",
+            "observed_at": "2026-11-14T07:23:23.115573+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68098,7 +68100,7 @@
             "period": "month",
             "salary_raw_snippet": "от 220 000 до 280 000 ₽ за месяц, до вычета налогов",
             "published_at": "2026-10-13T10:21:04+00:00",
-            "observed_at": "2026-11-13T12:34:36.255367+00:00",
+            "observed_at": "2026-11-14T07:23:23.122022+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68142,7 +68144,7 @@
             "period": "month",
             "salary_raw_snippet": "от 350 000 до 500 000 ₽ за месяц, на руки",
             "published_at": "2026-10-18T10:20:33+00:00",
-            "observed_at": "2026-11-13T12:34:36.278358+00:00",
+            "observed_at": "2026-11-14T07:23:23.133722+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68183,7 +68185,7 @@
             "period": null,
             "salary_raw_snippet": "от 260 000 до 300 000 ₽",
             "published_at": "2026-09-16T10:10:48+00:00",
-            "observed_at": "2026-11-13T12:34:38.086017+00:00",
+            "observed_at": "2026-11-14T07:23:24.638523+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68227,7 +68229,7 @@
             "period": "month",
             "salary_raw_snippet": "до 320 000 ₽ за месяц",
             "published_at": "2026-09-20T10:20:38+00:00",
-            "observed_at": "2026-11-13T12:34:38.087752+00:00",
+            "observed_at": "2026-11-14T07:23:24.639422+00:00",
             "links": [
               "https://t.me/c_rabota",
               "https://t.me/c_rabota",
@@ -68250,8 +68252,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -68272,14 +68274,14 @@
             "location": [
               "РФ, РБ"
             ],
-            "description": "Senior C++ CUDA Developer / GPU-инженер\nв Blancy — компания, которая создаёт web- и mobile-продукты, корпоративные сервисы, сайты и внутренние системы для бизнеса.\nДо 320К. Удалённая работа. Локация: РФ, РБ. Оформление только по ИП.\nИщет Александр Цвитка, его пост на LinkedIn.\n😁8💊2👍1\n\n\n1.01K views16:34",
+            "description": "Senior C++ CUDA Developer / GPU-инженер\nв Blancy — компания, которая создаёт web- и mobile-продукты, корпоративные сервисы, сайты и внутренние системы для бизнеса.\nДо 320К. Удалённая работа. Локация: РФ, РБ. Оформление только по ИП.\nИщет Александр Цвитка, его пост на LinkedIn.\n😁8💊2👍1\n\n\n1.02K views16:34",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-26T16:34:58+00:00",
-            "observed_at": "2026-11-13T12:34:40.836149+00:00",
+            "observed_at": "2026-11-14T07:23:26.780805+00:00",
             "links": [
               "https://t.me/forcpp",
               "https://t.me/forcpp",
@@ -68299,8 +68301,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -68328,7 +68330,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-03-11T07:24:39+00:00",
-            "observed_at": "2026-11-13T12:34:43.612546+00:00",
+            "observed_at": "2026-11-14T07:23:28.978369+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68372,7 +68374,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-03-23T11:33:58+00:00",
-            "observed_at": "2026-11-13T12:34:43.629203+00:00",
+            "observed_at": "2026-11-14T07:23:28.986687+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68416,14 +68418,14 @@
             "location": [
               "а или страны"
             ],
-            "description": "Группа компаний Excdev\nприглашает в команду ведущего разработчика C++ (middle+/senior)\n\nКомпания занимается разработкой собственных продуктов.\n\nЗарплатная плата : от 180 до 270 тысяч рублей на руки.\nУдаленный формат работы с возможностью работать из любой точки мира.\n\nОбязанности:\nРазработка кроссплатформенных клиентских приложений (desktop и mobile) на базе Qt/QML\nУчастие в проектировании архитектуры приложения, в том числе модульной структуры, API и механизмов интеграции с backend-системами\nРазработка и оптимизация UI/UX с использованием QML и Qt Quick Controls\nИнтеграция с внешними сервисами через HTTP API, WebSocket, REST, JSON-RPC, gRPC\nВзаимодействие с командой разработчиков, аналитиков и тестировщиков в рамках Agile/Scrum процессов\nПоддержка, рефакторинг и оптимизация существующего кода\nНаписание модульных и интеграционных тестов для обеспечения качества и надежности.\n\nТребования:\nУверенное владение C++ (C++11/17/20), знание стандартной библиотеки (STL) и современных идиом языка\nОпыт разработки на Qt (Qt Quick, QML) от 3 лет, включая работу с модульной архитектурой и паттернами проектирования\nГлубокое понимание принципов асинхронного программирования (Qt Concurrent, Signals/Slots, event loop)\nЗнание основных шаблонов проектирования и умение применять их на практике\nПонимание принципов работы распределённых систем и стандартных протоколов взаимодействия (HTTP/HTTPS, WebSocket, gRPC)\nОпыт интеграции с HTTP API (REST/JSON) и потоковыми протоколами\nПонимание механизмов авторизации и аутентификации (OAuth2, JWT, Basic Auth)\nОпыт работы с Git (ветвление, merge, rebase, code review)\nНавыки разработки и запуска unit-тестов (Qt Test, Google Test или аналогичные фреймворки). Будет преимуществом\nОпыт нативной разработки под Android (Kotlin/Java) и iOS (Objective-C/Swift)\nОпыт создания мостов между платформенным кодом и Qt/QML:\nJNI → C++ → QML (Android)\nObjective-C → C++ → QML (iOS/macOS)\nОпыт оптимизации производительности QML-приложений (QQuickItem, профилирование)\n\nУсловия:\nУдаленный формат работы из любого города или страны\nГрафик работы 5/2\nОтпуск - 28 календарных дней.\n\n\nКонтакт для связи\n@valenti_sh\n\n\n\n2.57K views05:45",
+            "description": "Группа компаний Excdev\nприглашает в команду ведущего разработчика C++ (middle+/senior)\n\nКомпания занимается разработкой собственных продуктов.\n\nЗарплатная плата : от 180 до 270 тысяч рублей на руки.\nУдаленный формат работы с возможностью работать из любой точки мира.\n\nОбязанности:\nРазработка кроссплатформенных клиентских приложений (desktop и mobile) на базе Qt/QML\nУчастие в проектировании архитектуры приложения, в том числе модульной структуры, API и механизмов интеграции с backend-системами\nРазработка и оптимизация UI/UX с использованием QML и Qt Quick Controls\nИнтеграция с внешними сервисами через HTTP API, WebSocket, REST, JSON-RPC, gRPC\nВзаимодействие с командой разработчиков, аналитиков и тестировщиков в рамках Agile/Scrum процессов\nПоддержка, рефакторинг и оптимизация существующего кода\nНаписание модульных и интеграционных тестов для обеспечения качества и надежности.\n\nТребования:\nУверенное владение C++ (C++11/17/20), знание стандартной библиотеки (STL) и современных идиом языка\nОпыт разработки на Qt (Qt Quick, QML) от 3 лет, включая работу с модульной архитектурой и паттернами проектирования\nГлубокое понимание принципов асинхронного программирования (Qt Concurrent, Signals/Slots, event loop)\nЗнание основных шаблонов проектирования и умение применять их на практике\nПонимание принципов работы распределённых систем и стандартных протоколов взаимодействия (HTTP/HTTPS, WebSocket, gRPC)\nОпыт интеграции с HTTP API (REST/JSON) и потоковыми протоколами\nПонимание механизмов авторизации и аутентификации (OAuth2, JWT, Basic Auth)\nОпыт работы с Git (ветвление, merge, rebase, code review)\nНавыки разработки и запуска unit-тестов (Qt Test, Google Test или аналогичные фреймворки). Будет преимуществом\nОпыт нативной разработки под Android (Kotlin/Java) и iOS (Objective-C/Swift)\nОпыт создания мостов между платформенным кодом и Qt/QML:\nJNI → C++ → QML (Android)\nObjective-C → C++ → QML (iOS/macOS)\nОпыт оптимизации производительности QML-приложений (QQuickItem, профилирование)\n\nУсловия:\nУдаленный формат работы из любого города или страны\nГрафик работы 5/2\nОтпуск - 28 календарных дней.\n\n\nКонтакт для связи\n@valenti_sh\n\n\n\n2.58K views05:45",
             "salary_min": 180000.0,
             "salary_max": 270000.0,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "Зарплатная плата : от 180 до 270 тысяч рублей на руки.",
             "published_at": "2026-04-27T05:45:33+00:00",
-            "observed_at": "2026-11-13T12:34:43.650856+00:00",
+            "observed_at": "2026-11-14T07:23:28.997777+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68463,7 +68465,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-05-22T11:01:16+00:00",
-            "observed_at": "2026-11-13T12:34:43.660882+00:00",
+            "observed_at": "2026-11-14T07:23:29.002987+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68517,7 +68519,7 @@
             "period": null,
             "salary_raw_snippet": "— ДМС со 100% покрытием, включая стоматологию, страхование жизни и здоровья в поездках за рубеж. Возможность страховки родственников с корпоративной скидкой;",
             "published_at": "2026-06-26T11:01:57+00:00",
-            "observed_at": "2026-11-13T12:34:43.667778+00:00",
+            "observed_at": "2026-11-14T07:23:29.006764+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68563,7 +68565,7 @@
             "period": null,
             "salary_raw_snippet": "- Зарплата в рублях (можно в валюте), прозрачная система бонусов",
             "published_at": "2026-09-07T12:26:21+00:00",
-            "observed_at": "2026-11-13T12:34:43.699173+00:00",
+            "observed_at": "2026-11-14T07:23:29.021771+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68601,14 +68603,14 @@
             "location": [
               "Локация/Гражданство: РФ"
             ],
-            "description": "#cpp #developer #hunttech\n☁️Позиция: Разработчик C++ ( Senior )\n🏙Компания: «HuntTech»\n💪Опыт: от 5 лет\n💰ЗП: Вилка: 230 - 285тр\n📅Формат работы: Удаленка\n📍Локация/Гражданство: РФ\n📅Занятость: Full-time\n☎️Контакт: @pavel_korab\n\n📌Описание проекта:\nОтечественная горно-геологическая информационная система (ГГИС), разработанная для автоматизации и повышения эффективности работы геологических и маркшейдерских служб горных предприятий;\n\n🔺Требования:\n- Опыт разработки на С++ от 5 лет;\n- Опыт работы с математическими моделями;\n- Опыт работы с графикой;\nОпыт работы с оптимизацией приложений;\n- Опыт работы с CAD системами и/или разработка 3D игр;\n\n➕Будет плюсом:\n- Гибрид или полное посещение офиса в Воронеже.\n\n🔥Если все нравится - пиши @pavel_korab\n\n\n\n1.37K views13:32",
+            "description": "#cpp #developer #hunttech\n☁️Позиция: Разработчик C++ ( Senior )\n🏙Компания: «HuntTech»\n💪Опыт: от 5 лет\n💰ЗП: Вилка: 230 - 285тр\n📅Формат работы: Удаленка\n📍Локация/Гражданство: РФ\n📅Занятость: Full-time\n☎️Контакт: @pavel_korab\n\n📌Описание проекта:\nОтечественная горно-геологическая информационная система (ГГИС), разработанная для автоматизации и повышения эффективности работы геологических и маркшейдерских служб горных предприятий;\n\n🔺Требования:\n- Опыт разработки на С++ от 5 лет;\n- Опыт работы с математическими моделями;\n- Опыт работы с графикой;\nОпыт работы с оптимизацией приложений;\n- Опыт работы с CAD системами и/или разработка 3D игр;\n\n➕Будет плюсом:\n- Гибрид или полное посещение офиса в Воронеже.\n\n🔥Если все нравится - пиши @pavel_korab\n\n\n\n1.39K views13:32",
             "salary_min": null,
             "salary_max": null,
             "currency": null,
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-10-28T13:32:29+00:00",
-            "observed_at": "2026-11-13T12:34:43.702588+00:00",
+            "observed_at": "2026-11-14T07:23:29.022806+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68645,14 +68647,14 @@
             "location": [
               "#пермь #москва #фултайм"
             ],
-            "description": "#вакансия #cpp #embedded #qt #гибрид #пермь #москва #фултайм\n\nNS Digital (https://www.pnsh.ru/about/holding/ns-digital/)\nищем Разработчика в штат.\nПолный рабочий день, гибрид (Пермь или Москва)\nЗарплата: 230 – 345 тысяч ₽ (gross) в месяц.\n\nВедущий Инженер-разработчик ПО верхнего уровня (разработка конфигурационного ПО для промышленных контроллеров, HMI/SCADA)\nТребования к кандидату:\n• Опыт разработки на Qt/C++ от 5 лет, включая сопровождение сложного прикладного ПО верхнего уровня промышленного назначения.\nПрофессиональные знания и навыки (обязательные):\n• Уверенное владение языком C++ (стандарты C++11 и выше) и фреймворком Qt (Widgets, Model-View, многопоточность, механизмы сигналов/слотов, события).\n• Глубокие навыки отладки, локализации и исправления дефектов в сложных кодовых базах.\n• Знание стандарта IEC 61131-3 и моделей программирования промышленных контроллеров (языки: ST, LD, FBD, SFC). Понимание типового рабочего процесса конфигурационных проектов.\n• Опыт работы с legacy-кодом: чтение, рефакторинг, управление рисками, способность вносить изменения без нарушения стабильности.\n• Знание основ промышленных сетей и систем управления: Modbus, OPC UA, промышленный Ethernet (PROFINET, EtherCAT) – понимание процессов совместной отладки с оборудованием.\n• Опыт использования систем контроля версий (предпочтительно SVN или Git), регрессионного тестирования, систем логирования и сбора отказов (crash reports).\n• Способность самостоятельно вести проблему от локализации до закрытия, включая взаимодействие с тестировщиками и службой внедрения.\n\nКонтакты:\n@olgavostroknutova\n\n\n\n806 viewsedited  19:29",
+            "description": "#вакансия #cpp #embedded #qt #гибрид #пермь #москва #фултайм\n\nNS Digital (https://www.pnsh.ru/about/holding/ns-digital/)\nищем Разработчика в штат.\nПолный рабочий день, гибрид (Пермь или Москва)\nЗарплата: 230 – 345 тысяч ₽ (gross) в месяц.\n\nВедущий Инженер-разработчик ПО верхнего уровня (разработка конфигурационного ПО для промышленных контроллеров, HMI/SCADA)\nТребования к кандидату:\n• Опыт разработки на Qt/C++ от 5 лет, включая сопровождение сложного прикладного ПО верхнего уровня промышленного назначения.\nПрофессиональные знания и навыки (обязательные):\n• Уверенное владение языком C++ (стандарты C++11 и выше) и фреймворком Qt (Widgets, Model-View, многопоточность, механизмы сигналов/слотов, события).\n• Глубокие навыки отладки, локализации и исправления дефектов в сложных кодовых базах.\n• Знание стандарта IEC 61131-3 и моделей программирования промышленных контроллеров (языки: ST, LD, FBD, SFC). Понимание типового рабочего процесса конфигурационных проектов.\n• Опыт работы с legacy-кодом: чтение, рефакторинг, управление рисками, способность вносить изменения без нарушения стабильности.\n• Знание основ промышленных сетей и систем управления: Modbus, OPC UA, промышленный Ethernet (PROFINET, EtherCAT) – понимание процессов совместной отладки с оборудованием.\n• Опыт использования систем контроля версий (предпочтительно SVN или Git), регрессионного тестирования, систем логирования и сбора отказов (crash reports).\n• Способность самостоятельно вести проблему от локализации до закрытия, включая взаимодействие с тестировщиками и службой внедрения.\n\nКонтакты:\n@olgavostroknutova\n\n\n\n822 viewsedited  19:29",
             "salary_min": 230000.0,
             "salary_max": 345000.0,
             "currency": "RUB",
             "period": "month",
             "salary_raw_snippet": "Зарплата: 230 – 345 тысяч ₽ (gross) в месяц.",
             "published_at": "2026-11-06T19:29:45+00:00",
-            "observed_at": "2026-11-13T12:34:43.711817+00:00",
+            "observed_at": "2026-11-14T07:23:29.026176+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68699,7 +68701,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-11-17T06:56:53+00:00",
-            "observed_at": "2026-11-13T12:34:45.546258+00:00",
+            "observed_at": "2026-11-14T07:23:30.535215+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68743,7 +68745,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-11-24T09:19:46+00:00",
-            "observed_at": "2026-11-13T12:34:45.549751+00:00",
+            "observed_at": "2026-11-14T07:23:30.537120+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68789,7 +68791,7 @@
             "period": null,
             "salary_raw_snippet": "-Оплата: 50.000-100.000 рублей",
             "published_at": "2025-11-28T09:16:27+00:00",
-            "observed_at": "2026-11-13T12:34:45.560280+00:00",
+            "observed_at": "2026-11-14T07:23:30.543161+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68831,7 +68833,7 @@
             "period": "month",
             "salary_raw_snippet": "-Оплата: до 130 000 ₽ за месяц, на руки",
             "published_at": "2025-12-06T09:39:21+00:00",
-            "observed_at": "2026-11-13T12:34:45.564146+00:00",
+            "observed_at": "2026-11-14T07:23:30.545355+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68869,7 +68871,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-12-24T08:10:36+00:00",
-            "observed_at": "2026-11-13T12:34:45.567426+00:00",
+            "observed_at": "2026-11-14T07:23:30.547195+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68911,7 +68913,7 @@
             "period": null,
             "salary_raw_snippet": "~50k ₽ / мес, самозанятый",
             "published_at": "2026-01-22T09:35:39+00:00",
-            "observed_at": "2026-11-13T12:34:45.581608+00:00",
+            "observed_at": "2026-11-14T07:23:30.555676+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68949,7 +68951,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-01-26T07:34:22+00:00",
-            "observed_at": "2026-11-13T12:34:45.583111+00:00",
+            "observed_at": "2026-11-14T07:23:30.556515+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -68993,7 +68995,7 @@
             "period": null,
             "salary_raw_snippet": "Оплата: до 140.000 руб",
             "published_at": "2026-02-02T13:51:06+00:00",
-            "observed_at": "2026-11-13T12:34:45.585459+00:00",
+            "observed_at": "2026-11-14T07:23:30.557943+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69034,7 +69036,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2026-03-02T12:44:24+00:00",
-            "observed_at": "2026-11-13T12:34:45.605850+00:00",
+            "observed_at": "2026-11-14T07:23:30.569335+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69080,7 +69082,7 @@
             "period": null,
             "salary_raw_snippet": "ЗП от 240 000 до 270 000 рублей Senior; 200 000 - 240 000 Middle",
             "published_at": "2025-07-01T08:23:19+00:00",
-            "observed_at": "2026-11-13T12:34:47.449350+00:00",
+            "observed_at": "2026-11-14T07:23:32.066631+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69123,7 +69125,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-07-18T07:31:30+00:00",
-            "observed_at": "2026-11-13T12:34:47.463283+00:00",
+            "observed_at": "2026-11-14T07:23:32.073584+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69167,7 +69169,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-07-24T11:23:18+00:00",
-            "observed_at": "2026-11-13T12:34:47.465075+00:00",
+            "observed_at": "2026-11-14T07:23:32.074491+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69212,7 +69214,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-08-13T13:55:54+00:00",
-            "observed_at": "2026-11-13T12:34:47.466707+00:00",
+            "observed_at": "2026-11-14T07:23:32.075311+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69255,7 +69257,7 @@
             "period": "month",
             "salary_raw_snippet": "💰 Зарплата: от 8000 до 15 000$ в месяц (готовы гибко обсуждать условия, в зависимости от экспертизы специалиста)",
             "published_at": "2025-08-19T16:42:26+00:00",
-            "observed_at": "2026-11-13T12:34:47.470508+00:00",
+            "observed_at": "2026-11-14T07:23:32.077207+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69302,7 +69304,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-09-12T14:40:23+00:00",
-            "observed_at": "2026-11-13T12:34:47.472925+00:00",
+            "observed_at": "2026-11-14T07:23:32.078593+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69346,7 +69348,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-09-26T15:41:08+00:00",
-            "observed_at": "2026-11-13T12:34:47.480711+00:00",
+            "observed_at": "2026-11-14T07:23:32.082939+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69382,14 +69384,14 @@
             "location": [
               "–гибрид, Санкт-Петербург/Москва"
             ],
-            "description": "*Вакансия: Инженер-программист (C++/Qt/Промышленная автоматизация)\n*Формат работы: Офис–гибрид, Санкт-Петербург/Москва\n*Оплата: от 150 000 ₽ на руки\n\nО компании:\nVeidelmarov Technologies — мы создаём промышленные системы управления и специализированное ПО, объединяя железо и софт в единые комплексные решения. В наших проектах используются C++/Qt, STM32, Embedded Linux и современные протоколы автоматизации.\n\nМы делаем системы, которые реально работают на производстве — от линий резки и упаковки до специализированных станков.\n\nКого мы ищем:\nИнженера-программиста, который не просто пишет код, а понимает, как работает реальное производство.\n\nТребования:\n- Уверенные знания C++ (C++11/14/17) и Qt.\n- Опыт работы с производственными линиями и промышленным оборудованием.\n- Практика взаимодействия с контроллерами (PLC/LC) и периферией.\n- Понимание электрики, схем и чертежей (умение читать и применять на практике).\n- Опыт работы с промышленными протоколами (Modbus, RS-485, TCP/IP, CAN).\n\nБудет плюсом:\n+ Опыт с STM32, Arduino, Raspberry Pi.\n+ Знание Embedded Linux, RTOS.\n+ Навыки разработки интерфейсов (UI/UX) для операторских панелей.\n+ Опыт интеграции ПО с реальным оборудованием.\n+ Умение работать руками: пайка, отладка, сборка прототипов.\n\nЧто предлагаем:\n- Зарплата 200 000 – 250 000 ₽ на руки.\n- Реальные производственные проекты, где твой код управляет железом.\n- Участие в создании своих продуктов с нуля: от ТЗ и схем до внедрения на предприятии.\n\nВозможность расти от программиста до архитектора решений и руководителя проектов.\n\nАтмосферу, где ценится инженерная смелость, интеллект и результат.\n\nЕсли ты готов работать там, где C++ встречается с реальными станками и линиями, пиши нам:\n✉️ info@veidelmarov.tech или Telegram: @VeidelmarovTechnologiesHR\n\n\n\n1.83K viewsedited  09:21",
+            "description": "*Вакансия: Инженер-программист (C++/Qt/Промышленная автоматизация)\n*Формат работы: Офис–гибрид, Санкт-Петербург/Москва\n*Оплата: от 150 000 ₽ на руки\n\nО компании:\nVeidelmarov Technologies — мы создаём промышленные системы управления и специализированное ПО, объединяя железо и софт в единые комплексные решения. В наших проектах используются C++/Qt, STM32, Embedded Linux и современные протоколы автоматизации.\n\nМы делаем системы, которые реально работают на производстве — от линий резки и упаковки до специализированных станков.\n\nКого мы ищем:\nИнженера-программиста, который не просто пишет код, а понимает, как работает реальное производство.\n\nТребования:\n- Уверенные знания C++ (C++11/14/17) и Qt.\n- Опыт работы с производственными линиями и промышленным оборудованием.\n- Практика взаимодействия с контроллерами (PLC/LC) и периферией.\n- Понимание электрики, схем и чертежей (умение читать и применять на практике).\n- Опыт работы с промышленными протоколами (Modbus, RS-485, TCP/IP, CAN).\n\nБудет плюсом:\n+ Опыт с STM32, Arduino, Raspberry Pi.\n+ Знание Embedded Linux, RTOS.\n+ Навыки разработки интерфейсов (UI/UX) для операторских панелей.\n+ Опыт интеграции ПО с реальным оборудованием.\n+ Умение работать руками: пайка, отладка, сборка прототипов.\n\nЧто предлагаем:\n- Зарплата 200 000 – 250 000 ₽ на руки.\n- Реальные производственные проекты, где твой код управляет железом.\n- Участие в создании своих продуктов с нуля: от ТЗ и схем до внедрения на предприятии.\n\nВозможность расти от программиста до архитектора решений и руководителя проектов.\n\nАтмосферу, где ценится инженерная смелость, интеллект и результат.\n\nЕсли ты готов работать там, где C++ встречается с реальными станками и линиями, пиши нам:\n✉️ info@veidelmarov.tech или Telegram: @VeidelmarovTechnologiesHR\n\n\n\n1.84K viewsedited  09:21",
             "salary_min": null,
             "salary_max": null,
             "currency": "RUB",
             "period": null,
             "salary_raw_snippet": "*Оплата: от 150 000 ₽ на руки | - Зарплата 200 000 – 250 000 ₽ на руки.",
             "published_at": "2025-10-01T09:21:59+00:00",
-            "observed_at": "2026-11-13T12:34:47.496075+00:00",
+            "observed_at": "2026-11-14T07:23:32.091094+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69427,7 +69429,7 @@
             "period": null,
             "salary_raw_snippet": null,
             "published_at": "2025-10-02T11:59:24+00:00",
-            "observed_at": "2026-11-13T12:34:47.502972+00:00",
+            "observed_at": "2026-11-14T07:23:32.094758+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69471,7 +69473,7 @@
             "period": null,
             "salary_raw_snippet": "• Уровень ЗП: от 250 000₽ net",
             "published_at": "2025-10-10T11:01:24+00:00",
-            "observed_at": "2026-11-13T12:34:47.508098+00:00",
+            "observed_at": "2026-11-14T07:23:32.097656+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69510,7 +69512,7 @@
             "period": null,
             "salary_raw_snippet": "• Уровень ЗП: от 250 000₽ net",
             "published_at": "2025-10-10T11:02:36+00:00",
-            "observed_at": "2026-11-13T12:34:47.511411+00:00",
+            "observed_at": "2026-11-14T07:23:32.099574+00:00",
             "links": [
               "https://t.me/ProCxxJobs",
               "https://t.me/ProCxxJobs",
@@ -69529,8 +69531,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -69558,7 +69560,7 @@
             "period": null,
             "salary_raw_snippet": "🔌 Вилка: ₽ 40-70к net (за полставки!)",
             "published_at": "2026-05-08T09:01:03+00:00",
-            "observed_at": "2026-11-13T12:34:50.424255+00:00",
+            "observed_at": "2026-11-14T07:23:34.336852+00:00",
             "links": [
               "https://t.me/phystechcareerchannel",
               "https://t.me/phystechcareerchannel",
@@ -69596,7 +69598,7 @@
             "period": null,
             "salary_raw_snippet": "Вилка: 140к-300к рублей net",
             "published_at": "2026-02-20T09:26:32+00:00",
-            "observed_at": "2026-11-13T12:34:52.088648+00:00",
+            "observed_at": "2026-11-14T07:23:35.807390+00:00",
             "links": [
               "https://t.me/phystechcareerchannel",
               "https://t.me/phystechcareerchannel",
@@ -69621,16 +69623,16 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "Telegram @careerspace",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -69658,7 +69660,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-29T13:26:00+00:00",
-            "observed_at": "2026-11-13T12:34:57.885006+00:00",
+            "observed_at": "2026-11-14T07:23:40.268772+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69702,7 +69704,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Chur] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-29T13:26:00+00:00",
-            "observed_at": "2026-11-13T12:34:57.885185+00:00",
+            "observed_at": "2026-11-14T07:23:40.268884+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69746,7 +69748,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-30T08:25:58+00:00",
-            "observed_at": "2026-11-13T12:34:57.885623+00:00",
+            "observed_at": "2026-11-14T07:23:40.269139+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69783,14 +69785,14 @@
             "location": [
               "Fahrweid (Zürich"
             ],
-            "description": "➡️ Senior Software Engineer C# oder C++ - Industrial Systems | Cudos AG⁣\n[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣\nhttps://tinyurl.com/3k3f662r ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n🔥1😱1😘1\n\n\n779 views07:26",
+            "description": "➡️ Senior Software Engineer C# oder C++ - Industrial Systems | Cudos AG⁣\n[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣\nhttps://tinyurl.com/3k3f662r ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n🔥1😱1😘1\n\n\n781 views07:26",
             "salary_min": 100000.0,
             "salary_max": 120000.0,
             "currency": "CHF",
             "period": null,
             "salary_raw_snippet": "[📍 Fahrweid (Zürich)] [💰 CHF 100'000 - 120'000] [💼 Senior] [🕒 Full-Time] [📣 German]⁣",
             "published_at": "2026-10-09T07:26:00+00:00",
-            "observed_at": "2026-11-13T12:34:59.737185+00:00",
+            "observed_at": "2026-11-14T07:23:41.815054+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69827,14 +69829,14 @@
             "location": [
               "Zurich"
             ],
-            "description": "➡️ C++ Engineer – Trading Systems | Rockstar Recruiting AG⁣\n[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣\nhttps://tinyurl.com/ua4vu5r6 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n❤6🔥2🥰1🤩1😘1\n\n\n807 views12:25",
+            "description": "➡️ C++ Engineer – Trading Systems | Rockstar Recruiting AG⁣\n[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣\nhttps://tinyurl.com/ua4vu5r6 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n❤6🔥2🥰1🤩1😘1\n\n\n808 views12:25",
             "salary_min": 140000.0,
             "salary_max": 180000.0,
             "currency": "CHF",
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-10-15T12:25:56+00:00",
-            "observed_at": "2026-11-13T12:34:59.738804+00:00",
+            "observed_at": "2026-11-14T07:23:41.816031+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69875,7 +69877,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-09-17T12:26:07+00:00",
-            "observed_at": "2026-11-13T12:35:01.599949+00:00",
+            "observed_at": "2026-11-14T07:23:43.352845+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69916,7 +69918,7 @@
             "period": null,
             "salary_raw_snippet": "[📍 Zurich] [💰 CHF 140'000 - 180'000] [💼 Senior] [🕒 Full-Time] [📣 English]⁣",
             "published_at": "2026-10-01T12:26:00+00:00",
-            "observed_at": "2026-11-13T12:35:01.602668+00:00",
+            "observed_at": "2026-11-14T07:23:43.354421+00:00",
             "links": [
               "https://t.me/switzerlanddevjobs",
               "https://t.me/switzerlanddevjobs",
@@ -69937,8 +69939,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -69959,14 +69961,14 @@
             "location": [
               "City of London"
             ],
-            "description": "➡️ Quantitative Developer – Python/Java, Market Risk & FRTB | CBSbutler Holdings Limited trading as CBSbutler⁣\n[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣\nhttps://tinyurl.com/39yy2ac5 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n👍1\n\n\n341 views09:35",
+            "description": "➡️ Quantitative Developer – Python/Java, Market Risk & FRTB | CBSbutler Holdings Limited trading as CBSbutler⁣\n[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣\nhttps://tinyurl.com/39yy2ac5 ⁣\n\n\nPS. If you like these, give us a 🔥 or 👍\n👍1\n\n\n359 views09:35",
             "salary_min": 70000.0,
             "salary_max": 110000.0,
             "currency": "GBP",
             "period": null,
             "salary_raw_snippet": "[📍 City of London] [💰 £70,000 - 110,000] [💼 Senior] [🕒 Full-Time] ⁣",
             "published_at": "2026-11-10T09:35:59+00:00",
-            "observed_at": "2026-11-13T12:35:02.894562+00:00",
+            "observed_at": "2026-11-14T07:23:44.149799+00:00",
             "links": [
               "https://t.me/devitjobs",
               "https://t.me/devitjobs",
@@ -69988,8 +69990,8 @@
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.719374+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.275066+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -70999,7 +71001,7 @@
       "observed_at": "2026-11-13T12:28:59.429476+00:00",
       "retrieved_at": "2026-11-13T12:25:20.529727+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "TypeError"
     },
     {
@@ -71283,7 +71285,7 @@
       "observed_at": "2026-11-13T10:16:19.379829+00:00",
       "retrieved_at": "2026-11-13T10:10:09.764754+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "TypeError"
     },
     {
@@ -71989,7 +71991,7 @@
       "observed_at": "2026-11-13T12:29:02.358052+00:00",
       "retrieved_at": "2026-11-13T12:25:20.529727+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "TypeError"
     },
     {
@@ -72586,12 +72588,46 @@
       "observed_at": "2026-11-13T12:29:11.092069+00:00",
       "retrieved_at": "2026-11-13T12:25:20.529727+00:00",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "TypeError"
     },
     {
       "source": "ictjobs.ch RSS",
       "records": [
+        {
+          "region": "Switzerland",
+          "query": "C++ RSS",
+          "raw": {
+            "id": "https://ictjobs.ch/?p=201098",
+            "title": "Systemtechnik und Softwareentwicklung",
+            "employer": "Lookthrough AG",
+            "description": "",
+            "url": "https://ictjobs.ch/system-netzwerktechnik-security-voip/systemtechnik-und-softwareentwicklung/",
+            "location": "Switzerland",
+            "city": "Switzerland",
+            "country": "CH",
+            "source_posted_at": "2026-11-13T15:15:00+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
+            "is_closed": false
+          }
+        },
+        {
+          "region": "Switzerland",
+          "query": "C++ RSS",
+          "raw": {
+            "id": "https://ictjobs.ch/?p=201091",
+            "title": "Technology Architect 80–100%",
+            "employer": "Kanton Zürich",
+            "description": "",
+            "url": "https://ictjobs.ch/beratung-consultants/technology-architect-80-100/",
+            "location": "Switzerland",
+            "city": "Switzerland",
+            "country": "CH",
+            "source_posted_at": "2026-11-13T14:12:00+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
+            "is_closed": false
+          }
+        },
         {
           "region": "Switzerland",
           "query": "C++ RSS",
@@ -72605,7 +72641,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T10:17:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72622,7 +72658,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T10:03:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72639,7 +72675,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T09:47:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72656,7 +72692,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T09:35:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72673,7 +72709,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T09:21:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72690,7 +72726,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-13T07:17:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72707,7 +72743,7 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-12T14:39:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         },
@@ -72724,56 +72760,22 @@
             "city": "Switzerland",
             "country": "CH",
             "source_posted_at": "2026-11-12T14:34:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
-            "is_closed": false
-          }
-        },
-        {
-          "region": "Switzerland",
-          "query": "C++ RSS",
-          "raw": {
-            "id": "https://ictjobs.ch/?p=200901",
-            "title": "IS Project Manager & SAP ARIBA SCC Implementation Coordinator (flexible location)",
-            "employer": "ABB Ltd.",
-            "description": "",
-            "url": "https://ictjobs.ch/projektleitung-agilitaet/is-project-manager-sap-ariba-scc-implementation-coordinator-flexible-location/",
-            "location": "Switzerland",
-            "city": "Switzerland",
-            "country": "CH",
-            "source_posted_at": "2026-11-12T13:57:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
-            "is_closed": false
-          }
-        },
-        {
-          "region": "Switzerland",
-          "query": "C++ RSS",
-          "raw": {
-            "id": "https://ictjobs.ch/?p=200916",
-            "title": "Portfolio & Data Controller/in 100% (w/m/d)",
-            "employer": "Mercedes-Benz Schweiz AG",
-            "description": "",
-            "url": "https://ictjobs.ch/software-entwicklung/portfolio-data-controller-in-100-w-m-d/",
-            "location": "Switzerland",
-            "city": "Switzerland",
-            "country": "CH",
-            "source_posted_at": "2026-11-12T11:35:00+00:00",
-            "observed_at": "2026-11-13T12:35:08.364811+00:00",
+            "observed_at": "2026-11-14T07:23:48.147916+00:00",
             "is_closed": false
           }
         }
       ],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:06.726477+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:47.280648+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
       "source": "YubHub",
       "records": [],
       "status": "queried",
-      "observed_at": "2026-11-13T12:35:08.365660+00:00",
-      "retrieved_at": "2026-11-13T12:31:01.188428+00:00",
+      "observed_at": "2026-11-14T07:23:48.148654+00:00",
+      "retrieved_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_policy": "weekly"
     },
     {
@@ -72782,7 +72784,7 @@
       "observed_at": null,
       "status": "error",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "HTTPError"
     },
     {
@@ -72791,7 +72793,7 @@
       "observed_at": null,
       "status": "error",
       "refresh_policy": "weekly",
-      "refresh_attempted_at": "2026-11-13T12:31:01.188428+00:00",
+      "refresh_attempted_at": "2026-11-14T07:19:22.226228+00:00",
       "refresh_error": "requires_login"
     },
     {
