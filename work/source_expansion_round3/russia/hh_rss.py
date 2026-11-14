@@ -68,22 +68,43 @@ def parse_feed(payload, query):
         title = plain_text(fields.get("title", ""))
         if not title:
             continue
+        description = plain_text(fields.get("description", ""))
+        employer_match = re.search(
+            r"Вакансия компании:\s*(.+?)(?=\s+(?:Направление\b|Создана\s*:|Регион\s*:|Предполагаемый уровень месячного дохода\s*:)|$)",
+            description,
+            re.IGNORECASE,
+        )
+        location_match = re.search(
+            r"Регион:\s*(.+?)(?=\s+(?:Вакансия компании|Направление|Создана|Предполагаемый уровень месячного дохода):|$)",
+            description,
+            re.IGNORECASE,
+        )
         pub_date = fields.get("pubDate")
         try:
             published_at = parsedate_to_datetime(pub_date).astimezone(timezone.utc).isoformat() if pub_date else None
         except (TypeError, ValueError, OverflowError):
             published_at = None
+        if not published_at:
+            created = re.search(r"\bСоздана:\s*(\d{2}\.\d{2}\.\d{4})", description)
+            if created:
+                try:
+                    published_at = datetime.strptime(created.group(1), "%d.%m.%Y").replace(tzinfo=timezone.utc).isoformat()
+                except ValueError:
+                    pass
         match = VACANCY_ID.search(url)
         guid = plain_text(fields.get("guid", ""))
         record_id = match.group(1) if match else (guid or url)
         records.append({
             "id": record_id,
             "title": title,
-            "employer": None,
+            "employer": employer_match.group(1).strip() if employer_match else None,
             "region": "Russia",
+            "country": "RU",
+            "city": location_match.group(1).strip() if location_match else None,
+            "location": location_match.group(1).strip() if location_match else "Russia",
             "url": url,
             "published_at": published_at,
-            "description": plain_text(fields.get("description", "")),
+            "description": description,
             "salary_min": None,
             "salary_max": None,
             "currency": None,
