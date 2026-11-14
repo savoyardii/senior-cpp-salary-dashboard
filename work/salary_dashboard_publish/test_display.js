@@ -25,7 +25,7 @@ const content=node=>[node.textContent,...node.children.map(content)].filter(Bool
 const jobs=()=>nodes.regions.children.flatMap(region=>region.children.filter(child=>child.className==='region-jobs')).map(content).join(' ');
 for(const currency of ['local','usd'])for(const period of ['month','year']){
  vm.runInContext(`setCurrencyMode('${currency}');setPeriodMode('${period}')`,context);
- const text=jobs();assert(text.includes(period==='month'?'/ месяц':'/ год'));
+ const text=jobs();assert(content(nodes.regions).includes('Среднее: '));assert(text.includes(period==='month'?'/ месяц':'/ год'));
  assert(!text.includes(period==='month'?'/ год':'/ месяц'));
  assert(!/тыс\.[^/]*тыс\./.test(text));
 }
