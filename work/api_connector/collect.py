@@ -232,7 +232,7 @@ def jooble(keys):
     for region, host, key, location in available:
         try:
             data, _ = request_json(f"https://{host}/api/{urllib.parse.quote(key, safe='')}",
-                                   {"Accept": "application/json"},
+                                   {"Accept": "application/json", "Content-Type": "application/json"},
                                    {"keywords": "C++", "location": location, "page": "1", "ResultOnPage": 50})
             if not isinstance(data, dict):
                 raise RuntimeError("invalid_response")
