@@ -16,6 +16,8 @@ import xml.etree.ElementTree as ET
 
 QUERIES = ("C++", "Senior C++", "HFT", "low latency C++")
 AREA = "113"  # Russia
+SALARY_SEARCHES = ((AREA, "C++"), (AREA, "HFT C++"), ("1", "C++"),
+                   ("1", "Senior C++"), ("2", "C++"), ("2", "Senior C++"))
 FEED_URL = "https://hh.ru/search/vacancy/rss"
 USER_AGENT = "salary-market-dashboard/1.0"
 VACANCY_ID = re.compile(r"/vacancy/(\d+)")
@@ -129,14 +131,22 @@ def dedupe(records):
     return list(found.values())
 
 
-def collect(queries=QUERIES, opener=urllib.request.urlopen):
-    if not 1 <= len(queries) <= len(QUERIES):
-        raise ValueError(f"use 1–{len(QUERIES)} queries")
+def collect(queries=None, opener=urllib.request.urlopen):
+    if queries is None:
+        searches = [(AREA, query, False) for query in QUERIES]
+        searches.extend((area, query, True) for area, query in SALARY_SEARCHES)
+    else:
+        if not 1 <= len(queries) <= len(QUERIES):
+            raise ValueError(f"use 1–{len(QUERIES)} queries")
+        searches = [(AREA, query, False) for query in queries]
     observed_at = datetime.now(timezone.utc).isoformat()
     result = {"source": "HeadHunter RSS", "observed_at": observed_at, "status": "queried", "requests": [], "records": []}
     records = []
-    for query in queries:
-        url = FEED_URL + "?" + urllib.parse.urlencode({"area": AREA, "clusters": "true", "enable_snippets": "true", "text": query})
+    for area, query, salary_only in searches:
+        params = {"area": area, "clusters": "true", "enable_snippets": "true", "text": query}
+        if salary_only:
+            params["label"] = "with_salary"
+        url = FEED_URL + "?" + urllib.parse.urlencode(params)
         request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml"})
         try:
             with opener(request, timeout=20) as response:
@@ -146,14 +156,17 @@ def collect(queries=QUERIES, opener=urllib.request.urlopen):
                 rows = parse_feed(payload, query)
         except urllib.error.HTTPError as exc:
             result["status"] = "blocked" if exc.code in {401, 403, 407, 429} else "error"
-            result["requests"].append({"query": query, "status": f"HTTP {exc.code}"})
+            result["requests"].append({"query": query, "area": area, "salary_only": salary_only,
+                                       "status": f"HTTP {exc.code}"})
             exc.close()
             break
         except (urllib.error.URLError, TimeoutError, OSError, ValueError, ET.ParseError) as exc:
             result["status"] = "blocked" if str(exc) in {"unexpected_feed_root", "missing_rss_channel"} else "error"
-            result["requests"].append({"query": query, "status": type(exc).__name__ if not isinstance(exc, ValueError) else str(exc)})
+            result["requests"].append({"query": query, "area": area, "salary_only": salary_only,
+                                       "status": type(exc).__name__ if not isinstance(exc, ValueError) else str(exc)})
             break
-        result["requests"].append({"query": query, "returned": len(rows), "status": "ok"})
+        result["requests"].append({"query": query, "area": area, "salary_only": salary_only,
+                                   "returned": len(rows), "status": "ok"})
         records.extend(rows)
     result["records"] = dedupe(records)
     return result
@@ -161,13 +174,13 @@ def collect(queries=QUERIES, opener=urllib.request.urlopen):
 
 def main():
     parser = ArgumentParser(description=__doc__)
-    parser.add_argument("--query", action="append", help=f"Override search queries; at most {len(QUERIES)} requests")
+    parser.add_argument("--query", action="append", help=f"Override broad search queries; at most {len(QUERIES)} requests")
     parser.add_argument("--fixture", type=Path, help="Parse one saved RSS XML file without network access")
     args = parser.parse_args()
     if args.fixture:
         result = {"source": "HeadHunter RSS", "status": "fixture", "records": parse_feed(args.fixture.read_bytes(), "fixture")}
     else:
-        result = collect(tuple(args.query) if args.query else QUERIES)
+        result = collect(tuple(args.query) if args.query else None)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
