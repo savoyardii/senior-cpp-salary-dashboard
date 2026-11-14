@@ -43,7 +43,8 @@ def fetch(url):
 SEEDS=[
 'https://www.jobs.service.gov.uk/jobs/search?keywords=C%2B%2B&location=London',
 'https://www.jobs.service.gov.uk/jobs/search?keywords=Senior+Software+Engineer&location=London',
-'https://www.reed.co.uk/jobs/senior-c-developer-london/56743332',
+'https://www.reed.co.uk/jobs/c-plus-plus-developer-jobs-in-london',
+'https://www.reed.co.uk/jobs/senior-c-plus-plus-developer-jobs-in-london',
 'https://www.ecmselection.co.uk/jobs?keywords=C%2B%2B&location=London',
 'https://www.client-server.com/jobs?keywords=C%2B%2B',
 'https://www.hunterbond.com/job/senior-c%2B%2B-software-developer/',
@@ -57,7 +58,7 @@ def main():
  ROOT.joinpath('raw').mkdir(exist_ok=True)
  with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:attempts=list(ex.map(fetch,SEEDS))
  Path(ROOT/'seed_attempts.json').write_text(json.dumps(attempts,indent=2))
- links=[]
+ links=[];reed_links=[]
  for x in attempts:
   if x.get('http_status')!=200:continue
   for link in x.get('links',[]):
@@ -65,7 +66,9 @@ def main():
    if re.fullmatch(r'https://www.jobs.service.gov.uk/jobs/[a-f0-9]{20,}',absolute) and absolute not in SEEDS:links.append(absolute)
    if 'ecmselection.co.uk' in absolute and '/vacancies/' in absolute:links.append(absolute)
    if 'client-server.com' in absolute and re.search(r'/job/.*(senior|lead).*c-',absolute,re.I):links.append(absolute)
- links=list(dict.fromkeys(links))[:35]
+   reed_url=absolute.split('?')[0].split('#')[0]
+   if re.fullmatch(r'https://www\.reed\.co\.uk/jobs/[^/]+/\d+',reed_url):reed_links.append(reed_url)
+ links=list(dict.fromkeys(links))[:35]+list(dict.fromkeys(reed_links))[:20]
  with concurrent.futures.ThreadPoolExecutor(max_workers=5) as ex:details=list(ex.map(fetch,links))
  attempts+=details
  (ROOT/'attempts.json').write_text(json.dumps(attempts,ensure_ascii=False,indent=2))
