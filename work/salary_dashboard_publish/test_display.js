@@ -26,9 +26,13 @@ const content=node=>[node.textContent,...node.children.map(content)].filter(Bool
 const apiAudit=JSON.parse(nodes['api-stats'].textContent);
 const sourceSnapshot=apiAudit.sources.filter(source=>source.status==='queried'&&source.records>0);
 const sourceNames=sourceSnapshot.map(source=>source.source==='HeadHunter RSS'?'HeadHunter':source.source);
+assert(page.includes('<details id="source-list" class="source-details">'),'Source list must be collapsed by default');
 const uniqueRoles=apiAudit.groups.filter(group=>group.sources.some(source=>sourceSnapshot.some(item=>item.source===source))).length;
 assert.deepEqual(nodes['source-rows'].children.map(row=>row.children[0].textContent),sourceNames,'Source list must contain only sources that returned data');
+assert(nodes['source-rows'].children.every(row=>row.children.length===3),'Source rows must omit the status column');
+assert(!page.includes('<th>Статус</th>'),'Source table must omit the status column');
 assert(content(nodes['source-kpis']).includes(String(sourceNames.length)),'Source summary must show the current count of sources with data');
+assert.equal(nodes['source-list-summary'].textContent,`Список источников (${sourceNames.length})`,'Expandable list summary must show source count');
 assert.equal(nodes['source-kpis'].children[2].children[0].textContent,new Intl.NumberFormat('ru-RU').format(uniqueRoles),'Source summary must show deduplicated unique roles');
 assert(nodes['source-kpis'].children[2].children[1].textContent.includes('дедупа'),'Deduplicated count must be labeled');
 assert(!sourceNames.includes('HeadHunter RSS')&&sourceNames.includes('HeadHunter'),'HeadHunter RSS must be shown as HeadHunter');
