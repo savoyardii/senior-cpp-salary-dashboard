@@ -12,6 +12,10 @@ assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link mus
 assert(page.includes('Senior (83 вакансии) и Lead (17 вакансий)'),'HireHi Senior/Lead statistics must be combined transparently');
 assert(page.includes('Lead (17 вакансий)'),'Dashboard must show the Lead sample size in its combined range');
 assert(!page.includes('не являются пересчитанными общими перцентилями'),'Removed percentile caveat must stay absent');
+const benchmarkScript=page.match(/const benchmarkValues=(\{[\s\S]*?\});\s*function benchmarkText/);
+assert(benchmarkScript,'Benchmark values must be present');
+const missingBenchmarkIds=[...benchmarkScript[1].matchAll(/"([^"]+)":\{/g)].map(match=>match[1]).filter(id=>!page.includes(`id="${id}"`));
+assert.deepEqual(missingBenchmarkIds,[],'Every benchmark value must target an element in the dashboard');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
