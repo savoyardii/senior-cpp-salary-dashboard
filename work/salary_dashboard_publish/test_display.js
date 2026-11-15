@@ -37,6 +37,15 @@ for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=
 const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
+const offerSummary=()=>nodes.regions.children.map(card=>content(card.children[0].children.find(child=>child.className==='offer-summary'))).join(' ');
+const offerCards=nodes.regions.children.map(card=>card.children[0].children.find(child=>child.className==='offer-summary'));
+assert.equal(offerCards.length,3,'Each location must display a salary summary');
+assert(offerCards.every(card=>card&&card.children.length>0),'Each location must show salary observations');
+const defaultOffers=offerSummary();
+assert(defaultOffers.includes('Gross/net не указано'),'Salary summaries must identify unknown tax basis');
+vm.runInContext("setCurrencyMode('usd');setPeriodMode('month')",context);
+assert(offerSummary().includes('$')&&offerSummary().includes('в месяц'),'Salary summaries must follow currency and period filters');
+vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 const apiAudit=JSON.parse(nodes['api-stats'].textContent);
 const sourceSnapshot=apiAudit.sources.filter(source=>source.status==='queried'&&source.records>0);
 const sourceNames=sourceSnapshot.map(source=>source.source==='HeadHunter RSS'?'HeadHunter':source.source);
@@ -76,7 +85,8 @@ const cards=content(nodes.regions);
 for(const name of ['Швейцария','Лондон','Россия']){
  const card=nodes.regions.children.find(region=>content(region).includes(name));
  assert(card,`${name} card must be rendered`);
- const count=Number(content(card).match(/Объявлений в расчёте: (\d+)/)?.[1]);
+ const offers=card.children.find(child=>child.className==='region-summary').children.find(child=>child.className==='offer-summary');
+ const count=offers.children.reduce((total,line)=>total+Number(line.children[0].textContent.match(/· (\d+)/)?.[1]||0),0);
  const jobsNode=card.children.find(child=>child.className==='region-jobs');
  assert(count>0&&jobsNode?.children.length===count,`${name} card must match its rendered salary vacancies`);
 }
@@ -85,7 +95,7 @@ assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'
 assert(jobs().includes('gross/net не указано'),'Expanded offers must label unknown tax basis');
 assert(jobs().includes('период не указан'),'Expanded offers must keep salary posts without cadence visible');
 assert(!jobs().includes('Алабуга')&&!page.includes('37562275')&&!page.includes('139133285'),'Alabuga C++ vacancy must be absent from the sample and API dashboard data');
-assert(cards.includes('Сопоставимой')||cards.includes('Только отдельные объявления'),'Cards must avoid inventing a range from mixed observations');
+assert(cards.includes('Объявленные суммы'),'Cards must avoid inventing a range from mixed observations');
 assert(nodes['source-summary'].textContent.includes('Ошибок обновления:'),'Dashboard must surface source failures and retained snapshots');
 const mixedGrade=JSON.parse(nodes.dataset.textContent).find(row=>row.url?.endsWith('/139326350/'));
 assert.equal(mixedGrade?.seniority,'inferred_senior','The Russian HFT Middle/Senior role is included as salary-inferred Senior');
