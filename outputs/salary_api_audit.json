@@ -17,7 +17,7 @@
     {
       "source": "Headcount Labs",
       "records": 475,
-      "qualified_records": 44,
+      "qualified_records": 47,
       "updated_at": "2026-11-15T17:38:13.850798+00:00",
       "status": "queried",
       "refresh_error": null,
@@ -107,7 +107,7 @@
     {
       "source": "ITJobsWatch",
       "records": 4,
-      "qualified_records": 3,
+      "qualified_records": 4,
       "updated_at": "2026-11-12T12:38:11.183094+00:00",
       "status": "queried",
       "refresh_error": null,
@@ -278,7 +278,7 @@
     {
       "source": "Telegram @c_rabota",
       "records": 11,
-      "qualified_records": 1,
+      "qualified_records": 2,
       "updated_at": "2026-11-15T17:38:13.850798+00:00",
       "status": "queried",
       "refresh_error": null,
@@ -432,8 +432,8 @@
   "regions": [
     {
       "region": "Switzerland",
-      "qualified_roles": 22,
-      "employers": 11,
+      "qualified_roles": 23,
+      "employers": 12,
       "salary_estimates_excluded": 0,
       "salary_fields_unresolved": 4,
       "salary_observations": 2,
@@ -454,13 +454,24 @@
     },
     {
       "region": "London, UK",
-      "qualified_roles": 63,
-      "employers": 40,
+      "qualified_roles": 64,
+      "employers": 41,
       "salary_estimates_excluded": 12,
       "salary_fields_unresolved": 4,
-      "salary_observations": 8,
+      "salary_observations": 9,
       "salary_conflicts": 0,
       "salary_ranges": [
+        {
+          "currency": "GBP",
+          "period": "year",
+          "tax_basis": "unknown",
+          "compensation": "base",
+          "employment_basis": "unknown",
+          "count": 1,
+          "min": null,
+          "max": null,
+          "range": null
+        },
         {
           "currency": "GBP",
           "period": "year",
@@ -476,11 +487,11 @@
     },
     {
       "region": "Russia",
-      "qualified_roles": 42,
+      "qualified_roles": 43,
       "employers": 24,
       "salary_estimates_excluded": 0,
       "salary_fields_unresolved": 7,
-      "salary_observations": 11,
+      "salary_observations": 12,
       "salary_conflicts": 0,
       "salary_ranges": [
         {
@@ -489,7 +500,7 @@
           "tax_basis": "gross",
           "compensation": "unknown",
           "employment_basis": "unknown",
-          "count": 2,
+          "count": 3,
           "min": null,
           "max": null,
           "range": null
@@ -553,6 +564,84 @@
     {
       "group_id": "g2",
       "region": "Switzerland",
+      "title": "Embedded Software Engineer C++",
+      "employer": "Sonova",
+      "city": "Staefa",
+      "sources": [
+        "Headcount Labs"
+      ],
+      "records": [
+        {
+          "source": "Headcount Labs",
+          "id": "e8b9a9d6-e392-4958-ae13-1185cc1d00bb",
+          "urls": [
+            "https://careers.sonova.com/us/en/job/166132",
+            "https://career5.successfactors.eu/career?company=Sonova&career_ns=job_listing&career_job_req_id=166132"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        },
+        {
+          "source": "Headcount Labs",
+          "id": "e1a42fbc-7b78-4183-a213-e7d6d0349924",
+          "urls": [
+            "https://careers.sonova.com/us/en/job/166132"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        },
+        {
+          "source": "Headcount Labs",
+          "id": "acdc29d8-4fc3-4623-b8d2-e39733eb9e13",
+          "urls": [
+            "https://jobs.sonova.com/job/Staefa-Embedded-Software-Engineer-C%2B%2B/1450138633/",
+            "https://career5.successfactors.eu/career?company=Sonova&career_ns=job_listing&career_job_req_id=165719"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "experience",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g3",
+      "region": "Switzerland",
+      "title": "Embedded Software Engineer C++",
+      "employer": "Sonova AG",
+      "city": "Staefa",
+      "sources": [
+        "Headcount Labs"
+      ],
+      "records": [
+        {
+          "source": "Headcount Labs",
+          "id": "7e7f620c-1c32-4db4-b6d5-5e649d78ed32",
+          "urls": [
+            "https://jobs.sonova.com/job/Staefa-Embedded-Software-Engineer-C%2B%2B/1455022133/"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        }
+      ],
+      "salary_candidates": [],
+      "salary": [],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "experience",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": [
+        "no_explicit_local_salary_currency_and_period"
+      ]
+    },
+    {
+      "group_id": "g4",
+      "region": "Switzerland",
       "title": "Senior C++ Engineer – Tech Lead",
       "employer": "CASCINATION AG",
       "city": "Bern",
@@ -581,38 +670,7 @@
       ]
     },
     {
-      "group_id": "g3",
-      "region": "Switzerland",
-      "title": "Embedded Software Engineer C++",
-      "employer": "Sonova",
-      "city": "Staefa",
-      "sources": [
-        "Headcount Labs"
-      ],
-      "records": [
-        {
-          "source": "Headcount Labs",
-          "id": "acdc29d8-4fc3-4623-b8d2-e39733eb9e13",
-          "urls": [
-            "https://jobs.sonova.com/job/Staefa-Embedded-Software-Engineer-C%2B%2B/1450138633/",
-            "https://career5.successfactors.eu/career?company=Sonova&career_ns=job_listing&career_job_req_id=165719"
-          ],
-          "observed_at": "2026-11-15T17:38:13.850798+00:00"
-        }
-      ],
-      "salary_candidates": [],
-      "salary": [],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "experience",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": [
-        "no_explicit_local_salary_currency_and_period"
-      ]
-    },
-    {
-      "group_id": "g4",
+      "group_id": "g5",
       "region": "Switzerland",
       "title": "Software Developer – Real-Time Rendering & Computer Vision (C++)",
       "employer": "CASCINATION AG",
@@ -642,7 +700,7 @@
       ]
     },
     {
-      "group_id": "g5",
+      "group_id": "g6",
       "region": "Switzerland",
       "title": "Senior C/C++ Low Latency Engineer",
       "employer": "Mathrix",
@@ -672,7 +730,7 @@
       ]
     },
     {
-      "group_id": "g6",
+      "group_id": "g7",
       "region": "Switzerland",
       "title": "Senior C++ Engineer",
       "employer": "DuckDuckGo",
@@ -702,7 +760,7 @@
       ]
     },
     {
-      "group_id": "g7",
+      "group_id": "g8",
       "region": "London, UK",
       "title": "C++ Trading Developer, Quant Trading Team",
       "employer": "Crypto.com",
@@ -732,7 +790,7 @@
       ]
     },
     {
-      "group_id": "g8",
+      "group_id": "g9",
       "region": "London, UK",
       "title": "Quant Trading C++ Engineer (APAC,UK)",
       "employer": "IO TECH SOLUTIONS LIMITED",
@@ -770,7 +828,7 @@
       ]
     },
     {
-      "group_id": "g9",
+      "group_id": "g10",
       "region": "London, UK",
       "title": "Senior C++ Engineer",
       "employer": "EPAM Systems",
@@ -800,7 +858,7 @@
       ]
     },
     {
-      "group_id": "g10",
+      "group_id": "g11",
       "region": "London, UK",
       "title": "Senior C++ Developer - Vice President",
       "employer": "Nomura Holdings, inc.",
@@ -830,7 +888,7 @@
       ]
     },
     {
-      "group_id": "g11",
+      "group_id": "g12",
       "region": "London, UK",
       "title": "Senior C++ / Rust Engineer – Low-Latency eTrading",
       "employer": "Grid Dynamics Holdings Inc",
@@ -860,7 +918,7 @@
       ]
     },
     {
-      "group_id": "g12",
+      "group_id": "g13",
       "region": "London, UK",
       "title": "Quantitative Developer - Ultra Low-Latency (C++)",
       "employer": "Qube Research & Technologies",
@@ -899,7 +957,7 @@
       ]
     },
     {
-      "group_id": "g13",
+      "group_id": "g14",
       "region": "London, UK",
       "title": "C++ Engineer",
       "employer": "Soho Dragon Solutions India Private Limited",
@@ -963,7 +1021,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g14",
+      "group_id": "g15",
       "region": "London, UK",
       "title": "Senior C++ Software Engineer",
       "employer": "Sees.ai",
@@ -993,7 +1051,7 @@
       ]
     },
     {
-      "group_id": "g15",
+      "group_id": "g16",
       "region": "London, UK",
       "title": "C++ Software Engineer | Trading Team",
       "employer": "Jump Trading",
@@ -1023,7 +1081,7 @@
       ]
     },
     {
-      "group_id": "g16",
+      "group_id": "g17",
       "region": "London, UK",
       "title": "Senior Embedded C++ Engineer",
       "employer": "ALTEN",
@@ -1087,7 +1145,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g17",
+      "group_id": "g18",
       "region": "London, UK",
       "title": "Senior Software Engineer, Trading Platform, C++",
       "employer": "DRW",
@@ -1143,7 +1201,7 @@
       ]
     },
     {
-      "group_id": "g18",
+      "group_id": "g19",
       "region": "London, UK",
       "title": "C++ Software Engineer (DV Commodities - London)",
       "employer": "DV Trading",
@@ -1182,7 +1240,7 @@
       ]
     },
     {
-      "group_id": "g19",
+      "group_id": "g20",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer - C++, Python,",
       "employer": "JPMC",
@@ -1212,7 +1270,7 @@
       ]
     },
     {
-      "group_id": "g20",
+      "group_id": "g21",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer - C++, Python,",
       "employer": "Chase-",
@@ -1242,7 +1300,7 @@
       ]
     },
     {
-      "group_id": "g21",
+      "group_id": "g22",
       "region": "London, UK",
       "title": "Senior Software Engineer, C++ , Core Platform",
       "employer": "Flow Traders",
@@ -1288,7 +1346,7 @@
       ]
     },
     {
-      "group_id": "g22",
+      "group_id": "g23",
       "region": "London, UK",
       "title": "Lead Software Engineering - C++",
       "employer": "JPMorganChase",
@@ -1327,7 +1385,7 @@
       ]
     },
     {
-      "group_id": "g23",
+      "group_id": "g24",
       "region": "London, UK",
       "title": "Quantitative Developer - HFT (C++)",
       "employer": "Qube Research & Technologies",
@@ -1366,7 +1424,7 @@
       ]
     },
     {
-      "group_id": "g24",
+      "group_id": "g25",
       "region": "London, UK",
       "title": "Senior C++ Software Engineer",
       "employer": "WorldQuant",
@@ -1396,7 +1454,7 @@
       ]
     },
     {
-      "group_id": "g25",
+      "group_id": "g26",
       "region": "London, UK",
       "title": "Senior Software Engineer – C++ / Video Processing",
       "employer": "DSL Digital Surgery Limited",
@@ -1481,7 +1539,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g26",
+      "group_id": "g27",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer (C++ / FICC Etrading)",
       "employer": "Alumni",
@@ -1511,7 +1569,7 @@
       ]
     },
     {
-      "group_id": "g27",
+      "group_id": "g28",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer (C++ / FICC Etrading)",
       "employer": "Chase-",
@@ -1550,7 +1608,7 @@
       ]
     },
     {
-      "group_id": "g28",
+      "group_id": "g29",
       "region": "London, UK",
       "title": "Sr Manager of Software Engineering (C++ / FICC Etrading)",
       "employer": "JPMC",
@@ -1589,7 +1647,7 @@
       ]
     },
     {
-      "group_id": "g29",
+      "group_id": "g30",
       "region": "London, UK",
       "title": "Sr Manager of Software Engineering (C++ / FICC Etrading)",
       "employer": "Alumni",
@@ -1619,7 +1677,7 @@
       ]
     },
     {
-      "group_id": "g30",
+      "group_id": "g31",
       "region": "London, UK",
       "title": "Senior C++ Developer",
       "employer": "GB01 SWIFT UK and Ireland",
@@ -1649,7 +1707,7 @@
       ]
     },
     {
-      "group_id": "g31",
+      "group_id": "g32",
       "region": "London, UK",
       "title": "Software Engineer, C++",
       "employer": "Tower Research Capital",
@@ -1679,7 +1737,7 @@
       ]
     },
     {
-      "group_id": "g32",
+      "group_id": "g33",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Chase-",
@@ -1718,7 +1776,7 @@
       ]
     },
     {
-      "group_id": "g33",
+      "group_id": "g34",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Alumni",
@@ -1748,7 +1806,7 @@
       ]
     },
     {
-      "group_id": "g34",
+      "group_id": "g35",
       "region": "London, UK",
       "title": "C++ XVA Developer",
       "employer": "SUMITOMO MITSUI BANKING CORPORATION",
@@ -1778,7 +1836,7 @@
       ]
     },
     {
-      "group_id": "g35",
+      "group_id": "g36",
       "region": "Russia",
       "title": "Программист C++",
       "employer": "АО \"ОКБ МЭИ\"",
@@ -1808,7 +1866,7 @@
       ]
     },
     {
-      "group_id": "g36",
+      "group_id": "g37",
       "region": "Russia",
       "title": "Ведущий разработчик C++ / Qt",
       "employer": "ООО \"ИВТРЕЙД\"",
@@ -1838,7 +1896,7 @@
       ]
     },
     {
-      "group_id": "g37",
+      "group_id": "g38",
       "region": "Russia",
       "title": "Ведущий инженер-программист C++",
       "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
@@ -1868,7 +1926,7 @@
       ]
     },
     {
-      "group_id": "g38",
+      "group_id": "g39",
       "region": "Russia",
       "title": "Ведущий инженер-программист",
       "employer": "АО \"КБП\"",
@@ -1898,7 +1956,7 @@
       ]
     },
     {
-      "group_id": "g39",
+      "group_id": "g40",
       "region": "Russia",
       "title": "Программист C++",
       "employer": "АО \"ОКБ МЭИ\"",
@@ -1928,7 +1986,7 @@
       ]
     },
     {
-      "group_id": "g40",
+      "group_id": "g41",
       "region": "Russia",
       "title": "Ведущий программист Qt, C++",
       "employer": "АО \"КОНЦЕРН ВКО \"АЛМАЗ - АНТЕЙ\"",
@@ -1958,7 +2016,7 @@
       ]
     },
     {
-      "group_id": "g41",
+      "group_id": "g42",
       "region": "Russia",
       "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
       "employer": "МФТИ",
@@ -1988,7 +2046,7 @@
       ]
     },
     {
-      "group_id": "g42",
+      "group_id": "g43",
       "region": "London, UK",
       "title": "C++ Trading Developer, Quant Trading Team",
       "employer": "Crypto.com",
@@ -2018,7 +2076,7 @@
       ]
     },
     {
-      "group_id": "g43",
+      "group_id": "g44",
       "region": "London, UK",
       "title": "Senior C++ Software Developer",
       "employer": "Hunter Bond",
@@ -2082,7 +2140,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g44",
+      "group_id": "g45",
       "region": "London, UK",
       "title": "Senior Software Engineer, Trading Platform, C++",
       "employer": "DRW",
@@ -2112,7 +2170,7 @@
       ]
     },
     {
-      "group_id": "g45",
+      "group_id": "g46",
       "region": "London, UK",
       "title": "Senior Software Engineer, C++",
       "employer": "Flow Traders",
@@ -2142,7 +2200,7 @@
       ]
     },
     {
-      "group_id": "g46",
+      "group_id": "g47",
       "region": "London, UK",
       "title": "C++ Senior Software Engineer",
       "employer": "Hunter Bond",
@@ -2206,7 +2264,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g47",
+      "group_id": "g48",
       "region": "London, UK",
       "title": "Senior Embedded Software Engineer (C++)",
       "employer": "Engineering Employment",
@@ -2270,7 +2328,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g48",
+      "group_id": "g49",
       "region": "London, UK",
       "title": "Senior Software Engineer (C++ / Defence Systems)",
       "employer": "",
@@ -2300,7 +2358,7 @@
       ]
     },
     {
-      "group_id": "g49",
+      "group_id": "g50",
       "region": "London, UK",
       "title": "C++ Software Engineer | Trading Team",
       "employer": "Jump Trading",
@@ -2330,7 +2388,7 @@
       ]
     },
     {
-      "group_id": "g50",
+      "group_id": "g51",
       "region": "Switzerland",
       "title": "Senior Software Engineer (C++/C#)",
       "employer": "Nutrient",
@@ -2360,7 +2418,7 @@
       ]
     },
     {
-      "group_id": "g51",
+      "group_id": "g52",
       "region": "Switzerland",
       "title": "Softwareentwickler - Senior C++/Qt",
       "employer": "",
@@ -2390,7 +2448,7 @@
       ]
     },
     {
-      "group_id": "g52",
+      "group_id": "g53",
       "region": "Switzerland",
       "title": "Senior C++ Software Engineer",
       "employer": "Jobgether",
@@ -2420,7 +2478,7 @@
       ]
     },
     {
-      "group_id": "g53",
+      "group_id": "g54",
       "region": "Switzerland",
       "title": "Senior Software Engineer Embedded C++",
       "employer": "",
@@ -2450,7 +2508,7 @@
       ]
     },
     {
-      "group_id": "g54",
+      "group_id": "g55",
       "region": "Switzerland",
       "title": "Senior GameDev Engineer (C++) (remote)",
       "employer": "Plummy Games",
@@ -2480,7 +2538,7 @@
       ]
     },
     {
-      "group_id": "g55",
+      "group_id": "g56",
       "region": "Switzerland",
       "title": "Senior C++ Engineer - Tech Lead",
       "employer": "CASCINATION AG",
@@ -2510,7 +2568,7 @@
       ]
     },
     {
-      "group_id": "g56",
+      "group_id": "g57",
       "region": "Switzerland",
       "title": "Senior Software Engineer - C++/Go",
       "employer": "Jobgether",
@@ -2540,7 +2598,7 @@
       ]
     },
     {
-      "group_id": "g57",
+      "group_id": "g58",
       "region": "Switzerland",
       "title": "Senior Software Developer",
       "employer": "NVIDIA",
@@ -2570,7 +2628,7 @@
       ]
     },
     {
-      "group_id": "g58",
+      "group_id": "g59",
       "region": "Russia",
       "title": "Senior Разработчик C++",
       "employer": "Система Безопасных Коммуникаций",
@@ -2600,7 +2658,7 @@
       ]
     },
     {
-      "group_id": "g59",
+      "group_id": "g60",
       "region": "London, UK",
       "title": "Senior C++ Software Engineer",
       "employer": "Hadteg.com",
@@ -2664,7 +2722,71 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g60",
+      "group_id": "g61",
+      "region": "London, UK",
+      "title": "Software Engineering Team Lead - C++",
+      "employer": "Spencer Rose Ltd",
+      "city": "London",
+      "sources": [
+        "ITJobsWatch"
+      ],
+      "records": [
+        {
+          "source": "ITJobsWatch",
+          "id": "55scz6",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_candidates": [
+        {
+          "min": null,
+          "max": 110000,
+          "currency": "GBP",
+          "period": "year",
+          "basis": "source_card_field",
+          "snippet": "GBP 110,000 Annual",
+          "tax_basis": "unknown",
+          "compensation": "base",
+          "bonus_mentioned": true,
+          "employment_basis": "unknown",
+          "source": "ITJobsWatch",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary": [
+        {
+          "min": null,
+          "max": 110000,
+          "currency": "GBP",
+          "period": "year",
+          "basis": "source_card_field",
+          "snippet": "GBP 110,000 Annual",
+          "tax_basis": "unknown",
+          "compensation": "base",
+          "bonus_mentioned": true,
+          "employment_basis": "unknown",
+          "source": "ITJobsWatch",
+          "urls": [
+            "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
+          ],
+          "observed_at": "2026-11-12T12:38:11.183094+00:00"
+        }
+      ],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "trading_finance",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": []
+    },
+    {
+      "group_id": "g62",
       "region": "London, UK",
       "title": "Senior Software Engineer C++ (Fixed Term Contract)",
       "employer": "Microlise",
@@ -2694,7 +2816,7 @@
       ]
     },
     {
-      "group_id": "g61",
+      "group_id": "g63",
       "region": "London, UK",
       "title": "Senior Software Engineer (C++ / Defence Systems)",
       "employer": "First Military Recruitment Ltd",
@@ -2724,7 +2846,7 @@
       ]
     },
     {
-      "group_id": "g62",
+      "group_id": "g64",
       "region": "London, UK",
       "title": "Senior C++ Engineer",
       "employer": "EPAM Systems Ltd",
@@ -2754,7 +2876,7 @@
       ]
     },
     {
-      "group_id": "g63",
+      "group_id": "g65",
       "region": "Russia",
       "title": "Senior C/C++ Developer (AI / Real-Time Audio Processing)",
       "employer": "Интеграция Дистрибуция Проекты",
@@ -2784,7 +2906,7 @@
       ]
     },
     {
-      "group_id": "g64",
+      "group_id": "g66",
       "region": "Russia",
       "title": "Senior Developer C++ (CyberTrace)",
       "employer": "Лаборатория Касперского",
@@ -2814,7 +2936,7 @@
       ]
     },
     {
-      "group_id": "g65",
+      "group_id": "g67",
       "region": "Russia",
       "title": "Senior C/С++ developer (1310)",
       "employer": "ЦНИИАГ",
@@ -2844,7 +2966,7 @@
       ]
     },
     {
-      "group_id": "g66",
+      "group_id": "g68",
       "region": "London, UK",
       "title": "FICC Options Execution - Senior Software Engineer (Crypto)",
       "employer": "DRW",
@@ -2874,7 +2996,7 @@
       ]
     },
     {
-      "group_id": "g67",
+      "group_id": "g69",
       "region": "London, UK",
       "title": "Quantitative Developer - Execution",
       "employer": "Qube Research & Technologies",
@@ -2904,7 +3026,7 @@
       ]
     },
     {
-      "group_id": "g68",
+      "group_id": "g70",
       "region": "London, UK",
       "title": "Quantitative Developer/Modeller - Risk & PnL",
       "employer": "Qube Research & Technologies",
@@ -2934,7 +3056,7 @@
       ]
     },
     {
-      "group_id": "g69",
+      "group_id": "g71",
       "region": "London, UK",
       "title": "Senior Developer - Core Trading Technology",
       "employer": "Qube Research & Technologies",
@@ -2964,7 +3086,7 @@
       ]
     },
     {
-      "group_id": "g70",
+      "group_id": "g72",
       "region": "London, UK",
       "title": "Senior Product Security Engineer",
       "employer": "Qube Research & Technologies",
@@ -2994,7 +3116,7 @@
       ]
     },
     {
-      "group_id": "g71",
+      "group_id": "g73",
       "region": "London, UK",
       "title": "Quant Library Developer, Macro Technology",
       "employer": "Point72",
@@ -3024,7 +3146,7 @@
       ]
     },
     {
-      "group_id": "g72",
+      "group_id": "g74",
       "region": "London, UK",
       "title": "Trading Platform Developer",
       "employer": "Ashby: Teza Technologies",
@@ -3054,7 +3176,7 @@
       ]
     },
     {
-      "group_id": "g73",
+      "group_id": "g75",
       "region": "Russia",
       "title": "Vital Partners ищет senior C/C++-разработчика для защитного ПО",
       "employer": "",
@@ -3084,7 +3206,7 @@
       ]
     },
     {
-      "group_id": "g74",
+      "group_id": "g76",
       "region": "Russia",
       "title": "Top Selection ищет Senior C/C++-разработчика для платёжного ядра",
       "employer": "",
@@ -3114,7 +3236,7 @@
       ]
     },
     {
-      "group_id": "g75",
+      "group_id": "g77",
       "region": "Russia",
       "title": "Senior C++ Developer",
       "employer": "",
@@ -3144,7 +3266,7 @@
       ]
     },
     {
-      "group_id": "g76",
+      "group_id": "g78",
       "region": "Russia",
       "title": "Senior C++ / Qt Developer — Кулонспецкомплект",
       "employer": "",
@@ -3208,7 +3330,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g77",
+      "group_id": "g79",
       "region": "Russia",
       "title": "Middle+ / Senior C++ Developer — ЕМЕ",
       "employer": "",
@@ -3272,7 +3394,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g78",
+      "group_id": "g80",
       "region": "Russia",
       "title": "Senior разработчик C/C++ (гибрид из Мск)",
       "employer": "",
@@ -3336,7 +3458,71 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g79",
+      "group_id": "g81",
+      "region": "Russia",
+      "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
+      "employer": "",
+      "city": "МФТИ",
+      "sources": [
+        "Telegram @c_rabota"
+      ],
+      "records": [
+        {
+          "source": "Telegram @c_rabota",
+          "id": "c_rabota/1231:0",
+          "urls": [
+            "https://t.me/c_rabota/1231"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        }
+      ],
+      "salary_candidates": [
+        {
+          "min": 220000.0,
+          "max": 280000.0,
+          "currency": "RUB",
+          "period": "month",
+          "basis": "job_board",
+          "snippet": "от 220 000 до 280 000 ₽ за месяц, до вычета налогов",
+          "tax_basis": "gross",
+          "compensation": "unknown",
+          "bonus_mentioned": true,
+          "employment_basis": "unknown",
+          "source": "Telegram @c_rabota",
+          "urls": [
+            "https://t.me/c_rabota/1231"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        }
+      ],
+      "salary": [
+        {
+          "min": 220000.0,
+          "max": 280000.0,
+          "currency": "RUB",
+          "period": "month",
+          "basis": "job_board",
+          "snippet": "от 220 000 до 280 000 ₽ за месяц, до вычета налогов",
+          "tax_basis": "gross",
+          "compensation": "unknown",
+          "bonus_mentioned": true,
+          "employment_basis": "unknown",
+          "source": "Telegram @c_rabota",
+          "urls": [
+            "https://t.me/c_rabota/1231"
+          ],
+          "observed_at": "2026-11-15T17:38:13.850798+00:00"
+        }
+      ],
+      "salary_estimate": false,
+      "salary_unresolved": false,
+      "seniority": "explicit",
+      "segment": "general_cpp",
+      "salary_conflict": false,
+      "salary_exclusion_reasons": []
+    },
+    {
+      "group_id": "g82",
       "region": "Russia",
       "title": "Senior C++ CUDA Developer / GPU-инженер",
       "employer": "Blancy",
@@ -3366,7 +3552,7 @@
       ]
     },
     {
-      "group_id": "g80",
+      "group_id": "g83",
       "region": "Russia",
       "title": "Senior C++ Developer",
       "employer": "",
@@ -3396,7 +3582,7 @@
       ]
     },
     {
-      "group_id": "g81",
+      "group_id": "g84",
       "region": "Russia",
       "title": "Разработчик C++ ( Senior )",
       "employer": "HuntTech",
@@ -3426,7 +3612,7 @@
       ]
     },
     {
-      "group_id": "g82",
+      "group_id": "g85",
       "region": "Russia",
       "title": "ищем Разработчика в штат.",
       "employer": "NS Digital",
@@ -3490,7 +3676,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g83",
+      "group_id": "g86",
       "region": "Switzerland",
       "title": "Senior Software Engineer C++ | Cudos AG⁣",
       "employer": "Cudos AG⁣",
@@ -3520,7 +3706,7 @@
       ]
     },
     {
-      "group_id": "g84",
+      "group_id": "g87",
       "region": "Switzerland",
       "title": "Senior Software Developer C++ | Cudos AG⁣",
       "employer": "Cudos AG⁣",
@@ -3550,7 +3736,7 @@
       ]
     },
     {
-      "group_id": "g85",
+      "group_id": "g88",
       "region": "Switzerland",
       "title": "Senior Software Engineer C# oder C++ - Industrial Systems | Cudos AG⁣",
       "employer": "Cudos AG⁣",
@@ -3580,7 +3766,7 @@
       ]
     },
     {
-      "group_id": "g86",
+      "group_id": "g89",
       "region": "Switzerland",
       "title": "Senior Software Engineer C# oder C++ - Industrial Systems | Cudos AG⁣",
       "employer": "Cudos AG⁣",
@@ -3610,7 +3796,7 @@
       ]
     },
     {
-      "group_id": "g87",
+      "group_id": "g90",
       "region": "Russia",
       "title": "Senior C++ Разработчик",
       "employer": "1С",
@@ -3640,7 +3826,7 @@
       ]
     },
     {
-      "group_id": "g88",
+      "group_id": "g91",
       "region": "Russia",
       "title": "Программист С++ Linux (middle +\\senior)",
       "employer": "GETMOBIT",
@@ -3670,7 +3856,7 @@
       ]
     },
     {
-      "group_id": "g89",
+      "group_id": "g92",
       "region": "Russia",
       "title": "Senior C++ developer (Fintech)",
       "employer": "Раккун Софт",
@@ -3700,7 +3886,7 @@
       ]
     },
     {
-      "group_id": "g90",
+      "group_id": "g93",
       "region": "Russia",
       "title": "C++-разработчик (senior, highload)",
       "employer": "Amex Development",
@@ -3730,7 +3916,7 @@
       ]
     },
     {
-      "group_id": "g91",
+      "group_id": "g94",
       "region": "Russia",
       "title": "C++ / Rust Developer (Middle / Senior) HFT",
       "employer": "Международный трастовый фонд",
@@ -3794,7 +3980,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g92",
+      "group_id": "g95",
       "region": "Russia",
       "title": "Старший разработчик (С++) [ИРТЕЯ]",
       "employer": "\"МТС\", Работа в IT",
@@ -3824,7 +4010,7 @@
       ]
     },
     {
-      "group_id": "g93",
+      "group_id": "g96",
       "region": "Russia",
       "title": "Старший С++ разработчик (Лимасcол, Кипр)",
       "employer": "MetaQuotes Software Corp.",
@@ -3854,7 +4040,7 @@
       ]
     },
     {
-      "group_id": "g94",
+      "group_id": "g97",
       "region": "Russia",
       "title": "Старший С++ разработчик (Лимасcол, Кипр)",
       "employer": "MetaQuotes Software Corp.",
@@ -3884,7 +4070,7 @@
       ]
     },
     {
-      "group_id": "g95",
+      "group_id": "g98",
       "region": "Russia",
       "title": "Старший программист С/С++",
       "employer": "Retail Personal",
@@ -3948,7 +4134,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g96",
+      "group_id": "g99",
       "region": "Russia",
       "title": "Ведущий программист C++ (Linux/ARM64/ARM32)",
       "employer": "Retail Personal",
@@ -4012,7 +4198,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g97",
+      "group_id": "g100",
       "region": "Russia",
       "title": "Ведущий разработчик C/C++ ( Senior/Team Lead )",
       "employer": "А-Риал",
@@ -4076,7 +4262,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g98",
+      "group_id": "g101",
       "region": "Russia",
       "title": "Ведущий программист С++",
       "employer": "Тензор",
@@ -4140,7 +4326,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g99",
+      "group_id": "g102",
       "region": "Russia",
       "title": "Senior C++ Developer",
       "employer": "Алабуга. Менеджмент",
@@ -4204,7 +4390,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g100",
+      "group_id": "g103",
       "region": "Russia",
       "title": "Ведущий инженер-программист С++",
       "employer": "Специальный Технологический Центр (ООО СТЦ)",
@@ -4268,7 +4454,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g101",
+      "group_id": "g104",
       "region": "Switzerland",
       "title": "Senior Software Engineer C++ @ Cudos AG [CHF 100'000 - 120'000]",
       "employer": "Cudos AG",
@@ -4332,7 +4518,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g102",
+      "group_id": "g105",
       "region": "Switzerland",
       "title": "Senior Software Developer C++ @ Cudos AG [CHF 100'000 - 120'000]",
       "employer": "Cudos AG",
@@ -4396,7 +4582,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g103",
+      "group_id": "g106",
       "region": "Switzerland",
       "title": "Senior C++ Engineer",
       "employer": "Fluent Trade Technologies",
@@ -4427,7 +4613,7 @@
       ]
     },
     {
-      "group_id": "g104",
+      "group_id": "g107",
       "region": "Switzerland",
       "title": "Senior C++ Software Engineer – AI Developer Tools",
       "employer": "NVIDIA",
@@ -4458,7 +4644,7 @@
       ]
     },
     {
-      "group_id": "g105",
+      "group_id": "g108",
       "region": "London, UK",
       "title": "Principal Software Engineer (Safety-Critical)",
       "employer": "Spectrum IT Recruitment",
@@ -4522,7 +4708,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g106",
+      "group_id": "g109",
       "region": "Russia",
       "title": "Требуется «Старший/ведущий разработчик C++ (Linux/OpenBMC)» (Москва)",
       "employer": "",
@@ -4552,7 +4738,7 @@
       ]
     },
     {
-      "group_id": "g107",
+      "group_id": "g110",
       "region": "Russia",
       "title": "Требуется «Старший разработчик на С++ в Яндекс Браузер» (Москва)",
       "employer": "",
@@ -4582,7 +4768,7 @@
       ]
     },
     {
-      "group_id": "g108",
+      "group_id": "g111",
       "region": "Russia",
       "title": "Требуется «Старший разработчик С++» (Томск)",
       "employer": "",
@@ -4612,7 +4798,7 @@
       ]
     },
     {
-      "group_id": "g109",
+      "group_id": "g112",
       "region": "Russia",
       "title": "Требуется «Старший разработчик С++» (Уфа)",
       "employer": "",
@@ -4642,7 +4828,7 @@
       ]
     },
     {
-      "group_id": "g110",
+      "group_id": "g113",
       "region": "Russia",
       "title": "Требуется «Ведущий разработчик (С++)» (Москва)",
       "employer": "",
@@ -4672,7 +4858,7 @@
       ]
     },
     {
-      "group_id": "g111",
+      "group_id": "g114",
       "region": "Russia",
       "title": "Требуется «Senior разработчик C/C++ (гибрид из Мск)» (Зеленоград, от 380 000 до 450 000 ₽)",
       "employer": "",
@@ -4702,7 +4888,7 @@
       ]
     },
     {
-      "group_id": "g112",
+      "group_id": "g115",
       "region": "Russia",
       "title": "Требуется «Ведущий разработчик (С/С++), NGFW» (Санкт-Петербург)",
       "employer": "",
@@ -4732,7 +4918,7 @@
       ]
     },
     {
-      "group_id": "g113",
+      "group_id": "g116",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Hackajob Ltd",
@@ -4762,7 +4948,7 @@
       ]
     },
     {
-      "group_id": "g114",
+      "group_id": "g117",
       "region": "London, UK",
       "title": "Senior/C++ Software Engineer",
       "employer": "Selby Jennings London",
@@ -4792,7 +4978,7 @@
       ]
     },
     {
-      "group_id": "g115",
+      "group_id": "g118",
       "region": "London, UK",
       "title": "Senior Software Engineer C++",
       "employer": "REC SOLUTIONS LIMITED",
@@ -4822,7 +5008,7 @@
       ]
     },
     {
-      "group_id": "g116",
+      "group_id": "g119",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Hackajob Ltd",
@@ -4852,7 +5038,7 @@
       ]
     },
     {
-      "group_id": "g117",
+      "group_id": "g120",
       "region": "London, UK",
       "title": "Senior Embedded Software Engineer C++",
       "employer": "Engineering Employment",
@@ -4882,7 +5068,7 @@
       ]
     },
     {
-      "group_id": "g118",
+      "group_id": "g121",
       "region": "London, UK",
       "title": "Senior Embedded Software Engineer (C++)",
       "employer": "Expert Employment",
@@ -4912,7 +5098,7 @@
       ]
     },
     {
-      "group_id": "g119",
+      "group_id": "g122",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer - C++, Python,",
       "employer": "JPMorganChase",
@@ -4942,7 +5128,7 @@
       ]
     },
     {
-      "group_id": "g120",
+      "group_id": "g123",
       "region": "London, UK",
       "title": "Senior Software Engineer (C++ / Defence Systems)",
       "employer": "First Military Recruitment",
@@ -4972,7 +5158,7 @@
       ]
     },
     {
-      "group_id": "g121",
+      "group_id": "g124",
       "region": "London, UK",
       "title": "Senior/C++ Software Engineer - Selby Jennings",
       "employer": "Selby Jennings",
@@ -5002,7 +5188,7 @@
       ]
     },
     {
-      "group_id": "g122",
+      "group_id": "g125",
       "region": "London, UK",
       "title": "C++ Trading Developer, Quant Trading Team",
       "employer": "Crypto.com",
@@ -5032,7 +5218,7 @@
       ]
     },
     {
-      "group_id": "g123",
+      "group_id": "g126",
       "region": "London, UK",
       "title": "Senior Software Engineer (Data Platform, C++)",
       "employer": "Nebius",
@@ -5062,7 +5248,7 @@
       ]
     },
     {
-      "group_id": "g124",
+      "group_id": "g127",
       "region": "London, UK",
       "title": "Senior Software Engineer – C++ / Video Processing",
       "employer": "Medtronic",
@@ -5092,7 +5278,7 @@
       ]
     },
     {
-      "group_id": "g125",
+      "group_id": "g128",
       "region": "London, UK",
       "title": "Senior Software Engineer - C++ / Video Processing",
       "employer": "Medtronic",
@@ -5122,7 +5308,7 @@
       ]
     },
     {
-      "group_id": "g126",
+      "group_id": "g129",
       "region": "London, UK",
       "title": "Senior Quant Developer (C++)- Leading Quant & Systematic Fund",
       "employer": "Oxford Knight",
@@ -5152,7 +5338,7 @@
       ]
     },
     {
-      "group_id": "g127",
+      "group_id": "g130",
       "region": "London, UK",
       "title": "C++ Senior Software Developer - London- Prop Trading Firm",
       "employer": "Oxford Knight",
@@ -5310,21 +5496,6 @@
     },
     {
       "source": "Headcount Labs",
-      "id": "e8b9a9d6-e392-4958-ae13-1185cc1d00bb",
-      "urls": [
-        "https://careers.sonova.com/us/en/job/166132",
-        "https://career5.successfactors.eu/career?company=Sonova&career_ns=job_listing&career_job_req_id=166132"
-      ],
-      "observed_at": "2026-11-15T17:38:13.850798+00:00",
-      "region": "Switzerland",
-      "title": "Embedded Software Engineer C++",
-      "employer": "Sonova",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Headcount Labs",
       "id": "e37cb9a2-1087-4843-9ad9-b31a25640e16",
       "urls": [
         "https://agir.softgarden.io/job/65228436/Aushilfs-Chauffeur-Kat.-C-m-w-d-im-Stundenlohn?jobDbPVId=290366183&l=de"
@@ -5353,34 +5524,6 @@
         "not_software_development_role",
         "cpp_not_core_requirement",
         "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Headcount Labs",
-      "id": "e1a42fbc-7b78-4183-a213-e7d6d0349924",
-      "urls": [
-        "https://careers.sonova.com/us/en/job/166132"
-      ],
-      "observed_at": "2026-11-15T17:38:13.850798+00:00",
-      "region": "Switzerland",
-      "title": "Embedded Software Engineer C++",
-      "employer": "Sonova Group",
-      "reasons": [
-        "cpp_not_core_requirement"
-      ]
-    },
-    {
-      "source": "Headcount Labs",
-      "id": "7e7f620c-1c32-4db4-b6d5-5e649d78ed32",
-      "urls": [
-        "https://jobs.sonova.com/job/Staefa-Embedded-Software-Engineer-C%2B%2B/1455022133/"
-      ],
-      "observed_at": "2026-11-15T17:38:13.850798+00:00",
-      "region": "Switzerland",
-      "title": "Embedded Software Engineer C++",
-      "employer": "Sonova AG",
-      "reasons": [
-        "cpp_not_core_requirement"
       ]
     },
     {
@@ -7327,7 +7470,6 @@
       "title": "C++ Developer Inter",
       "employer": "Freelancerprox",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -11291,7 +11433,6 @@
       "employer": "ООО \"СТЦ\"",
       "reasons": [
         "junior_role",
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -11646,7 +11787,6 @@
       "title": "Mod Developer (Python &amp; React)",
       "employer": "Леста Игры",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -12077,7 +12217,6 @@
       "title": "Golang разработчик",
       "employer": "F6",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -12641,7 +12780,6 @@
       "employer": "ООО \"СТЦ\"",
       "reasons": [
         "junior_role",
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -13055,7 +13193,6 @@
       "title": "Инженер по автоматизированным системам управления технологией производства (АСУ ТП)",
       "employer": "ООО \"НМ\"",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -14536,7 +14673,6 @@
       "employer": "",
       "reasons": [
         "junior_role",
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -14742,20 +14878,6 @@
       "reasons": [
         "seniority_not_established",
         "inactive_or_old"
-      ]
-    },
-    {
-      "source": "ITJobsWatch",
-      "id": "55scz6",
-      "urls": [
-        "https://www.itjobswatch.co.uk/jv/Spencer-Rose-Ltd/Software-Engineering-Team-Lead-CPlusPlus-Job-London-UK-55scz6?jr=8n4-vg-1lh"
-      ],
-      "observed_at": "2026-11-12T12:38:11.183094+00:00",
-      "region": "London, UK",
-      "title": "Software Engineering Team Lead - C++",
-      "employer": "Spencer Rose Ltd",
-      "reasons": [
-        "cpp_not_core_requirement"
       ]
     },
     {
@@ -15139,7 +15261,6 @@
       "employer": "Qube Research & Technologies",
       "reasons": [
         "not_software_development_role",
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -15301,7 +15422,6 @@
       "employer": "Qube Research & Technologies",
       "reasons": [
         "not_software_development_role",
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -16021,20 +16141,6 @@
       "observed_at": "2026-11-15T17:38:13.850798+00:00",
       "region": "Russia",
       "title": "Программист С++ Middle/Senior",
-      "employer": "",
-      "reasons": [
-        "seniority_not_established"
-      ]
-    },
-    {
-      "source": "Telegram @c_rabota",
-      "id": "c_rabota/1231:0",
-      "urls": [
-        "https://t.me/c_rabota/1231"
-      ],
-      "observed_at": "2026-11-15T17:38:13.850798+00:00",
-      "region": "Russia",
-      "title": "Ведущий инженер-электронщик (Embedded Разработчик)",
       "employer": "",
       "reasons": [
         "seniority_not_established"
@@ -19368,7 +19474,6 @@
       "title": "C++ Engineer - London- Global Quant Firm",
       "employer": "Oxford Knight",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -19803,7 +19908,6 @@
       "title": "C++ & Python Engineer - Crypto- Global Quant Firm",
       "employer": "Oxford Knight",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },
@@ -19818,7 +19922,6 @@
       "title": "C++/FPGA Developer - London- Leading Quant Firm",
       "employer": "Oxford Knight",
       "reasons": [
-        "cpp_not_core_requirement",
         "seniority_not_established"
       ]
     },

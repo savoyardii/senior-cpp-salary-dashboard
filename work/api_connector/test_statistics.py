@@ -30,6 +30,10 @@ class SalaryEvidenceTests(unittest.TestCase):
         ceiling = m.salary_from_description('до 365 тыс. руб. в месяц', 'RUB')
         self.assertEqual((ceiling['min'], ceiling['max']), (None, 365000))
 
+    def test_plus_suffix_is_an_open_floor(self):
+        pay = m.salary_from_description('Base salary £120k+ per year', 'GBP')
+        self.assertEqual((pay['min'], pay['max'], pay['period']), (120000, None, 'year'))
+
     def test_bonus_and_total_pay(self):
         for text in ('Bonus £10000 per year', '£10000 bonus per year'):
             self.assertIsNone(m.salary_from_description(text, 'GBP'))
@@ -85,6 +89,17 @@ class ScopeAndDedupTests(unittest.TestCase):
         for text in ('3–5 years of experience', '2 to 5 years of experience', 'between 3 and 5 years of experience', '6 months experience in C++', 'C++ experience; 10 years is ideal', '5 years of sales experience; C++ experience 6 months', 'Company founded 10 years ago'):
             self.assertFalse(m.senior('C++ Developer', text), text)
         self.assertFalse(m.senior('Junior C++ Developer', '10 years experience'))
+
+    def test_cpp_optionality_is_skill_specific(self):
+        self.assertTrue(m.cpp_is_required('Senior C++ Engineer', 'C++ is required, Python is a plus.'))
+        self.assertTrue(m.cpp_is_required('Senior C++ Engineer', 'Python is a plus; C++ experience is required.'))
+        self.assertFalse(m.cpp_is_required('Senior Python Engineer', 'Python is required, C++ is a plus.'))
+        self.assertFalse(m.cpp_is_required('Senior C++ Engineer', 'Python required; C++ nice to have.'))
+
+    def test_seniority_uses_all_requirements_independent_of_order(self):
+        for text in ('2 years C++ and 8 years of software development',
+                     '8 years of software development and 2 years C++'):
+            self.assertTrue(m.senior('Senior C++ Engineer', text), text)
 
     def test_remote_alternatives(self):
         for region, code in (('Switzerland', 'CH'), ('Russia', 'RU')):

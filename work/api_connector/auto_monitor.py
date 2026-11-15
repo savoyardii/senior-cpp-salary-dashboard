@@ -193,18 +193,24 @@ def senior(title, description):
     if JUNIOR.search(title):
         return False
     explicit_senior = bool(SENIOR_TITLE.search(title))
-    # Only experience requirements qualify; company age and contract duration do not.
+    senior_experience = False
+    short_experience = False
+    # Decide from all experience requirements so sentence order cannot change the result.
     for match in EXPERIENCE.finditer(description):
         context = description[max(0, match.start() - 70):match.end() + 90]
         if re.search(r'is ideal|preferred|nice to have|желател', description[match.end():match.end() + 35], re.I):
             continue
         if re.search(r'sales|marketing|recruit|accounting|продаж|маркетинг|бухгалтер', context, re.I):
             continue
-        if explicit_senior and int(match['low']) <= 3 and re.search(r'experience|professional|commercial|опыт|стаж|разработ', context, re.I):
-            return False
         if int(match['low']) >= 5 and re.search(r'experience|professional|commercial|опыт|стаж|разработ', context, re.I):
             if not re.search(r'up to|at most|до\s*$', description[max(0, match.start() - 15):match.start()], re.I):
-                return True
+                senior_experience = True
+        if explicit_senior and int(match['low']) <= 3 and re.search(r'experience|professional|commercial|опыт|стаж|разработ', context, re.I):
+            short_experience = True
+    if senior_experience:
+        return True
+    if short_experience:
+        return False
     return explicit_senior
 
 
@@ -241,8 +247,12 @@ CPP_NOT_REQUIRED = re.compile(
 
 def cpp_optional(text):
     for sentence in re.split(r'[.!?;\n]', text or ''):
-        if CPP.search(sentence) and (OPTIONAL_CPP.search(sentence) or CPP_ALTERNATIVE.search(sentence) or CPP_NOT_REQUIRED.search(sentence)):
+        if CPP_ALTERNATIVE.search(sentence) or CPP_NOT_REQUIRED.search(sentence):
             return True
+        # Keep optionality attached to the skill it describes, not another skill in the sentence.
+        for clause in re.split(r'[,;]|\b(?:and|but|whereas|while)\b', sentence, flags=re.I):
+            if CPP.search(clause) and OPTIONAL_CPP.search(clause):
+                return True
     return False
 
 
@@ -374,7 +384,7 @@ def salary_from_description(description, expected_currency):
             high = number_value(match['high'], scale2) if match['high'] else low
         except (ValueError, OverflowError):
             continue
-        if not match['range'] and re.search(r'\bfrom\s*$|\bот\s*$', before, re.I):
+        if not match['range'] and (re.search(r'\bfrom\s*$|\bот\s*$', before, re.I) or re.match(r'\s*\+', after)):
             high = None
         elif not match['range'] and re.search(r'up to\s*$|\bдо\s*$', before, re.I):
             low = None
@@ -660,7 +670,13 @@ if __name__ == '__main__':
     assert number_value('150,000', None) == 150000
     assert number_value('150.000,50', None) == 150000
     assert salary_from_description('Base salary £120,000 per year plus bonus', 'GBP')['min'] == 120000
-    assert salary_from_description('£100k total compensation per year', 'GBP') is None
+    assert salary_from_description('£100k total compensation per year', 'GBP')['compensation'] == 'package'
+    assert salary_from_description('Base salary £120k+ per year', 'GBP')['max'] is None
+    assert cpp_is_required('Senior C++ Engineer', 'C++ is required, Python is a plus')
+    assert not cpp_is_required('Senior Python Engineer', 'Python is required, C++ is a plus')
+    for description in ('2 years C++ and 8 years of software development',
+                        '8 years of software development and 2 years C++'):
+        assert senior('Senior C++ Engineer', description)
     sample = {'region': 'Russia', 'raw': {'id': 'sample', 'job-name': 'Ведущий разработчик C++',
               'company': {'name': 'Работодатель'}, 'region': {'name': 'Москва'},
               'requirements': 'Опыт работы от 5 лет; знание C++',

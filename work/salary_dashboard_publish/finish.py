@@ -34,7 +34,7 @@ assert '__DATA__' not in page and '__API_STATS__' not in page and '__MANUAL_STAT
 (ROOT / 'outputs/salary_sample_audited.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2))
 (DIST / 'index.html').write_text(page)
 stat_cards = []
-for region in ('Switzerland', 'London, UK', 'Russia'):
+for region, region_label in (('Switzerland', 'Швейцария'), ('London, UK', 'Лондон'), ('Russia', 'Россия')):
     region_groups = [group for group in monitor['groups'] if group['region'] == region]
     salaries = [pay for group in region_groups if group['seniority'] == 'explicit'
                 for pay in group.get('salary', [])]
@@ -47,6 +47,7 @@ for region in ('Switzerland', 'London, UK', 'Russia'):
         '<p class="muted">Явно Senior с зарплатой: {} групп; известны gross/net, base/package и период: {}.</p></div>'
         .format(qualified, len(salaries), structured)
     )
+    stat_cards[-1] = stat_cards[-1].replace('<strong>', f'<strong>{region_label}: ', 1)
 methodology = (Path(__file__).parent / 'methodology_template.html').read_text()
 observed_at = monitor.get('observed_at')
 observed_label = (datetime.fromisoformat(observed_at).strftime('%d.%m.%Y %H:%M UTC')

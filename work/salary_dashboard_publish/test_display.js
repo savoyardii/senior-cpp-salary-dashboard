@@ -1,7 +1,11 @@
 // Offline rendering regressions; this is not a browser or accessibility test.
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
 const page=fs.readFileSync(path.join(__dirname,'dist/index.html'),'utf8');
+const methodology=fs.readFileSync(path.join(__dirname,'dist/methodology.html'),'utf8');
 assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
+for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
+for(const evidence of ['CHF 125–170 тыс.','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,2 млн','не обновляются еженедельным парсером'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
+assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limitations must remain visible');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
