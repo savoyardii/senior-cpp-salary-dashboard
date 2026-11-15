@@ -446,8 +446,8 @@
           "compensation": "unknown",
           "employment_basis": "unknown",
           "count": 2,
-          "min": 100000,
-          "max": 120000,
+          "min": null,
+          "max": null,
           "range": null
         }
       ]
@@ -465,23 +465,12 @@
           "currency": "GBP",
           "period": "year",
           "tax_basis": "unknown",
-          "compensation": "base",
-          "employment_basis": "unknown",
-          "count": 3,
-          "min": 60000,
-          "max": 300000,
-          "range": null
-        },
-        {
-          "currency": "GBP",
-          "period": "year",
-          "tax_basis": "unknown",
           "compensation": "unknown",
           "employment_basis": "unknown",
-          "count": 5,
-          "min": 40000,
-          "max": 220000,
-          "range": "40000–220000"
+          "count": 8,
+          "min": null,
+          "max": null,
+          "range": null
         }
       ]
     },
@@ -501,9 +490,9 @@
           "compensation": "unknown",
           "employment_basis": "unknown",
           "count": 11,
-          "min": 170000.0,
-          "max": 400000,
-          "range": "170000.0–400000"
+          "min": null,
+          "max": null,
+          "range": null
         }
       ]
     }
@@ -916,6 +905,7 @@
           "snippet": "API pay: 200000–220000 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -934,6 +924,7 @@
           "snippet": "API pay: 200000–220000 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -1038,6 +1029,7 @@
           "snippet": "API pay: 40000–60000 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -1056,6 +1048,7 @@
           "snippet": "API pay: 40000–60000 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -1410,6 +1403,7 @@
           "snippet": "API pay: 76800–115200 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -1427,6 +1421,7 @@
           "snippet": "API pay: 76800–115200 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -1446,6 +1441,7 @@
           "snippet": "API pay: 76800–115200 GBP/year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Headcount Labs",
           "urls": [
@@ -2027,7 +2023,8 @@
           "basis": "text",
           "snippet": "riven firm is looking for a top-tier C++ Engineer to...  Salary: £300k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2045,7 +2042,8 @@
           "basis": "text",
           "snippet": "riven firm is looking for a top-tier C++ Engineer to...  Salary: £300k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2149,7 +2147,8 @@
           "basis": "text",
           "snippet": "e partnering with one of the world’s most successful...  Salary: £250k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2167,7 +2166,8 @@
           "basis": "text",
           "snippet": "e partnering with one of the world’s most successful...  Salary: £250k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2211,7 +2211,8 @@
           "basis": "text",
           "snippet": "Experience with GUI UX or...  Salary: £60k - £68k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2229,7 +2230,8 @@
           "basis": "text",
           "snippet": "Experience with GUI UX or...  Salary: £60k - £68k per annum",
           "tax_basis": "unknown",
-          "compensation": "base",
+          "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Jooble API",
           "urls": [
@@ -2574,6 +2576,7 @@
           "snippet": "£120,000 to £200,000 a year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": true,
           "employment_basis": "unknown",
           "source": "UK Government Work Hub",
           "urls": [
@@ -2592,6 +2595,7 @@
           "snippet": "£120,000 to £200,000 a year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": true,
           "employment_basis": "unknown",
           "source": "UK Government Work Hub",
           "urls": [
@@ -3116,6 +3120,7 @@
           "snippet": "Удалённо. 170 000–270 000 ₽ в месяц на руки",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @cppdevjob",
           "urls": [
@@ -3134,6 +3139,7 @@
           "snippet": "Удалённо. 170 000–270 000 ₽ в месяц на руки",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @cppdevjob",
           "urls": [
@@ -3178,6 +3184,7 @@
           "snippet": "Офис, Москва. От 200 000 ₽ в месяц до вычета налогов",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @cppdevjob",
           "urls": [
@@ -3196,6 +3203,7 @@
           "snippet": "Офис, Москва. От 200 000 ₽ в месяц до вычета налогов",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @cppdevjob",
           "urls": [
@@ -3240,6 +3248,7 @@
           "snippet": "до 365 000 ₽ за месяц",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @c_rabota",
           "urls": [
@@ -3258,6 +3267,7 @@
           "snippet": "до 365 000 ₽ за месяц",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @c_rabota",
           "urls": [
@@ -3392,6 +3402,7 @@
           "snippet": "Зарплата: 230 – 345 тысяч ₽ (gross) в месяц.",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @ProCxxJobs",
           "urls": [
@@ -3410,6 +3421,7 @@
           "snippet": "Зарплата: 230 – 345 тысяч ₽ (gross) в месяц.",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "Telegram @ProCxxJobs",
           "urls": [
@@ -3694,6 +3706,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 350 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3712,6 +3725,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 350 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3846,6 +3860,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3864,6 +3879,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3908,6 +3924,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 до 350 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3926,6 +3943,7 @@
           "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 до 350 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3970,6 +3988,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 250 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -3988,6 +4007,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 250 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4032,6 +4052,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 250 000 до 400 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4050,6 +4071,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 250 000 до 400 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4094,6 +4116,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 500 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4112,6 +4135,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 500 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4156,6 +4180,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 300 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4174,6 +4199,7 @@
           "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 300 000 ₽",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "HeadHunter RSS",
           "urls": [
@@ -4218,6 +4244,7 @@
           "snippet": "CHF 100'000 - 120'000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "SwissDevJobs",
           "urls": [
@@ -4236,6 +4263,7 @@
           "snippet": "CHF 100'000 - 120'000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "SwissDevJobs",
           "urls": [
@@ -4280,6 +4308,7 @@
           "snippet": "CHF 100'000 - 120'000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "SwissDevJobs",
           "urls": [
@@ -4298,6 +4327,7 @@
           "snippet": "CHF 100'000 - 120'000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "SwissDevJobs",
           "urls": [
@@ -4404,6 +4434,7 @@
           "snippet": "£80,000 - 100,000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "DevITjobs UK RSS",
           "urls": [
@@ -4422,6 +4453,7 @@
           "snippet": "£80,000 - 100,000 per year",
           "tax_basis": "unknown",
           "compensation": "unknown",
+          "bonus_mentioned": false,
           "employment_basis": "unknown",
           "source": "DevITjobs UK RSS",
           "urls": [

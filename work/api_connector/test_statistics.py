@@ -25,13 +25,22 @@ class SalaryEvidenceTests(unittest.TestCase):
             pay = m.salary_from_description(text, 'GBP')
             self.assertEqual((pay['min'], pay['max']), (100000, 150000))
         self.assertIsNone(m.salary_from_description('Salary £100k–$150k per year', 'GBP'))
-        self.assertEqual(m.salary_from_description('от 300 тыс. руб. в месяц', 'RUB')['max'], None)
+        self.assertEqual((m.salary_from_description('от 300 тыс. руб. в месяц', 'RUB')['min'],
+                          m.salary_from_description('от 300 тыс. руб. в месяц', 'RUB')['max']), (300000, None))
+        ceiling = m.salary_from_description('до 365 тыс. руб. в месяц', 'RUB')
+        self.assertEqual((ceiling['min'], ceiling['max']), (None, 365000))
 
     def test_bonus_and_total_pay(self):
-        for text in ('£100k total compensation per year', 'Bonus £10000 per year', '£10000 bonus per year', 'OTE £120000 per year'):
+        for text in ('Bonus £10000 per year', '£10000 bonus per year'):
             self.assertIsNone(m.salary_from_description(text, 'GBP'))
+        for text in ('£100k total compensation per year', 'OTE £120000 per year'):
+            pay = m.salary_from_description(text, 'GBP')
+            self.assertEqual(pay['compensation'], 'package')
+            self.assertTrue(pay['bonus_mentioned'])
         for text in ('Salary £120,000 per year; bonus 20%', 'Base salary £120000 per year plus bonus', '20% bonus, base salary £120k per year'):
-            self.assertEqual(m.salary_from_description(text, 'GBP')['min'], 120000)
+            pay = m.salary_from_description(text, 'GBP')
+            self.assertEqual(pay['min'], 120000)
+            self.assertTrue(pay['bonus_mentioned'])
 
     def test_predicted_flag_is_a_hard_gate(self):
         for flag in ('1', True, 'true', None):
@@ -92,6 +101,12 @@ class ScopeAndDedupTests(unittest.TestCase):
         out = m.build_monitor(snapshot)
         self.assertTrue(out['excluded'])
         self.assertIsNone(next(s for s in out['sources'] if s['source'] == 'Adzuna')['updated_at'])
+        for region in out['regions']:
+            for band in region['salary_ranges']:
+                if band['tax_basis'] == 'unknown' or band['compensation'] == 'unknown':
+                    self.assertIsNone(band['range'])
+                    self.assertIsNone(band['min'])
+                    self.assertIsNone(band['max'])
         for group in out['groups']:
             for pay in group['salary']:
                 self.assertTrue(pay['urls'])

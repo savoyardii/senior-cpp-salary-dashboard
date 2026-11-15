@@ -27,6 +27,7 @@ CHANNELS = {
 PAGE_LIMIT = 3
 VACANCY_RE = re.compile(r"(?:c/c\+\+|c\+\+|c\s*\+\+|\bhft\b|\bhigh[- ]frequency\b|\blow[- ]latency\b|\bquant(?:itative)? developer\b|\btrading systems\b)", re.I)
 SALARY_RE = re.compile(r"[^\n]*(?:₽|руб\w*|CHF|£|GBP|\$|USD|EUR|€)[^\n]*", re.I)
+BONUS_RE = re.compile(r"bonus|equity|sign[- ]?on|преми|бонус|pnl", re.I)
 TITLE_RE = re.compile(r"c\s*\+\s*\+|c/c\+\+|hft|low[- ]latency|high[- ]frequency|quant|engineer|developer|разработчик|инженер|программист|ищет", re.I)
 CHANNEL_HEADERS = {
     "cppdevjob": re.compile(r"^вакансии по c\s*\+\s*\+", re.I),
@@ -95,9 +96,11 @@ def post_segments(text):
 def _salary_fields(segment):
     matches = [m.group(0).strip() for m in SALARY_RE.finditer(segment)]
     if not matches:
-        return {"salary_min": None, "salary_max": None, "currency": None,
-                "period": None, "salary_raw_snippet": None}
-    snippet = " | ".join(matches)
+        return {"salary_min": None, "salary_max": None, "currency": None, "period": None,
+                "tax_basis": "unknown", "compensation_kind": "unknown", "bonus_mentioned": False,
+                "salary_raw_snippet": None}
+    raw_snippet = " | ".join(matches)
+    snippet = raw_snippet
     currency = next((code for token, code in (("₽", "RUB"), ("руб", "RUB"),
                      ("CHF", "CHF"), ("£", "GBP"), ("GBP", "GBP"),
                      ("$", "USD"), ("USD", "USD"), ("€", "EUR"), ("EUR", "EUR"))
@@ -118,7 +121,21 @@ def _salary_fields(segment):
             except ValueError:
                 continue
     amounts = list(dict.fromkeys(amounts))
-    period_context = snippet
+    bonus_match = BONUS_RE.search(raw_snippet)
+    first_amount = amount_re.search(raw_snippet)
+    if bonus_match and first_amount and bonus_match.start() > first_amount.start():
+        snippet = raw_snippet[:bonus_match.start()].rstrip(" +,;—-")
+        amounts = []
+        for match in amount_re.finditer(snippet):
+            number = re.sub(r"[\s,'’]", "", match.group("number"))
+            scale = (match.group("scale") or "").strip().casefold()
+            try:
+                amount = float(number.replace(",", ".") if number.count(",") == 1 and len(number.rsplit(",", 1)[-1]) != 3 else number.replace(",", ""))
+                amount *= 1000 if scale in {"k", "к", "тыс", "тыс."} else 1_000_000 if scale in {"m", "млн"} else 1
+                amounts.append((amount, scale))
+            except ValueError:
+                continue
+    period_context = raw_snippet
     period = "year" if re.search(r"\b(?:per year|per annum|yearly|annually|annual|p\.a\.)\b|/(?:year|yr)\b|в год|год(?:а|ов)?", period_context, re.I) else None
     if re.search(r"\b(?:per month|monthly|month)\b|/(?:month|mo)\b|в месяц|ежемесяч|за месяц", period_context, re.I):
         period = "month"
@@ -127,7 +144,16 @@ def _salary_fields(segment):
     # Multiple grade-specific ranges in one post cannot safely become one senior salary range.
     low = high = None
     if len(amounts) == 1:
-        low = high = amounts[0][0]
+        value = amounts[0][0]
+        first_amount = amount_re.search(snippet)
+        prefix = snippet[:first_amount.start()].rstrip() if first_amount else ''
+        currency_prefix = r"(?:₽|руб\w*|CHF|£|GBP|\$|USD|EUR|€)?\s*"
+        if re.search(rf"\b(?:от|from)\s*{currency_prefix}$", prefix, re.I):
+            low, high = value, None
+        elif re.search(rf"\b(?:до|up to)\s*{currency_prefix}$", prefix, re.I):
+            low, high = None, value
+        else:
+            low = high = value
     elif len(amounts) == 2:
         first, second = amounts
         shared_scale = second[1] if not first[1] else first[1] if not second[1] else None
@@ -139,8 +165,13 @@ def _salary_fields(segment):
         low, high = sorted(values)
     else:
         period = None
-    return {"salary_min": low, "salary_max": high,
-            "currency": currency, "period": period, "salary_raw_snippet": snippet}
+    tax_basis = "net" if re.search(r"на руки|чистыми|after tax|\bnet(?: salary)?\b", raw_snippet, re.I) else \
+                "gross" if re.search(r"gross|до вычета налогов|before tax", raw_snippet, re.I) else "unknown"
+    compensation_kind = "package" if re.search(r"total compensation|total comp|package|\bOTE\b", raw_snippet, re.I) else \
+                        "base" if re.search(r"base salary|base pay|basic salary|оклад", raw_snippet, re.I) else "unknown"
+    return {"salary_min": low, "salary_max": high, "currency": currency, "period": period,
+            "tax_basis": tax_basis, "compensation_kind": compensation_kind,
+            "bonus_mentioned": bool(bonus_match), "salary_raw_snippet": raw_snippet}
 
 
 def _location(segment):

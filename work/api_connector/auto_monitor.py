@@ -14,6 +14,7 @@ JUNIOR = re.compile(r'\b(junior|graduate|intern|internship|trainee|entry[- ]leve
 OUT_OF_SCOPE = re.compile(r'machine learning|\bml engineer|машинн\w*\s+обучен|researcher|\btrader\b|учител|военнослуж|chauffeur|driver|водител', re.I)
 NUMBER = r'(?:\d{1,3}(?:[ ,.]\d{3})+(?:[,.]\d+)?|\d+(?:[,.]\d+)?)'
 BONUS = re.compile(r'total comp|target comp|\bTC\b|\bOTE\b|bonus|equity|sign[- ]?on|one[- ]?time|единоврем|преми|бонус|подъ[её]мн', re.I)
+PACKAGE = re.compile(r'total\s*(?:comp|compensation)|target comp|\bTC\b|\bOTE\b|total package|package', re.I)
 NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs UK RSS', 'Hiring Index',
                       'ictjobs.ch RSS', 'YubHub', 'Active Vacancies', 'JobServe RSS', 'Habr Career RSS',
                       'Jooble API', 'Careerjet API', 'Techmap API'}
@@ -331,7 +332,9 @@ PAY_EXPRESSION = re.compile(
 def pay_metadata(text):
     return {'tax_basis': 'net' if re.search(r'after tax|net salary|на руки|после налог', text, re.I) else
                          'gross' if re.search(r'before tax|gross|до налог|до вычета', text, re.I) else 'unknown',
-            'compensation': 'base' if re.search(r'base(?: salary| pay)?|salary|оклад|зарплат', text, re.I) else 'unknown',
+            'compensation': 'package' if re.search(r'total comp|total compensation|package|\bOTE\b', text, re.I) else
+                            'base' if re.search(r'\bbase salary\b|\bbase pay\b|\bbasic salary\b|оклад', text, re.I) else 'unknown',
+            'bonus_mentioned': bool(BONUS.search(text)),
             'employment_basis': 'contractor' if re.search(r'contractor|через ИП|самозанят', text, re.I) else 'unknown'}
 
 
@@ -361,7 +364,8 @@ def salary_from_description(description, expected_currency):
         # Bonus after a completed salary expression is separate; total-package amounts are excluded.
         close_prefix = before[-40:]
         close_suffix = after[:re.search(r'\b(?:plus|and)\b|[+;,]', after, re.I).start()] if re.search(r'\b(?:plus|and)\b|[+;,]', after, re.I) else after
-        if (BONUS.search(close_prefix) and not re.search(r'base(?: salary| pay)?[^;]*$|оклад[^;]*$', close_prefix, re.I)) or BONUS.search(close_suffix):
+        if (BONUS.search(close_prefix) and not re.search(r'base(?: salary| pay)?[^;]*$|оклад[^;]*$', close_prefix, re.I)
+                and not PACKAGE.search(close_prefix)) or (BONUS.search(close_suffix) and not PACKAGE.search(close_suffix)):
             continue
         scale1 = match['scale1'] or match['scale2']
         scale2 = match['scale2'] or match['scale1']
@@ -377,7 +381,8 @@ def salary_from_description(description, expected_currency):
         if valid_pay(low, high):
             snippet = (before + match.group(0) + after).strip()
             return {'min': low, 'max': high, 'currency': expected_currency, 'period': period,
-                    'basis': 'text', 'snippet': snippet[:250], **pay_metadata(snippet)}
+                    'basis': 'text', 'snippet': snippet[:250], **pay_metadata(snippet),
+                    'bonus_mentioned': bool(BONUS.search(text[max(0, match.start() - 20):match.end() + 60]))}
     return None
 
 
@@ -408,7 +413,8 @@ def salary_rows(source, region, raw, description):
                 if item.get('currency') == expected and item.get('interval') in {'month', 'year', 'day'} and valid_pay(low, high):
                     found.append({'min': low, 'max': high, 'currency': expected, 'period': item['interval'],
                                   'basis': 'api_field', 'snippet': f"API pay: {low}–{high} {expected}/{item['interval']}",
-                                  'tax_basis': 'unknown', 'compensation': 'unknown', 'employment_basis': 'unknown'})
+                                  'tax_basis': 'unknown', 'compensation': 'unknown',
+                                  'bonus_mentioned': bool(BONUS.search(description)), 'employment_basis': 'unknown'})
     if source in {'Zarplata', 'UK Government Work Hub', 'Yandex Delivery Careers', 'Kaspersky Careers', 'ITJobsWatch', 'Finder', 'Reed', 'Hunter Bond'}:
         low, high, currency, period = (raw.get(k) for k in ('salary_min', 'salary_max', 'currency', 'period'))
         flags = ' '.join(str(x) for x in (raw.get('flags') or []))
@@ -418,11 +424,13 @@ def salary_rows(source, region, raw, description):
             basis = str(raw.get('tax_basis') or raw.get('gross_net') or 'unknown').casefold()
             basis = 'net' if 'net' in basis else 'gross' if 'gross' in basis else 'unknown'
             compensation = str(raw.get('compensation_kind') or raw.get('comp_type') or '').casefold()
-            compensation = 'base' if any(term in compensation for term in ('base', 'salary', 'оклад')) else 'unknown'
+            compensation = 'package' if compensation == 'package' or re.search(r'\b(?:package|total comp|ote)\b', compensation) else \
+                           'base' if compensation == 'base' or re.search(r'\bbase salary\b|\bbase pay\b|\bbasic salary\b|оклад', compensation) else 'unknown'
             found.append({'min': low, 'max': high, 'currency': expected, 'period': period.casefold(),
                           'basis': raw.get('salary_basis') or 'job_board',
                           'snippet': raw.get('salary_snippet') or raw.get('salary_raw_snippet') or raw.get('raw_salary_snippet'),
-                          'tax_basis': basis, 'compensation': compensation, 'employment_basis': 'unknown'})
+                          'tax_basis': basis, 'compensation': compensation,
+                          'bonus_mentioned': bool(BONUS.search(description)), 'employment_basis': 'unknown'})
     if normalized_source(source):
         low, high, currency, period = (raw.get(k) for k in ('salary_min', 'salary_max', 'currency', 'period'))
         if currency == expected and period in {'month', 'MONTH', 'year', 'YEAR', 'day', 'DAY'} and valid_pay(low, high):
@@ -430,12 +438,16 @@ def salary_rows(source, region, raw, description):
                           'basis': raw.get('salary_basis') or 'job_board',
                           'snippet': raw.get('salary_snippet') or raw.get('salary_raw_snippet'),
                           'tax_basis': raw.get('tax_basis') if raw.get('tax_basis') in {'gross', 'net'} else 'unknown',
-                          'compensation': raw.get('compensation_kind') or 'unknown', 'employment_basis': 'unknown'})
+                          'compensation': raw.get('compensation_kind') or 'unknown',
+                          'bonus_mentioned': bool(raw.get('bonus_mentioned') or BONUS.search(description)),
+                          'employment_basis': 'unknown'})
     # SuperJob/Trudvsem numeric fields omit period: only explicit text evidence can qualify.
     if not found and not blocked:
         parsed = salary_from_description(description, expected)
         if parsed:
             found.append(parsed)
+    for pay in found:
+        pay.setdefault('bonus_mentioned', bool(BONUS.search(description)))
     return found
 
 
@@ -597,6 +609,7 @@ def build_monitor(snapshot):
                 if len(known) > 1:
                     reasons.append('conflicting_' + dimension)
                 pay[dimension] = next(iter(known)) if len(known) == 1 else 'unknown'
+            pay['bonus_mentioned'] = any(x.get('bonus_mentioned') for x in dated)
             if not reasons:
                 group['salary'] = [pay]
         elif group['salary_candidates']:
@@ -618,19 +631,23 @@ def summarize_groups(groups):
     regions = []
     for region in ('Switzerland', 'London, UK', 'Russia'):
         matched = [g for g in groups if g['region'] == region]
-        observations = [pay for group in matched for pay in group['salary']]
+        observations = [(pay, group.get('employer')) for group in matched for pay in group['salary']]
         by_basis = {}
-        for pay in observations:
+        for pay, employer in observations:
             key = tuple(pay[k] for k in ('currency', 'period', 'tax_basis', 'compensation', 'employment_basis'))
-            by_basis.setdefault(key, []).append(pay)
+            by_basis.setdefault(key, []).append((pay, employer))
         ranges = []
         for key, values in sorted(by_basis.items()):
-            lows = [x['min'] for x in values if x['min'] is not None]
-            highs = [x['max'] for x in values if x['max'] is not None]
-            low, high = min(lows) if lows else None, max(highs) if highs else None
+            closed = [(pay, employer) for pay, employer in values if pay['min'] is not None and pay['max'] is not None]
+            employers = {clean(employer) for _, employer in closed if employer}
+            band_allowed = (len(closed) == len(values) and len(closed) >= 5 and len(employers) >= 3
+                            and key[0] in {'CHF', 'GBP', 'RUB'} and key[1] in {'month', 'year'}
+                            and key[2] in {'gross', 'net'} and key[3] in {'base', 'package'})
+            low = min(pay['min'] for pay, _ in closed) if band_allowed else None
+            high = max(pay['max'] for pay, _ in closed) if band_allowed else None
             ranges.append(dict(zip(('currency', 'period', 'tax_basis', 'compensation', 'employment_basis'), key),
                                count=len(values), min=low, max=high,
-                               range=f'{low}–{high}' if len(values) >= 5 else None))
+                               range=f'{low}–{high}' if band_allowed else None))
         regions.append({'region': region, 'qualified_roles': len(matched),
                         'employers': len({clean(g['employer']) for g in matched if g['employer']}),
                         'salary_estimates_excluded': sum(g['salary_estimate'] for g in matched),

@@ -73,6 +73,17 @@ class TelegramParserTests(unittest.TestCase):
         salary = collect._salary_fields("Оплата — 288–316 тыс. ₽. Рабочий день с 9 до 18 часов.")
         self.assertIsNone(salary["period"])
 
+    def test_open_salary_bounds_tax_basis_and_bonus_are_preserved(self):
+        floor = collect._salary_fields("Зарплата: от 200 000 ₽ в месяц на руки")
+        self.assertEqual((floor["salary_min"], floor["salary_max"], floor["period"], floor["tax_basis"]),
+                         (200000, None, "month", "net"))
+        ceiling = collect._salary_fields("Оплата: до 365 000 ₽ в месяц gross")
+        self.assertEqual((ceiling["salary_min"], ceiling["salary_max"], ceiling["tax_basis"]),
+                         (None, 365000, "gross"))
+        base = collect._salary_fields("Base salary £120,000 per year plus bonus £10,000")
+        self.assertEqual((base["salary_min"], base["salary_max"], base["compensation_kind"], base["bonus_mentioned"]),
+                         (120000, 120000, "base", True))
+
     def test_direct_job_link_is_preserved(self):
         fixture = '''<div class="tgme_widget_message_wrap" data-post="forcpp/43"><div>
           Job for C, C++ Developers<br>Senior C++ Engineer<br>Location: Russia<br>
