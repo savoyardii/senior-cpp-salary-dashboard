@@ -341,7 +341,7 @@
     {
       "source": "HeadHunter RSS",
       "records": 94,
-      "qualified_records": 15,
+      "qualified_records": 14,
       "updated_at": "2026-11-15T21:27:51.958941+00:00",
       "status": "queried",
       "refresh_error": null,
@@ -487,11 +487,11 @@
     },
     {
       "region": "Russia",
-      "qualified_roles": 44,
-      "employers": 25,
+      "qualified_roles": 43,
+      "employers": 24,
       "salary_estimates_excluded": 0,
       "salary_fields_unresolved": 7,
-      "salary_observations": 12,
+      "salary_observations": 11,
       "salary_conflicts": 0,
       "salary_ranges": [
         {
@@ -500,7 +500,7 @@
           "tax_basis": "gross",
           "compensation": "unknown",
           "employment_basis": "unknown",
-          "count": 3,
+          "count": 6,
           "min": null,
           "max": null,
           "range": null
@@ -511,7 +511,7 @@
           "tax_basis": "net",
           "compensation": "unknown",
           "employment_basis": "unknown",
-          "count": 1,
+          "count": 3,
           "min": null,
           "max": null,
           "range": null
@@ -522,7 +522,7 @@
           "tax_basis": "unknown",
           "compensation": "unknown",
           "employment_basis": "unknown",
-          "count": 8,
+          "count": 2,
           "min": null,
           "max": null,
           "range": null
@@ -4094,9 +4094,9 @@
           "max": null,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4113,9 +4113,9 @@
           "max": null,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4158,9 +4158,9 @@
           "max": 350000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 до 350 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 до 350 000 ₽ за месяц на руки",
+          "tax_basis": "net",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4177,9 +4177,9 @@
           "max": 350000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": ".2026 Регион: Москва Предполагаемый уровень месячного дохода: от 250 000 до 350 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 до 350 000 ₽ за месяц на руки",
+          "tax_basis": "net",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4222,9 +4222,9 @@
           "max": 250000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 250 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "до 250 000 ₽ за месяц на руки",
+          "tax_basis": "net",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4241,9 +4241,9 @@
           "max": 250000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 250 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "до 250 000 ₽ за месяц на руки",
+          "tax_basis": "net",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4286,9 +4286,9 @@
           "max": 400000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 250 000 до 400 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 до 400 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4305,9 +4305,9 @@
           "max": 400000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 250 000 до 400 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "от 250 000 до 400 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4327,70 +4327,6 @@
     },
     {
       "group_id": "g102",
-      "region": "Russia",
-      "title": "Senior C++ Developer",
-      "employer": "Алабуга. Менеджмент",
-      "city": "Санкт-Петербург",
-      "sources": [
-        "HeadHunter RSS"
-      ],
-      "records": [
-        {
-          "source": "HeadHunter RSS",
-          "id": "139133285",
-          "urls": [
-            "https://hh.ru/vacancy/139133285"
-          ],
-          "observed_at": "2026-11-15T21:27:51.958941+00:00"
-        }
-      ],
-      "salary_candidates": [
-        {
-          "min": 500000,
-          "max": null,
-          "currency": "RUB",
-          "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 500 000 ₽",
-          "tax_basis": "unknown",
-          "compensation": "unknown",
-          "bonus_mentioned": false,
-          "employment_basis": "unknown",
-          "source": "HeadHunter RSS",
-          "urls": [
-            "https://hh.ru/vacancy/139133285"
-          ],
-          "observed_at": "2026-11-15T21:27:51.958941+00:00"
-        }
-      ],
-      "salary": [
-        {
-          "min": 500000,
-          "max": null,
-          "currency": "RUB",
-          "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: от 500 000 ₽",
-          "tax_basis": "unknown",
-          "compensation": "unknown",
-          "bonus_mentioned": false,
-          "employment_basis": "unknown",
-          "source": "HeadHunter RSS",
-          "urls": [
-            "https://hh.ru/vacancy/139133285"
-          ],
-          "observed_at": "2026-11-15T21:27:51.958941+00:00"
-        }
-      ],
-      "salary_estimate": false,
-      "salary_unresolved": false,
-      "seniority": "explicit",
-      "segment": "general_cpp",
-      "salary_conflict": false,
-      "salary_exclusion_reasons": []
-    },
-    {
-      "group_id": "g103",
       "region": "Russia",
       "title": "Ведущий инженер-программист С++",
       "employer": "Специальный Технологический Центр (ООО СТЦ)",
@@ -4414,9 +4350,9 @@
           "max": 300000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 300 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "до 300 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4433,9 +4369,9 @@
           "max": 300000,
           "currency": "RUB",
           "period": "month",
-          "basis": "text",
-          "snippet": "ион: Санкт-Петербург Предполагаемый уровень месячного дохода: до 300 000 ₽",
-          "tax_basis": "unknown",
+          "basis": "verified_hh_detail_page",
+          "snippet": "до 300 000 ₽ за месяц до вычета налогов",
+          "tax_basis": "gross",
           "compensation": "unknown",
           "bonus_mentioned": false,
           "employment_basis": "unknown",
@@ -4454,7 +4390,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g104",
+      "group_id": "g103",
       "region": "Switzerland",
       "title": "Senior Software Engineer C++ @ Cudos AG [CHF 100'000 - 120'000]",
       "employer": "Cudos AG",
@@ -4518,7 +4454,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g105",
+      "group_id": "g104",
       "region": "Switzerland",
       "title": "Senior Software Developer C++ @ Cudos AG [CHF 100'000 - 120'000]",
       "employer": "Cudos AG",
@@ -4582,7 +4518,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g106",
+      "group_id": "g105",
       "region": "Switzerland",
       "title": "Senior C++ Engineer",
       "employer": "Fluent Trade Technologies",
@@ -4613,7 +4549,7 @@
       ]
     },
     {
-      "group_id": "g107",
+      "group_id": "g106",
       "region": "Switzerland",
       "title": "Senior C++ Software Engineer – AI Developer Tools",
       "employer": "NVIDIA",
@@ -4644,7 +4580,7 @@
       ]
     },
     {
-      "group_id": "g108",
+      "group_id": "g107",
       "region": "London, UK",
       "title": "Principal Software Engineer (Safety-Critical)",
       "employer": "Spectrum IT Recruitment",
@@ -4708,7 +4644,7 @@
       "salary_exclusion_reasons": []
     },
     {
-      "group_id": "g109",
+      "group_id": "g108",
       "region": "Russia",
       "title": "Требуется «Старший/ведущий разработчик C++ (Linux/OpenBMC)» (Москва)",
       "employer": "",
@@ -4738,7 +4674,7 @@
       ]
     },
     {
-      "group_id": "g110",
+      "group_id": "g109",
       "region": "Russia",
       "title": "Требуется «Старший разработчик на С++ в Яндекс Браузер» (Москва)",
       "employer": "",
@@ -4768,7 +4704,7 @@
       ]
     },
     {
-      "group_id": "g111",
+      "group_id": "g110",
       "region": "Russia",
       "title": "Требуется «Старший разработчик С++» (Томск)",
       "employer": "",
@@ -4798,7 +4734,7 @@
       ]
     },
     {
-      "group_id": "g112",
+      "group_id": "g111",
       "region": "Russia",
       "title": "Требуется «Старший разработчик С++» (Уфа)",
       "employer": "",
@@ -4828,7 +4764,7 @@
       ]
     },
     {
-      "group_id": "g113",
+      "group_id": "g112",
       "region": "Russia",
       "title": "Требуется «Ведущий разработчик (С++)» (Москва)",
       "employer": "",
@@ -4858,7 +4794,7 @@
       ]
     },
     {
-      "group_id": "g114",
+      "group_id": "g113",
       "region": "Russia",
       "title": "Требуется «Senior разработчик C/C++ (гибрид из Мск)» (Зеленоград, от 380 000 до 450 000 ₽)",
       "employer": "",
@@ -4888,7 +4824,7 @@
       ]
     },
     {
-      "group_id": "g115",
+      "group_id": "g114",
       "region": "Russia",
       "title": "Требуется «Ведущий разработчик (С/С++), NGFW» (Санкт-Петербург)",
       "employer": "",
@@ -4918,7 +4854,7 @@
       ]
     },
     {
-      "group_id": "g116",
+      "group_id": "g115",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Hackajob Ltd",
@@ -4948,7 +4884,7 @@
       ]
     },
     {
-      "group_id": "g117",
+      "group_id": "g116",
       "region": "London, UK",
       "title": "Senior/C++ Software Engineer",
       "employer": "Selby Jennings London",
@@ -4978,7 +4914,7 @@
       ]
     },
     {
-      "group_id": "g118",
+      "group_id": "g117",
       "region": "London, UK",
       "title": "Senior Software Engineer C++",
       "employer": "REC SOLUTIONS LIMITED",
@@ -5008,7 +4944,7 @@
       ]
     },
     {
-      "group_id": "g119",
+      "group_id": "g118",
       "region": "London, UK",
       "title": "Lead eSoftware Engineer - C++",
       "employer": "Hackajob Ltd",
@@ -5038,7 +4974,7 @@
       ]
     },
     {
-      "group_id": "g120",
+      "group_id": "g119",
       "region": "London, UK",
       "title": "Senior Embedded Software Engineer C++",
       "employer": "Engineering Employment",
@@ -5068,7 +5004,7 @@
       ]
     },
     {
-      "group_id": "g121",
+      "group_id": "g120",
       "region": "London, UK",
       "title": "Senior Embedded Software Engineer (C++)",
       "employer": "Expert Employment",
@@ -5098,7 +5034,7 @@
       ]
     },
     {
-      "group_id": "g122",
+      "group_id": "g121",
       "region": "London, UK",
       "title": "Sr Lead Software Engineer - C++, Python,",
       "employer": "JPMorganChase",
@@ -5128,7 +5064,7 @@
       ]
     },
     {
-      "group_id": "g123",
+      "group_id": "g122",
       "region": "London, UK",
       "title": "Senior Software Engineer (C++ / Defence Systems)",
       "employer": "First Military Recruitment",
@@ -5158,7 +5094,7 @@
       ]
     },
     {
-      "group_id": "g124",
+      "group_id": "g123",
       "region": "London, UK",
       "title": "Senior/C++ Software Engineer - Selby Jennings",
       "employer": "Selby Jennings",
@@ -5188,7 +5124,7 @@
       ]
     },
     {
-      "group_id": "g125",
+      "group_id": "g124",
       "region": "London, UK",
       "title": "C++ Trading Developer, Quant Trading Team",
       "employer": "Crypto.com",
@@ -5218,7 +5154,7 @@
       ]
     },
     {
-      "group_id": "g126",
+      "group_id": "g125",
       "region": "London, UK",
       "title": "Senior Software Engineer (Data Platform, C++)",
       "employer": "Nebius",
@@ -5248,7 +5184,7 @@
       ]
     },
     {
-      "group_id": "g127",
+      "group_id": "g126",
       "region": "London, UK",
       "title": "Senior Software Engineer – C++ / Video Processing",
       "employer": "Medtronic",
@@ -5278,7 +5214,7 @@
       ]
     },
     {
-      "group_id": "g128",
+      "group_id": "g127",
       "region": "London, UK",
       "title": "Senior Software Engineer - C++ / Video Processing",
       "employer": "Medtronic",
@@ -5308,7 +5244,7 @@
       ]
     },
     {
-      "group_id": "g129",
+      "group_id": "g128",
       "region": "London, UK",
       "title": "Senior Quant Developer (C++)- Leading Quant & Systematic Fund",
       "employer": "Oxford Knight",
@@ -5338,7 +5274,7 @@
       ]
     },
     {
-      "group_id": "g130",
+      "group_id": "g129",
       "region": "London, UK",
       "title": "C++ Senior Software Developer - London- Prop Trading Firm",
       "employer": "Oxford Knight",

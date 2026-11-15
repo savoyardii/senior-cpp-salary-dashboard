@@ -33,21 +33,28 @@ assert '__DATA__' not in page and '__API_STATS__' not in page and '__MANUAL_STAT
 (OUT / 'salary_dashboard.html').write_text(page)
 (ROOT / 'outputs/salary_sample_audited.json').write_text(json.dumps(rows, ensure_ascii=False, indent=2))
 (DIST / 'index.html').write_text(page)
+def vacancy_count(count):
+    last_two = count % 100
+    last = count % 10
+    word = 'вакансия' if last == 1 and last_two != 11 else 'вакансии' if 2 <= last <= 4 and not 12 <= last_two <= 14 else 'вакансий'
+    return f'{count} {word}'
+
+
 stat_cards = []
 for region, region_label in (('Switzerland', 'Швейцария'), ('London, UK', 'Лондон'), ('Russia', 'Россия')):
     region_groups = [group for group in monitor['groups'] if group['region'] == region]
-    salaries = [pay for group in region_groups if group['seniority'] == 'explicit'
-                for pay in group.get('salary', [])]
-    structured = sum(pay.get('tax_basis') in {'gross', 'net'}
-                     and pay.get('compensation') in {'base', 'package'}
-                     and pay.get('period') in {'month', 'year'} for pay in salaries)
+    salary_groups = [group for group in region_groups
+                     if group['seniority'] == 'explicit' and group.get('salary')]
+    structured = sum(any(pay.get('tax_basis') in {'gross', 'net'}
+                         and pay.get('compensation') in {'base', 'package'}
+                         and pay.get('period') in {'month', 'year'}
+                         for pay in group.get('salary', [])) for group in salary_groups)
     qualified = next(item['qualified_roles'] for item in monitor['regions'] if item['region'] == region)
     stat_cards.append(
-        '<div class="stat"><strong>{}</strong><span>API-вакансий прошли фильтры роли и локального рынка</span>'
-        '<p class="muted">Явно Senior с зарплатой: {} групп; известны gross/net, base/package и период: {}.</p></div>'
-        .format(qualified, len(salaries), structured)
+        '<div class="stat"><strong>{}: {}</strong><span>прошли фильтры роли и локального рынка</span>'
+        '<p class="muted">Senior-вакансий с зарплатой: {}; из них явно указаны gross/net, base/package и период: {}.</p></div>'
+        .format(region_label, vacancy_count(qualified), len(salary_groups), structured)
     )
-    stat_cards[-1] = stat_cards[-1].replace('<strong>', f'<strong>{region_label}: ', 1)
 methodology = (Path(__file__).parent / 'methodology_template.html').read_text()
 observed_at = monitor.get('observed_at')
 observed_label = (datetime.fromisoformat(observed_at).strftime('%d.%m.%Y %H:%M UTC')

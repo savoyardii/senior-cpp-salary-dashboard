@@ -20,6 +20,19 @@ NORMALIZED_SOURCES = {'SwissDevJobs', 'HeadHunter RSS', 'Himalayas', 'DevITjobs 
                       'Jooble API', 'Careerjet API', 'Techmap API'}
 NORMALIZED_PREFIXES = ('Telegram @', 'Greenhouse:', 'HH RSS:', 'Lever:', 'Ashby:')
 
+# Public HH vacancy pages manually confirmed these salary labels on 2026-11-16.
+HH_PAY_BASIS = {
+    '139323321': ('gross', 'от 250 000 ₽ за месяц до вычета налогов'),
+    '138805237': ('net', 'от 250 000 до 350 000 ₽ за месяц на руки'),
+    '138738583': ('net', 'до 250 000 ₽ за месяц на руки'),
+    '135355481': ('gross', 'от 250 000 до 400 000 ₽ за месяц до вычета налогов'),
+    '138885306': ('gross', 'до 300 000 ₽ за месяц до вычета налогов'),
+}
+EXCLUDED_VACANCY_URLS = {
+    'https://hh.ru/vacancy/139133285',
+    'https://finder.work/vacancies/37562275',
+}
+
 
 def normalized_source(source):
     return source in NORMALIZED_SOURCES or str(source or '').startswith(NORMALIZED_PREFIXES)
@@ -456,7 +469,12 @@ def salary_rows(source, region, raw, description):
         parsed = salary_from_description(description, expected)
         if parsed:
             found.append(parsed)
+    hh_basis = HH_PAY_BASIS.get(str(raw.get('id'))) if source == 'HeadHunter RSS' else None
     for pay in found:
+        if hh_basis:
+            pay['tax_basis'] = hh_basis[0]
+            pay['snippet'] = hh_basis[1]
+            pay['basis'] = 'verified_hh_detail_page'
         pay.setdefault('bonus_mentioned', bool(BONUS.search(description)))
     return found
 
@@ -519,12 +537,14 @@ def build_monitor(snapshot):
             record = entry if isinstance(entry.get('raw'), dict) else {'region': entry.get('region'), 'raw': entry}
             title, employer, description, raw = fields(name, record)
             identity = str(raw.get('job_id') or raw.get('id') or raw.get('source_id') or raw.get('link') or '')
+            urls = job_urls(name, raw)
+            if identity in {'139133285', '37562275'} or any(canonical_job_url(url) in {canonical_job_url(x) for x in EXCLUDED_VACANCY_URLS} for url in urls):
+                continue
             for region in record_regions(name, record):
                 regional = {**record, 'region': region}
                 reasons = exclusion_reasons(name, regional)
                 if name == 'Adzuna' and description_market_conflict(region, description):
                     reasons.append('description_location_conflicts_with_source_location')
-                urls = job_urls(name, raw)
                 if name == 'Headcount Labs':
                     urls = list(dict.fromkeys(
                         url for posting in raw.get('postings', [])
