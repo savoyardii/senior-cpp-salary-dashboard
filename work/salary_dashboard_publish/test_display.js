@@ -5,11 +5,12 @@ const methodology=fs.readFileSync(path.join(__dirname,'dist/methodology.html'),'
 assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
 for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
 for(const evidence of ['сводный коридор двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
-for(const evidence of ['CHF 125–170 тыс.','сводный коридор двух Senior C++ ролей','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,2 млн','P25–P75 середин объявленных вилок','не обновляются еженедельным парсером'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
+for(const evidence of ['CHF 125–170 тыс.','сводный коридор двух Senior C++ ролей','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,4 млн','P25–P75 середин объявленных вилок','не обновляются еженедельным парсером'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
 assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limitations must remain visible');
 assert(page.includes('https://antaltalent.ru/wp-content/uploads/2025/10/RUS_Job_market_25-26.pdf'),'Antal link must use the live PDF');
 assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link must be removed');
-assert(page.includes('для 17 вакансий за тот же rolling 12 months'),'HireHi Lead statistics must show the 17-role sample');
+assert(page.includes('Senior (83 вакансии) и Lead (17 вакансий)'),'HireHi Senior/Lead statistics must be combined transparently');
+assert(page.includes('не являются пересчитанными общими перцентилями'),'Combined range must not be misrepresented as pooled quantiles');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
@@ -53,9 +54,9 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
  assert(!text.includes(period==='month'?'в год':'в месяц'));
 }
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
-assert.equal(nodes['bench-hirehi-lead'].textContent,'₽1,9–3,4 млн','Lead benchmark must annualize from monthly local values');
-vm.runInContext("setPeriodMode('month')",context);assert.equal(nodes['bench-hirehi-lead'].textContent,'₽157–283 тыс.','Lead benchmark must follow the month control');
-vm.runInContext("setCurrencyMode('usd');setPeriodMode('year')",context);assert(nodes['bench-hirehi-lead'].textContent.startsWith('$'),'Lead benchmark must follow the currency control');
+assert.equal(nodes['bench-hirehi-combined'].textContent,'₽1,8–3,4 млн','Combined Senior/Lead band must annualize from monthly local values');
+vm.runInContext("setPeriodMode('month')",context);assert.equal(nodes['bench-hirehi-combined'].textContent,'₽150–283 тыс.','Combined band must envelope both grade ranges in monthly mode');
+vm.runInContext("setCurrencyMode('usd');setPeriodMode('year')",context);assert(nodes['bench-hirehi-combined'].textContent.startsWith('$'),'Combined band must follow the currency control');
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 assert.equal(vm.runInContext("salaryText({salary_min:500000,salary_max:null,currency:'RUB',period:null},'Russia')",context),'от ₽500 тыс. · период не указан','An open salary floor without period must stay open and unannualized');
 assert.equal(vm.runInContext("salaryText({salary_min:null,salary_max:365000,currency:'RUB',period:null},'Russia')",context),'до ₽365 тыс. · период не указан','An upper-only amount must stay upper-only');
