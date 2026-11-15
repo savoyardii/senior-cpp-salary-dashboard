@@ -78,11 +78,13 @@ assert(/от ₽500 тыс\. · период не указан · Алабуга
 assert(cards.includes('Сопоставимой')||cards.includes('Только отдельные объявления'),'Cards must avoid inventing a range from mixed observations');
 assert(nodes['source-summary'].textContent.includes('Ошибок обновления:'),'Dashboard must surface source failures and retained snapshots');
 const mixedGrade=JSON.parse(nodes.dataset.textContent).find(row=>row.url?.endsWith('/139326350/'));
-assert.equal(mixedGrade?.seniority,'unclear','Middle/Senior listing must not be inferred Senior from salary');
+assert.equal(mixedGrade?.seniority,'inferred_senior','The Russian HFT Middle/Senior role is included as salary-inferred Senior');
+assert(cards.includes('C++ / Rust Developer (Middle / Senior) HFT'),'Salary-inferred Russian HFT vacancy must appear in the default Senior view');
+assert(mixedGrade?.seniority_basis?.includes('₽350 тыс.')&&mixedGrade.seniority_basis.includes('Middle/Senior'),'Salary-based Senior inference and its basis must remain in the dataset');
 nodes.level.value='all';vm.runInContext('render()',context);
 const allCards=content(nodes.regions);
 assert(allCards!==cards,'All-level filter must alter the merged sample');
-assert(allCards.includes('C++ / Rust Developer (Middle / Senior) HFT'),'Mixed-grade HFT vacancy must remain in adjacent-level context');
+assert(allCards.includes('C++ / Rust Developer (Middle / Senior) HFT'),'Mixed-grade HFT vacancy must remain visible in the adjacent-level context');
 nodes.segment.value='finance';vm.runInContext('render()',context);
 assert(content(nodes.regions)!==allCards,'Segment filter must alter the displayed sample');
 console.log('Display checks passed: pay bounds, periods/currencies, source freshness, deduplicated sample and filters.');

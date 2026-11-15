@@ -490,7 +490,7 @@
     "posted_date": "2026-11-10",
     "status": "listed_active_employer_unverified",
     "segment": "hft",
-    "seniority": "unclear",
+    "seniority": "inferred_senior",
     "salary_min": 350000,
     "salary_max": null,
     "currency": "RUB",
@@ -498,7 +498,7 @@
     "gross_net": "net",
     "comp_type": "salary floor; bonus unstated",
     "salary_provenance": "Vacancy mirror states from ₽350,000 take-home/month.",
-    "notes": "3–6 years; title combines Middle/Senior and no explicit five-year lower bound. Excluded from the default Senior-only cohort; kept only in the adjacent-level context filter. Salary is not used to infer seniority. Low-latency trading infrastructure; duplicate aggregator copies counted once. Source listing appeared active on 2026-11-11; employer-side status was not independently confirmed. Full page and JSON-LD reviewed. Same HH vacancy is duplicated across aggregators; count once.",
+    "notes": "3–6 years; title combines Middle/Senior and no explicit five-year lower bound. Included in the Senior view as a salary-based inference per user instruction; title remains Middle/Senior and experience is 3–6 years, so this is not explicit seniority. Low-latency trading infrastructure; duplicate aggregator copies counted once. Source listing appeared active on 2026-11-11; employer-side status was not independently confirmed. Full page and JSON-LD reviewed. Same HH vacancy is duplicated across aggregators; count once.",
     "market_scope": "local_market",
     "http_status": 200,
     "final_url": "https://vakradar.ru/vacancy/139326350/",
@@ -507,7 +507,8 @@
     "salary_review_state": "found",
     "salary_evidence": "Visible page: “от 350 000 ₽ за месяц на руки”; JobPosting JSON-LD gives RUB/month minValue 350000. Posted 2026-11-10, valid through 2026-12-10.",
     "analysis_eligible": true,
-    "analysis_exclusion_reason": null
+    "analysis_exclusion_reason": null,
+    "seniority_basis": "Оценён как Senior по просьбе пользователя: от ₽350 тыс. на руки в месяц сочтено маловероятным для Middle; в объявлении уровень указан как Middle/Senior и опыт 3–6 лет."
   },
   {
     "region": "Russia",
