@@ -9,6 +9,7 @@ for(const evidence of ['CHF 125–170 тыс.','сводный коридор д
 assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limitations must remain visible');
 assert(page.includes('https://antaltalent.ru/wp-content/uploads/2025/10/RUS_Job_market_25-26.pdf'),'Antal link must use the live PDF');
 assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link must be removed');
+assert(page.includes('для 17 вакансий за тот же rolling 12 months'),'HireHi Lead statistics must show the 17-role sample');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
@@ -52,6 +53,10 @@ for(const currency of ['local','usd'])for(const period of ['month','year']){
  assert(!text.includes(period==='month'?'в год':'в месяц'));
 }
 vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
+assert.equal(nodes['bench-hirehi-lead'].textContent,'₽1,9–3,4 млн','Lead benchmark must annualize from monthly local values');
+vm.runInContext("setPeriodMode('month')",context);assert.equal(nodes['bench-hirehi-lead'].textContent,'₽157–283 тыс.','Lead benchmark must follow the month control');
+vm.runInContext("setCurrencyMode('usd');setPeriodMode('year')",context);assert(nodes['bench-hirehi-lead'].textContent.startsWith('$'),'Lead benchmark must follow the currency control');
+vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 assert.equal(vm.runInContext("salaryText({salary_min:500000,salary_max:null,currency:'RUB',period:null},'Russia')",context),'от ₽500 тыс. · период не указан','An open salary floor without period must stay open and unannualized');
 assert.equal(vm.runInContext("salaryText({salary_min:null,salary_max:365000,currency:'RUB',period:null},'Russia')",context),'до ₽365 тыс. · период не указан','An upper-only amount must stay upper-only');
 vm.runInContext("setPeriodMode('month')",context);
@@ -61,7 +66,6 @@ assert.equal(vm.runInContext("compensationKind({comp_type:'package (base/bonus s
 const unknownPeriodAnnual=vm.runInContext("salaryText({salary_min:500000,salary_max:null,currency:'RUB',period:null},'Russia')",context);
 vm.runInContext("setPeriodMode('month')",context);
 assert.equal(vm.runInContext("salaryText({salary_min:500000,salary_max:null,currency:'RUB',period:null},'Russia')",context),unknownPeriodAnnual,'Period toggle must not annualize an unspecified period');
-vm.runInContext("setCurrencyMode('local');setPeriodMode('year')",context);
 const cards=content(nodes.regions);
 for(const name of ['Швейцария','Лондон','Россия']){
  const card=nodes.regions.children.find(region=>content(region).includes(name));
