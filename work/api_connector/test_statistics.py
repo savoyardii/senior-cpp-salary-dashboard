@@ -115,7 +115,8 @@ class ScopeAndDedupTests(unittest.TestCase):
         snapshot = json.loads((Path(__file__).parent / 'data/latest.json').read_text())
         out = m.build_monitor(snapshot)
         self.assertTrue(out['excluded'])
-        self.assertIsNone(next(s for s in out['sources'] if s['source'] == 'Adzuna')['updated_at'])
+        self.assertEqual(next(s for s in out['sources'] if s['source'] == 'Adzuna')['updated_at'],
+                         next(s for s in snapshot['sources'] if s['source'] == 'Adzuna')['pilot_observed_at'])
         for region in out['regions']:
             for band in region['salary_ranges']:
                 if band['tax_basis'] == 'unknown' or band['compensation'] == 'unknown':
@@ -175,6 +176,7 @@ class ScopeAndDedupTests(unittest.TestCase):
     def test_cpp_as_one_option_among_languages_is_not_a_core_requirement(self):
         description = 'Proficiency in Go, Python, C++, or another statically typed language is required.'
         self.assertFalse(m.cpp_is_required('Senior Software Engineer', description))
+        self.assertFalse(m.cpp_is_required('Senior Software Engineer', 'Proficiency in Go, Python, C++, or a…'))
 
     def test_same_title_different_requisitions_not_silently_collapsed(self):
         raw = {'title': {'value': 'Senior C++ Developer'}, 'employer_name': {'value': 'Example'},

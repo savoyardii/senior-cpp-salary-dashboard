@@ -252,7 +252,8 @@ OPTIONAL_CPP = re.compile(
 CPP_ALTERNATIVE = re.compile(
     r'(?:c\s*\+\s*\+|с\s*\+\s*\+).{0,45}\b(?:or|oder|либо|или)\b.{0,45}\b(?:rust|go|c#|java|kotlin|python|kdb)\b|'
     r'\b(?:rust|go|c#|java|kotlin|python|kdb)\b.{0,45}\b(?:or|oder|либо|или)\b.{0,45}(?:c\s*\+\s*\+|с\s*\+\s*\+)|'
-    r'(?:c\s*\+\s*\+|с\s*\+\s*\+)[^.;\n]{0,80}\bor another (?:statically typed )?language\b', re.I)
+    r'(?:c\s*\+\s*\+|с\s*\+\s*\+)[^.;\n]{0,80}\bor another (?:statically typed )?language|'
+    r'(?:c\s*\+\s*\+|с\s*\+\s*\+)[^.;\n]{0,45}\bor\s+a(?:…|\.\.\.)', re.I)
 CPP_NOT_REQUIRED = re.compile(
     r'(?:if you don.t know|we can teach|can be taught|не знаете|научим).{0,80}(?:c\s*\+\s*\+|с\s*\+\s*\+)|'
     r'(?:c\s*\+\s*\+|с\s*\+\s*\+).{0,80}(?:if you don.t know|we can teach|can be taught|не знаете|научим)', re.I)

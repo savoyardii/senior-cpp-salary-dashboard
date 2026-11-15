@@ -1,4 +1,5 @@
 from pathlib import Path
+from datetime import datetime, timezone
 import importlib.util
 import json
 import sys
@@ -26,6 +27,12 @@ def main():
     if not app_id or not app_key:
         raise SystemExit("Adzuna keys are missing.")
     additions = []
+    prior_requests = len(source.get("requests", []))
+    prior_records = []
+    for row in source["records"]:
+        for region in row.get("regions") or [row.get("region")]:
+            for query in row.get("queries") or [row.get("query") or "C++"]:
+                prior_records.append({"region": region, "query": query, "raw": row["raw"]})
     # Reuse the same safe request implementation and the already-authorized 25-call limit.
     for page in range(3, 12):
         params = {"what": "C++", "where": "London", "results_per_page": 50, "content-type": "application/json"}
@@ -39,8 +46,9 @@ def main():
         except RuntimeError as exc:
             source["requests"].append({"region": "London, UK", "query": "C++", "page": page, "status": str(exc)})
             break
-    source["records"].extend(additions)
-    source["requests_used"] = used + 9
+    source["records"] = prior_records + additions
+    source["requests_used"] = used + len(source["requests"]) - prior_requests
+    source["pilot_observed_at"] = datetime.now(timezone.utc).isoformat()
     source["records"] = dedupe(source)["records"]
     snapshot["sources"] = [source if s["source"] == "Adzuna" else s for s in snapshot["sources"]]
     SNAPSHOT.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2))

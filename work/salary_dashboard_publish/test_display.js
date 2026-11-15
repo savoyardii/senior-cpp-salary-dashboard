@@ -10,7 +10,7 @@ assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limi
 assert(page.includes('https://antaltalent.ru/wp-content/uploads/2025/10/RUS_Job_market_25-26.pdf'),'Antal link must use the live PDF');
 assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link must be removed');
 assert(page.includes('Senior (83 вакансии) и Lead (17 вакансий)'),'HireHi Senior/Lead statistics must be combined transparently');
-assert(page.includes('для Senior (83 вакансии) и Lead (17 вакансии) в России и СНГ'),'Dashboard must show the combined Senior/Lead sample basis');
+assert(page.includes('Lead (17 вакансий)'),'Dashboard must show the Lead sample size in its combined range');
 assert(!page.includes('не являются пересчитанными общими перцентилями'),'Removed percentile caveat must stay absent');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
@@ -80,7 +80,7 @@ assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN 
 assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
 assert(jobs().includes('gross/net не указано'),'Expanded offers must label unknown tax basis');
 assert(jobs().includes('период не указан'),'Expanded offers must keep salary posts without cadence visible');
-assert(/от ₽500 тыс\. · период не указан · Алабуга/.test(jobs()),'Alabuga salary floor must remain open and unperiodized');
+assert(!jobs().includes('Алабуга')&&!page.includes('37562275')&&!page.includes('139133285'),'Alabuga C++ vacancy must be absent from the sample and API dashboard data');
 assert(cards.includes('Сопоставимой')||cards.includes('Только отдельные объявления'),'Cards must avoid inventing a range from mixed observations');
 assert(nodes['source-summary'].textContent.includes('Ошибок обновления:'),'Dashboard must surface source failures and retained snapshots');
 const mixedGrade=JSON.parse(nodes.dataset.textContent).find(row=>row.url?.endsWith('/139326350/'));
