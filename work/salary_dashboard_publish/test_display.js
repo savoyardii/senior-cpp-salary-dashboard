@@ -1,6 +1,7 @@
 // Offline rendering regressions; this is not a browser or accessibility test.
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
 const page=fs.readFileSync(path.join(__dirname,'dist/index.html'),'utf8');
+assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
@@ -22,6 +23,9 @@ for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=
 const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
+const sourceCount=JSON.parse(nodes['api-stats'].textContent).sources.length;
+assert(nodes['source-rows'].children.length===sourceCount,'Source list must match the latest automated source snapshot');
+assert(content(nodes['source-kpis']).includes(String(sourceCount)),'Source summary must show the current source count');
 const jobs=()=>nodes.regions.children.flatMap(region=>region.children.filter(child=>child.className==='region-jobs')).map(content).join(' ');
 for(const currency of ['local','usd'])for(const period of ['month','year']){
  vm.runInContext(`setCurrencyMode('${currency}');setPeriodMode('${period}')`,context);
