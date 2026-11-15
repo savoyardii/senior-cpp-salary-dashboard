@@ -23,9 +23,11 @@ for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=
 const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
-const sourceCount=JSON.parse(nodes['api-stats'].textContent).sources.length;
-assert(nodes['source-rows'].children.length===sourceCount,'Source list must match the latest automated source snapshot');
-assert(content(nodes['source-kpis']).includes(String(sourceCount)),'Source summary must show the current source count');
+const sourceSnapshot=JSON.parse(nodes['api-stats'].textContent).sources.filter(source=>source.status==='queried'&&source.records>0);
+const sourceNames=sourceSnapshot.map(source=>source.source==='HeadHunter RSS'?'HeadHunter':source.source);
+assert.deepEqual(nodes['source-rows'].children.map(row=>row.children[0].textContent),sourceNames,'Source list must contain only sources that returned data');
+assert(content(nodes['source-kpis']).includes(String(sourceNames.length)),'Source summary must show the current count of sources with data');
+assert(!sourceNames.includes('HeadHunter RSS')&&sourceNames.includes('HeadHunter'),'HeadHunter RSS must be shown as HeadHunter');
 const jobs=()=>nodes.regions.children.flatMap(region=>region.children.filter(child=>child.className==='region-jobs')).map(content).join(' ');
 for(const currency of ['local','usd'])for(const period of ['month','year']){
  vm.runInContext(`setCurrencyMode('${currency}');setPeriodMode('${period}')`,context);
