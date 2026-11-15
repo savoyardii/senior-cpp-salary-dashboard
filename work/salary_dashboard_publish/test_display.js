@@ -10,7 +10,8 @@ assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limi
 assert(page.includes('https://antaltalent.ru/wp-content/uploads/2025/10/RUS_Job_market_25-26.pdf'),'Antal link must use the live PDF');
 assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link must be removed');
 assert(page.includes('Senior (83 вакансии) и Lead (17 вакансий)'),'HireHi Senior/Lead statistics must be combined transparently');
-assert(page.includes('не являются пересчитанными общими перцентилями'),'Combined range must not be misrepresented as pooled quantiles');
+assert(page.includes('для Senior (83 вакансии) и Lead (17 вакансии) в России и СНГ'),'Dashboard must show the combined Senior/Lead sample basis');
+assert(!page.includes('не являются пересчитанными общими перцентилями'),'Removed percentile caveat must stay absent');
 class Node {
  constructor(tag='div',text=''){this.tag=tag;this.textContent=text;this.children=[];this.style={};this.attrs={};this.listeners={};this.parentElement=this;this.value='';this.hidden=false}
  append(...nodes){this.children.push(...nodes)}
