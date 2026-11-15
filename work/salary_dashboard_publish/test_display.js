@@ -34,6 +34,9 @@ for(const [id,values]of [['segment',['all','finance']],['level',['senior','all']
  document.getElementById(id).value=values[0];const menu=document.getElementById(id+'-menu');menu.items=values.map(value=>{const n=new Node('button',value);n.dataset={value};return n});
 }
 for(const id of ['dataset','api-stats'])document.getElementById(id).textContent=page.match(new RegExp(`<script id="${id}" type="application/json">([\\s\\S]*?)</script>`))[1];
+const correctedRussianNet=JSON.parse(nodes.dataset.textContent).filter(row=>['https://career.habr.com/vacancies/1000167693','https://finder.work/vacancies/37562430'].includes(row.url));
+assert.equal(correctedRussianNet.length,2,'Both Russian net vacancies with monthly salary must remain in the sample');
+assert(correctedRussianNet.every(row=>row.period==='month'&&row.gross_net==='net'),'Both Russian net amounts must be classified as monthly');
 const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
@@ -93,7 +96,7 @@ for(const name of ['Швейцария','Лондон','Россия']){
 assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
 assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
 assert(jobs().includes('gross/net не указано'),'Expanded offers must label unknown tax basis');
-assert(jobs().includes('период не указан'),'Expanded offers must keep salary posts without cadence visible');
+assert(!jobs().includes('период не указан'),'Unverified salary posts must stay out of the expanded vacancy list');
 assert(!jobs().includes('Алабуга')&&!page.includes('37562275')&&!page.includes('139133285'),'Alabuga C++ vacancy must be absent from the sample and API dashboard data');
 assert(cards.includes('Объявленные суммы'),'Cards must avoid inventing a range from mixed observations');
 assert(nodes['source-summary'].textContent.includes('Ошибок обновления:'),'Dashboard must surface source failures and retained snapshots');
