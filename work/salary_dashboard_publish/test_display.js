@@ -3,7 +3,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const page=fs.readFileSync(path.join(__dirname,'dist/index.html'),'utf8');
 const methodology=fs.readFileSync(path.join(__dirname,'dist/methodology.html'),'utf8');
 assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
-for(const evidence of ['Решение по выборке:','разные локальные уровни и структуры оплаты','отдельный бенчмарк конкурентности','Кейс GitLab:','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
+for(const evidence of ['Решение по выборке:','разные локальные уровни и структуры оплаты','отдельный бенчмарк конкурентности','Кейс GitLab:','75-й перцентиль вместо 50-го','±20% от неё','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
 assert(methodology.includes('Локация учитывается при определении конкурентного диапазона оплаты'),'Methodology must align with the regional-market hiring recommendation');
 for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
 for(const evidence of ['сводный коридор двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
@@ -42,6 +42,8 @@ assert(correctedRussianNet.every(row=>row.period==='month'&&row.gross_net==='net
 const context={document,Intl,Map,Set,Date,Number,URL,Event:class Event{},console};vm.createContext(context);
 vm.runInContext(page.split('<script>')[1].split('</script>')[0],context);
 const content=node=>[node.textContent,...node.children.map(content)].filter(Boolean).join(' ');
+const comparableKpi=nodes.kpis.children.find(card=>content(card).includes('сопоставимых условий оплаты'));
+assert(!comparableKpi||Number(comparableKpi.children[0].textContent)>0,'Show the comparable-pay KPI only when its count is positive');
 const offerSummary=()=>nodes.regions.children.map(card=>content(card.children[0].children.find(child=>child.className==='offer-summary'))).join(' ');
 const offerCards=nodes.regions.children.map(card=>card.children[0].children.find(child=>child.className==='offer-summary'));
 assert.equal(offerCards.length,3,'Each location must display a salary summary');
