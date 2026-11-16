@@ -3,7 +3,7 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const page=fs.readFileSync(path.join(__dirname,'dist/index.html'),'utf8');
 const methodology=fs.readFileSync(path.join(__dirname,'dist/methodology.html'),'utf8');
 assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
-for(const evidence of ['Решение по выборке:','значительно отличающиеся локальные уровни оплаты','прокси для измерения ожиданий работников','Кейс GitLab:','75-й перцентиль вместо 50-го','обычно примерно 20% от неё','три различных региональных вилки','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
+for(const evidence of ['Решение по выборке:','Разница в предлагаемых зарплатах велика','прокси ожиданий работников','Кейс GitLab:','75-й перцентиль вместо 50-го','обычно примерно 20% от неё','три вилки для трёх рынков','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
 assert(methodology.includes('Локация учитывается при определении конкурентного диапазона оплаты'),'Methodology must align with the regional-market hiring recommendation');
 for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
 for(const evidence of ['общая вилка для двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
