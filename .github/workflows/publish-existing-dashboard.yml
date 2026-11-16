@@ -1,0 +1,35 @@
+name: Publish existing dashboard
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: salary-dashboard-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload existing dashboard
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: work/salary_dashboard_publish/dist
+
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
