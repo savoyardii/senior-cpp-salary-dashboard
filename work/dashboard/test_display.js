@@ -103,7 +103,7 @@ assert(jobs().includes('gross/net не указано'),'Expanded offers must la
 assert(!jobs().includes('период не указан'),'Unverified salary posts must stay out of the expanded vacancy list');
 assert(!jobs().includes('Алабуга')&&!page.includes('37562275')&&!page.includes('139133285'),'Alabuga C++ vacancy must be absent from the sample and API dashboard data');
 assert(!page.includes('Объявленные суммы'),'Dashboard must not label salary cards as "Объявленные суммы"');
-assert(nodes['source-summary'].textContent.includes('Ошибок обновления:'),'Dashboard must surface source failures and retained snapshots');
+assert(!page.includes('id=\"source-summary\"'),'Dashboard must omit the source error and stale-snapshot summary');
 const mixedGrade=JSON.parse(nodes.dataset.textContent).find(row=>row.url?.endsWith('/139326350/'));
 assert.equal(mixedGrade?.seniority,'inferred_senior','The Russian HFT Middle/Senior role is included as salary-inferred Senior');
 assert(cards.includes('C++ / Rust Developer (Middle / Senior) HFT'),'Salary-inferred Russian HFT vacancy must appear in the default Senior view');
