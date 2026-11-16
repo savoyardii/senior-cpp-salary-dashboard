@@ -6,8 +6,8 @@ assert(!page.includes('Что добавил расширенный поиск')
 for(const evidence of ['Решение по выборке:','разные локальные уровни и структуры оплаты','отдельный бенчмарк конкурентности','Кейс GitLab:','75-й перцентиль вместо 50-го','±20% от неё','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
 assert(methodology.includes('Локация учитывается при определении конкурентного диапазона оплаты'),'Methodology must align with the regional-market hiring recommendation');
 for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
-for(const evidence of ['сводный коридор двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
-for(const evidence of ['CHF 125–170 тыс.','сводный коридор двух Senior C++ ролей','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,4 млн','P25–P75 середин объявленных вилок','не обновляются еженедельным парсером'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
+for(const evidence of ['общая вилка для двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
+for(const evidence of ['CHF 125–170 тыс.','общая вилка для двух Senior C++ ролей','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,4 млн','P25–P75 середин объявленных вилок'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
 assert(page.includes('gross/net не раскрыты'),'Swiss salary basis limitations must remain visible');
 assert(page.includes('https://antaltalent.ru/wp-content/uploads/2025/10/RUS_Job_market_25-26.pdf'),'Antal link must use the live PDF');
 assert(!page.includes('2025/09/RUS_Job_market_25-26.pdf'),'Broken Antal link must be removed');
