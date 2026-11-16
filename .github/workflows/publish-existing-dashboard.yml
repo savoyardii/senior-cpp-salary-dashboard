@@ -28,7 +28,7 @@ jobs:
       - name: Upload existing dashboard
         uses: actions/upload-pages-artifact@v4
         with:
-          path: work/salary_dashboard_publish/dist
+          path: work/dashboard/dist
 
       - name: Deploy dashboard
         id: deployment

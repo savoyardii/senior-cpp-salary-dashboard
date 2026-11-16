@@ -245,7 +245,7 @@ def save_and_build(snapshot):
     temp = SNAPSHOT.with_suffix('.json.tmp')
     temp.write_text(json.dumps(snapshot, ensure_ascii=False, indent=2))
     temp.replace(SNAPSHOT)
-    subprocess.run([sys.executable, str(ROOT / 'work/salary_dashboard_publish/finish.py')], check=True)
+    subprocess.run([sys.executable, str(ROOT / 'work/dashboard/finish.py')], check=True)
 
 
 def refresh():

@@ -47,7 +47,7 @@ work/api_connector/install_schedule.sh
 
 ## Проверка и аудит
 
-`python3 -B -m unittest discover -s work/api_connector -p test_statistics.py` — офлайн-регрессии. После `finish.py` запуск `node work/salary_dashboard_publish/test_display.js` проверяет подписи периода/масштаба и область фильтров без браузера.
+`python3 -B -m unittest discover -s work/api_connector -p test_statistics.py` — офлайн-регрессии. После `finish.py` запуск `node work/dashboard/test_display.js` проверяет подписи периода/масштаба и область фильтров без браузера.
 
 `outputs/salary_api_audit.json` и раскрытие под API-таблицей содержат исходные URL/ID, зарплатные свидетельства и причины исключения. Фильтры сегмента и уровня действуют на API и статический блок. API-сегмент определяется словами из описания и названия; это кодовая классификация, не ручная проверка.
 
