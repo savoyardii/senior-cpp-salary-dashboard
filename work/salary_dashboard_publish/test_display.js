@@ -3,6 +3,8 @@ const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/st
 const page=fs.readFileSync(path.join(__dirname,'dist/index.html'),'utf8');
 const methodology=fs.readFileSync(path.join(__dirname,'dist/methodology.html'),'utf8');
 assert(!page.includes('Что добавил расширенный поиск'),'Expanded search block must be removed');
+for(const evidence of ['Решение по выборке:','разные локальные уровни и структуры оплаты','отдельный бенчмарк конкурентности','Кейс GitLab:','handbook.gitlab.com/handbook/total-rewards/compensation'])assert(page.includes(evidence),`Hiring decision must include sample evidence and the GitLab case: ${evidence}`);
+assert(methodology.includes('Локация учитывается при определении конкурентного диапазона оплаты'),'Methodology must align with the regional-market hiring recommendation');
 for(const name of ['Швейцария','Лондон','Россия'])assert(methodology.includes(`<strong>${name}:`),`${name} methodology count must be labeled`);
 for(const evidence of ['сводный коридор двух Senior C++ ролей','₽260–390 тыс.','до налогов и без бонусов','P25–P75 середин объявленных вилок','/2025/10/RUS_Job_market_25-26.pdf'])assert(methodology.includes(evidence),`Methodology must include ${evidence}`);
 for(const evidence of ['CHF 125–170 тыс.','сводный коридор двух Senior C++ ролей','£95–140 тыс.','₽3,1–4,7 млн','₽1,8–3,4 млн','P25–P75 середин объявленных вилок','не обновляются еженедельным парсером'])assert(page.includes(evidence),`External salary evidence must show ${evidence}`);
