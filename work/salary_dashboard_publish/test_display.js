@@ -97,7 +97,7 @@ for(const name of ['Швейцария','Лондон','Россия']){
  const jobsNode=card.children.find(child=>child.className==='region-jobs');
  assert(count>0&&jobsNode?.children.length===count,`${name} card must match its rendered salary vacancies`);
 }
-assert(cards.split('Senior Embedded C++ Engineer').length-1===1,'The same ALTEN vacancy must be deduplicated across sources');
+assert(!cards.includes('Senior Embedded C++ Engineer')&&!cards.includes('Embedded Software Engineer'),'Embedded/firmware roles must be excluded from the target salary sample');
 assert(cards.includes('Senior Software Engineer C++')&&cards.includes('Cudos AG'),'Expanded vacancies must include the job link and employer');
 assert(jobs().includes('gross/net не указано'),'Expanded offers must label unknown tax basis');
 assert(!jobs().includes('период не указан'),'Unverified salary posts must stay out of the expanded vacancy list');

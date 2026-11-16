@@ -87,10 +87,11 @@
     "description_reviewed": true,
     "salary_review_state": "found",
     "salary_evidence": "“CHF 100,000 - 130,000” — rendered salary line; matching page data fields annualSalaryFrom=100000, annualSalaryTo=130000; gross/net and base/total not specified.",
-    "analysis_eligible": true,
+    "analysis_eligible": false,
     "link_state": "ok",
     "link_state_detail": "http_200_page_and_current_category_listing",
-    "description_review_source": "Current HTTP 200 vacancy page body and structured page data reviewed."
+    "description_review_source": "Current HTTP 200 vacancy page body and structured page data reviewed.",
+    "analysis_exclusion_reason": "Embedded/firmware profile is outside the target Senior C++ SWE comparison."
   },
   {
     "region": "Switzerland",
@@ -118,10 +119,11 @@
     "description_reviewed": true,
     "salary_review_state": "found",
     "salary_evidence": "“CHF 100,000 - 130,000” — rendered salary line; matching page data fields annualSalaryFrom=100000, annualSalaryTo=130000; gross/net and base/total not specified.",
-    "analysis_eligible": true,
+    "analysis_eligible": false,
     "link_state": "ok",
     "link_state_detail": "http_200_page_and_current_category_listing",
-    "description_review_source": "Current HTTP 200 vacancy page body and structured page data reviewed."
+    "description_review_source": "Current HTTP 200 vacancy page body and structured page data reviewed.",
+    "analysis_exclusion_reason": "Embedded/firmware profile is outside the target Senior C++ SWE comparison."
   },
   {
     "region": "Switzerland",

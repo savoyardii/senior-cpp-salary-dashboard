@@ -2087,7 +2087,8 @@
     "description_reviewed": true,
     "salary_review_state": "found",
     "salary_evidence": "Region: London Compensation: GBP 40000 - GBP 60000 - yearly.",
-    "analysis_eligible": true
+    "analysis_eligible": false,
+    "analysis_exclusion_reason": "Embedded/firmware profile is outside the target Senior C++ SWE comparison."
   },
   {
     "region": "London, UK",
